@@ -44,7 +44,9 @@ if (!empty($_SESSION["name"])) {
 
         <div class=""></div>
         <ul>
-            
+        
+            <li><a href="../portal.php"><i style="font-size: 30px; padding: 10px;" class='bx bx-reset'></i></a></li>
+
             <div class="dropdown">
                 <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <?php echo $_SESSION['name']; ?>
@@ -86,7 +88,7 @@ if (!empty($_SESSION["name"])) {
                         <p>Evaluacion sobre el Curso</p>
                         <small>De click en "Comenzar Evaluacion" para ir a la evaluacion</small>
                         <br>
-                        <a href="">Comenzar Evaluacion</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScrdZvXcq-K4OoceGqDd4ul1S1_L4TPFZzW_KbdbbuvzquXvg/viewform?usp=sharing">Comenzar Evaluacion</a>
                     </div>
                 </div>
 
@@ -109,13 +111,13 @@ if (!empty($_SESSION["name"])) {
     <!--Cierre de class arbol de aprendizaje-->
 
 
-        <!--START FOOTER-->
+        <!--START FOOTER-
         <footer>
             <div class="footer">
                 <a href="../portal.php"><i class='bx bx-reset'></i></a>
             </div>
         </footer>
-    <!--START FOOTER-->
+    START FOOTER-->
 
 
 

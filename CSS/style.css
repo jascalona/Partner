@@ -107,6 +107,7 @@ header .btn-sesion{
 main{
     max-width: 800px;
     margin: 0 auto;    
+    margin-bottom: 80px;
 }
 
 main .container-learning .img-public img{
@@ -166,6 +167,28 @@ main .container-learning .container-learning-text p{
         margin: 30px;
     }
 }
+
+
+footer{
+    color: #fff;
+}
+
+.footer_section {
+    width: 100%;
+    float: left;
+    background-color: #252525;
+    height: auto;
+    padding-bottom: 50px;
+    box-shadow: 0px 24px 19px -1px #222223;
+    position: relative;
+}
+
+.footer_logo {
+    width: 80%;
+    float: left;
+    padding: 0px 0px 30px 0px;
+}
+
 
 /*RESPONSIVE HEADER MENU*/
 /*Tabletas*/

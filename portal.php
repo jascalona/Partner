@@ -44,7 +44,7 @@ if (!empty($_SESSION["name"])) {
 
         <div class=""></div>
         <ul>
-            <li><a href=""><i class='bx bxs-user-circle'></i></a></li>
+            <li><a href="./Learning.php"><i style="font-size: 30px; padding: 10px;" class='bx bxs-home'></i></a></li>
 
             <div class="dropdown">
                 <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -125,7 +125,7 @@ if (!empty($_SESSION["name"])) {
 
                     <!--Print Management-->
                     <div class="card" style="width: 15rem; height: 22rem;">
-                        <img src="./IMG/b405.jpg" class="card-img-top" alt="...">
+                        <img src="./IMG/printMana.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Print Management</h5>
                             <small>Publicado:</small>
@@ -161,7 +161,7 @@ if (!empty($_SESSION["name"])) {
 
                     <!--AltaLink B8155-->
                     <div class="card" style="width: 15rem; height: 22rem;">
-                        <img src="./IMG/b405.jpg" class="card-img-top" alt="...">
+                        <img src="./IMG/AL8155.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">AltaLink B8155</h5>
                             <small>Publicado:</small>
@@ -205,13 +205,12 @@ if (!empty($_SESSION["name"])) {
 
     </main>
 
-    <!--START FOOTER-->
+    <!--START FOOTER
         <footer>
             <div class="footer">
-                <a href="./Learning.php"><i class='bx bxs-home'></i></a>
             </div>
         </footer>
-    <!--START FOOTER-->
+        START FOOTER-->
 
 
 
