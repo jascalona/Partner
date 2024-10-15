@@ -58,53 +58,67 @@ if (!empty($_SESSION["name"])) {
         </ul>
     </header>
 
-    
+
     <div class="container-fondo">
         <div class="fondo"></div>
         <div class="text">
             <p>Documentación VersaLink B405</p>
         </div>
-    
+
 
         <main>
 
-        <!--Reseña del status fondo-->
-        <div class="fondo-status">
-            <p><small>Este curso a su propio ritmo proporciona información relacionada con el servicio con respecto al Xerox Color C75-J75.</small></p>
-            <small>Seleccione el botón "Ver" para comenzar su aprendizaje.</small>
+            <!--Reseña del status fondo-->
+            <div class="fondo-status">
+                <p><small>Este curso a su propio ritmo proporciona información relacionada con el servicio con respecto al Xerox Color C75-J75.</small></p>
+                <small>Seleccione el botón "Ver" para comenzar su aprendizaje.</small>
 
 
 
-            <div class="btn-ver">
-                <button class="btn btn-dark"><a href="./VL_DOC/service_training.php" target="_blank">Ver</a></button>
-            </div>
-
-
-            <div class="text-final">
-                <div class="linear"></div>
-
-                <div class="container-evaluation">
-                    <p>Evaluacion sobre el Curso</p>
-                    <small>De click en "Comenzar Evaluacion" para ir a la evaluacion</small>
-                    <br>
-                    <a href="">Comenzar Evaluacion</a>
+                <div class="btn-ver">
+                    <button class="btn btn-dark"><a href="./VL_DOC/service_training.php" target="_blank">Ver</a></button>
                 </div>
-            </div>
 
 
-            <div class="enlaces">
-                <p>información Adicional</p>
+                <div class="text-final">
+                    <div class="linear"></div>
+
+                    <div class="container-evaluation">
+                        <p>Evaluacion sobre el Curso</p>
+                        <small>De click en "Comenzar Evaluacion" para ir a la evaluacion</small>
+                        <br>
+                        <a href="">Comenzar Evaluacion</a>
+                    </div>
+                </div>
+
+
+                <div class="enlaces">
+                    <p>información Adicional</p>
                     <li><a href="https://www.xerox.com/vids/VersaLinkB405_US/index.htm">Demo Virtual</a></li>
                     <li><a href="./VL_DOC/installation_guide.pdf">Guia de Instalación</a></li>
                     <li><a href=""></a></li>
                     <li><a href=""></a></li>
+                </div>
+
             </div>
 
-        </div>
-
-        <!--Reseña del status fondo-->
-    </main>
+            <!--Reseña del status fondo-->
+        </main>
 
         <!--Cierre de class arbol de aprendizaje-->
     </div>
     <!--Cierre de class arbol de aprendizaje-->
+
+
+        <!--START FOOTER-->
+        <footer>
+            <div class="footer">
+                <a href="../portal.php"><i class='bx bx-reset'></i></a>
+            </div>
+        </footer>
+    <!--START FOOTER-->
+
+
+
+</body>
+</html>

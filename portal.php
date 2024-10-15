@@ -205,13 +205,13 @@ if (!empty($_SESSION["name"])) {
 
     </main>
 
-    <!--START FOOTER
+    <!--START FOOTER-->
         <footer>
             <div class="footer">
                 <a href="./Learning.php"><i class='bx bxs-home'></i></a>
             </div>
         </footer>
-    START FOOTER-->
+    <!--START FOOTER-->
 
 
 

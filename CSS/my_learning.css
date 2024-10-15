@@ -10,8 +10,17 @@
     list-style: none;
 }
 
-body{
-    background: #e3e1e1f3
+body{ 
+    position: relative;
+    min-height: 150vh;
+    background: #e3e1e1f3;
+
+}
+
+@media (max-width: 700px) {
+    body{
+        min-height: 180vh;
+    }
 }
 
 /*DEFINICIONES STANDAR*/
@@ -129,12 +138,16 @@ main .fondo-card section {
 
 /*FOOTER*/
 footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     background: #292929;
     height: 65px;
     display: flex;
     justify-content: initial;
     align-items: center;
     padding: 0 30px;
+
 }
 
 footer .footer a{
@@ -188,9 +201,6 @@ footer .footer a i:hover{
     .container-fondo .text p{
         font-size: 18px;
     }
-
-    /*VL_B405*/
-    .fondo-status{}    
 
 }
 
