@@ -4,7 +4,7 @@ if (!empty($_SESSION["name"])) {
     header("loaction: ./intranet.php");
 } else {
     if ((time() - $_SESSION['time']) > 40) {
-        header("location: ./intranet.php");
+        header("location: ../intranet.php");
     }
 }
 ?>
@@ -50,7 +50,7 @@ if (!empty($_SESSION["name"])) {
                     <?php echo $_SESSION['name']; ?>
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="./CONTROLLER/close.php">Cerrar Sesion</a></li>
+                    <li><a class="dropdown-item" href="./close.php">Cerrar Sesion</a></li>
                 </ul>
             </div>
 

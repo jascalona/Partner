@@ -4,7 +4,7 @@ if (!empty($_SESSION["name"])) {
     header("loaction: ./log.php");
 } else {
     if ((time() - $_SESSION['time']) > 40) {
-        header("location: ./log.php");
+        header("location: ./intranet.php");
     }
 }
 ?>
@@ -44,6 +44,7 @@ if (!empty($_SESSION["name"])) {
 
         <div class=""></div>
         <ul>
+            <li><a href=""><i class='bx bxs-user-circle'></i></a></li>
 
             <div class="dropdown">
                 <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
