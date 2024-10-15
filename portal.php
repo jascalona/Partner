@@ -91,7 +91,6 @@ if (!empty($_SESSION["name"])) {
                         <div class="card-body">
                             <h5 class="card-title">VersaLink B405</h5>
                             <small>Publicado:</small>
-                            <br>
                             <small>11/08/2024</small>
 
                             <!--Boton-->
@@ -130,7 +129,6 @@ if (!empty($_SESSION["name"])) {
                         <div class="card-body">
                             <h5 class="card-title">Print Management</h5>
                             <small>Publicado:</small>
-                            <br>
                             <small>11/08/2024</small>
 
                             <!--Boton-->
@@ -167,7 +165,6 @@ if (!empty($_SESSION["name"])) {
                         <div class="card-body">
                             <h5 class="card-title">AltaLink B8155</h5>
                             <small>Publicado:</small>
-                            <br>
                             <small>11/08/2024</small>
 
                             <!--Boton-->
