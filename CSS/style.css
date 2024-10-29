@@ -1,0 +1,249 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background: #fcfbfbf3
+}
+
+/*DEFINICIONES STANDAR*/
+p{
+    color: rgba(40, 40, 40, 0.826);
+}
+
+strong{
+    color: rgba(31, 31, 31, 0.722);
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 60px;
+    padding: 15px;
+}
+
+header .logo .line{
+    border-left: solid #000 1px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #565555;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    background: #fff;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    box-shadow: 0 1px 10px rgba(83, 82, 82, 0.446);
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8%;
+    margin-top: 12px;
+}
+
+header ul .cerrar-sesion li a{
+    color: #1e1e1e;
+}
+
+header ul li a{
+    padding: 0px 7px;
+    color: rgba(59, 59, 59, 0.826);
+    font-size: 13px;
+    text-decoration: none;
+}
+
+header .btn-sesion{
+    font-size: 25px;
+}
+
+.checkbtn{
+    float: right;
+    font-size: 30px;
+    color: rgba(59, 59, 59, 0.826);
+    cursor: pointer;
+    display: none;
+}
+/*hidden check*/
+#check{
+    display: none;
+}
+
+.carousel .carousel-item{
+    max-height: 400px;
+}
+
+/* SESION LEARNNING*/
+/*LEARNNING*/
+.text-bienvenida{
+    max-width: 800px;
+    margin: 25px auto;
+    text-align: initial;
+}
+
+.text-bienvenida p{
+    font-size: 25px;
+}
+
+main{
+    max-width: 800px;
+    margin: 0 auto;    
+    margin-bottom: 80px;
+}
+
+main .container-learning .img-public img{
+    width: 100%;
+    max-height: 400px;
+}
+
+main .container-learning .container-learning-text .title{
+    padding-top: 4%;
+    font-size: 25px;
+}
+
+main .container-learning .container-learning-text p{
+    font-size: 13px;
+}
+
+/*SECTION CARD*/
+
+.container-learning-card .we-make img{
+    width: 100%;
+}
+
+.container-learning-card article .title{
+    text-align: center;
+    padding-top: 4%;
+    font-size: 25px;
+}
+
+.container-learning-card .gallery .card{
+    padding: 4%;
+    border-radius: 8px;
+}
+
+
+.container-learning-card .gallery{
+    display: flex;
+    justify-content: center;
+}
+
+.gallery{
+    display: grid;
+    gap: 4%;
+}
+
+@media (min-width: 992px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 720px) {
+    .gallery {
+        flex-wrap: wrap;
+    }
+
+    .gallery .card {
+        margin: 30px;
+    }
+}
+
+
+footer{
+    color: #fff;
+}
+
+.footer_section {
+    width: 100%;
+    float: left;
+    background-color: #252525;
+    height: auto;
+    padding-bottom: 50px;
+    box-shadow: 0px 24px 19px -1px #222223;
+    position: relative;
+}
+
+.footer_logo {
+    width: 80%;
+    float: left;
+    padding: 0px 0px 30px 0px;
+}
+
+
+/*RESPONSIVE HEADER MENU*/
+/*Tabletas*/
+@media (max-width: 952px) {
+    header ul li a{
+        font-size: 12px;
+    }
+}
+
+/*Movil*/
+@media (max-width: 750px) {
+    .checkbtn{
+        display: block;
+    }
+    header ul{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        background: #05031cf2;
+        top: 10px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    
+    header ul li{
+        display: block;
+        margin: 30px 0;
+        line-height: 30px;
+        border: solid 1px #b3b3b3;
+        padding: 10px;
+    }
+
+    header ul {
+        display: block;
+        margin: 50px 0;
+        line-height: 10px;
+    }
+
+    header ul li a{
+        font-size: 20px;
+        color: #b3b3b3;
+    }
+    
+    #check:checked ~  ul{
+        left: 0;
+    }
+}
+
+
+/*CONTENIDO MAIN*/
+@media (max-width: 881px) {
+    main {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
