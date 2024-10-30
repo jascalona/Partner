@@ -18,7 +18,7 @@ class select_c{
 
     //Function for Vistas
     public function SelectC(){
-        $sqlC = "SELECT caracteristicas FROM vl_b405";
+        $sqlC = "SELECT caracteristicas FROM vl_b405 WHERE id=1";
         $conexion = $this->Connection();
         $res = mysqli_query($conexion,$sqlC) or die ("Ha Ocurrido un Error");
         return $res;
