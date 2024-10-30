@@ -32,7 +32,7 @@ class select_c{
         return $res2;
     }
 
-    //Function for Vistas Caracteristicas item 01
+    //Function for Vistas Caracteristicas item 03
     public function SelectC3(){
         $sqlC3 = " SELECT caracteristicas FROM vl_b405 WHERE id=3";
         $conexion = $this->Connection();
@@ -40,11 +40,20 @@ class select_c{
         return $res3;
     }
 
+    //Function for Vistas Caracteristicas item 04
     public function SelectC4(){
         $sqlC4 = " SELECT caracteristicas FROM vl_b405 WHERE id=4";
         $conexion = $this->Connection();
         $res4 = mysqli_query($conexion,$sqlC4) or die ("Ha Ocurrido un Error");
         return $res4;
+    }
+
+    //Function for Vistas Caracteristicas iem 05
+    public function SelectC5(){
+        $sqlC5 = " SELECT caracteristicas FROM vl_b405 WHERE id=5 ";
+        $conexion = $this->Connection();
+        $res5 = mysqli_query($conexion,$sqlC5) or die ("Ha Ocurrido un Error");
+        return $res5;
     }
 
 }

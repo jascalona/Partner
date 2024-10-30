@@ -135,7 +135,29 @@ if (!empty($_SESSION["name"])) {
 
                       </div>
                     </div>
-                    <!--item 0-->
+                    <!--item 04-->
+
+                       <!--item 04-->
+                       <div class="carousel-item" name="3">
+
+                      <div class="item-content">      
+                        <p class="title">Controladores de Impresión y escaneo</p>  
+                        
+                        <div  style="" class="content">
+                          <?php
+                            $op = new select_c();
+                            $res5 = $op->SelectC5();
+                            while ($row = mysqli_fetch_array($res5)) {
+                                echo $row['caracteristicas'];
+                          }  
+                          ?> 
+                        <img style="" src="./images/H/" alt="">
+                        
+                        </div>
+
+                        </div>
+                      </div>
+                      <!--item 04-->
 
                     </div>
 
