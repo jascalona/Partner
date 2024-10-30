@@ -16,6 +16,4 @@ if (!$conexion) {
   //  echo '<script>alert("Conexion Exitosa!")</script>';
 }
 
-
-
 ?>

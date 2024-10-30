@@ -42,124 +42,102 @@ if (!empty($_SESSION["name"])) {
         
             <div class="container">
 
-              <div class="container-training">  
+            <form action="post">
+
+              <div style="background: #f3f3f3f3;" class="container-training">  
                 
                 <div style="width: 700px; height: 500px;" id="carouselExampleFade" class="carousel slide carousel-fade">
                     <div class="carousel-inner">
 
+                    <!--item 01-->
                       <div class="carousel-item active">
-                        <img src="./images/Carrusel_01.png" class="d-block w-100" alt="...">
-                      </div>
                       
-                      <div class="carousel-item">
-                            <?php
-                                $op = new select_c();
-                                $res = $op->SelectC();
-                                while ($row = mysqli_fetch_array($res)) {
-                                    echo $row['caracteristicas'];
-                                }  
-                            ?>
-                     </div>
+                        <div class="item-content">  
+                        <p class="title">Capacitación de Servicio Técnico VersaLkin B400 & B405</p>
+
+                        <div class="content">
+                          <?php
+                              $op = new select_c();
+                              $res = $op->SelectC();
+                              while ($row = mysqli_fetch_array($res)) {
+                                  echo $row['caracteristicas'];
+                              }  
+                          ?>
+                          <img src="./images/carrusel_1.png" alt="">
+
+                        </div>
+
+                          </div>
+                      </div>
+                      <!--item 01-->
+
+                      <!--item 02-->
+                      <div class="carousel-item" name="name2" id="2" >
+
+                        <div class="item-content">      
+                        <p class="title">Configuración</p>  
+                        
+                        <div  style="line-height: 2;" class="content">
+                          <?php
+                            $op = new select_c();
+                            $res2 = $op->SelectC2();
+                            while ($row = mysqli_fetch_array($res2)) {
+                                echo $row['caracteristicas'];
+                           }  
+                          ?> 
+                        <img src="./images/carrusel_1.png" alt="">
+                        
+                        </div>
+
+                        </div>
+                      </div>
+                    <!--item 02-->
+                     
+                    <!--item 03-->
+                      <div class="carousel-item" name="3">
+
+                      <div class="item-content">      
+                        <p class="title">Soporte de Medidas</p>  
+                        
+                        <div  style="" class="content">
+                          <?php
+                            $op = new select_c();
+                            $res3 = $op->SelectC3();
+                            while ($row = mysqli_fetch_array($res3)) {
+                                echo $row['caracteristicas'];
+                           }  
+                          ?> 
+                        <img style="max-width: 400px;" src="./images/H/carrucel_3.png" alt="">
+                        
+                        </div>
+
+                        </div>
+                      </div>
+                    <!--item 03-->
+
+                    <!--item 04-->
+                    <div class="carousel-item" name="3">
+
+                    <div class="item-content">      
+                      <p class="title">Panel de Control</p>  
                       
-                      <div class="carousel-item">
-                        <img src="./images/Carrusel_03.png" class="d-block w-100" alt="...">
-                      </div>
-                    
-                      <div class="carousel-item">
-                        <img src="./images/Carrusel_20.png" class="d-block w-100" alt="...">
-                      </div>
-
-                      <div class="carousel-item">
-                        <img src="./images/Carrusel_04.png" class="d-block w-100" alt="...">
-                      </div>
-
-                      <div class="carousel-item">
-                        <img src="./images/Carrusel_05.png" class="d-block w-100" alt="...">
+                      <div  style="" class="content">
+                        <?php
+                          $op = new select_c();
+                          $res4 = $op->SelectC4();
+                          while ($row = mysqli_fetch_array($res4)) {
+                              echo $row['caracteristicas'];
+                        }  
+                        ?> 
+                      <img style="" src="./images/H/carrucel_4.png" alt="">
+                      
                       </div>
 
-                      <div class="carousel-item">
-                        <img src="./images/Carrusel_24.png" class="d-block w-100" alt="...">
                       </div>
-
-                      <div class="carousel-item">
-                        <img src="./images/Carrusel_25.png" class="d-block w-100" alt="...">
-                      </div>
-
-                      <div class="carousel-item">
-                        <img src="./images/Carrusel_26.png" class="d-block w-100" alt="...">
-                      </div>
-
-                      <div class="carousel-item">
-                        <img src="./images/Carrusel_06.png" class="d-block w-100" alt="...">
-                      </div>
-
-                      <div class="carousel-item">
-                        <img src="./images/Carrusel_21.png" class="d-block w-100" alt="...">
-                      </div>
-
-                      <div class="carousel-item">
-                        <img src="./images/Carrusel_22.png" class="d-block w-100" alt="...">
-                      </div>
-
-                      <div class="carousel-item">
-                        <img src="./images/Carrusel_23.png" class="d-block w-100" alt="...">
-                      </div>
-
-                      <div class="carousel-item">
-                        <img src="./images/Carrusel_07.png" class="d-block w-100" alt="...">
-                      </div>
-
-                      <div class="carousel-item">
-                        <img src="./images/Carrusel_08.png" class="d-block w-100" alt="...">
-                      </div>
-
-                      <div class="carousel-item">
-                        <img src="./images/Carrusel_09.png" class="d-block w-100" alt="...">
-                      </div>
-
-                      <div class="carousel-item">
-                        <img src="./images/Carrusel_10.png" class="d-block w-100" alt="...">
-                      </div>
-
-                      <div class="carousel-item">
-                        <img src="./images/Carrusel_11.png" class="d-block w-100" alt="...">
-                      </div>
-
-                      <div class="carousel-item">
-                        <img src="./images/Carrusel_12.png" class="d-block w-100" alt="...">
-                      </div>
-
-                      <div class="carousel-item">
-                        <img src="./images/Carrusel_13.png" class="d-block w-100" alt="...">
-                      </div>
-
-                      <div class="carousel-item">
-                        <img src="./images/Carrusel_14.png" class="d-block w-100" alt="...">
-                      </div>
-
-                      <div class="carousel-item">
-                        <img src="./images/Carrusel_15.png" class="d-block w-100" alt="...">
-                      </div>
-
-                      <div class="carousel-item">
-                        <img src="./images/Carrusel_16.png" class="d-block w-100" alt="...">
-                      </div>
-
-                      <div class="carousel-item">
-                        <img src="./images/Carrusel_17.png" class="d-block w-100" alt="...">
-                      </div>
-
-                      <div class="carousel-item">
-                        <img src="./images/Carrusel_18.png" class="d-block w-100" alt="...">
-                      </div>
-
-                      <div class="carousel-item">
-                        <img src="./images/Carrusel_19.png" class="d-block w-100" alt="...">
-                      </div>
-
+                    </div>
+                    <!--item 0-->
 
                     </div>
-                    <br>
 
                 <div class="navigator-btn">
 
@@ -172,11 +150,14 @@ if (!empty($_SESSION["name"])) {
                         <a href="../VL_B405.php"><i class='bx bxs-home-alt-2'></i></a>
                     </div>
                     
-                    <button class="carousel-control-nex" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                   
+                    <button class="carousel-control-nex" type="button" name="next" id="next"  data-bs-target="#carouselExampleFade" data-bs-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>    
+
+                  </form>
 
                 </div>
 
