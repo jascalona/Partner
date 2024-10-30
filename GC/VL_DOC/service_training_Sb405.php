@@ -3,7 +3,7 @@ session_start();
 if (!empty($_SESSION["name"])) {
     header("loaction: ./intranet.php");
 }else{
-    if ((time() - $_SESSION['time']) > 40) {
+    if ((time() - $_SESSION['time']) > 1800) {
         header("location: ./intranet.php");
     }
 }

@@ -106,7 +106,7 @@ if (!empty($_SESSION["name"])) {
                     <small>Seleccione el botón "Ver" para comenzar su aprendizaje.</small>
 
                     <div class="btn-ver">
-                        <button class="btn btn-dark"><a href="" target="_blank">Ver</a></button>
+                        <button class="btn btn-dark"><a href="./VL_DOC/service_training_Hb405.php" target="_blank">Ver</a></button>
                     </div>
                 </div>
 
