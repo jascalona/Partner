@@ -16,7 +16,7 @@ if (!empty($_SESSION["name"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./images/x.png">
-    <title>My Learning</title>
+    <title>XDV ELearning VLB405</title>
 
      <!--STYLE ICON-->
      <link rel="stylesheet" href="./CSS_SERVICE/Bootstrap.css">

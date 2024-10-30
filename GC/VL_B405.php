@@ -17,7 +17,7 @@ if (!empty($_SESSION["name"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../IMG/x.png">
-    <title>VersaLink B405</title>
+    <title>Enrollment Details</title>
 
     <!--STYLE ICON-->
     <link rel="stylesheet" href="../CSS/my_learning.css">
@@ -74,11 +74,12 @@ if (!empty($_SESSION["name"])) {
 
             <!--Servicio software-->
             <div class="fondo-status">
+            <small><b><i>Software</i></b></small>
                 <p><small>Este curso a su propio ritmo proporciona información relacionada con el servicio software para VersaLink B405.</small></p>
                 <small>Seleccione el botón "Ver" para comenzar su aprendizaje.</small>
 
                 <div class="btn-ver">
-                    <button class="btn btn-dark"><a href="./VL_DOC/service_training.php" target="_blank">Ver</a></button>
+                    <button class="btn btn-dark"><a href="./VL_DOC/service_training_Sb405.php" target="_blank">Ver</a></button>
                 </div>
 
 
@@ -100,6 +101,7 @@ if (!empty($_SESSION["name"])) {
                 <div class="text-final">
                     <div class="linear"></div>
                     <br>
+                    <small><b><i>Hardware</i></b></small>
                     <p><small>Este curso a su propio ritmo proporciona información relacionada con el servicio técnico para VersaLink B405.</small></p>
                     <small>Seleccione el botón "Ver" para comenzar su aprendizaje.</small>
 
