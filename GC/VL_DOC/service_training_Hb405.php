@@ -19,6 +19,7 @@ if (!empty($_SESSION["name"])) {
     <title>XDV ELearning VLB405</title>
 
     <!--STYLE ICON-->
+    <link rel="stylesheet" href="./CSS_SERVICE/test.css">
     <link rel="stylesheet" href="./CSS_SERVICE/Bootstrap.css">
     <link rel="stylesheet" href="./CSS_SERVICE/service_training.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -30,162 +31,230 @@ if (!empty($_SESSION["name"])) {
 
 
 </head>
-<body style="background: #d0d0d0;">
+<body  class="grid-container">
 
-    
-        <main>
-            
-        <!--Instancia de Conexion-->
-        <?php  include ("./CONTROLLER/Conexion.php");?>
-        <?php  include ("./CONTROLLER/select_c.php");?>
-        <!--Instancia de Conexion-->
-        
-            <div class="container">
 
-            <form action="post">
 
-              <div style="background: #f3f3f3f3;" class="container-training">  
-                
-                <div style="width: 700px; height: 500px;" id="carouselExampleFade" class="carousel slide carousel-fade">
-                    <div class="carousel-inner">
+        <header>
+          <div class="text">
+            <p><small>Hola <strong><?php echo $_SESSION['name']; ?></strong>, Bienvenido al Curso de Servicio Técnico para VersaLink B405</small></p>
+          </div>
 
-                    <!--item 01-->
-                      <div class="carousel-item active">
-                      
-                        <div class="item-content">  
-                        <p class="title">Capacitación de Servicio Técnico VersaLkin B400 & B405</p>
+          
+            <div class="btn-nav">
+              <button class="btn btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                <i class='bx bxs-home' style='color: #ded4f6'></i>
+              </button>
+              
+              <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="staticBackdropLabel"><strong>ELearning VLB405</strong></h5>
+                  <button style="padding: 10px;" type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <i class='bx bx-x' style='color:#ded4f6' ></i>
+                  </button>
+                </div>
+                <div class="offcanvas-body">
+                  
+                  <div class="btn-cont">
 
-                        <div class="content">
-                          <?php
-                              $op = new select_c();
-                              $res = $op->SelectC();
-                              while ($row = mysqli_fetch_array($res)) {
-                                  echo $row['caracteristicas'];
-                              }  
-                          ?>
-                          <img src="./images/carrusel_1.png" alt="">
-
-                        </div>
-
-                          </div>
-                      </div>
-                      <!--item 01-->
-
-                      <!--item 02-->
-                      <div class="carousel-item" name="name2" id="2" >
-
-                        <div class="item-content">      
-                        <p class="title">Configuración</p>  
-                        
-                        <div  style="line-height: 2;" class="content">
-                          <?php
-                            $op = new select_c();
-                            $res2 = $op->SelectC2();
-                            while ($row = mysqli_fetch_array($res2)) {
-                                echo $row['caracteristicas'];
-                           }  
-                          ?> 
-                        <img src="./images/carrusel_1.png" alt="">
-                        
-                        </div>
-
-                        </div>
-                      </div>
-                    <!--item 02-->
-                     
-                    <!--item 03-->
-                      <div class="carousel-item" name="3">
-
-                      <div class="item-content">      
-                        <p class="title">Soporte de Medidas</p>  
-                        
-                        <div  style="" class="content">
-                          <?php
-                            $op = new select_c();
-                            $res3 = $op->SelectC3();
-                            while ($row = mysqli_fetch_array($res3)) {
-                                echo $row['caracteristicas'];
-                           }  
-                          ?> 
-                        <img style="max-width: 400px;" src="./images/H/carrucel_3.png" alt="">
-                        
-                        </div>
-
-                        </div>
-                      </div>
-                    <!--item 03-->
-
-                    <!--item 04-->
-                    <div class="carousel-item" name="3">
-
-                    <div class="item-content">      
-                      <p class="title">Panel de Control</p>  
-                      
-                      <div  style="" class="content">
-                        <?php
-                          $op = new select_c();
-                          $res4 = $op->SelectC4();
-                          while ($row = mysqli_fetch_array($res4)) {
-                              echo $row['caracteristicas'];
-                        }  
-                        ?> 
-                      <img style="" src="./images/H/carrucel_4.png" alt="">
-                      
-                      </div>
-
-                      </div>
-                    </div>
-                    <!--item 04-->
-
-                       <!--item 04-->
-                       <div class="carousel-item" name="3">
-
-                      <div class="item-content">      
-                        <p class="title">Controladores de Impresión y escaneo</p>  
-                        
-                        <div  style="" class="content">
-                          <?php
-                            $op = new select_c();
-                            $res5 = $op->SelectC5();
-                            while ($row = mysqli_fetch_array($res5)) {
-                                echo $row['caracteristicas'];
-                          }  
-                          ?> 
-                        <img style="" src="./images/H/" alt="">
-                        
-                        </div>
-
-                        </div>
-                      </div>
-                      <!--item 04-->
-
-                    </div>
-
-                <div class="navigator-btn">
-
-                    <button  class="carousel-control-pre" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-
-                    <div class="btn-volver">
-                        <a href="../VL_B405.php"><i class='bx bxs-home-alt-2'></i></a>
-                    </div>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Caracteristicas de Producto
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Producto</a></li>
+                        <li><a class="dropdown-item" href="#">Interfaz de Usuario</a></li>
+                        <li><a class="dropdown-item" href="#">Actuación</a></li>
+                        <li><a class="dropdown-item" href="#">Herramientas y recursos</a></li>
+                      </ul>
+                    </li>   
                     
-                   
-                    <button class="carousel-control-nex" type="button" name="next" id="next"  data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>    
-
-                  </form>
-
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Instalación
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Instalación de Producto</a></li>
+                        <li><a class="dropdown-item" href="#">Conexionde red</a></li>
+                        <li><a class="dropdown-item" href="#">Instalación del controlador</a></li>
+                        <li><a class="dropdown-item" href="#">Herramientas y recursos</a></li>
+                        <li><a class="dropdown-item" href="#">Impresiones y copias</a></li>
+                        <li><re class="dropdown-item" href="#">Hardware de autenticación</a></li>
+                      </ul>
+                    </li>
+          
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Teoria del funcionamiento
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Descripción general del sistema</a></li>
+                        <li><a class="dropdown-item" href="#">Creando imagenes</a></li>
+                        <li><a class="dropdown-item" href="#">Ruta del papel y sistema de alimentación</a></li>
+                        <li><a class="dropdown-item" href="#">DADF Y escaner</a></li>
+                      </ul>
+                    </li>
+          
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Mantenimiento
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Mantenimiento al cliente</a></li>
+                        <li><a class="dropdown-item" href="#">Articulos remplazables por el cliente</a></li>
+                        <li><a class="dropdown-item" href="#">Auto Ayuda</a></li>
+                        <li><a class="dropdown-item" href="#">Atascos</a></li>
+                        <li><a class="dropdown-item" href="#">Calidad de impresión</a></li>
+                      </ul>
+                    </li>
+          
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Herramientas y ajustes
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Herramientas de Servicio</a></li>
+                        <li><a class="dropdown-item" href="#">Identificación del número de serie</a></li>
+                        <li><a class="dropdown-item" href="#">Auto Ayuda</a></li>
+                        <li><a class="dropdown-item" href="#">Software de máquina de carga</a></li>
+                      </ul>
+                    </li>
+          
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Problemas principales
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Recursos de apoyo local</a></li>
+                        <li><a class="dropdown-item" href="#">Recursos para problemas comunes</a></li>
+                      </ul>
+                    </li>
+                  </div>
+                
                 </div>
-
-                </div>
-
-             
+              </div>
             </div>
+          
+
+          
         
-        </main>
+        </header>
+
+
+        <nav>
+  
+          <div class="logo">
+            <img src="./images/xdv.png" alt="">
+          </div>
+
+          <ul>
+            
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Caracteristicas de Producto
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Producto</a></li>
+              <li><a class="dropdown-item" href="#">Interfaz de Usuario</a></li>
+              <li><a class="dropdown-item" href="#">Actuación</a></li>
+              <li><a class="dropdown-item" href="#">Herramientas y recursos</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Instalación
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Instalación de Producto</a></li>
+              <li><a class="dropdown-item" href="#">Conexionde red</a></li>
+              <li><a class="dropdown-item" href="#">Instalación del controlador</a></li>
+              <li><a class="dropdown-item" href="#">Herramientas y recursos</a></li>
+              <li><a class="dropdown-item" href="#">Impresiones y copias</a></li>
+              <li><re class="dropdown-item" href="#">Hardware de autenticación</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Teoria del funcionamiento
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Descripción general del sistema</a></li>
+              <li><a class="dropdown-item" href="#">Creando imagenes</a></li>
+              <li><a class="dropdown-item" href="#">Ruta del papel y sistema de alimentación</a></li>
+              <li><a class="dropdown-item" href="#">DADF Y escaner</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Mantenimiento
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Mantenimiento al cliente</a></li>
+              <li><a class="dropdown-item" href="#">Articulos remplazables por el cliente</a></li>
+              <li><a class="dropdown-item" href="#">Auto Ayuda</a></li>
+              <li><a class="dropdown-item" href="#">Atascos</a></li>
+              <li><a class="dropdown-item" href="#">Calidad de impresión</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Herramientas y ajustes
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Herramientas de Servicio</a></li>
+              <li><a class="dropdown-item" href="#">Identificación del número de serie</a></li>
+              <li><a class="dropdown-item" href="#">Auto Ayuda</a></li>
+              <li><a class="dropdown-item" href="#">Software de máquina de carga</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Problemas principales
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Recursos de apoyo local</a></li>
+              <li><a class="dropdown-item" href="#">Recursos para problemas comunes</a></li>
+            </ul>
+          </li>
+
+          </ul>
+    
+        </nav>
+
+        <!--Content-->
+          <main>
+
+              <?php
+                include './CONTROLLER/Conexion.php';
+                include './CONTROLLER/select_c.php';
+              ?>
+
+              <div class="container-carac">
+
+                <article>
+                    <h5>Soporte Tecnico para VersaLink B405 & B400</h5>
+                      <br>
+
+                      <div class="content">
+                        <p class="paragraph"><small>
+                          <?php
+                            $op = new select_c();
+                            $res = $op->SelectC();
+                            while ($row = mysqli_fetch_array($res)) {
+                              echo $row['caracteristicas'];
+                            }  
+                          ?>
+                        </small></p>
+                        <img src="./images/H/b405.jpg" alt="">
+                      </div>
+
+                  </article>
+
+              </div>
+          </main>
+        <!--Content-->
