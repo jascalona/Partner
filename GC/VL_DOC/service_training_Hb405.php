@@ -252,7 +252,6 @@ if (!empty($_SESSION["name"])) {
                         </small></p>
                         <img src="./images/H/b405.jpg" alt="">
                       </div>
-
                   </article>
 
               </div>
