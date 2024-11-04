@@ -154,8 +154,8 @@ if (!empty($_SESSION["name"])) {
               Caracteristicas de Producto
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Producto</a></li>
-              <li><a class="dropdown-item" href="#">Interfaz de Usuario</a></li>
+              <li><a class="dropdown-item" href="#img_item1_carru">Producto</a></li>
+              <li><a class="dropdown-item" href="#img_item2_carru">Interfaz de Usuario</a></li>
               <li><a class="dropdown-item" href="#">Actuación</a></li>
               <li><a class="dropdown-item" href="#">Herramientas y recursos</a></li>
             </ul>
@@ -236,11 +236,29 @@ if (!empty($_SESSION["name"])) {
 
               <div class="container-carac">
 
-                <article>
-                    <h5>Soporte Tecnico para VersaLink B405 & B400</h5>
+                <article id="item_carru" id="img_item1_carru">
+                    <h5 id="img_item1_carru" >Soporte Tecnico para VersaLink B405 & B400</h5>
                       <br>
 
-                      <div class="content">
+                      <div class="content" id="">
+                        <p class="paragraph"><small>
+                          <?php
+                            $op = new select_c();
+                            $res = $op->SelectC();
+                            while ($row = mysqli_fetch_array($res)) {
+                              echo $row['caracteristicas'];
+                            }  
+                          ?>
+                        </small></p>
+                        <img src="./images/H/b405.jpg" alt="">
+                      </div>
+                  </article>
+
+                  <article id="item_carru" id="img_item2_carru">
+                    <h5 id="img_item2_carru" >Test</h5>
+                      <br>
+
+                      <div class="content" id="img_item2_carru">
                         <p class="paragraph"><small>
                           <?php
                             $op = new select_c();

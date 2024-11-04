@@ -81,7 +81,7 @@ nav ul li {
 main{
     background: #f6f6f6e3;
     max-width: 60%;
-    min-height: 75%;
+    min-height: 600px;
     margin: 0 auto;
     margin-top: 50px;
     margin-left: 25%;
@@ -157,5 +157,31 @@ main{
 @media (max-width: 600px) {
     main .container-carac .content img{
         max-width: 100%;
+    }
+}
+
+main{
+    height: auto;
+    width: 100%;
+}
+
+.container-carac {
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+@media (min-height: 963px) {
+    .container-carac{
+        height: 450px;
+        overflow: hidden;
+    }
+}
+
+/*medida para movil height 75vh*/
+
+@media (max-height: 890px) {
+    .container-carac{
+        height: 60vh;
     }
 }
