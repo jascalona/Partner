@@ -90,42 +90,6 @@ main{
 }
 
 /*STYLE ARTICLE SECTION*/
-.container-carac article{
-    max-width: 95%;
-    margin: 0 auto;
-    line-height: 2;
-}
-
-.container-carac article h5{
-    font-size: 35px;
-}
-
-.container-carac article .content{
-    display: flex;
-    font-size: 18px;
-    padding: 20px;
-}
-
-.container-carac img{
-    max-width: 350px;
-    padding: 15px;
-    border-radius: 20px;
-    transition: transform 0.3s;
-}
-
-.container-carac article img:hover{
-    transform: scale(1.1);
-}
-
-
-.container-carac article .btn-navi i{
-    float: left;
-    margin-top: -15%;
-    font-size: 80px;
-    color: #05152f;
-    padding: 20px;
-}
-
 @media (max-width: 1220px) {
     nav{
         display: none;
@@ -188,3 +152,63 @@ main{
 }
 
 /*medida para movil height 75vh*/
+
+.carousel-inner{
+    background: grey;
+    height: 100%;
+}
+
+.carousel-item h5{
+    font-size: 25px;
+    padding: 15px 5px;
+    color: #535157;
+}
+
+.carousel-item h5 strong{
+    color: #05152f;
+}
+
+.carousel-item article {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    background: red;    
+    padding: 20px;
+}
+
+.container-carac article img{
+    max-width: 250px;
+    padding: 15px;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.container-carac article img:hover{
+    transform: scale(1.1);
+}
+
+ .btn-leccion {
+    position: absolute;
+    padding: 5px 40px;
+}
+
+.btn-leccion a{
+    text-decoration: none;
+    background: #53515779;
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    color: #ded4f6;
+}
+
+.btn-leccion{
+    transition: transform 0.3s;
+}
+
+.btn-leccion:hover{
+    transform:scale(1.3);
+}
+
+.btn-leccion a:hover{
+    background: #535157;    
+}
