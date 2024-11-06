@@ -155,7 +155,7 @@ main{
 
 .carousel-inner{
     background: grey;
-    height: 100%;
+    height: 100vh;
 }
 
 .carousel-item h5{
@@ -192,7 +192,7 @@ main{
     padding: 5px 40px;
 }
 
-.btn-leccion a{
+.btn-leccion button{
     text-decoration: none;
     background: #53515779;
     padding: 15px;
@@ -209,6 +209,6 @@ main{
     transform:scale(1.3);
 }
 
-.btn-leccion a:hover{
+.btn-leccion button:hover{
     background: #535157;    
 }

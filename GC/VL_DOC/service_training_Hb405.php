@@ -27,6 +27,7 @@ if (!empty($_SESSION["name"])) {
 
     <!--SCRIPT-->
     <script src="./JS_training/Bootstrap.js"></script>
+    <script src="./JS_training/btn_leccion.js"></script>
     <!--SCRIPT-->
 
 
@@ -234,10 +235,10 @@ if (!empty($_SESSION["name"])) {
                 include './CONTROLLER/select_c.php';
               ?>
 
-              <div class="container-carac">
+              <div class="container-carac" id="leccion1">
 
               <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
+                <div  class="carousel-inner">
                   
 
                 <!--Carrusel 01-->                
@@ -257,12 +258,7 @@ if (!empty($_SESSION["name"])) {
 
                         <img src="./images/H/b405.jpg" alt="IMG">
 
-                        <!--Navegation-->  
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                          <span class="bx bx-chevron-left" style="color: #000; font-size: 50px;" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        
+                        <!--Navegation-->                          
                         <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                           <span class="bx bx-chevron-right" style="color: #000; font-size: 50px;" aria-hidden="true"></span>
                           <span class="visually-hidden">Next</span>
@@ -276,7 +272,7 @@ if (!empty($_SESSION["name"])) {
                     <div class="carousel-item">
                       <h5>Caracteristicas</h5>
 
-                      <article class="content">
+                      <article style="padding: 50pxs;" class="content">
                         <p class="paragraph">
                           <?php
                             $op = new select_c();
@@ -350,17 +346,18 @@ if (!empty($_SESSION["name"])) {
                       </article>
 
                       <div class="btn-leccion">
-                        <a href="">Siguiente</a>
+                            <button id="btnShow" onclick="show" >
+                              Siguiente
+                            </button>
                       </div>
                       
                     </div>
                 <!--Carrusel 04-->
                 
 
-
-                    <div class="carousel-item">
-                      <img src="..." class="d-block w-100" alt="...">
-                    </div>
+                <div class="carousel-item" id="item22">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
 
 
 
