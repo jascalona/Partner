@@ -117,6 +117,15 @@ main{
     transform: scale(1.1);
 }
 
+
+.container-carac article .btn-navi i{
+    float: left;
+    margin-top: -15%;
+    font-size: 80px;
+    color: #05152f;
+    padding: 20px;
+}
+
 @media (max-width: 1220px) {
     nav{
         display: none;
@@ -166,7 +175,7 @@ main{
 }
 
 .container-carac {
-    height: 50vh;
+    height: 60vh;
     width: 100%;
     overflow: hidden;
 }
@@ -179,9 +188,3 @@ main{
 }
 
 /*medida para movil height 75vh*/
-
-@media (max-height: 890px) {
-    .container-carac{
-        height: 60vh;
-    }
-}

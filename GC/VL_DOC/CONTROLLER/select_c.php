@@ -34,7 +34,7 @@ class select_c{
 
     //Function for Vistas Caracteristicas item 03
     public function SelectC3(){
-        $sqlC3 = " SELECT caracteristicas FROM vl_b405 WHERE id=3";
+        $sqlC3 = " SELECT caracteristicas FROM vl_b405 WHERE id=4";
         $conexion = $this->Connection();
         $res3 = mysqli_query($conexion,$sqlC3) or die ("Ha Ocurrido un Error    ");
         return $res3;
