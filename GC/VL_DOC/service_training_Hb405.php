@@ -346,7 +346,7 @@ if (!empty($_SESSION["name"])) {
                       </article>
 
                       <div class="btn-leccion">
-                            <button id="btnShow" onclick="show" >
+                            <button id="ocultar" onclick="show" >
                               Siguiente
                             </button>
                       </div>
@@ -354,18 +354,133 @@ if (!empty($_SESSION["name"])) {
                     </div>
                 <!--Carrusel 04-->
                 
-
-                <div class="carousel-item" id="item22">
-                    <img src="..." class="d-block w-100" alt="...">
                 </div>
-
-
-
-                
-                </div>
-
               
               </div>
-              </div>
+            </div>
+
+            <style>
+              #leccion2{display: none;}
+            </style>
+
+            <div class="container-carac" id="leccion2">
+
+              <div id="carouselExample" class="carousel slide">
+                <div  class="carousel-inner">
+                  
+
+                <!--Carrusel 01-->                
+                  <div class="carousel-item active">
+                      <h5>Soporte Técnico para Productos VersaLink</h5>
+
+                      <article class="content">
+                        <p class="paragraph">
+                            <?php
+                              $op = new select_c();
+                              $res = $op->SelectC();
+                              while ($row = mysqli_fetch_array($res)) {
+                                echo $row['caracteristicas'];
+                              }
+                            ?>
+                        </p>
+
+                        <img src="./images/H/b405.jpg" alt="IMG">
+
+                        <!--Navegation-->                          
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <span class="bx bx-chevron-right" style="color: #000; font-size: 50px;" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                        <!--Navegation-->
+                      </article>
+                  </div>
+                <!--Carrusel 01-->
+                
+                <!--Carrusel 02-->
+                    <div class="carousel-item">
+                      <h5>Caracteristicas</h5>
+
+                      <article style="padding: 50pxs;" class="content">
+                        <p class="paragraph">
+                          <?php
+                            $op = new select_c();
+                            $res2 = $op->SelectC2();
+                            while ($row2 = mysqli_fetch_array($res2)) {
+                              echo $row2['caracteristicas'];
+                            }
+                          ?>
+                        </p>
+
+                        <img src="./images/H/medidas.png" alt="">
+
+                        <!--Navegation-->  
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <span class="bx bx-chevron-left" style="color: #000; font-size: 50px;" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <span class="bx bx-chevron-right" style="color: #000; font-size: 50px;" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                        <!--Navegation-->
+
+                      </article>
+                    </div>
+                <!--Carrusel 02-->                    
+
+                <!--Carrusel 03-->
+                <div class="carousel-item" id="">
+                      <h5>Opciones</h5>
+
+                      <article class="content">
+                        <p class="paragraph">
+                          <?php
+                            $op = new select_c();
+                            $res2 = $op->SelectC3();
+                            while ($row2 = mysqli_fetch_array($res2)) {
+                              echo $row2['caracteristicas'];
+                            }
+                          ?>
+                        </p>
+
+                        <img src="./images/H/carrusel_3.png" alt="">
+
+                        <!--Navegation-->  
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <span class="bx bx-chevron-left" style="color: #000; font-size: 50px;" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <span class="bx bx-chevron-right" style="color: #000; font-size: 50px;" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                        <!--Navegation-->
+
+                      </article>
+                    </div>
+                <!--Carrusel 03-->
+                
+                <!--Carrusel 04-->
+                <div class="carousel-item" id="">
+                      <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito la primera lección de formación Técnica</h5>
+
+                      <article class="content">
+                        <p class="paragraph">
+                          De Click en "Siguiente" para acceder a la lección II
+                        </p>
+                        <img src="./images/H/siguiente.jpg" alt="">
+                      </article>
+
+                      <div class="btn-leccion">
+                            <button id="ocultar" onclick="show" >
+                              Siguiente
+                            </button>
+                      </div>
+                      
+                    </div>
+                <!--Carrusel 04-->
+
           </main>
         <!--Content-->
