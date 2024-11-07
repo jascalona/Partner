@@ -346,7 +346,7 @@ if (!empty($_SESSION["name"])) {
                       </article>
 
                       <div class="btn-leccion">
-                            <button id="ocultar" onclick="show" >
+                            <button id="boton" onclick="mostrar();" >
                               Siguiente
                             </button>
                       </div>
@@ -359,11 +359,13 @@ if (!empty($_SESSION["name"])) {
               </div>
             </div>
 
+
+            <!--LECCION 02-->
             <style>
               #leccion2{display: none;}
             </style>
 
-            <div class="container-carac" id="leccion2">
+            <div id="leccion2" class="container-carac">
 
               <div id="carouselExample" class="carousel slide">
                 <div  class="carousel-inner">
@@ -371,7 +373,7 @@ if (!empty($_SESSION["name"])) {
 
                 <!--Carrusel 01-->                
                   <div class="carousel-item active">
-                      <h5>Soporte Técnico para Productos VersaLink</h5>
+                      <h5>Pendejos</h5>
 
                       <article class="content">
                         <p class="paragraph">
@@ -484,3 +486,7 @@ if (!empty($_SESSION["name"])) {
 
           </main>
         <!--Content-->
+
+
+</body>
+</html>
