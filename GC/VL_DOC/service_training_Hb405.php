@@ -336,7 +336,7 @@ if (!empty($_SESSION["name"])) {
                 
                 <!--Carrusel 04-->
                 <div class="carousel-item" id="">
-                      <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito la primera lección de formación Técnica</h5>
+                      <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección de formación Técnica</h5>
 
                       <article class="content">
                         <p class="paragraph">
@@ -376,7 +376,7 @@ if (!empty($_SESSION["name"])) {
                       <p class="paragraph">
                         <?php
                           $op = new select_c();
-                          $res2 = $op->SelectC2();
+                          $res2 = $op->SelectC4();
                           while ($row2 = mysqli_fetch_array($res2)) {
                             echo $row2['caracteristicas'];
                           }
@@ -386,6 +386,7 @@ if (!empty($_SESSION["name"])) {
                     </div>
 
                     <div class="ui_fle_carru">
+                      <a href=""></a>
                       <a href="#ui_item_2"><i class='bx bxs-chevron-right'></i></a>
                     </div>
 
@@ -398,11 +399,27 @@ if (!empty($_SESSION["name"])) {
               <!--Carrusel ui 2-->
               <article class="item_carru" id="item2_carru" >
                 <div class="ui_carru" id="ui_item_2">
-                    Test
-                  <div class="ui_fle_carru">
-                    <a href="#ui_item_1"><i class='bx bxs-chevron-left'></i></a>
-                    <a href="#ui_item_3"><i class='bx bxs-chevron-right'></i></a>
-                  </div>
+                  <h5>Controladores de impresion y escaneo</h5>
+
+                    <div class="content-general">
+                      <p class="paragraph">
+                        <?php
+                          $op = new select_c();
+                          $res2 = $op->SelectC5();
+                          while ($row2 = mysqli_fetch_array($res2)) {
+                            echo $row2['caracteristicas'];
+                          }
+                        ?>
+                      </p>
+
+                      <img src="./images/H/controladores.png" alt="">
+
+                    </div>
+
+                    <div class="ui_fle_carru">                      
+                      <a href="#ui_item_1"><i class='bx bxs-chevron-left'></i></a>
+                      <a href="#ui_item_3"><i class='bx bxs-chevron-right'></i></a>
+                    </div>
 
                 </div>  
 
@@ -412,25 +429,62 @@ if (!empty($_SESSION["name"])) {
                <!--Carrusel ui 3-->
                <article class="item_carru" id="item2_carru" >
                 <div class="ui_carru" id="ui_item_3">
-                    Test
-                  <div class="ui_fle_carru">
+                  <h5>Servidor web Integrado</h5>
+
+                      <div class="content-general">
+                        <p>
+                          <?php
+                            $op = new select_c();
+                            $res6 = $op->SelectC6();
+                            while ($row6 = mysqli_fetch_array($res6)) {
+                              echo $row6['caracteristicas'];
+                            }
+                          ?>
+                        </p>
+
+                        <img src="./images/H/web.png" alt="">
+
+                      </div>
+
+
+                <div class="ui_fle_carru">
                     <a href="#ui_item_2"><i class='bx bxs-chevron-left'></i></a>
-                    <a href="#ui_item_1"><i class='bx bxs-chevron-right'></i></a>
+                    <a href="#ui_item_4"><i class='bx bxs-chevron-right'></i></a>
                   </div>
 
-                  <div class="btn-leccion">
-                    <button id="boton" onclick="ir_leccion3();" >
-                      Siguiente
-                    </button>
-                  </div>
+                  
 
                 </div>  
 
-
-              
                 
               </article>
               <!--Carrusel ui 3-->
+
+              <!--Carrusel ui 04-->
+              <article class="item_carru" id="item4_carru" >
+                <div class="ui_carru" id="ui_item_4">
+
+                <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección de formación Técnica</h5>
+
+                    <div class="content-general">
+                      <p class="paragraph">
+                            De Click en "Siguiente" para acceder a la lección III
+                      </p>
+
+                      <img src="./images/H/siguiente2.jpg" alt="">
+
+                    </div>
+
+                      <div class="btn-leccion">
+                        <button id="boton" onclick="ir_leccion3();" >
+                          Siguiente
+                        </button>
+                      </div>
+
+                </div>
+              </article>
+              <!--Carrusel ui 04-->
+
 
             </div>      
             <!--LECCION 02-->
@@ -447,9 +501,25 @@ if (!empty($_SESSION["name"])) {
                 <!--Carrusel ui 1-->
                 <article class="item_carru" id="item1_carru" >
                   <div class="ac_carru" id="ac_item_1">
-                    <h5>eSTO ES UNA PRUEBA DE LA lECHUGA</h5>
+                    <h5>Factores de rendimiento de velocidad</h5>
   
+                    <div class="content-general">
+                      <p>
+                        <?php
+                          $op = new select_c();
+                          $res7 = $op->SelectC7();
+                          while ($row7 = mysqli_fetch_array($res7)) {
+                            echo $row7['caracteristicas'];
+                          }
+                        ?>
+                      </p>
+
+                      <img style="height: 300px;" src="./images/H/factores.png" alt="">
+
+                    </div>
+
                       <div class="ui_fle_carru">
+                        <a href=""></a>
                         <a href="#ac_item_2"><i class='bx bxs-chevron-right'></i></a>
                       </div>
   
@@ -462,10 +532,27 @@ if (!empty($_SESSION["name"])) {
                 <!--Carrusel ui 2-->
                 <article class="item_carru" id="item2_carru" >
                   <div class="ui_carru" id="ac_item_2">
-                      Test
+                      <h5>Factores de rendimiento de la calidad de impresión</h5>
+                        
+                        <div class="content-general">
+                          <p>
+                            <?php
+                              $op = new select_c();
+                              $res8 = $op->SelectC8();
+                              while ($row = mysqli_fetch_array($res8)) {
+                                echo $row['caracteristicas'];
+                              }
+                            ?>
+                          </p>
+
+                          <img style="height: 300px;" src="./images/H/factores.png" alt="">
+
+                        </div>
+
+
                     <div class="ui_fle_carru">
-                      <a href="#ui_item_1"><i class='bx bxs-chevron-left'></i></a>
-                      <a href="#ui_item_3"><i class='bx bxs-chevron-right'></i></a>
+                      <a href="#ac_item_1"><i class='bx bxs-chevron-left'></i></a>
+                      <a href="#ac_item_3"><i class='bx bxs-chevron-right'></i></a>
                     </div>
   
                   </div>  
@@ -474,18 +561,61 @@ if (!empty($_SESSION["name"])) {
                 <!--Carrusel ui 2-->
   
                  <!--Carrusel ui 3-->
-                 <article class="item_carru" id="item2_carru" >
-                  <div class="ui_carru" id="ui_item_3">
-                      Test
+                 <article class="item_carru" id="item3_carru" >
+                  <div class="ui_carru" id="ac_item_3">
+                      <h5>Soluciones de Terceros</h5>
+
+                          <div class="content-general">
+                            <p>
+                              <?php
+                                $op = new select_c();
+                                $res9 = $op->SelectC9();
+                                while ($row = mysqli_fetch_array($res9)) {
+                                  echo $row['caracteristicas'];
+                                }
+                              ?>
+                            </p>
+
+                                <img src="./images/H/soluciones_terceros.png" alt="">
+
+                          </div>
+
                     <div class="ui_fle_carru">
-                      <a href="#ui_item_2"><i class='bx bxs-chevron-left'></i></a>
-                      <a href="#ui_item_1"><i class='bx bxs-chevron-right'></i></a>
+                      <a href="#ac_item_3"><i class='bx bxs-chevron-left'></i></a>
+                      <a href="#ac_item_4"><i class='bx bxs-chevron-right'></i></a>
                     </div>
   
                   </div>  
   
                 </article>
                 <!--Carrusel ui 3-->
+
+
+                 <!--Carrusel ui 04-->
+              <article class="item_carru" id="item4_carru" >
+                <div class="ui_carru" id="ac_item_4">
+
+                <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección de formación Técnica</h5>
+
+                    <div class="content-general">
+                      <p class="paragraph">
+                            De Click en "Siguiente" para acceder a la lección IV
+                      </p>
+
+                      <img src="./images/H/siguiente2.jpg" alt="">
+
+                    </div>
+
+                      <div class="btn-leccion">
+                        <button id="boton" onclick="" >
+                          Siguiente
+                        </button>
+                      </div>
+
+                </div>
+              </article>
+              <!--Carrusel ui 04-->
+
   
               </div>      
               <!--LECCION 03-->

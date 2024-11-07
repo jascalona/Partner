@@ -56,4 +56,32 @@ class select_c{
         return $res5;
     }
 
+    public function SelectC6(){
+        $sqlC6 = " SELECT caracteristicas FROM vl_b405 WHERE id=6 ";
+        $conexion = $this->Connection();
+        $res6 = mysqli_query($conexion,$sqlC6) or die ("Ha Ocurrido un Error");
+        return $res6;
+    }
+
+    public function SelectC7(){
+        $sqlC7 = " SELECT caracteristicas FROM vl_b405 WHERE id=7 ";
+        $conexion = $this->Connection();
+        $res7 = mysqli_query($conexion,$sqlC7) or die ("Ha Ocurrido un Error");
+        return $res7;
+    }
+
+    public function SelectC8(){
+        $sqlC8 = " SELECT caracteristicas FROM vl_b405 WHERE id=8 ";
+        $conexion = $this->Connection();
+        $res8 = mysqli_query($conexion,$sqlC8) or die ("Ha Ocurrido un Error");
+        return $res8;
+    }
+
+    public function SelectC9(){
+        $sqlC9 = " SELECT caracteristicas FROM vl_b405 WHERE id=9 ";
+        $conexion = $this->Connection();
+        $res9 = mysqli_query($conexion,$sqlC9) or die ("Ha Ocurrido un Error");
+        return $res9;
+    }
+
 }

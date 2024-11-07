@@ -154,7 +154,6 @@ main{
 /*medida para movil height 75vh*/
 
 .carousel-inner{
-    background: grey;
     height: 100vh;
 }
 
@@ -172,8 +171,11 @@ main{
     max-width: 90%;
     margin: 0 auto;
     display: flex;
-    background: red;    
     padding: 30px;
+}
+
+.carousel-inner article button{
+    padding: 20px;
 }
 
 .container-carac article img{
@@ -229,6 +231,7 @@ main{
 
 .item_carru h5{
     font-size: 28px;
+    color: #535157;
 }
 
 .ui_carru{
@@ -244,27 +247,20 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    padding: 15px;
+    font-size: 40px;
+}
+
+.ui_fle_carru a{
+    color: #05152f;
 }
 
 /*stylo para items diferenciar*/
-#ui_item_1{
-    background: rgb(45, 45, 94);
-}
 
-#ui_item_2{
-    background: rgb(89, 72, 89);
-}
-
-#ui_item_3{
-    background: rgb(89, 89, 89);
-}
 
 .content-general{
-    background: red;
     max-width: 90%;
     margin: 0 auto;
     display: flex;
-    background: red;    
     padding: 30px;
 }
