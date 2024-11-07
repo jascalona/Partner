@@ -212,3 +212,59 @@ main{
 .btn-leccion button:hover{
     background: #535157;    
 }
+
+/*Carrusel 2*/
+
+.cont_items_carru{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+} 
+
+.item_carru{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.item_carru h5{
+    font-size: 28px;
+}
+
+.ui_carru{
+    height: 100%;
+    width: 100%;
+}
+
+.ui_fle_carru{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+/*stylo para items diferenciar*/
+#ui_item_1{
+    background: rgb(45, 45, 94);
+}
+
+#ui_item_2{
+    background: rgb(89, 72, 89);
+}
+
+#ui_item_3{
+    background: rgb(89, 89, 89);
+}
+
+.content-general{
+    background: red;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    background: red;    
+    padding: 30px;
+}

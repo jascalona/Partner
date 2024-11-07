@@ -155,13 +155,13 @@ if (!empty($_SESSION["name"])) {
               Caracteristicas de Producto
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#img_item1_carru">Producto</a></li>
-              <li><a class="dropdown-item" href="#img_item2_carru">Interfaz de Usuario</a></li>
+              <li><a class="dropdown-item" href="">Producto</a></li>
+              <li><a class="dropdown-item" href="" onclick="ir_leccion2();">Interfaz de Usuario</a></li>
               <li><a class="dropdown-item" href="#">Actuación</a></li>
               <li><a class="dropdown-item" href="#">Herramientas y recursos</a></li>
             </ul>
           </li>
-
+          
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Instalación
@@ -346,7 +346,7 @@ if (!empty($_SESSION["name"])) {
                       </article>
 
                       <div class="btn-leccion">
-                            <button id="boton" onclick="mostrar();" >
+                            <button id="boton" onclick="ir_leccion2();" >
                               Siguiente
                             </button>
                       </div>
@@ -359,131 +359,138 @@ if (!empty($_SESSION["name"])) {
               </div>
             </div>
 
-
             <!--LECCION 02-->
             <style>
               #leccion2{display: none;}
             </style>
 
             <div id="leccion2" class="container-carac">
+              
+            
+              <!--Carrusel ui 1-->
+              <article class="item_carru" id="item1_carru" >
+                <div class="ui_carru" id="ui_item_1">
+                  <h5>Interfaz de Usuario</h5>
 
-              <div id="carouselExample" class="carousel slide">
-                <div  class="carousel-inner">
-                  
+                    <div class="content-general">
+                      <p class="paragraph">
+                        <?php
+                          $op = new select_c();
+                          $res2 = $op->SelectC2();
+                          while ($row2 = mysqli_fetch_array($res2)) {
+                            echo $row2['caracteristicas'];
+                          }
+                        ?>
+                      </p>
 
-                <!--Carrusel 01-->                
-                  <div class="carousel-item active">
-                      <h5>Pendejos</h5>
+                    </div>
 
-                      <article class="content">
-                        <p class="paragraph">
-                            <?php
-                              $op = new select_c();
-                              $res = $op->SelectC();
-                              while ($row = mysqli_fetch_array($res)) {
-                                echo $row['caracteristicas'];
-                              }
-                            ?>
-                        </p>
+                    <div class="ui_fle_carru">
+                      <a href="#ui_item_2"><i class='bx bxs-chevron-right'></i></a>
+                    </div>
 
-                        <img src="./images/H/b405.jpg" alt="IMG">
+                </div>  
 
-                        <!--Navegation-->                          
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                          <span class="bx bx-chevron-right" style="color: #000; font-size: 50px;" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                        <!--Navegation-->
-                      </article>
+              </article>
+              <!--Carrusel ui 1-->
+
+
+              <!--Carrusel ui 2-->
+              <article class="item_carru" id="item2_carru" >
+                <div class="ui_carru" id="ui_item_2">
+                    Test
+                  <div class="ui_fle_carru">
+                    <a href="#ui_item_1"><i class='bx bxs-chevron-left'></i></a>
+                    <a href="#ui_item_3"><i class='bx bxs-chevron-right'></i></a>
                   </div>
-                <!--Carrusel 01-->
+
+                </div>  
+
+              </article>
+              <!--Carrusel ui 2-->
+
+               <!--Carrusel ui 3-->
+               <article class="item_carru" id="item2_carru" >
+                <div class="ui_carru" id="ui_item_3">
+                    Test
+                  <div class="ui_fle_carru">
+                    <a href="#ui_item_2"><i class='bx bxs-chevron-left'></i></a>
+                    <a href="#ui_item_1"><i class='bx bxs-chevron-right'></i></a>
+                  </div>
+
+                  <div class="btn-leccion">
+                    <button id="boton" onclick="ir_leccion3();" >
+                      Siguiente
+                    </button>
+                  </div>
+
+                </div>  
+
+
+              
                 
-                <!--Carrusel 02-->
-                    <div class="carousel-item">
-                      <h5>Caracteristicas</h5>
+              </article>
+              <!--Carrusel ui 3-->
 
-                      <article style="padding: 50pxs;" class="content">
-                        <p class="paragraph">
-                          <?php
-                            $op = new select_c();
-                            $res2 = $op->SelectC2();
-                            while ($row2 = mysqli_fetch_array($res2)) {
-                              echo $row2['caracteristicas'];
-                            }
-                          ?>
-                        </p>
+            </div>      
+            <!--LECCION 02-->
 
-                        <img src="./images/H/medidas.png" alt="">
 
-                        <!--Navegation-->  
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                          <span class="bx bx-chevron-left" style="color: #000; font-size: 50px;" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                          <span class="bx bx-chevron-right" style="color: #000; font-size: 50px;" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                        <!--Navegation-->
-
-                      </article>
-                    </div>
-                <!--Carrusel 02-->                    
-
-                <!--Carrusel 03-->
-                <div class="carousel-item" id="">
-                      <h5>Opciones</h5>
-
-                      <article class="content">
-                        <p class="paragraph">
-                          <?php
-                            $op = new select_c();
-                            $res2 = $op->SelectC3();
-                            while ($row2 = mysqli_fetch_array($res2)) {
-                              echo $row2['caracteristicas'];
-                            }
-                          ?>
-                        </p>
-
-                        <img src="./images/H/carrusel_3.png" alt="">
-
-                        <!--Navegation-->  
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                          <span class="bx bx-chevron-left" style="color: #000; font-size: 50px;" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                          <span class="bx bx-chevron-right" style="color: #000; font-size: 50px;" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                        <!--Navegation-->
-
-                      </article>
-                    </div>
-                <!--Carrusel 03-->
+               <!--LECCION 03-->
+               <style>
+                #leccion3{display: none;}
+              </style>
+  
+              <div id="leccion3" class="container-carac">
                 
-                <!--Carrusel 04-->
-                <div class="carousel-item" id="">
-                      <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito la primera lección de formación Técnica</h5>
-
-                      <article class="content">
-                        <p class="paragraph">
-                          De Click en "Siguiente" para acceder a la lección II
-                        </p>
-                        <img src="./images/H/siguiente.jpg" alt="">
-                      </article>
-
-                      <div class="btn-leccion">
-                            <button id="ocultar" onclick="show" >
-                              Siguiente
-                            </button>
+              
+                <!--Carrusel ui 1-->
+                <article class="item_carru" id="item1_carru" >
+                  <div class="ac_carru" id="ac_item_1">
+                    <h5>eSTO ES UNA PRUEBA DE LA lECHUGA</h5>
+  
+                      <div class="ui_fle_carru">
+                        <a href="#ac_item_2"><i class='bx bxs-chevron-right'></i></a>
                       </div>
-                      
+  
+                  </div>  
+  
+                </article>
+                <!--Carrusel ui 1-->
+  
+  
+                <!--Carrusel ui 2-->
+                <article class="item_carru" id="item2_carru" >
+                  <div class="ui_carru" id="ac_item_2">
+                      Test
+                    <div class="ui_fle_carru">
+                      <a href="#ui_item_1"><i class='bx bxs-chevron-left'></i></a>
+                      <a href="#ui_item_3"><i class='bx bxs-chevron-right'></i></a>
                     </div>
-                <!--Carrusel 04-->
-
+  
+                  </div>  
+  
+                </article>
+                <!--Carrusel ui 2-->
+  
+                 <!--Carrusel ui 3-->
+                 <article class="item_carru" id="item2_carru" >
+                  <div class="ui_carru" id="ui_item_3">
+                      Test
+                    <div class="ui_fle_carru">
+                      <a href="#ui_item_2"><i class='bx bxs-chevron-left'></i></a>
+                      <a href="#ui_item_1"><i class='bx bxs-chevron-right'></i></a>
+                    </div>
+  
+                  </div>  
+  
+                </article>
+                <!--Carrusel ui 3-->
+  
+              </div>      
+              <!--LECCION 03-->
+            
+                     
           </main>
         <!--Content-->
 
