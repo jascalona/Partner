@@ -901,8 +901,8 @@ if (!empty($_SESSION["name"])) {
                         </div>
                               
                         <div class="ui_fle_carru">
-                        <a href="#in_item_2"><i class='bx bxs-chevron-left'></i></a>
-                        <a href="#in_item_4"><i class='bx bxs-chevron-right'></i></a>
+                          <a href="#in_item_2"><i class='bx bxs-chevron-left'></i></a>
+                          <a href="#in_item_4"><i class='bx bxs-chevron-right'></i></a>
                         </div>
 
                     </div>
@@ -1037,15 +1037,40 @@ if (!empty($_SESSION["name"])) {
                   <h5>Teoría del Funcionamiento</h5>
 
                     <div class="content-general">
-                      <p>
-                        testsad
+                      <p style="font-size: 11px;">
+                        <?php
+                          $optf = new select_tf();
+                          $resFT = $optf->select_tf();
+                          while ($row = mysqli_fetch_array($resFT)) {
+                            echo $row['teoria_funtion'];
+                          }
+                        ?>
                       </p>
+                    </div>
+
+                    <div class="ui_fle_carru">
+                        <a href=""></a>
+                        <a href="#tf_item_2"><i class='bx bxs-chevron-right'></i></a>
                     </div>
 
                 </div>
 
               </article>
               <!--Carrusel TF 01-->
+
+              <!--Carrusel TF 02-->
+              <article class="item_carru" id="item2_carru">
+                <div class="tf_carru" id="tf_item_2">
+                  <h5>Teoría del Funcionamiento Video</h5>
+
+                    <div class="content-general">
+                      <video src="./images/H/teoria_funcionamiento_1.mp4"></video>
+                    </div>
+
+                </div>
+
+              </article>
+              <!--Carrusel TF 02-->
             
             
             </div>

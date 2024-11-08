@@ -1,6 +1,5 @@
 <?php
 //CREATION CLASS select_c
-
 class select_c{
     private $server = 'localhost';
     private $user = 'root';
@@ -128,7 +127,6 @@ class select_c{
 }
 
 //CREATION CLASS select_i
-
 class select_i{
 
     private $server = 'localhost';
@@ -185,5 +183,35 @@ class select_i{
         $resI5 = mysqli_query($conexion,$sqlI5) or die ("Ha Ocurrido un Error");
         return $resI5;
     }
+
+}
+
+//CREATION CLASS select_tf
+class select_tf{
+    private $server = 'localhost';
+
+    private $user = 'root';
+
+    private $password = '';
+
+    private $db = 'gxdeve_apps';
+
+    private $port = '3306';
+    
+    public function Connection(){
+        $conexion = mysqli_connect($this->server, $this->user, $this->password, $this->db);
+        return $conexion;
+    }
+
+    //Function for Vistas Modulo Teoria del Funcionamiento
+
+    public function select_tf(){
+        $sqlTF = " SELECT teoria_funtion FROM vl_b405 WHERE id=1 ";
+        $conexion = $this->Connection();
+        $resTF = mysqli_query($conexion,$sqlTF) or die ("Ha Ocurrido un Error");
+        return $resTF;
+    }
+    
+
 
 }
