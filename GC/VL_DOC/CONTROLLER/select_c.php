@@ -165,4 +165,25 @@ class select_i{
         return $resI2;
     }
 
+    public function SelecI3(){
+        $sqlI3 = " SELECT instalacion FROM vl_b405 WHERE id=3 ";
+        $conexion = $this->Connection();
+        $resI3 = mysqli_query($conexion,$sqlI3) or die ("Ha Ocurrido un Error");
+        return $resI3;
+    }
+
+    public function SelecI4(){
+        $sqlI4 = " SELECT instalacion FROM vl_b405 WHERE id=4 ";
+        $conexion = $this->Connection();
+        $resI4 = mysqli_query($conexion,$sqlI4) or die ("Ha Ocurrido un Error");
+        return $resI4;
+    }
+    
+    public function SelecI5(){
+        $sqlI5 = " SELECT instalacion FROM vl_b405 WHERE id=5 ";
+        $conexion = $this->Connection();
+        $resI5 = mysqli_query($conexion,$sqlI5) or die ("Ha Ocurrido un Error");
+        return $resI5;
+    }
+
 }

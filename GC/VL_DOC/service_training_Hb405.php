@@ -66,7 +66,7 @@ if (!empty($_SESSION["name"])) {
                         <li><a class="dropdown-item" href="#img_item1_carru">Producto</a></li>
                         <li><a class="dropdown-item" id="boton" onclick="ir_leccion2();">Interfaz de Usuario</a></li>
                         <li><a class="dropdown-item" id="boton" onclick="ir_leccion3();">Actuación</a></li>
-                        <li><a class="dropdown-item" href="#">Herramientas y recursos</a></li>
+                        <li><a class="dropdown-item" id="boton" onclick="ir_leccion4();">Herramientas y recursos</a></li>
                       </ul>
                     </li>   
                     
@@ -75,12 +75,7 @@ if (!empty($_SESSION["name"])) {
                         Instalación
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Instalación de Producto</a></li>
-                        <li><a class="dropdown-item" href="#">Conexionde red</a></li>
-                        <li><a class="dropdown-item" href="#">Instalación del controlador</a></li>
-                        <li><a class="dropdown-item" href="#">Herramientas y recursos</a></li>
-                        <li><a class="dropdown-item" href="#">Impresiones y copias</a></li>
-                        <li><re class="dropdown-item" href="#">Hardware de autenticación</a></li>
+                        <li><a class="dropdown-item" id="boton" onclick="ir_leccion5();">Instalación de Producto</a></li>
                       </ul>
                     </li>
           
@@ -89,7 +84,7 @@ if (!empty($_SESSION["name"])) {
                         Teoria del funcionamiento
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Descripción general del sistema</a></li>
+                        <li><a class="dropdown-item" id="boton" onclick="ir_leccion6();">Descripción general del sistema</a></li>
                         <li><a class="dropdown-item" href="#">Creando imagenes</a></li>
                         <li><a class="dropdown-item" href="#">Ruta del papel y sistema de alimentación</a></li>
                         <li><a class="dropdown-item" href="#">DADF Y escaner</a></li>
@@ -168,12 +163,7 @@ if (!empty($_SESSION["name"])) {
               Instalación
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Instalación de Producto</a></li>
-              <li><a class="dropdown-item" href="#">Conexionde red</a></li>
-              <li><a class="dropdown-item" href="#">Instalación del controlador</a></li>
-              <li><a class="dropdown-item" href="#">Herramientas y recursos</a></li>
-              <li><a class="dropdown-item" href="#">Impresiones y copias</a></li>
-              <li><re class="dropdown-item" href="#">Hardware de autenticación</a></li>
+              <li><a class="dropdown-item" id="boton" onclick="ir_leccion5();">Instalación de Producto</a></li>
             </ul>
           </li>
 
@@ -182,7 +172,7 @@ if (!empty($_SESSION["name"])) {
               Teoria del funcionamiento
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Descripción general del sistema</a></li>
+              <li><a class="dropdown-item"id="boton" onclick="ir_leccion6();">Descripción general del sistema</a></li>
               <li><a class="dropdown-item" href="#">Creando imagenes</a></li>
               <li><a class="dropdown-item" href="#">Ruta del papel y sistema de alimentación</a></li>
               <li><a class="dropdown-item" href="#">DADF Y escaner</a></li>
@@ -236,7 +226,8 @@ if (!empty($_SESSION["name"])) {
                 include './CONTROLLER/select_c.php';
               ?>
 
-              <div class="container-carac" id="leccion1">
+            <!--END MODULO DE CARACTERISTICAS-->
+            <div class="container-carac" id="leccion1">
 
               <div id="carouselExample" class="carousel slide">
                 <div  class="carousel-inner">
@@ -488,12 +479,12 @@ if (!empty($_SESSION["name"])) {
             <!--LECCION 02-->
 
 
-               <!--LECCION 03-->
-               <style>
-                #leccion3{display: none;}
-              </style>
+            <!--LECCION 03-->
+           <style>
+              #leccion3{display: none;}
+           </style>
   
-              <div id="leccion3" class="container-carac">
+            <div id="leccion3" class="container-carac">
                 
               
                 <!--Carrusel ui 1-->
@@ -613,15 +604,16 @@ if (!empty($_SESSION["name"])) {
               </article>
               <!--Carrusel ui 04-->
 
-              </div>      
-              <!--LECCION 03-->
+            </div>      
+            <!--LECCION 03-->
             
-              <!--LECCION 04-->
-              <style>
-                #leccion4{ display: none;}
-              </style>
 
-              <div id="leccion4" class="container-carac">
+            <!--LECCION 04-->
+            <style>
+              #leccion4{ display: none;}
+            </style>
+
+            <div id="leccion4" class="container-carac">
 
               <!--Carrusel HR 01-->
                   <article class="item_carru" id="item1_carru" >
@@ -820,16 +812,18 @@ if (!empty($_SESSION["name"])) {
 
 
               </div>
-              <!--LECCION 04-->
+            <!--LECCION 04-->
+            <!--END MODULO DE CARACTERISTICAS-->
 
 
-              <!--MODULO DE INSTALACION-->
-              <!--LECCION 05-->
-              <style>
-                #leccion5{display: ;}
-              </style>
 
-              <div id="leccion5" class="container-carac">
+            <!--MODULO DE INSTALACION-->
+            <!--LECCION 05-->
+            <style>
+              #leccion5{display: none;}
+            </style>
+
+            <div id="leccion5" class="container-carac">
 
                 <!--Carrusel IP 01-->
                 <article class="item_carru" id="item1_carru" >
@@ -886,11 +880,176 @@ if (!empty($_SESSION["name"])) {
                   </div>
                 </article>
             <!--Carrusel IP 02-->
-              </div>
+              
+            <!--Carrusel IP 03-->
+            <article class="item_carru" id="item3_carru" >
+                    <div class="in_carru" id="in_item_3">
+                      <h5>Requsitos de Energia</h5>
 
+                        <div class="content-general">
+                            <p>
+                              <?php
+                                $opi = new select_i();
+                                $resI3 = $opi->SelecI3();
+                                while ($row = mysqli_fetch_array($resI3)) {
+                                  echo $row['instalacion'];
+                                }
+                              ?>
+                            </p>
 
+                            <img src="./images/H/instalacion2.png" alt="img">
+                        </div>
+                              
+                        <div class="ui_fle_carru">
+                        <a href="#in_item_2"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="#in_item_4"><i class='bx bxs-chevron-right'></i></a>
+                        </div>
+
+                    </div>
+                  </article>
+              <!--Carrusel IP 03-->
+
+              <!--Carrusel IP 04-->
+              <article class="item_carru" id="item4_carru" >
+                    <div class="in_carru" id="in_item_4">
+                      <h5>Secuencia de Encendido/Apagado</h5>
+
+                        <div class="content-general">
+                            <p>
+                              <?php
+                                $opi = new select_i();
+                                $resI4 = $opi->SelecI4();
+                                while ($row = mysqli_fetch_array($resI4)) {
+                                  echo $row['instalacion'];
+                                }
+                              ?>
+                            </p>
+                        </div>
+                              
+                        <div class="ui_fle_carru">
+                        <a href="#in_item_3"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="#in_item_5"><i class='bx bxs-chevron-right'></i></a>
+                        </div>
+
+                    </div>
+                  </article>
+              <!--Carrusel IP 04-->
+
+              <!--Carrusel IP 05-->
+              <article class="item_carru" id="item5_carru" >
+                <div class="in_carru" id="in_item_5">
+                  <h5>Conexión de Red</h5>
+
+                    <div class="content-general">
+                        <p>
+                          <?php
+                            $opi = new select_i();
+                            $resI5 = $opi->SelecI5();
+                            while ($row = mysqli_fetch_array($resI5)) {
+                              echo $row['instalacion'];
+                            }
+                          ?>
+                          <br><br>
+                          Puede conseguir más documentación en la formación de Software
+                        </p>
+
+                        <img src="./images/H/instalacion3.png" alt="img">
+                    </div>
+                          
+                    <div class="ui_fle_carru">
+                    <a href="#in_item_4"><i class='bx bxs-chevron-left'></i></a>
+                    <a href="#in_item_6"><i class='bx bxs-chevron-right'></i></a>
+                    </div>
+
+                </div>
+              </article>
+          <!--Carrusel IP 05-->
+
+              <!--Carrusel IP 05-->
+               <article class="item_carru" id="item6_carru" >
+                <div class="hr_carru" id="in_item_6">
+
+                <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección de formación Técnica</h5>
+
+                    <div class="content-general">
+                      <p class="paragraph">
+                            De Click en "Siguiente" para acceder a la lección VI
+                      </p>
+
+                      <img src="./images/H/siguiente3.jpg" alt="">
+
+                    </div>
+
+                      <div class="btn-leccion">
+                        <button id="boton" onclick="ir_leccion6();" >
+                          Siguiente
+                        </button>
+                      </div>
+
+                </div>
+              </article>
+              <!--Carrusel IP 05-->
               <!--LECCION 05-->
 
+              
+              
+
+
+               <!--Carrusel IP 06-->
+               <article class="item_carru" id="item6_carru" >
+                <div class="hr_carru" id="in_item_6">
+
+                <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección de formación Técnica</h5>
+
+                    <div class="content-general">
+                      <p class="paragraph">
+                            De Click en "Siguiente" para acceder a la lección VI
+                      </p>
+
+                      <img src="./images/H/siguiente3.jpg" alt="">
+
+                    </div>
+
+                      <div class="btn-leccion">
+                        <button id="boton" onclick="ir_leccion5();" >
+                          Siguiente
+                        </button>
+                      </div>
+
+                </div>
+              </article>
+              <!--Carrusel IP 06-->
+          
+            </div>
+            <!--LECCION 05-->
+
+
+            <!--LECCION 06-->
+            <style>
+              #leccion6{display: none;}
+            </style>
+
+            <div id="leccion6" class="container-carac">
+
+              <!--Carrusel TF 01-->
+              <article class="item_carru" id="item1_carru">
+                <div class="tf_carru" id="tf_item_1">
+                  <h5>Teoría del Funcionamiento</h5>
+
+                    <div class="content-general">
+                      <p>
+                        testsad
+                      </p>
+                    </div>
+
+                </div>
+
+              </article>
+              <!--Carrusel TF 01-->
+            
+            
+            </div>
+            <!--leccion 06-->
 
 
 
