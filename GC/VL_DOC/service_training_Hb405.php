@@ -64,8 +64,8 @@ if (!empty($_SESSION["name"])) {
                       </a>
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#img_item1_carru">Producto</a></li>
-                        <li><a class="dropdown-item" href="#img_item2_carru">Interfaz de Usuario</a></li>
-                        <li><a class="dropdown-item" href="#">Actuación</a></li>
+                        <li><a class="dropdown-item" id="boton" onclick="ir_leccion2();">Interfaz de Usuario</a></li>
+                        <li><a class="dropdown-item" id="boton" onclick="ir_leccion3();">Actuación</a></li>
                         <li><a class="dropdown-item" href="#">Herramientas y recursos</a></li>
                       </ul>
                     </li>   
@@ -156,11 +156,12 @@ if (!empty($_SESSION["name"])) {
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="">Producto</a></li>
-              <li><a class="dropdown-item" href="" onclick="ir_leccion2();">Interfaz de Usuario</a></li>
-              <li><a class="dropdown-item" href="#">Actuación</a></li>
+              <li><a class="dropdown-item" id="boton" onclick="ir_leccion2();">Interfaz de Usuario</a></li>
+              <li><a class="dropdown-item" id="boton" onclick="ir_leccion3();">Actuación</a></li>
               <li><a class="dropdown-item" href="#">Herramientas y recursos</a></li>
             </ul>
           </li>
+
           
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -607,7 +608,7 @@ if (!empty($_SESSION["name"])) {
                     </div>
 
                       <div class="btn-leccion">
-                        <button id="boton" onclick="" >
+                        <button id="boton" onclick="ir_leccion();" >
                           Siguiente
                         </button>
                       </div>
