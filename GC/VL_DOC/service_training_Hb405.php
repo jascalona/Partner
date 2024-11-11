@@ -86,7 +86,8 @@ if (!empty($_SESSION["name"])) {
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item" id="boton" onclick="ir_leccion6();">Descripción general del sistema</a></li>
                         <li><a class="dropdown-item" id="boton" onclick="ir_leccion7();">Creado de imágenes</a></li>
-                        <li><a class="dropdown-item" id="boton" onclick="ir_leccion8();">jjjjs</a></li>
+                        <li><a class="dropdown-item" id="boton" onclick="ir_leccion8();">Sistema de alimentacion</a></li>
+                        <li><a class="dropdown-item" id="boton" onclick="ir_leccion9();">DADF y escáner</a></li>
 
                       </ul>
                     </li>
@@ -174,6 +175,9 @@ if (!empty($_SESSION["name"])) {
             <ul class="dropdown-menu">
               <li><a class="dropdown-item"id="boton" onclick="ir_leccion6();">Descripción general del sistema</a></li>
               <li><a class="dropdown-item" id="boton" onclick="ir_leccion7();">Creado de imágenes</a></li>
+              <li><a class="dropdown-item" id="boton" onclick="ir_leccion8();">Sistema de alimentacion</a></li>
+              <li><a class="dropdown-item" id="boton" onclick="ir_leccion9();">DADF y escáner</a></li>
+
             </ul>
           </li>
 
@@ -1331,6 +1335,453 @@ if (!empty($_SESSION["name"])) {
             <!--LECCION 07-->
 
 
+            <!--LECCION 08-->
+            <style>
+              #leccion8 {display: none;}
+            </style>
+
+            <div id="leccion8" class="container-carac">
+                
+            <!--Carrusel TF 12-->
+            <article class="item_carru" id="item12_carru">
+                <div class="tf_carru" id="tf_item_12">
+                  <h5>Ruta de papel y Sistema de alimentación</h5>
+
+                    <div class="content-general">
+                      <p>
+                        <?php
+                          $optf = new select_tf() ;
+                          $resTF7  = $optf->select_tf7();
+                          while ($row = mysqli_fetch_array($resTF7)){
+                            echo $row['teoria_funtion'];
+                          } 
+                        ?>
+                      </p>
+
+                      <img src="./images/H/teoria_funcionamiento_7.png" alt="">
+
+                    </div>
+
+                    <div class="ui_fle_carru">
+                        <a href=""></a>
+                        <a href="#tf_item_13"><i class='bx bxs-chevron-right'></i></a>
+                    </div>
+
+                </div>
+
+              </article>
+              <!--Carrusel TF 12-->
+
+              <!--Carrusel TF 13-->
+              <article class="item_carru" id="item13_carru">
+                  <div class="tf_carru" id="tf_item_13">
+                    <h5>Descripción general de la ruta del papel</h5>
+
+                      <div class="content-general">
+                        <p>
+                            <?php
+                              $optf = new select_tf() ;
+                              $resTF8  = $optf->select_tf8();
+                              while ($row = mysqli_fetch_array($resTF8)){
+                                echo $row['teoria_funtion'];
+                              } 
+                            ?>
+                            <br><br>
+                            <strong>Puedes ver un video demostrativo en la siguiente lamina!</strong>
+                          </p>
+
+                      </div>
+
+                      <div class="ui_fle_carru">
+                        <a href="#tf_item_12"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="#tf_item_14"><i class='bx bxs-chevron-right'></i></a>
+                      </div>
+
+                  </div>
+
+                </article>
+                <!--Carrusel TF 13-->
+
+              <!--Carrusel TF 14-->
+              <article class="item_carru" id="item14_carru">
+                  <div class="tf_carru" id="tf_item_14">
+                    <h5>Descripción general de la ruta del papel</h5>
+
+                    <div class="content-general">
+                         
+                      <video width="100%" height="300" controls>
+                        <source src="./images/H/teoria_funcionamiento_1.mp4" type="video/mp4">
+                        Su navegador no es compatible con la etiqueta de vídeo.
+                      </video>
+                    
+                    </div>
+
+                      <div class="ui_fle_carru">
+                        <a href="#tf_item_13"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="#tf_item_15"><i class='bx bxs-chevron-right'></i></a>
+                      </div>
+
+                  </div>
+
+                </article>
+                <!--Carrusel TF 14-->
+
+                <!--Carrusel TF 15-->
+                <article class="item_carru" id="item15_carru">
+                    <div class="tf_carru" id="tf_item_15">
+                      <h5>Sensores de la ruta del papel</h5>
+
+                        <div class="content-general">
+                              <p>
+                                <?php
+                                  $optf = new select_tf() ;
+                                  $resTF9 = $optf->select_tf9();
+                                  while ($row = mysqli_fetch_array($resTF9)) {
+                                    echo $row["teoria_funtion"];
+                                  }
+                                ?>
+                              </p>
+
+                              <img src="./images/H/teoria_funcionamiento_8.png" alt="">
+
+                        </div>
+
+                        <div class="ui_fle_carru">
+                          <a href="#tf_item_14"><i class='bx bxs-chevron-left'></i></a>
+                          <a href="#tf_item_16"><i class='bx bxs-chevron-right'></i></a>
+                        </div>
+
+                    </div>
+
+                  </article>
+                  <!--Carrusel TF 15-->
+
+                   <!--Carrusel TF 16-->
+                  <article class="item_carru" id="item16_carru">
+                      <div class="tf_carru" id="tf_item_16">
+                        <h5>Descripción general de la ruta del papel</h5>
+                          <small>
+                            Acontinuación un breve vídeo que indica cómo localizar y eliminar atascos de papel.
+                          </small>
+
+                        <div class="content-general">  
+                          <video width="100%" height="280" controls>
+                            <source src="./images/H/teoria_funcionamiento_3.mp4" type="video/mp4">
+                            Su navegador no es compatible con la etiqueta de vídeo.
+                          </video>
+                        </div>
+
+                          <div class="ui_fle_carru">
+                            <a href="#tf_item_15"><i class='bx bxs-chevron-left'></i></a>
+                            <a href="#tf_item_17"><i class='bx bxs-chevron-right'></i></a>
+                          </div>
+
+                      </div>
+
+                    </article>
+                    <!--Carrusel TF 16-->
+                   
+                  <!--Carrusel TF 17-->
+                  <article class="item_carru" id="item17_carru">
+                    <div class="tf_carru" id="tf_item_17">
+                      <h5>Sistema de alimentación de papel</h5>
+
+                        <div class="content-general">
+                            <p>
+                              <?php
+                                $optf = new select_tf() ;
+                                $resTF10 = $optf->select_tf10();
+                                while ($row = mysqli_fetch_array($resTF10)){
+                                  echo $row["teoria_funtion"];
+                                }  
+                              ?>
+                            </p>
+
+                              <img src="./images/H/teoria_funcionamiento_9.png" alt="">
+
+                        </div>
+
+
+                        <div class="ui_fle_carru">
+                          <a href="#tf_item_16"><i class='bx bxs-chevron-left'></i></a>
+                          <a href="#tf_item_18"><i class='bx bxs-chevron-right'></i></a>
+                        </div>
+
+                    </div>
+
+                  </article>
+                  <!--Carrusel TF 17-->
+
+                   <!--Carrusel TF 18-->
+                   <article class="item_carru" id="item18_carru">
+                    <div class="tf_carru" id="tf_item_18">
+                      <h5>Descripción general de la limpieza</h5>
+
+                        <div class="content-general">
+                            <p>
+                              <?php
+                                $optf = new select_tf() ;
+                                $resTF6 = $optf->select_tf6();
+                                while ($row = mysqli_fetch_array($resTF6)){
+                                  echo $row["teoria_funtion"];
+                                }  
+                              ?>
+                            </p>
+
+                              <img src="./images/H/teoria_funcionamiento_6.png" alt="">
+
+                        </div>
+
+                        <div class="ui_fle_carru">
+                          <a href="#tf_item_17"><i class='bx bxs-chevron-left'></i></a>
+                          <a href="#tf_item_19"><i class='bx bxs-chevron-right'></i></a>
+                        </div>
+
+                    </div>
+
+                  </article>
+                  <!--Carrusel TF 18-->
+
+                  <!--Carrusel TF 19-->
+                  <article class="item_carru" id="item19_carru" >
+                    <div class="tf_carru" id="tf_item_19">
+
+                    <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección de formación Técnica</h5>
+
+                        <div class="content-general">
+                          <p class="paragraph">
+                                De Click en "Siguiente" para acceder a la lección IX <i class="ri-vidicon-fill"></i>
+                          </p>
+
+                          <img src="./images/H/siguiente2.jpg" alt="">
+
+                        </div>
+
+                          <div class="btn-leccion">
+                            <button id="boton" onclick="ir_leccion9();" >
+                              Siguiente
+                            </button>
+                          </div>
+
+                    </div>
+                  </article>
+                  <!--Carrusel IP 19-->
+
+
+            </div>
+            <!--LECCION 08-->
+
+            <!--LECCION 09-->
+            <style>
+              #leccion9 {display: none;}
+            </style>
+
+            <div id="leccion9" class="container-carac">
+                
+            <!--Carrusel TF 20-->
+            <article class="item_carru" id="item20_carru">
+                <div class="tf_carru" id="tf_item_20">
+                  <h5>DADF y escáner</h5>
+
+                    <div class="content-general">
+                      <p>
+                        <?php
+                          $optf = new select_tf() ;
+                          $resTF11  = $optf->select_tf11();
+                          while ($row = mysqli_fetch_array($resTF11)){
+                            echo $row['teoria_funtion'];
+                          } 
+                        ?>
+                      </p>
+
+                      <img src="./images/H/teoria_funcionamiento_10.png" alt="">
+
+                    </div>
+
+                    <div class="ui_fle_carru">
+                        <a href=""></a>
+                        <a href="#tf_item_21"><i class='bx bxs-chevron-right'></i></a>
+                    </div>
+
+                </div>
+
+              </article>
+              <!--Carrusel TF 20-->
+
+              <!--Carrusel TF 21-->
+              <article class="item_carru" id="item21_carru">
+                  <div class="tf_carru" id="tf_item_21">
+                    <h5>Ruta de papel DADF</h5>
+
+                      <div class="content-general">
+                        <p>
+                            <?php
+                              $optf = new select_tf() ;
+                              $resTF12  = $optf->select_tf12();
+                              while ($row = mysqli_fetch_array($resTF12)){
+                                echo $row['teoria_funtion'];
+                              } 
+                            ?>
+                          </p>
+
+                      </div>
+
+                      <div class="ui_fle_carru">
+                        <a href="#tf_item_20"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="#tf_item_22"><i class='bx bxs-chevron-right'></i></a>
+                      </div>
+
+                  </div>
+
+                </article>
+                <!--Carrusel TF 21-->
+
+              <!--Carrusel TF 22-->
+              <article class="item_carru" id="item22_carru">
+                  <div class="tf_carru" id="tf_item_22">
+                    <h5>Ruta de papel DADF</h5>
+
+                    <div class="content-general">
+                      <p>
+                        <?php
+                        $optf = new select_tf() ;
+                        $resTF13 = $optf->select_tf13();
+                        while ($row = mysqli_fetch_array($resTF13)){
+                          echo $row['teoria_funtion'];
+                        }
+                        ?>
+                      </p>
+
+                      <img src="./images/H/teoria_funcionamiento_11.png" alt="">
+                    </div>
+
+                      <div class="ui_fle_carru">
+                        <a href="#tf_item_21"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="#tf_item_23"><i class='bx bxs-chevron-right'></i></a>
+                      </div>
+
+                  </div>
+
+                </article>
+                <!--Carrusel TF 22-->
+
+                <!--Carrusel TF 23-->
+                <article class="item_carru" id="item23_carru">
+                    <div class="tf_carru" id="tf_item_23">
+                      <h5>Sensores de papel DADF</h5>
+
+                        <div class="content-general">
+                              <p>
+                                <?php
+                                  $optf = new select_tf() ;
+                                  $resTF9 = $optf->select_tf14();
+                                  while ($row = mysqli_fetch_array($resTF9)) {
+                                    echo $row["teoria_funtion"];
+                                  }
+                                ?>
+                              </p>
+
+                        </div>
+
+                        <div class="ui_fle_carru">
+                          <a href="#tf_item_22"><i class='bx bxs-chevron-left'></i></a>
+                          <a href="#tf_item_24"><i class='bx bxs-chevron-right'></i></a>
+                        </div>
+
+                    </div>
+
+                  </article>
+                  <!--Carrusel TF 23-->
+
+                   <!--Carrusel TF 24-->
+                  <article class="item_carru" id="item24_carru">
+                      <div class="tf_carru" id="tf_item_24">
+                        <h5>Sistema de alimentación de papel DADF</h5>
+
+                        <div class="content-general">  
+                          <p>
+                            <?php
+                              $optf = new select_tf() ;
+                              $resTF15 = $optf->select_tf15();
+                              while ($row = mysqli_fetch_array($resTF15)){
+                                echo $row["teoria_funtion"];
+                              }
+                            ?>
+                          </p>
+
+                          <img src="./images/H/teoria_funcionamiento_13.png" alt="">
+                        </div>
+
+                          <div class="ui_fle_carru">
+                            <a href="#tf_item_23"><i class='bx bxs-chevron-left'></i></a>
+                            <a href="#tf_item_25"><i class='bx bxs-chevron-right'></i></a>
+                          </div>
+
+                      </div>
+
+                    </article>
+                    <!--Carrusel TF 24-->
+                   
+                  <!--Carrusel TF 25-->
+                  <article class="item_carru" id="item25_carru">
+                    <div class="tf_carru" id="tf_item_25">
+                      <h5>Ruta de la imagen escaneada</h5>
+
+                        <div class="content-general">
+                            <p>
+                              <?php
+                                $optf = new select_tf() ;
+                                $resTF16 = $optf->select_tf16();
+                                while ($row = mysqli_fetch_array($resTF16)){
+                                  echo $row["teoria_funtion"];
+                                }  
+                              ?>
+                            </p>
+
+                        </div>
+
+
+                        <div class="ui_fle_carru">
+                          <a href="#tf_item_24"><i class='bx bxs-chevron-left'></i></a>
+                          <a href="#tf_item_26"><i class='bx bxs-chevron-right'></i></a>
+                        </div>
+
+                    </div>
+
+                  </article>
+                  <!--Carrusel TF 25-->
+
+                  <!--Carrusel TF 26-->
+                  <article class="item_carru" id="item26_carru" >
+                    <div class="tf_carru" id="tf_item_26">
+
+                    <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección de formación Técnica</h5>
+
+                        <div class="content-general">
+                          <p class="paragraph">
+                                De Click en "Siguiente" para acceder a la lección <i class="ri-xbox-fill"></i> <i class="ri-vidicon-fill"></i>
+                          </p>
+
+                          <img src="./images/H/siguiente_4.jpg" alt="">
+
+                        </div>
+
+                          <div class="btn-leccion">
+                            <button id="boton" onclick="ir_leccion10();" >
+                              Siguiente
+                            </button>
+                          </div>
+
+                    </div>
+                  </article>
+                  <!--Carrusel TF 26-->
+
+
+            </div>
+            <!--LECCION 09-->    
+
+
+            
           </main>
         <!--Content-->
 

@@ -247,5 +247,75 @@ class select_tf{
         return $resTF6;
     }
 
+    public function select_tf7(){
+        $sqlTF7 = " SELECT teoria_funtion FROM vl_b405 WHERE id=7 ";
+        $conexion = $this->Connection();
+        $resTF7 = mysqli_query($conexion,$sqlTF7) or die ("Ha Ocurrido un Error");
+        return $resTF7;
+    }
+
+    public function select_tf8(){
+        $sqlTF8 = " SELECT teoria_funtion FROM vl_b405 WHERE id=8 ";
+        $conexion = $this->Connection();
+        $resTF8 = mysqli_query($conexion,$sqlTF8) or die ("Ha Ocurrido un Error");
+        return $resTF8;
+    }
+
+    public function select_tf9(){
+        $sqlTF9 = " SELECT teoria_funtion FROM vl_b405 WHERE id=9 ";
+        $conexion = $this->Connection();
+        $resTF9 = mysqli_query($conexion,$sqlTF9) or die ("Ha Ocurrido un Error");
+        return $resTF9;
+    }
+
+    public function select_tf10(){
+        $sqlTF10 = " SELECT teoria_funtion FROM vl_b405 WHERE id=10 ";
+        $conexion = $this->Connection();
+        $resTF10 = mysqli_query($conexion,$sqlTF10) or die ("Ha Ocurrido un Error");
+        return $resTF10;
+    }
+
+    public function select_tf11(){
+        $slqTF11 = " SELECT teoria_funtion FROM vl_b405 WHERE id=11 ";
+        $conexion = $this->Connection();
+        $resTF11 = mysqli_query($conexion,$slqTF11) or die ("Ha Ocurrido un Error");
+        return $resTF11;
+    }
+
+    public function select_tf12(){
+        $sqlTF12 = " SELECT teoria_funtion FROM vl_b405 WHERE id=12 ";
+        $conexion = $this->Connection();
+        $resTF12 = mysqli_query($conexion,$sqlTF12) or die ("Ha Ocurrido un Error");
+        return $resTF12;
+    }
+
+    public function select_tf13(){
+        $sqlTF13 = " SELECT teoria_funtion FROM vl_b405 WHERE id=13 ";
+        $conexion = $this->Connection();
+        $resTF13 = mysqli_query($conexion,$sqlTF13) or die ("Ha Ocurrido un Error");
+        return $resTF13;
+    }
+
+    public function select_tf14(){
+        $sqlTF14 = " SELECT teoria_funtion FROM vl_b405 WHERE id=14 ";
+        $conexion = $this->Connection();
+        $resTF14 = mysqli_query($conexion,$sqlTF14) or die ("Ha Ocurrido un Error");
+        return $resTF14;
+    }
+
+    public function select_tf15(){
+        $sqlTF15 = " SELECT teoria_funtion FROM vl_b405 WHERE id=15 ";
+        $conexion = $this->Connection();
+        $resTF15 = mysqli_query($conexion,$sqlTF15) or die ("Ha Ocurrido un Error");
+        return $resTF15;
+    }
+
+    public function select_tf16(){
+        $sqlTF16 = " SELECT teoria_funtion FROM vl_b405 WHEE WHERE id=16 ";
+        $conexion = $this->Connection();
+        $resTF16 = mysqli_query($conexion,$sqlTF16) or die ("Ha Ocurrido un Error");
+        return $resTF16;
+    }
 
 }
+
