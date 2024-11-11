@@ -85,9 +85,6 @@ if (!empty($_SESSION["name"])) {
                       </a>
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item" id="boton" onclick="ir_leccion6();">Descripción general del sistema</a></li>
-                        <li><a class="dropdown-item" href="#">Creando imagenes</a></li>
-                        <li><a class="dropdown-item" href="#">Ruta del papel y sistema de alimentación</a></li>
-                        <li><a class="dropdown-item" href="#">DADF Y escaner</a></li>
                       </ul>
                     </li>
           
@@ -173,9 +170,6 @@ if (!empty($_SESSION["name"])) {
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item"id="boton" onclick="ir_leccion6();">Descripción general del sistema</a></li>
-              <li><a class="dropdown-item" href="#">Creando imagenes</a></li>
-              <li><a class="dropdown-item" href="#">Ruta del papel y sistema de alimentación</a></li>
-              <li><a class="dropdown-item" href="#">DADF Y escaner</a></li>
             </ul>
           </li>
 
@@ -1064,7 +1058,18 @@ if (!empty($_SESSION["name"])) {
                   <h5>Teoría del Funcionamiento Video</h5>
 
                     <div class="content-general">
-                      <video src="./images/H/teoria_funcionamiento_1.mp4"></video>
+                         
+                      <video width="100%" height="300" controls>
+                        <source src="./images/H/teoria_funcionamiento_1.mp4" type="video/mp4">
+                        Su navegador no es compatible con la etiqueta de vídeo.
+                      </video>
+                    
+                    </div>
+
+
+                    <div class="ui_fle_carru">
+                    <a href="#tf_item_1"><i class='bx bxs-chevron-left'></i></a>
+                    <a href="#tf_item_3"><i class='bx bxs-chevron-right'></i></a>
                     </div>
 
                 </div>
@@ -1072,10 +1077,45 @@ if (!empty($_SESSION["name"])) {
               </article>
               <!--Carrusel TF 02-->
             
-            
-            </div>
-            <!--leccion 06-->
+              <!--Carrusel TF 03-->
+              <article class="item_carru" id="item3_carru" >
+                <div class="tf_carru" id="tf_item_3">
 
+                <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección de formación Técnica</h5>
+
+                    <div class="content-general">
+                      <p class="paragraph">
+                            De Click en "Siguiente" para acceder a la lección VII
+                      </p>
+
+                      <img src="./images/H/siguiente4.jpg" alt="">
+
+                    </div>
+
+                      <div class="btn-leccion">
+                        <button id="boton" onclick="ir_leccion7();" >
+                          Siguiente
+                        </button>
+                      </div>
+
+                </div>
+              </article>
+              <!--Carrusel TF 03-->
+
+
+            </div>
+            <!--LECCION 06-->
+
+
+            <!--LECCION 07-->
+            <style>
+
+            </style>
+
+            <div id="leccion7" class="container-carac">
+                
+            </div>
+            <!--LECCION 07-->
 
 
           </main>
