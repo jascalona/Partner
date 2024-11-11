@@ -85,6 +85,9 @@ if (!empty($_SESSION["name"])) {
                       </a>
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item" id="boton" onclick="ir_leccion6();">Descripción general del sistema</a></li>
+                        <li><a class="dropdown-item" id="boton" onclick="ir_leccion7();">Creado de imágenes</a></li>
+                        <li><a class="dropdown-item" id="boton" onclick="ir_leccion8();">jjjjs</a></li>
+
                       </ul>
                     </li>
           
@@ -170,6 +173,7 @@ if (!empty($_SESSION["name"])) {
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item"id="boton" onclick="ir_leccion6();">Descripción general del sistema</a></li>
+              <li><a class="dropdown-item" id="boton" onclick="ir_leccion7();">Creado de imágenes</a></li>
             </ul>
           </li>
 
@@ -810,7 +814,6 @@ if (!empty($_SESSION["name"])) {
             <!--END MODULO DE CARACTERISTICAS-->
 
 
-
             <!--MODULO DE INSTALACION-->
             <!--LECCION 05-->
             <style>
@@ -819,8 +822,8 @@ if (!empty($_SESSION["name"])) {
 
             <div id="leccion5" class="container-carac">
 
-                <!--Carrusel IP 01-->
-                <article class="item_carru" id="item1_carru" >
+            <!--Carrusel IP 01-->
+            <article class="item_carru" id="item1_carru" >
                   <div class="in_carru" id="in_item_1">
                     <h5>Descripción general de la Instalación</h5>
 
@@ -844,7 +847,7 @@ if (!empty($_SESSION["name"])) {
                       </div>
 
                   </div>
-                </article>
+            </article>
             <!--Carrusel IP 01-->
 
             <!--Carrusel IP 02-->
@@ -872,7 +875,7 @@ if (!empty($_SESSION["name"])) {
                       </div>
 
                   </div>
-                </article>
+            </article>
             <!--Carrusel IP 02-->
               
             <!--Carrusel IP 03-->
@@ -983,11 +986,8 @@ if (!empty($_SESSION["name"])) {
                 </div>
               </article>
               <!--Carrusel IP 05-->
+
               <!--LECCION 05-->
-
-              
-              
-
 
                <!--Carrusel IP 06-->
                <article class="item_carru" id="item6_carru" >
@@ -1109,11 +1109,224 @@ if (!empty($_SESSION["name"])) {
 
             <!--LECCION 07-->
             <style>
-
+              #leccion7 {display: none;}
             </style>
 
             <div id="leccion7" class="container-carac">
                 
+            <!--Carrusel TF 04-->
+            <article class="item_carru" id="item4_carru">
+                <div class="tf_carru" id="tf_item_4">
+                  <h5>Creado de Imágenes</h5>
+
+                    <div class="content-general">
+                      <p>
+                        <?php
+                          $optf = new select_tf() ;
+                          $resTF2  = $optf->select_tf2();
+                          while ($row = mysqli_fetch_array($resTF2)){
+                            echo $row['teoria_funtion'];
+                          } 
+                        ?>
+                      </p>
+
+                      <img src="./images/H/teoria_funcionamiento_2.png" alt="">
+
+                    </div>
+
+                    <div class="ui_fle_carru">
+                        <a href=""></a>
+                        <a href="#tf_item_5"><i class='bx bxs-chevron-right'></i></a>
+                    </div>
+
+                </div>
+
+              </article>
+              <!--Carrusel TF 04-->
+
+              <!--Carrusel TF 05-->
+              <article class="item_carru" id="item5_carru">
+                  <div class="tf_carru" id="tf_item_5">
+                    <h5>Proceso de Toma de images</h5>
+
+                      <div class="content-general">
+                        <p>
+                            <?php
+                              $optf = new select_tf() ;
+                              $resTF3  = $optf->select_tf3();
+                              while ($row = mysqli_fetch_array($resTF3)){
+                                echo $row['teoria_funtion'];
+                              } 
+                            ?>
+                          </p>
+
+                      </div>
+
+                      <div class="ui_fle_carru">
+                        <a href="#tf_item_4"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="#tf_item_6"><i class='bx bxs-chevron-right'></i></a>
+                      </div>
+
+                  </div>
+
+                </article>
+                <!--Carrusel TF 05-->
+
+              <!--Carrusel TF 06-->
+              <article class="item_carru" id="item6_carru">
+                  <div class="tf_carru" id="tf_item_6">
+                    <h5>Proceso de Toma de images</h5>
+
+                    <div style=" display: flex; justify-content: center  " class="content-general">
+                    <img  style="min-width: 90%; " src="./images/H/teoria_funcionamiento_3.png" alt="">
+                      </div>
+
+                      <div class="ui_fle_carru">
+                        <a href="#tf_item_5"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="#tf_item_7"><i class='bx bxs-chevron-right'></i></a>
+                      </div>
+
+                  </div>
+
+                </article>
+                <!--Carrusel TF 06-->
+
+                <!--Carrusel TF 07-->
+                <article class="item_carru" id="item7_carru">
+                    <div class="tf_carru" id="tf_item_7">
+                      <h5>Desarrollo y Transferencia</h5>
+
+                        <div class="content-general">
+                              <p>
+                                <?php
+                                  $optf = new select_tf() ;
+                                  $resTF4 = $optf->select_tf4();
+                                  while ($row = mysqli_fetch_array($resTF4)) {
+                                    echo $row["teoria_funtion"];
+                                  }
+                                ?>
+                              </p>
+                        </div>
+
+                        <div class="ui_fle_carru">
+                          <a href="#tf_item_6"><i class='bx bxs-chevron-left'></i></a>
+                          <a href="#tf_item_8"><i class='bx bxs-chevron-right'></i></a>
+                        </div>
+
+                    </div>
+
+                  </article>
+                  <!--Carrusel TF 07-->
+
+
+                <!--Carrusel TF 08-->
+                <article class="item_carru" id="item8_carru">
+                    <div class="tf_carru" id="tf_item_8">
+                      <h5>Desarrollo y Transferencia</h5>
+
+                        <div style=" display: flex; justify-content: center  " class="content-general">
+                        <img  style="min-width: 300px;" src="./images/H/teoria_funcionamiento_4.png" alt="">
+                        </div>
+
+
+                        <div class="ui_fle_carru">
+                          <a href="#tf_item_7"><i class='bx bxs-chevron-left'></i></a>
+                          <a href="#tf_item_9"><i class='bx bxs-chevron-right'></i></a>
+                        </div>
+
+                    </div>
+
+                  </article>
+                  <!--Carrusel TF 08-->
+
+                  <!--Carrusel TF 09-->
+                  <article class="item_carru" id="item9_carru">
+                    <div class="tf_carru" id="tf_item_9">
+                      <h5>Fusionando</h5>
+
+                        <div class="content-general">
+                            <p>
+                              <?php
+                                $optf = new select_tf() ;
+                                $resTF5 = $optf->select_tf5();
+                                while ($row = mysqli_fetch_array($resTF5)){
+                                  echo $row["teoria_funtion"];
+                                }  
+                              ?>
+                            </p>
+
+                              <img src="./images/H/teoria_funcionamiento_5.png" alt="">
+
+                        </div>
+
+
+                        <div class="ui_fle_carru">
+                          <a href="#tf_item_8"><i class='bx bxs-chevron-left'></i></a>
+                          <a href="#tf_item_10"><i class='bx bxs-chevron-right'></i></a>
+                        </div>
+
+                    </div>
+
+                  </article>
+                  <!--Carrusel TF 09-->
+
+                   <!--Carrusel TF 10-->
+                   <article class="item_carru" id="item10_carru">
+                    <div class="tf_carru" id="tf_item_10">
+                      <h5>Descripción general de la limpieza</h5>
+
+                        <div class="content-general">
+                            <p>
+                              <?php
+                                $optf = new select_tf() ;
+                                $resTF6 = $optf->select_tf6();
+                                while ($row = mysqli_fetch_array($resTF6)){
+                                  echo $row["teoria_funtion"];
+                                }  
+                              ?>
+                            </p>
+
+                              <img src="./images/H/teoria_funcionamiento_6.png" alt="">
+
+                        </div>
+
+
+                        <div class="ui_fle_carru">
+                          <a href="#tf_item_9"><i class='bx bxs-chevron-left'></i></a>
+                          <a href="#tf_item_11"><i class='bx bxs-chevron-right'></i></a>
+                        </div>
+
+                    </div>
+
+                  </article>
+                  <!--Carrusel TF 10-->
+
+                  <!--Carrusel TF 11-->
+                  <article class="item_carru" id="item11_carru" >
+                    <div class="tf_carru" id="tf_item_11">
+
+                    <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección de formación Técnica</h5>
+
+                        <div class="content-general">
+                          <p class="paragraph">
+                                De Click en "Siguiente" para acceder a la lección <i class="ri-vidicon-fill"></i>
+                          </p>
+
+                          <img src="./images/H/siguiente.jpg" alt="">
+
+                        </div>
+
+                          <div class="btn-leccion">
+                            <button id="boton" onclick="ir_leccion8();" >
+                              Siguiente
+                            </button>
+                          </div>
+
+                    </div>
+                  </article>
+                  <!--Carrusel IP 11-->
+
+
             </div>
             <!--LECCION 07-->
 

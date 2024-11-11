@@ -56,6 +56,6 @@ function ir_leccion7(){
     document.getElementById('leccion3').style.display = 'none';
     document.getElementById('leccion4').style.display = 'none';
     document.getElementById('leccion5').style.display = 'none';
-    document.getElementById('leccion6').style.display = 'none';
+    document.getElementById('leccion6').style.display = 'none'; 
     document.getElementById('leccion7').style.display = 'block';
 }
