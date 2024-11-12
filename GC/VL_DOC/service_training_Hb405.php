@@ -2763,7 +2763,7 @@ if (!empty($_SESSION["name"])) {
                             </div>
 
                               <div class="btn-leccion">
-                                <button id="boton" onclick="ir_leccion14();" >
+                                <button id="boton" onclick="ir_leccion15();" >
                                   Siguiente
                                 </button>
                               </div>
@@ -2858,7 +2858,7 @@ if (!empty($_SESSION["name"])) {
                             </div>
 
                               <div class="btn-leccion">
-                                <button id="boton" onclick="ir_leccion15();" >
+                                <button id="boton" onclick="ir_leccion16();" >
                                   Siguiente
                                 </button>
                               </div>
@@ -2870,6 +2870,290 @@ if (!empty($_SESSION["name"])) {
 
             </div>
             <!--LECCION 15--> 
+
+
+            <!--LECCION 16-->
+            <style>
+              #leccion16 {display: none;}
+            </style>
+
+            <div id="leccion16" class="container-carac">
+                
+            <!--Carrusel PP 04-->
+            <article class="item_carru" id="item4_carru">
+                <div class="pp_carru" id="pp_item_4">
+                  <h5>Atascos de Papel</h5>
+                    <div class="content-general">
+                        <p>
+                          <?php
+                            $oppp = new select_pp() ;
+                            $resPP3 = $oppp->select_pp3();
+                            while ($row = mysqli_fetch_array($resPP3)){
+                              echo $row['pp']; 
+                            }
+                          ?>
+                        </p>
+
+                          <img src="./images/H/mantenimiento6.png" alt="">
+                    </div>
+
+                    <div class="ui_fle_carru">
+                        <a href=""></a>
+                        <a href="#pp_item_5"><i class='bx bxs-chevron-right'></i></a>
+                    </div>
+
+                </div>
+
+              </article>
+              <!--Carrusel PP 04-->
+
+              <!--Carrusel PP 05-->
+              <article class="item_carru" id="item5_carru">
+                  <div class="pp_carru" id="pp_item_5">
+                    <h5>Solución remota</h5>
+
+                      <div class="content-general">
+                          <p style="font-size: 13px;">
+                            <?php
+                              $oppp = new select_pp() ;
+                              $resPP4 = $oppp->select_pp4();
+                              while ($row = mysqli_fetch_array($resPP4)){
+                                echo $row['pp'];
+                              }
+                            ?>
+                          </p>
+
+                      </div>
+
+                      <div class="ui_fle_carru">
+                        <a href="#pp_item_4"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="#pp_item_6"><i class='bx bxs-chevron-right'></i></a>
+                      </div>
+
+                  </div>
+
+                </article>
+                <!--Carrusel PP 05-->
+
+              <!--Carrusel PP 06-->
+              <article class="item_carru" id="item6_carru">
+                  <div class="pp_carru" id="pp_item_6">
+                    <h5>Consejos especiales</h5>
+
+                      <div class="content-general">
+                          <p style="font-size: 13px;">
+                            <?php
+                              $oppp = new select_pp() ;
+                              $resPP5 = $oppp->select_pp5();
+                              while ($row = mysqli_fetch_array($resPP5)){
+                                echo $row['pp'];
+                              }
+                            ?>
+                          </p>
+
+                      </div>
+
+                      <div class="ui_fle_carru">
+                        <a href="#pp_item_5"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="#pp_item_7"><i class='bx bxs-chevron-right'></i></a>
+                      </div>
+
+                  </div>
+
+                </article>
+                <!--Carrusel PP 06-->
+
+                <!--Carrusel PP 07-->
+                <article class="item_carru" id="item7_carru">
+                  <div class="pp_carru" id="pp_item_7">
+                    <h5>Llamadas en sitio</h5>
+
+                      <div class="content-general">
+                          <p>
+                            <?php
+                              $oppp = new select_pp() ;
+                              $resPP6 = $oppp->select_pp6();
+                              while ($row = mysqli_fetch_array($resPP6)){
+                                echo $row['pp'];
+                              }
+                            ?>
+                          </p>
+
+                      </div>
+
+                      <div class="ui_fle_carru">
+                        <a href="#pp_item_6"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="#pp_item_8"><i class='bx bxs-chevron-right'></i></a>
+                      </div>
+
+                  </div>
+                  
+                </article>
+                <!--Carrusel PP 07-->
+
+                 <!--Carrusel PP 08-->
+                 <article class="item_carru" id="item8_carru">
+                  <div class="pp_carru" id="pp_item_8">
+                    <h5>Calidad de impresión</h5>
+
+                      <div class="content-general">
+                          <p>
+                            <?php
+                              $oppp = new select_pp() ;
+                              $resPP6 = $oppp->select_pp6();
+                              while ($row = mysqli_fetch_array($resPP6)){
+                                echo $row['pp'];
+                              }
+                            ?>
+                          </p>
+
+                      </div>
+
+                      <div class="ui_fle_carru">
+                        <a href="#pp_item_7"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="#pp_item_9"><i class='bx bxs-chevron-right'></i></a>
+                      </div>
+
+                  </div>
+                  
+                </article>
+                <!--Carrusel PP 08-->
+
+                 <!--Carrusel PP 09-->
+                 <article class="item_carru" id="item9_carru">
+                  <div class="pp_carru" id="pp_item_9">
+                    <h5>Solución Remota</h5>
+
+                      <div class="content-general">
+                          <p>
+                            <?php
+                              $oppp = new select_pp() ;
+                              $resPP7 = $oppp->select_pp7();
+                              while ($row = mysqli_fetch_array($resPP7)){
+                                echo $row['pp'];
+                              }
+                            ?>
+                          </p>
+
+                      </div>
+
+                      <div class="ui_fle_carru">
+                        <a href="#pp_item_8"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="#pp_item_10"><i class='bx bxs-chevron-right'></i></a>
+                      </div>
+
+                  </div>
+                  
+                </article>
+                <!--Carrusel PP 09-->
+
+                 <!--Carrusel PP 10-->
+                 <article class="item_carru" id="item10_carru">
+                  <div class="pp_carru" id="pp_item_10">
+                    <h5>Llamadas en sitio</h5>
+
+                      <div class="content-general">
+                          <p>
+                            <?php
+                              $oppp = new select_pp() ;
+                              $resPP8 = $oppp->select_pp8();
+                              while ($row = mysqli_fetch_array($resPP8)){
+                                echo $row['pp'];
+                              }
+                            ?>
+                          </p>
+
+                      </div>
+
+                      <div class="ui_fle_carru">
+                        <a href="#pp_item_9"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="#pp_item_11"><i class='bx bxs-chevron-right'></i></a>
+                      </div>
+
+                  </div>
+                  
+                </article>
+                <!--Carrusel PP 10-->
+
+                 <!--Carrusel PP 11-->
+                 <article class="item_carru" id="item11_carru">
+                  <div class="pp_carru" id="pp_item_11">
+                    <h5>Reemplazo de cartuchos de tóner y drum</h5>
+
+                      <div class="content-general">
+                          <p>
+                            <?php
+                              $oppp = new select_pp() ;
+                              $resPP9 = $oppp->select_pp9();
+                              while ($row = mysqli_fetch_array($resPP9  )){
+                                echo $row['pp'];
+                              }
+                            ?>
+                          </p>
+                      </div>
+
+                      <div class="ui_fle_carru">
+                        <a href="#pp_item_10"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="#pp_item_12"><i class='bx bxs-chevron-right'></i></a>
+                      </div>
+
+                  </div>
+                  
+                </article>
+                <!--Carrusel PP 11-->
+
+                 <!--Carrusel PP 12-->
+                 <article class="item_carru" id="item12_carru">
+                  <div class="pp_carru" id="pp_item_12">
+                    <h5>Ruidos de la impresora</h5>
+
+                      <div style="font-size: 13px;" class="content-general">
+                          <p>
+                            <?php
+                              $oppp = new select_pp() ;
+                              $resPP10 = $oppp->select_pp10();
+                              while ($row = mysqli_fetch_array($resPP10  )){
+                                echo $row['pp'];
+                              }
+                            ?>
+                          </p>
+                      </div>
+
+                      <div class="ui_fle_carru">
+                        <a href="#pp_item_11"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="#pp_item_13"><i class='bx bxs-chevron-right'></i></a>
+                      </div>
+
+                  </div>
+                  
+                </article>
+                <!--Carrusel PP 12-->
+
+                      <!--Carrusel PP 13-->
+                      <article class="item_carru" id="item13_carru" >
+                        <div class="pp_carru" id="pp_item_13">
+
+                        <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito la formación de Servicio Técnico para VersaLink B405</h5>
+
+                            <div class="content-general">
+                              <p class="paragraph">
+                                    De Click en "Ir a la Evaluación" para comenzar la evaluación diagnostica<i class="ri-xbox-fill"a</i> <i class="ri-vidicon-fill"></i>
+                              </p>
+                            </div>
+
+                              <div class="btn-">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLScrdZvXcq-K4OoceGqDd4ul1S1_L4TPFZzW_KbdbbuvzquXvg/viewform">Ir a la Evaluación</a>
+                                <br>
+                                <a href="../VL_B405.php">Volver a  los detalles de Inscripción</a>
+                              </div>
+
+                        </div>
+                      </article>
+                      <!--Carrusel PP 013-->
+
+
+            </div>
+            <!--LECCION 16--> 
 
 
           </main>

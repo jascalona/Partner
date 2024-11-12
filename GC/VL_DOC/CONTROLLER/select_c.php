@@ -514,12 +514,66 @@ class select_pp{
     }
 
     public function select_pp2(){
-        $sqlPP = " SELECT pp FROM vl_b405 WHERE id=2 ";
+        $sqlPP2 = " SELECT pp FROM vl_b405 WHERE id=2 ";
         $conexion = $this->Connection();
-        $resPP2 = mysqli_query($conexion,$sqlPP) or die ("Ha Ocurrido un Error");
+        $resPP2 = mysqli_query($conexion,$sqlPP2) or die ("Ha Ocurrido un Error");
         return $resPP2;
     }
 
+    public function select_pp3(){
+        $sqlPP3 = " SELECT pp FROM vl_b405 WHERE id=3 ";
+        $conexion = $this->Connection();
+        $resPP3 = mysqli_query($conexion,$sqlPP3) or die ("Ha Ocurrido un Error");
+        return $resPP3;
+    }
 
+    public function select_pp4(){
+        $sqlPP4 = " SELECT pp FROM vl_b405 WHERE id=4 ";
+        $conexion = $this->Connection();
+        $resPP4 = mysqli_query($conexion,$sqlPP4) or die ("Ha Ocurrido un Error");
+        return $resPP4;
+    }
+
+    public function select_pp5(){
+        $sqlPP5 = " SELECT pp FROM vl_b405 WHERE id=5 ";
+        $conexion = $this->Connection();
+        $resPP5 = mysqli_query($conexion,$sqlPP5) or die ("Ha Ocurrido un Error");
+        return $resPP5;
+    }
+
+    public function select_pp6(){
+        $sqlPP6 = " SELECT pp FROM vl_b405 WHERE id=6 ";
+        $conexion = $this->Connection();
+        $resPP6 = mysqli_query($conexion,$sqlPP6) or die ("Ha Ocurrido un Error");
+        return $resPP6;
+    }
+
+    public function select_pp7(){
+        $sqlPP7 = " SELECT pp FROM vl_b405 WHERE id=7 ";
+        $conexion = $this->Connection();
+        $resPP7 = mysqli_query($conexion,$sqlPP7) or die ("Ha Ocurrido un Error");
+        return $resPP7;
+    }
+
+    public function select_pp8(){
+        $sqlPP8 = " SELECT pp FROM vl_b405 WHERE id=8 ";
+        $conexion = $this->Connection();
+        $resPP8 = mysqli_query($conexion,$sqlPP8) or die ("Ha Ocurrido un Error");
+        return $resPP8;
+    }
+
+    public function select_pp9(){
+        $sqlPP9 = " SELECT pp FROM vl_b405 WHERE id=9 ";
+        $conexion = $this->Connection();
+        $resPP9 = mysqli_query($conexion,$sqlPP9) or die ("Ha Ocurrido un Error");
+        return $resPP9;
+    }
+    
+    public function select_pp10(){
+        $sqlPP10 = " SELECT pp FROM vl_b405 WHERE id=10 ";
+        $conexion = $this->Connection();
+        $resPP10 = mysqli_query($conexion,$sqlPP10) or die ("Ha Ocurrido un Error");
+        return $resPP10;
+    }
 
 }
