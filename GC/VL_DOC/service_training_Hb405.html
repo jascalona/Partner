@@ -118,8 +118,8 @@ if (!empty($_SESSION["name"])) {
                         Problemas principales
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Recursos de apoyo local</a></li>
-                        <li><a class="dropdown-item" href="#">Recursos para problemas comunes</a></li>
+                        <li><a class="dropdown-item" id="boton" onclick="ir_leccion15();">Recursos de apoyo local</a></li>
+                        <li><a class="dropdown-item" id="boton" onclick="ir_leccion16();">Recursos para problemas comunes</a></li>
                       </ul>
                     </li>
                   </div>
@@ -203,8 +203,8 @@ if (!empty($_SESSION["name"])) {
               Problemas principales
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Recursos de apoyo local</a></li>
-              <li><a class="dropdown-item" href="#">Recursos para problemas comunes</a></li>
+              <li><a class="dropdown-item" id="boton" onclick="ir_leccion15();">Recursos de apoyo local</a></li>
+              <li><a class="dropdown-item" id="boton" onclick="ir_leccion16();">Recursos para problemas comunes</a></li>
             </ul>
           </li>
 
@@ -2776,6 +2776,100 @@ if (!empty($_SESSION["name"])) {
             </div>
             <!--LECCION 14--> 
 
+
+            <!--MODULO PROBLEMAS PRINCIPALES-->
+            <!--LECCION 15-->
+            <style>
+              #leccion15 {display: none;}
+            </style>
+
+            <div id="leccion15" class="container-carac">
+                
+            <!--Carrusel PP 01-->
+            <article class="item_carru" id="item1_carru">
+                <div class="pp_carru" id="pp_item_1">
+                  <h5>Boletín de anuncios</h5>
+                    <div class="content-general">
+                        <p>
+                          <?php
+                            $oppp = new select_pp() ;
+                            $resPP = $oppp->select_pp();
+                            while ($row = mysqli_fetch_array($resPP)){
+                              echo $row['pp']; 
+                            }
+                          ?>
+                        </p>
+
+                          <img src="./images/H/pp1.png" alt="">
+                    </div>
+
+                    <div class="ui_fle_carru">
+                        <a href=""></a>
+                        <a href="#pp_item_2"><i class='bx bxs-chevron-right'></i></a>
+                    </div>
+
+                </div>
+
+              </article>
+              <!--Carrusel PP 01-->
+
+              <!--Carrusel PP 02-->
+              <article class="item_carru" id="item2_carru">
+                  <div class="pp_carru" id="pp_item_2">
+                    <h5>Soporte Local</h5>
+
+                      <div class="content-general">
+                          <p>
+                            <?php
+                              $oppp = new select_pp() ;
+                              $resPP2 = $oppp->select_pp2();
+                              while ($row = mysqli_fetch_array($resPP2)){
+                                echo $row['pp'];
+                              }
+                            ?>
+                          </p>
+
+                      </div>
+
+                      <div class="ui_fle_carru">
+                        <a href="#pp_item_1"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="#pp_item_3"><i class='bx bxs-chevron-right'></i></a>
+                      </div>
+
+                  </div>
+
+                </article>
+                <!--Carrusel HA 02-->
+
+
+                      <!--Carrusel PP 03-->
+                      <article class="item_carru" id="item3_carru" >
+                        <div class="pp_carru" id="pp_item_3">
+
+                        <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección de formación Técnica</h5>
+
+                            <div class="content-general">
+                              <p class="paragraph">
+                                    De Click en "Siguiente" para acceder a la lección XVI <i class="ri-xbox-fill"></i> <i class="ri-vidicon-fill"></i>
+                              </p>
+
+                              <img src="./images/H/siguiente.jpg" alt="">
+
+                            </div>
+
+                              <div class="btn-leccion">
+                                <button id="boton" onclick="ir_leccion15();" >
+                                  Siguiente
+                                </button>
+                              </div>
+
+                        </div>
+                      </article>
+                      <!--Carrusel HA 06-->
+
+
+            </div>
+            <!--LECCION 15--> 
 
 
           </main>

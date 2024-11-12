@@ -9,8 +9,6 @@ class select_c{
 
     //Instancia for Connection
     public function Connection(){
-
-        //CREATE $conexion
         $conexion = mysqli_connect($this->server,$this->user,$this->password,$this->db,$this->port);
         return $conexion;
     }
@@ -140,7 +138,7 @@ class select_i{
     private $port = '3306';
 
 
-    //Instancio for Connection
+    //Instancia for Connection
 
     public function Connection(){
         $conexion = mysqli_connect($this->server,$this->user,$this->password,$this->db,$this->port);
@@ -198,13 +196,13 @@ class select_tf{
 
     private $port = '3306';
     
+    //Instancia for Connection
     public function Connection(){
         $conexion = mysqli_connect($this->server, $this->user, $this->password, $this->db);
         return $conexion;
     }
 
     //Function for Vistas Modulo Teoria del Funcionamiento
-
     public function select_tf(){
         $sqlTF = " SELECT teoria_funtion FROM vl_b405 WHERE id=1 ";
         $conexion = $this->Connection();
@@ -327,6 +325,7 @@ class select_mt{
     private $db = "gxdeve_apps";
     private $port = "3306";
 
+    //Instancia for Connection
     public function Connection(){
         $conexion = mysqli_connect($this->server, $this->user,$this->password,$this->db, $this->port);
         return $conexion;    
@@ -448,11 +447,13 @@ class select_ha{
     private $db = "gxdeve_apps";
     private $port = "3306";
 
+    //Instancia for Connection
     public function Connection(){
         $conexion = mysqli_connect($this->server, $this->user, $this->password, $this->db);
         return $conexion;
     }
 
+    //Function for Vistas Modulo Herramientas & Ajustes
     public function select_ha(){
         $sqlHA = " SELECT herra_ajustes FROM vl_b405 WHERE id=1 ";
         $conexion = $this->Connection();
@@ -487,6 +488,38 @@ class select_ha{
         $resHA5 = mysqli_query($conexion,$sqlHA5) or die ("Ha Ocurrido un Error");
         return $resHA5;
     }
+
+
+}
+
+class select_pp{
+    private $server = "localhost";
+    private $user = "root";
+    private $password = "";
+    private $db = "gxdeve_apps";
+    private $port = "3306";
+
+    //Instancia for Connection
+    public function Connection(){
+        $conexion =  mysqli_connect($this->server, $this->user, $this->password, $this->db);
+        return $conexion;
+    }
+
+    //Function for Vistas Modulo Problemas Principales
+    public function select_pp(){
+        $sqlPP = " SELECT pp FROM vl_b405 WHERE id=1 ";
+        $conexion = $this->Connection();
+        $resPP = mysqli_query($conexion,$sqlPP) or die ("Ha Ocurrido un Error");
+        return $resPP;
+    }
+
+    public function select_pp2(){
+        $sqlPP = " SELECT pp FROM vl_b405 WHERE id=2 ";
+        $conexion = $this->Connection();
+        $resPP2 = mysqli_query($conexion,$sqlPP) or die ("Ha Ocurrido un Error");
+        return $resPP2;
+    }
+
 
 
 }
