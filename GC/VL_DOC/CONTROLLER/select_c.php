@@ -383,6 +383,32 @@ class select_mt{
         return $resMT7;
     }
 
+    public function select_mt8(){
+        $sqlMT8 = " SELECT mantenimiento FROM vl_b405 WHERE id=8 ";
+        $conexion = $this->Connection();
+        $resMT8 = mysqli_query($conexion,$sqlMT8) or die ("Ha Ocurrido un Error");
+        return $resMT8;
+    }
 
+    public function select_mt9(){
+        $sqlMT9 = " SELECT mantenimiento FROM vl_b405 WHERE id=9 ";
+        $conexion = $this->Connection();
+        $resMT9 = mysqli_query($conexion,$sqlMT9) or die ("Ha Ocurrido un Error");
+        return $resMT9;
+    }
+
+    public function select_mt10(){
+        $sqlMT10 = " SELECT mantenimiento FROM vl_b405 WHERE id=10 ";
+        $conexion = $this->Connection();
+        $resMT10 = mysqli_query($conexion,$sqlMT10) or die ("Ha Ocurrido un Error");
+        return $resMT10;
+    }
+
+    public function select_mt11(){
+        $sqlMT11 = " SELECT mantenimiento FROM vl_b405 WHERE id=11 ";
+        $conexion = $this->Connection();
+        $resMT11 = mysqli_query($conexion,$sqlMT11) or die ("Ha Ocurrido un Error");
+        return $resMT11;
+    }
 
 }

@@ -97,11 +97,10 @@ if (!empty($_SESSION["name"])) {
                         Mantenimiento
                       </a>
                       <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" id="boton" onclick="ir_leccion10();">Mantenimiento al cliente</a></li>
-                      <li><a class="dropdown-item" href="#">Articulos remplazables por el cliente</a></li>
-                        <li><a class="dropdown-item" href="#">Auto Ayuda</a></li>
-                        <li><a class="dropdown-item" href="#">Atascos</a></li>
-                        <li><a class="dropdown-item" href="#">Calidad de impresión</a></li>
+                        <li><a class="dropdown-item" id="boton" onclick="ir_leccion10();">Mantenimiento al cliente</a></li>
+                        <li><a class="dropdown-item" id="boton" onclick="ir_leccion11();">Articulos remplazables por el cliente</a></li>
+                        <li><a class="dropdown-item" id="boton" onclick="ir_leccion12();">Atascos</a></li>
+                        <li><a class="dropdown-item" id="boton" onclick="ir_leccion13();">Calidad de impresión</a></li>
                       </ul>
                     </li>
           
@@ -188,9 +187,8 @@ if (!empty($_SESSION["name"])) {
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" id="boton" onclick="ir_leccion10();">Mantenimiento al cliente</a></li>
               <li><a class="dropdown-item" id="boton" onclick="ir_leccion11();">Articulos remplazables por el cliente</a></li>
-              <li><a class="dropdown-item" href="#">Auto Ayuda</a></li>
-              <li><a class="dropdown-item" href="#">Atascos</a></li>
-              <li><a class="dropdown-item" href="#">Calidad de impresión</a></li>
+              <li><a class="dropdown-item" id="boton" onclick="ir_leccion12();">Atascos</a></li>
+              <li><a class="dropdown-item" id="boton" onclick="ir_leccion13();">Calidad de impresión</a></li>
             </ul>
           </li>
 
@@ -1571,6 +1569,7 @@ if (!empty($_SESSION["name"])) {
             </div>
             <!--LECCION 08-->
 
+
             <!--LECCION 09-->
             <style>
               #leccion9 {display: none;}
@@ -1779,6 +1778,7 @@ if (!empty($_SESSION["name"])) {
 
             </div>
             <!--LECCION 09-->    
+
 
             <!--MODULO MANTENIMIENTO-->
             <!--LECCION 10-->
@@ -2081,8 +2081,371 @@ if (!empty($_SESSION["name"])) {
 
 
             </div>
-            <!--LECCION 09-->    
+            <!--LECCION 10-->    
 
+
+            <!--LECCION 11-->
+            <style>
+              #leccion11 {display: none;}
+            </style>
+
+            <div id="leccion11" class="container-carac">
+                
+            <!--Carrusel MT 12-->
+            <article class="item_carru" id="item12_carru">
+                <div class="mt_carru" id="mt_item_12">
+                  <h5>Artículos reemplazables por el cliente</h5>
+
+                    <div class="content-general">
+                      <p>
+                        <?php
+                          $opmt = new select_mt() ;
+                          $resMT8  = $opmt->select_mt8();
+                          while ($row = mysqli_fetch_array($resMT8)){
+                            echo $row['mantenimiento'];
+                          } 
+                        ?>
+                      </p>
+
+                      <img src="./images/H/mantenimient5.png" alt="">
+
+                    </div>
+
+                    <div class="ui_fle_carru">
+                        <a href=""></a>
+                        <a href="#mt_item_13"><i class='bx bxs-chevron-right'></i></a>
+                    </div>
+
+                </div>
+
+              </article>
+              <!--Carrusel MT 12-->
+
+              <!--Carrusel MT 13-->
+              <article class="item_carru" id="item13_carru">
+                  <div class="mt_carru" id="mt_item_13">
+                    <h5>Remplazo del Fusor</h5>
+
+                      <div class="content-general">
+                         <video width="100%" height="280" controls>
+                            <source src="./images/H/mantenimiento4.mp4" type="video/mp4" >
+                            Su navegador no es compatible con la etiqueta de vídeo.
+                          </video>
+                      </div>
+
+                      <div class="ui_fle_carru">
+                        <a href="#mt_item_12"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="#mt_item_14"><i class='bx bxs-chevron-right'></i></a>
+                      </div>
+
+                  </div>
+
+                </article>
+                <!--Carrusel MT 13-->
+
+              <!--Carrusel MT 14-->
+              <article class="item_carru" id="item14_carru">
+                  <div class="mt_carru" id="mt_item_14">
+                    <h5>Reemplazo del rodillo de transferencia de polarización (BTR)</h5>
+
+                    <div class="content-general">
+                      <video width="100%" height="280" controls>
+                        <source src="./images/H/mantenimiento5.mp4" type="video/mp4" >
+                        Su navegador no es compatible con la etiqueta de vídeo.
+                      </video>
+                    </div>
+
+                      <div class="ui_fle_carru">
+                        <a href="#mt_item_13"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="#mt_item_15"><i class='bx bxs-chevron-right'></i></a>
+                      </div>
+
+                  </div>
+
+                </article>
+                <!--Carrusel MT 14-->
+
+
+                  <!--Carrusel MT 15-->
+                  <article class="item_carru" id="item15_carru" >
+                    <div class="mt_carru" id="mt_item_15">
+
+                    <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección de formación Técnica</h5>
+
+                        <div class="content-general">
+                          <p class="paragraph">
+                                De Click en "Siguiente" para acceder a la lección XII <i class="ri-xbox-fill"></i> <i class="ri-vidicon-fill"></i>
+                          </p>
+
+                          <img src="./images/H/siguiente3.jpg" alt="">
+
+                        </div>
+
+                          <div class="btn-leccion">
+                            <button id="boton" onclick="ir_leccion12();" >
+                              Siguiente
+                            </button>
+                          </div>
+
+                    </div>
+                  </article>
+                  <!--Carrusel MT 11-->
+
+
+            </div>
+            <!--LECCION 11-->    
+
+            
+            <!--LECCION 12-->
+            <style>
+              #leccion12 {display: none;}
+            </style>
+
+            <div id="leccion12" class="container-carac">
+                
+            <!--Carrusel MT 16-->
+            <article class="item_carru" id="item16_carru">
+                <div class="mt_carru" id="mt_item_16">
+                  <h5>Eliminación de atascos</h5>
+                    <div class="content-general">
+                        <p>
+                          <?php
+                            $opmt = new select_mt() ;
+                            $resMT9 = $opmt->select_mt9();
+                            while ($row = mysqli_fetch_array($resMT9)){
+                              echo $row['mantenimiento'];
+                            }
+                          ?>
+                        </p>
+
+                        <img src="./images/H/mantenimiento6.png" alt="">
+
+                    </div>
+
+                    <div class="ui_fle_carru">
+                        <a href=""></a>
+                        <a href="#mt_item_17"><i class='bx bxs-chevron-right'></i></a>
+                    </div>
+
+                </div>
+
+              </article>
+              <!--Carrusel MT 16-->
+
+              <!--Carrusel MT 17-->
+              <article class="item_carru" id="item17_carru">
+                  <div class="mt_carru" id="mt_item_17">
+                    <h5>Ubicaciones comunes de atascos</h5>
+
+                      <div class="content-general">
+                          <p>
+                            <?php
+                              $opmt = new select_mt() ;
+                              $resMT10 = $opmt->select_mt10();
+                              while ($row = mysqli_fetch_array($resMT10)){
+                                echo $row['mantenimiento'];
+                              }
+                            ?>
+                          </p>
+
+                          <img src="./images/H/mantenimiento7.png" alt="">
+                      </div>
+
+                      <div class="ui_fle_carru">
+                        <a href="#mt_item_16"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="#mt_item_18"><i class='bx bxs-chevron-right'></i></a>
+                      </div>
+
+                  </div>
+
+                </article>
+                <!--Carrusel MT 17-->
+
+              <!--Carrusel MT 18-->
+              <article class="item_carru" id="item18_carru">
+                  <div class="mt_carru" id="mt_item_18">
+                    <h5>Pasos para eliminar atascos</h5>
+
+                    <div class="content-general">
+                      <p>
+                        <?php
+                          $opmt = new select_mt() ;
+                          $resMT11 = $opmt->select_mt11();
+                          while ($row = mysqli_fetch_array($resMT11)){
+                            echo $row['mantenimiento'];
+                          }
+                        ?>
+                      </p>
+                    </div>
+
+                      <div class="ui_fle_carru">
+                        <a href="#mt_item_17"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="#mt_item_19"><i class='bx bxs-chevron-right'></i></a>
+                      </div>
+
+                  </div>
+
+                </article>
+                <!--Carrusel MT 18-->
+
+                <!--Carrusel MT 19-->
+                <article class="item_carru" id="item19_carru">
+                    <div class="mt_carru" id="mt_item_19">
+                      <h5>Como eliminar atascos en la Bypass</h5>
+
+                      <div class="content-general">
+                         <video width="100%" height="280" controls>
+                            <source src="./images/H/atascos1.mp4" type="video/mp4" >
+                            Su navegador no es compatible con la etiqueta de vídeo.
+                          </video>
+                      </div>
+
+                        <div class="ui_fle_carru">
+                          <a href="#mt_item_18"><i class='bx bxs-chevron-left'></i></a>
+                          <a href="#mt_item_20"><i class='bx bxs-chevron-right'></i></a>
+                        </div>
+
+                    </div>
+
+                  </article>
+                  <!--Carrusel MT 19-->
+
+                   <!--Carrusel MT 20-->
+                  <article class="item_carru" id="item20_carru">
+                      <div class="mt_carru" id="mt_item_20">
+                        <h5>Eliminar atascos en la bandeja de papel</h5>
+
+                        <div class="content-general">
+                          <video width="100%" height="280" controls>
+                              <source src="./images/H/atascos2.mp4" type="video/mp4" >
+                              Su navegador no es compatible con la etiqueta de vídeo.
+                            </video>
+                        </div>
+
+                          <div class="ui_fle_carru">
+                            <a href="#mt_item_19"><i class='bx bxs-chevron-left'></i></a>
+                            <a href="#mt_item_21"><i class='bx bxs-chevron-right'></i></a>
+                          </div>
+
+                      </div>
+
+                    </article>
+                    <!--Carrusel MT 20-->
+
+                    <!--Carrusel MT 21-->
+                    <article class="item_carru" id="item21_carru">
+                        <div class="mt_carru" id="mt_item_21">
+                          <h5>Eliminar atascos en el frente y el fusor</h5>
+
+                          <div class="content-general">
+                            <video width="100%" height="280" controls>
+                                <source src="./images/H/atascos3.mp4" type="video/mp4" >
+                                Su navegador no es compatible con la etiqueta de vídeo.
+                              </video>
+                          </div>
+
+                            <div class="ui_fle_carru">
+                              <a href="#mt_item_20"><i class='bx bxs-chevron-left'></i></a>
+                              <a href="#mt_item_22"><i class='bx bxs-chevron-right'></i></a>
+                            </div>
+
+                        </div>
+
+                      </article>
+                      <!--Carrusel MT 21-->
+
+                      <!--Carrusel MT 22-->
+                    <article class="item_carru" id="item22_carru">
+                        <div class="mt_carru" id="mt_item_22">
+                          <h5>Reemplazo de rodillos de alimentación y de DADF</h5>
+
+                          <div style="display: flex; justify-content: center; " class="content-general">
+                              <img style="min-width: 80%;" src="./images/H/mantenimiento8.png" alt="">
+                          </div>
+
+                            <div class="ui_fle_carru">
+                              <a href="#mt_item_21"><i class='bx bxs-chevron-left'></i></a>
+                              <a href="#mt_item_23"><i class='bx bxs-chevron-right'></i></a>
+                            </div>
+
+                        </div>
+
+                      </article>
+                      <!--Carrusel MT 22-->
+
+                      <!--Carrusel MT 23-->
+                      <article class="item_carru" id="item23_carru">
+                        <div class="mt_carru" id="mt_item_23">
+                          <h5>Reemplazo de los rodillos de alimentación de papel</h5>
+
+                          <div class="content-general">
+                            <video width="100%" height="280" controls >
+                              <source src="./images/H/remplazo1.mp4" type="video/mp4" >
+                              Su navegador no es compatible con la etiqueta de vídeo.
+                            </video>
+                          </div>
+
+                            <div class="ui_fle_carru">
+                              <a href="#mt_item_22"><i class='bx bxs-chevron-left'></i></a>
+                              <a href="#mt_item_24"><i class='bx bxs-chevron-right'></i></a>
+                            </div>
+
+                        </div>
+
+                      </article>
+                      <!--Carrusel MT 23-->
+
+                       <!--Carrusel MT 24-->
+                       <article class="item_carru" id="item24_carru">
+                        <div class="mt_carru" id="mt_item_24">
+                          <h5>Reemplazo de los rodillos del DADF y la almohadilla separadora</h5>
+
+                          <div class="content-general">
+                            <video width="100%" height="280" controls >
+                              <source src="./images/H/remplazo2.mp4" type="video/mp4" >
+                              Su navegador no es compatible con la etiqueta de vídeo.
+                            </video>
+                          </div>
+
+                            <div class="ui_fle_carru">
+                              <a href="#mt_item_23"><i class='bx bxs-chevron-left'></i></a>
+                              <a href="#mt_item_25"><i class='bx bxs-chevron-right'></i></a>
+                            </div>
+
+                        </div>
+
+                      </article>
+                      <!--Carrusel MT 24-->
+
+
+                      <!--Carrusel MT 25-->
+                      <article class="item_carru" id="item25_carru" >
+                        <div class="mt_carru" id="mt_item_25">
+
+                        <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección de formación Técnica</h5>
+
+                            <div class="content-general">
+                              <p class="paragraph">
+                                    De Click en "Siguiente" para acceder a la lección XIII <i class="ri-xbox-fill"></i> <i class="ri-vidicon-fill"></i>
+                              </p>
+
+                              <img src="./images/H/siguiente5.jpg" alt="">
+
+                            </div>
+
+                              <div class="btn-leccion">
+                                <button id="boton" onclick="ir_leccion12();" >
+                                  Siguiente
+                                </button>
+                              </div>
+
+                        </div>
+                      </article>
+                      <!--Carrusel MT 11-->
+
+
+            </div>
+            <!--LECCION 12--> 
 
             
           </main>
