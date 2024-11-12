@@ -109,10 +109,7 @@ if (!empty($_SESSION["name"])) {
                         Herramientas y ajustes
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Herramientas de Servicio</a></li>
-                        <li><a class="dropdown-item" href="#">Identificación del número de serie</a></li>
-                        <li><a class="dropdown-item" href="#">Auto Ayuda</a></li>
-                        <li><a class="dropdown-item" href="#">Software de máquina de carga</a></li>
+                        <li><a class="dropdown-item" id="boton" onclick="ir_leccion14();">Herramientas de Servicio</a></li>
                       </ul>
                     </li>
           
@@ -197,10 +194,7 @@ if (!empty($_SESSION["name"])) {
               Herramientas y ajustes
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Herramientas de Servicio</a></li>
-              <li><a class="dropdown-item" href="#">Identificación del número de serie</a></li>
-              <li><a class="dropdown-item" href="#">Auto Ayuda</a></li>
-              <li><a class="dropdown-item" href="#">Software de máquina de carga</a></li>
+              <li><a class="dropdown-item" id="boton" onclick="ir_leccion14();">Herramientas de Servicio</a></li>
             </ul>
           </li>
 
@@ -2447,6 +2441,7 @@ if (!empty($_SESSION["name"])) {
             </div>
             <!--LECCION 12--> 
 
+
             <!--LECCION 13-->
             <style>
               #leccion13 {display: none;}
@@ -2572,7 +2567,7 @@ if (!empty($_SESSION["name"])) {
 
                             <div class="content-general">
                               <p class="paragraph">
-                                    De Click en "Siguiente" para acceder a la lección XIX <i class="ri-xbox-fill"></i> <i class="ri-vidicon-fill"></i>
+                                    De Click en "Siguiente" para acceder a la lección XIV <i class="ri-xbox-fill"></i> <i class="ri-vidicon-fill"></i>
                               </p>
 
                               <img src="./images/H/siguiente2.jpg" alt="">
@@ -2593,7 +2588,196 @@ if (!empty($_SESSION["name"])) {
             </div>
             <!--LECCION 13--> 
 
-            
+
+            <!--MODULO HERRAMIENTAS Y AJUSTES-->
+            <!--LECCION 14-->
+            <style>
+              #leccion14 {display: none;}
+            </style>
+
+            <div id="leccion14" class="container-carac">
+                
+            <!--Carrusel HA 01-->
+            <article class="item_carru" id="item1_carru">
+                <div class="ha_carru" id="ha_item_1">
+                  <h5>Manuel de Servicio</h5>
+                    <div class="content-general">
+                        <p>
+                          <?php
+                            $opha = new select_ha() ;
+                            $resHA = $opha->select_HA();
+                            while ($row = mysqli_fetch_array($resHA)){
+                              echo $row['herra_ajustes'];
+                            }
+                          ?>
+                        </p>
+
+                          <img src="./images/H/gsn.png" alt="">
+                    </div>
+
+                    <div class="ui_fle_carru">
+                        <a href=""></a>
+                        <a href="#ha_item_2"><i class='bx bxs-chevron-right'></i></a>
+                    </div>
+
+                </div>
+
+              </article>
+              <!--Carrusel HA 01-->
+
+              <!--Carrusel HA 02-->
+              <article class="item_carru" id="item2_carru">
+                  <div class="ha_carru" id="ha_item_2">
+                    <h5>Herramientas de servicio - Manual de servicio PDF</h5>
+
+                      <div class="content-general">
+                          <p>
+                            <?php
+                              $opha = new select_ha() ;
+                              $resHA2 = $opha->select_ha2();
+                              while ($row = mysqli_fetch_array($resHA2)){
+                                echo $row['herra_ajustes'];
+                              }
+                            ?>
+                          </p>
+
+                          <img src="./images/H/herramientas.png" alt="">
+                      </div>
+
+                      <div class="ui_fle_carru">
+                        <a href="#ha_item_1"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="#ha_item_3"><i class='bx bxs-chevron-right'></i></a>
+                      </div>
+
+                  </div>
+
+                </article>
+                <!--Carrusel HA 02-->
+
+                <!--Carrusel HA 03-->
+              <article class="item_carru" id="item3_carru">
+                  <div class="ha_carru" id="ha_item_3">
+                    <h5>Herramientas de servicio - ProLibro</h5>
+
+                      <div class="content-general">
+                          <p>
+                            <?php
+                              $opha = new select_ha() ;
+                              $resHA3 = $opha->select_ha3();
+                              while ($row = mysqli_fetch_array($resHA3)){
+                                echo $row['herra_ajustes'];
+                              }
+                            ?>
+                          </p>
+
+                          <img src="./images/H/prolibro.png" alt="">
+                      </div>
+
+                      <div class="ui_fle_carru">
+                        <a href="#ha_item_2"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="#ha_item_4"><i class='bx bxs-chevron-right'></i></a>
+                      </div>
+
+                  </div>
+
+                </article>
+                <!--Carrusel HA 03-->
+
+                 <!--Carrusel HA 04-->
+                <article class="item_carru" id="item4_carru">
+                  <div class="ha_carru" id="ha_item_4">
+                    <h5>Herramientas de servicio - ProLibro</h5>
+
+                      <div class="content-general">
+                          <p>
+                            <?php
+                              $opha = new select_ha() ;
+                              $resHA4 = $opha->select_ha4();
+                              while ($row = mysqli_fetch_array($resHA4)){
+                                echo $row['herra_ajustes'];
+                              }
+                            ?>
+                          </p>
+
+                      </div>
+
+                      <div class="ui_fle_carru">
+                        <a href="#ha_item_3"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="#ha_item_5"><i class='bx bxs-chevron-right'></i></a>
+                      </div>
+
+                  </div>
+
+                </article>
+                <!--Carrusel HA 04-->
+
+              
+                 <!--Carrusel HA 05-->
+                 <article class="item_carru" id="item5_carru">
+                  <div class="ha_carru" id="ha_item_5">
+                    <h5>Prolibro - Librerias</h5>
+
+                      <div class="content-general">
+                          <p>
+                            <?php
+                              $opha = new select_ha() ;
+                              $resHA5 = $opha->select_ha5();
+                              while ($row = mysqli_fetch_array($resHA5)){
+                                echo $row['herra_ajustes'];
+                              }
+                            ?>
+
+                            <br><br><br><br>
+                            Puede descargar la herramienta en: https://www.prolibro.com/download/xerox/windows 
+
+                          </p>
+
+                          <img src="./images/H/prolibro2.png" alt="">
+                      </div>
+
+                      <div class="ui_fle_carru">
+                        <a href="#ha_item_3"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="#ha_item_6"><i class='bx bxs-chevron-right'></i></a>
+                      </div>
+
+                  </div>
+
+                </article>
+                <!--Carrusel HA 05-->
+
+              
+
+                      <!--Carrusel HA 06-->
+                      <article class="item_carru" id="item6_carru" >
+                        <div class="ha_carru" id="ha_item_6">
+
+                        <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección de formación Técnica</h5>
+
+                            <div class="content-general">
+                              <p class="paragraph">
+                                    De Click en "Siguiente" para acceder a la lección XV <i class="ri-xbox-fill"></i> <i class="ri-vidicon-fill"></i>
+                              </p>
+
+                              <img src="./images/H/siguiente2.jpg" alt="">
+
+                            </div>
+
+                              <div class="btn-leccion">
+                                <button id="boton" onclick="ir_leccion14();" >
+                                  Siguiente
+                                </button>
+                              </div>
+
+                        </div>
+                      </article>
+                      <!--Carrusel HA 06-->
+
+
+            </div>
+            <!--LECCION 14--> 
+
+
+
           </main>
         <!--Content-->
 

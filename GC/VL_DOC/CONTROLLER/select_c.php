@@ -440,3 +440,53 @@ class select_mt{
     }
 
 }
+
+class select_ha{
+    private $server = "localhost";
+    private $user = "root";
+    private $password = "";
+    private $db = "gxdeve_apps";
+    private $port = "3306";
+
+    public function Connection(){
+        $conexion = mysqli_connect($this->server, $this->user, $this->password, $this->db);
+        return $conexion;
+    }
+
+    public function select_ha(){
+        $sqlHA = " SELECT herra_ajustes FROM vl_b405 WHERE id=1 ";
+        $conexion = $this->Connection();
+        $resHA = mysqli_query($conexion,$sqlHA) or die ("Ha Ocurrio un Error");
+        return $resHA;
+    }
+
+    public function select_ha2(){
+        $sqlHA2 = " SELECT herra_ajustes FROM vl_b405 WHERE id=2 ";
+        $conexion = $this->Connection();
+        $resHA2 = mysqli_query($conexion,$sqlHA2) or die ("Ha Ocurrio un Error");
+        return $resHA2;
+    }
+
+    public function select_ha3(){
+        $sqlHA3 = " SELECT herra_ajustes FROM vl_b405 WHERE id=3 ";
+        $conexion = $this->Connection();
+        $resHA3 = mysqli_query($conexion,$sqlHA3) or die ("Ha Ocurrio un Error");
+        return $resHA3;
+    }
+
+    public function select_ha4(){
+        $sqlHA4 = " SELECT herra_ajustes FROM vl_b405 WHERE id=4 ";
+        $conexion = $this->Connection();
+        $resHA4 = mysqli_query($conexion,$sqlHA4) or die ("Ha Ocurrio un Error");
+        return $resHA4;
+    }
+
+    public function select_ha5(){
+        $sqlHA5 = " SELECT herra_ajustes FROM vl_b405 WHERE id=5 ";
+        $conexion = $this->Connection();
+        $resHA5 = mysqli_query($conexion,$sqlHA5) or die ("Ha Ocurrido un Error");
+        return $resHA5;
+    }
+
+
+}
