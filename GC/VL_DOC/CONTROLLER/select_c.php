@@ -319,3 +319,70 @@ class select_tf{
 
 }
 
+//CREATION CLASS select_mt
+class select_mt{
+    private $server = "localhost";
+    private $user = "root";
+    private $password = "";
+    private $db = "gxdeve_apps";
+    private $port = "3306";
+
+    public function Connection(){
+        $conexion = mysqli_connect($this->server, $this->user,$this->password,$this->db, $this->port);
+        return $conexion;    
+    }
+
+    //Function for Vistas Modulo Mantenimiento
+    
+    public function select_mt(){
+        $sqlMT = " SELECT mantenimiento FROM vl_b405 WHERE id=1 ";
+        $conexion = $this->Connection();
+        $resMT = mysqli_query($conexion,$sqlMT) or die ("Ha Ocurrido un Error");
+        return $resMT;
+    }
+
+    public function select_mt2(){
+        $sqlMT2 = " SELECT mantenimiento FROM vl_b405 WHERE id=2 ";
+        $conexion = $this->Connection();
+        $resMT2 = mysqli_query($conexion,$sqlMT2) or die ("Ha Ocurrido un Error");
+        return $resMT2;
+    }
+
+    public function select_mt3(){
+        $sqlMT3 = " SELECT mantenimiento FROM vl_b405 WHERE id=3 ";
+        $conexion = $this->Connection();
+        $resMT3 = mysqli_query($conexion,$sqlMT3) or die ("Ha Ocurrido un Error");
+        return $resMT3;
+    }
+
+    public function select_mt4(){
+        $sqlMT4 = " SELECT mantenimiento FROM vl_b405 WHERE id=4 ";
+        $conexion = $this->Connection();
+        $resMT4 = mysqli_query($conexion,$sqlMT4) or die ("Ha Ocurrido un Error");
+        return $resMT4;
+    }
+
+    public function select_mt5(){
+        $sqlMT5 = " SELECT mantenimiento FROM vl_b405 WHERE id=5 ";
+        $conexion = $this->Connection();
+        $resMT5 = mysqli_query($conexion,$sqlMT5) or die ("Ha Ocurrido un Error");
+        return $resMT5;
+    }
+
+    public function select_mt6(){
+        $sqlMT6 = " SELECT mantenimiento FROM vl_b405 WHERE id=6 ";
+        $conexion = $this->Connection();
+        $resMT6 = mysqli_query($conexion,$sqlMT6) or die ("Ha Ocurrido un Error");
+        return $resMT6;
+    }
+
+    public function select_mt7(){
+        $sqlMT7 = " SELECT mantenimiento FROM vl_b405 WHERE id=7 ";
+        $conexion = $this->Connection();
+        $resMT7 = mysqli_query($conexion,$sqlMT7) or die ("Ha Ocurrido un Error");
+        return $resMT7;
+    }
+
+
+
+}

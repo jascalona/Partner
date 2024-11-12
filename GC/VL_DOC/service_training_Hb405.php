@@ -97,8 +97,8 @@ if (!empty($_SESSION["name"])) {
                         Mantenimiento
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Mantenimiento al cliente</a></li>
-                        <li><a class="dropdown-item" href="#">Articulos remplazables por el cliente</a></li>
+                      <li><a class="dropdown-item" id="boton" onclick="ir_leccion10();">Mantenimiento al cliente</a></li>
+                      <li><a class="dropdown-item" href="#">Articulos remplazables por el cliente</a></li>
                         <li><a class="dropdown-item" href="#">Auto Ayuda</a></li>
                         <li><a class="dropdown-item" href="#">Atascos</a></li>
                         <li><a class="dropdown-item" href="#">Calidad de impresión</a></li>
@@ -173,7 +173,7 @@ if (!empty($_SESSION["name"])) {
               Teoria del funcionamiento
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item"id="boton" onclick="ir_leccion6();">Descripción general del sistema</a></li>
+              <li><a class="dropdown-item" id="boton" onclick="ir_leccion6();">Descripción general del sistema</a></li>
               <li><a class="dropdown-item" id="boton" onclick="ir_leccion7();">Creado de imágenes</a></li>
               <li><a class="dropdown-item" id="boton" onclick="ir_leccion8();">Sistema de alimentacion</a></li>
               <li><a class="dropdown-item" id="boton" onclick="ir_leccion9();">DADF y escáner</a></li>
@@ -186,8 +186,8 @@ if (!empty($_SESSION["name"])) {
               Mantenimiento
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Mantenimiento al cliente</a></li>
-              <li><a class="dropdown-item" href="#">Articulos remplazables por el cliente</a></li>
+              <li><a class="dropdown-item" id="boton" onclick="ir_leccion10();">Mantenimiento al cliente</a></li>
+              <li><a class="dropdown-item" id="boton" onclick="ir_leccion11();">Articulos remplazables por el cliente</a></li>
               <li><a class="dropdown-item" href="#">Auto Ayuda</a></li>
               <li><a class="dropdown-item" href="#">Atascos</a></li>
               <li><a class="dropdown-item" href="#">Calidad de impresión</a></li>
@@ -1775,6 +1775,309 @@ if (!empty($_SESSION["name"])) {
                     </div>
                   </article>
                   <!--Carrusel TF 26-->
+
+
+            </div>
+            <!--LECCION 09-->    
+
+            <!--MODULO MANTENIMIENTO-->
+            <!--LECCION 10-->
+            <style>
+              #leccion10 {display: none;}
+            </style>
+
+            <div id="leccion10" class="container-carac">
+                
+            <!--Carrusel MT 01-->
+            <article class="item_carru" id="item1_carru">
+                <div class="mt_carru" id="mt_item_1">
+                  <h5>Mantenimiento al Cliente</h5>
+
+                    <div class="content-general">
+                      <p>
+                        <?php
+                          $opmt = new select_mt() ;
+                          $resMT  = $opmt->select_mt();
+                          while ($row = mysqli_fetch_array($resMT)){
+                            echo $row['mantenimiento'];
+                          } 
+                        ?>
+                      </p>
+
+                    </div>
+
+                    <div class="ui_fle_carru">
+                        <a href=""></a>
+                        <a href="#mt_item_2"><i class='bx bxs-chevron-right'></i></a>
+                    </div>
+
+                </div>
+
+              </article>
+              <!--Carrusel MT 01-->
+
+              <!--Carrusel MT 02-->
+              <article class="item_carru" id="item2_carru">
+                  <div class="mt_carru" id="mt_item_2">
+                    <h5>Descripción general del mantenimiento</h5>
+
+                      <div class="content-general">
+                        <p>
+                            <?php
+                              $opmt = new select_mt() ;
+                              $resMT2  = $opmt->select_mt2();
+                              while ($row = mysqli_fetch_array($resMT2)){
+                                echo $row['mantenimiento'];
+                              } 
+                            ?>
+                          </p>
+
+                      </div>
+
+                      <div class="ui_fle_carru">
+                        <a href="#mt_item_1"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="#mt_item_3"><i class='bx bxs-chevron-right'></i></a>
+                      </div>
+
+                  </div>
+
+                </article>
+                <!--Carrusel MT 02-->
+
+              <!--Carrusel MT 03-->
+              <article class="item_carru" id="item3_carru">
+                  <div class="mt_carru" id="mt_item_3">
+                    <h5>Limpieza de la impresora</h5>
+
+                    <div class="content-general">
+                      <video width="100%" height="280" controls>
+                        <source src="./images/H/mantenimiento1.mp4" type="video/mp4" >
+                        Su navegador no es compatible con la etiqueta de vídeo.
+                      </video>
+                    </div>
+
+                      <div class="ui_fle_carru">
+                        <a href="#mt_item_2"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="#mt_item_4"><i class='bx bxs-chevron-right'></i></a>
+                      </div>
+
+                  </div>
+
+                </article>
+                <!--Carrusel MT 03-->
+
+                <!--Carrusel MT 04-->
+                <article class="item_carru" id="item4_carru">
+                    <div class="mt_carru" id="mt_item_4">
+                      <h5>Remplazo del Cartucho de Tóner</h5>
+
+                        <div class="content-general">
+                          <video width="100%" height="280" controls>
+                            <source src="./images/H/mantenimiento2.mp4" type="video/mp4" >
+                            Su navegador no es compatible con la etiqueta de vídeo.
+                          </video>
+                        </div>
+
+                        <div class="ui_fle_carru">
+                          <a href="#mt_item_3"><i class='bx bxs-chevron-left'></i></a>
+                          <a href="#mt_item_5"><i class='bx bxs-chevron-right'></i></a>
+                        </div>
+
+                    </div>
+
+                  </article>
+                  <!--Carrusel MT 04-->
+
+                   <!--Carrusel MT 05-->
+                  <article class="item_carru" id="item5_carru">
+                      <div class="tf_carru" id="mt_item_5">
+                        <h5>Remplazo del Drum</h5>
+
+                        <div class="content-general">
+                          <video width="100%" height="280" controls>
+                            <source src="./images/H/mantenimiento3.mp4" type="video/mp4" >
+                            Su navegador no es compatible con la etiqueta de vídeo.
+                          </video>
+                        </div>
+
+                          <div class="ui_fle_carru">
+                            <a href="#mt_item_4"><i class='bx bxs-chevron-left'></i></a>
+                            <a href="#mt_item_6"><i class='bx bxs-chevron-right'></i></a>
+                          </div>
+
+                      </div>
+
+                    </article>
+                    <!--Carrusel MT 05-->
+                   
+                  <!--Carrusel MT 06-->
+                  <article class="item_carru" id="item6_carru">
+                    <div class="mt_carru" id="mt_item_6">
+                      <h5>Resumen de mantenimiento del cliente</h5>
+
+                        <div class="content-general">
+                            <p>
+                              <?php
+                                $opmt = new select_mt() ;
+                                $resMT3 = $opmt->select_mt3();
+                                while ($row = mysqli_fetch_array($resMT3)){
+                                  echo $row["mantenimiento"];
+                                }  
+                              ?>
+                            </p>
+
+                        </div>
+
+
+                        <div class="ui_fle_carru">
+                          <a href="#mt_item_5"><i class='bx bxs-chevron-left'></i></a>
+                          <a href="#mt_item_7"><i class='bx bxs-chevron-right'></i></a>
+                        </div>
+
+                    </div>
+
+                  </article>
+                  <!--Carrusel MT 06-->
+
+                   <!--Carrusel MT 07-->
+                   <article class="item_carru" id="item7_carru">
+                    <div class="mt_carru" id="mt_item_7">
+                      <h5>Limpieza de la Impresora</h5>
+
+                        <div class="content-general">
+                            <p>
+                              <?php
+                                $opmt = new select_mt() ;
+                                $resMT4 = $opmt->select_mt4();
+                                while ($row = mysqli_fetch_array($resMT4)){
+                                  echo $row["mantenimiento"];
+                                }  
+                              ?>
+                            </p>
+
+                        </div>
+
+                        <div class="ui_fle_carru">
+                          <a href="#mt_item_6"><i class='bx bxs-chevron-left'></i></a>
+                          <a href="#mt_item_8"><i class='bx bxs-chevron-right'></i></a>
+                        </div>
+
+                    </div>
+
+                  </article>
+                  <!--Carrusel MT 07-->
+
+                  
+                   <!--Carrusel MT 08-->
+                   <article class="item_carru" id="item8_carru">
+                    <div class="mt_carru" id="mt_item_8">
+                      <h5>Remplazo de suministros</h5>
+
+                        <div class="content-general">
+                            <p>
+                              <?php
+                                $opmt = new select_mt() ;
+                                $resMT5 = $opmt->select_mt5();
+                                while ($row = mysqli_fetch_array($resMT5)){
+                                  echo $row["mantenimiento"];
+                                }  
+                              ?>
+                            </p>
+
+                        </div>
+
+                        <div class="ui_fle_carru">
+                          <a href="#mt_item_6"><i class='bx bxs-chevron-left'></i></a>
+                          <a href="#mt_item_9"><i class='bx bxs-chevron-right'></i></a>
+                        </div>
+
+                    </div>
+
+                  </article>
+                  <!--Carrusel MT 08-->
+
+
+                   <!--Carrusel MT 09-->
+                   <article class="item_carru" id="item9_carru">
+                    <div class="mt_carru" id="mt_item_9">
+                      <h5>Ajuste de la Impresora</h5>
+
+                        <div class="content-general">
+                            <p>
+                              <?php
+                                $opmt = new select_mt() ;
+                                $resMT6 = $opmt->select_mt6();
+                                while ($row = mysqli_fetch_array($resMT6)){
+                                  echo $row["mantenimiento"];
+                                }  
+                              ?>
+                            </p>
+
+                            <img src="./images/H/mantenimiento2.png" alt="">
+                        </div>
+
+                        <div class="ui_fle_carru">
+                          <a href="#mt_item_8"><i class='bx bxs-chevron-left'></i></a>
+                          <a href="#mt_item_10"><i class='bx bxs-chevron-right'></i></a>
+                        </div>
+
+                    </div>
+
+                  </article>
+                  <!--Carrusel MT 09-->
+
+
+                  <!--Carrusel MT 10-->
+                  <article class="item_carru" id="item10_carru">
+                    <div class="mt_carru" id="mt_item_10">
+                      <h5>Remplazo de articulos de larga duración</h5>
+
+                        <div class="content-general">
+                            <p>
+                              <?php
+                                $opmt = new select_mt() ;
+                                $resMT7 = $opmt->select_mt7();
+                                while ($row = mysqli_fetch_array($resMT7)){
+                                  echo $row["mantenimiento"];
+                                }  
+                              ?>
+                            </p>
+                        </div>
+
+                        <div class="ui_fle_carru">
+                          <a href="#mt_item_9"><i class='bx bxs-chevron-left'></i></a>
+                          <a href="#mt_item_11"><i class='bx bxs-chevron-right'></i></a>
+                        </div>
+
+                    </div>
+
+                  </article>
+                  <!--Carrusel MT 10-->
+
+                  <!--Carrusel MT 11-->
+                  <article class="item_carru" id="item1_carru" >
+                    <div class="mt_carru" id="mt_item_11">
+
+                    <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección de formación Técnica</h5>
+
+                        <div class="content-general">
+                          <p class="paragraph">
+                                De Click en "Siguiente" para acceder a la lección XI <i class="ri-xbox-fill"></i> <i class="ri-vidicon-fill"></i>
+                          </p>
+
+                          <img src="./images/H/siguiente_4.jpg" alt="">
+
+                        </div>
+
+                          <div class="btn-leccion">
+                            <button id="boton" onclick="ir_leccion11();" >
+                              Siguiente
+                            </button>
+                          </div>
+
+                    </div>
+                  </article>
+                  <!--Carrusel MT 11-->
 
 
             </div>
