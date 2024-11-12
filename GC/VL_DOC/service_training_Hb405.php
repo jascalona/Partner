@@ -2447,6 +2447,152 @@ if (!empty($_SESSION["name"])) {
             </div>
             <!--LECCION 12--> 
 
+            <!--LECCION 13-->
+            <style>
+              #leccion13 {display: none;}
+            </style>
+
+            <div id="leccion13" class="container-carac">
+                
+            <!--Carrusel MT 26-->
+            <article class="item_carru" id="item26_carru">
+                <div class="mt_carru" id="mt_item_26">
+                  <h5>Defectos Comunes en la Calidad de Salida</h5>
+                    <div class="content-general">
+                        <p>
+                          <?php
+                            $opmt = new select_mt() ;
+                            $resMT12 = $opmt->select_mt12();
+                            while ($row = mysqli_fetch_array($resMT12)){
+                              echo $row['mantenimiento'];
+                            }
+                          ?>
+                        </p>
+
+
+                    </div>
+
+                    <div class="ui_fle_carru">
+                        <a href=""></a>
+                        <a href="#mt_item_27"><i class='bx bxs-chevron-right'></i></a>
+                    </div>
+
+                </div>
+
+              </article>
+              <!--Carrusel MT 26-->
+
+              <!--Carrusel MT 27-->
+              <article class="item_carru" id="item27_carru">
+                  <div class="mt_carru" id="mt_item_27">
+                    <h5>Imprima una página de prueba</h5>
+
+                      <div class="content-general">
+                          <p>
+                            <?php
+                              $opmt = new select_mt() ;
+                              $resMT13 = $opmt->select_mt13();
+                              while ($row = mysqli_fetch_array($resMT13)){
+                                echo $row['mantenimiento'];
+                              }
+                            ?>
+                          </p>
+                      </div>
+
+                      <div class="ui_fle_carru">
+                        <a href="#mt_item_26"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="#mt_item_28"><i class='bx bxs-chevron-right'></i></a>
+                      </div>
+
+                  </div>
+
+                </article>
+                <!--Carrusel MT 27-->
+
+              <!--Carrusel MT 28-->
+              <article class="item_carru" id="item28_carru">
+                  <div class="mt_carru" id="mt_item_28">
+                    <h5>Defectos comunes de la calidad de salida</h5>
+
+                    <div class="content-general">
+                      <p>
+                        <?php
+                          $opmt = new select_mt() ;
+                          $resMT14 = $opmt->select_mt14();
+                          while ($row = mysqli_fetch_array($resMT14)){
+                            echo $row['mantenimiento'];
+                          }
+                        ?>
+                      </p>
+                    </div>
+
+                      <div class="ui_fle_carru">
+                        <a href="#mt_item_27"><i class='bx bxs-chevron-left'></i></a>
+                        <a href="#mt_item_29"><i class='bx bxs-chevron-right'></i></a>
+                      </div>
+
+                  </div>
+
+                </article>
+                <!--Carrusel MT 28-->
+
+                <!--Carrusel MT 29-->
+                <article class="item_carru" id="item29_carru">
+                    <div class="mt_carru" id="mt_item_29">
+                      <h5>Ajuste de altitud</h5>
+
+                      <div class="content-general">
+                          <p>
+                            <?php
+                              $opmt = new select_mt() ;
+                              $resMT15 = $opmt->select_mt15();
+                              while ($row = mysqli_fetch_array($resMT15)){
+                                echo $row['mantenimiento'];
+                              }
+                            ?>
+                          </p>
+                      </div>
+
+                        <div class="ui_fle_carru">
+                          <a href="#mt_item_28"><i class='bx bxs-chevron-left'></i></a>
+                          <a href="#mt_item_30"><i class='bx bxs-chevron-right'></i></a>
+                        </div>
+
+                    </div>
+
+                  </article>
+                  <!--Carrusel MT 29-->
+
+
+                      <!--Carrusel MT 30-->
+                      <article class="item_carru" id="item30_carru" >
+                        <div class="mt_carru" id="mt_item_30">
+
+                        <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección de formación Técnica</h5>
+
+                            <div class="content-general">
+                              <p class="paragraph">
+                                    De Click en "Siguiente" para acceder a la lección XIX <i class="ri-xbox-fill"></i> <i class="ri-vidicon-fill"></i>
+                              </p>
+
+                              <img src="./images/H/siguiente2.jpg" alt="">
+
+                            </div>
+
+                              <div class="btn-leccion">
+                                <button id="boton" onclick="ir_leccion14();" >
+                                  Siguiente
+                                </button>
+                              </div>
+
+                        </div>
+                      </article>
+                      <!--Carrusel MT 30-->
+
+
+            </div>
+            <!--LECCION 13--> 
+
             
           </main>
         <!--Content-->
