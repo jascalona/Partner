@@ -3174,7 +3174,7 @@ if (!empty($_SESSION["name"])) {
             </p>
           </div>
 
-          <div class="btn-">
+          <div class="btn-enlaces-evaluacion">
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScrdZvXcq-K4OoceGqDd4ul1S1_L4TPFZzW_KbdbbuvzquXvg/viewform">Ir a la Evaluación</a>
             <br>
             <a href="../VL_B405.php">Volver a los detalles de Inscripción</a>

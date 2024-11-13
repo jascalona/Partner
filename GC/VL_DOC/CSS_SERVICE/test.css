@@ -79,7 +79,8 @@ nav ul li {
 }
 
 main{
-    background: #f6f6f6e3;
+    background: rgb(46, 46, 74);
+    color: #eae4f7;
     max-width: 60%;
     max-height: 500px;
     margin: 0 auto;
@@ -89,7 +90,7 @@ main{
     padding: 50px;
 }
 
-/*STYLE ARTICLE SECTION*/
+/*RESPONSIVE NAV NAVIGATION*/
 @media (max-width: 1220px) {
     nav{
         display: none;
@@ -109,29 +110,16 @@ main{
     header{
         font-size: 22px;
     }
+} 
     
-    main .container-carac h5{
-        font-size: 24px;
-    }
-    
-    main .container-carac .content{
-        display: block;
-        text-align: center;
-        font-size: 18px;
-    }
-}
-
 @media (max-width: 830px) {
     header {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
-@media (max-width: 600px) {
-    main .container-carac .content img{
-        max-width: 100%;
-    }
-}
+/*END RESPONSIVE NAV NAVIGATION*/
+
 
 main{
     height: auto;
@@ -140,17 +128,11 @@ main{
 
 .container-carac {
     max-height: 400px;
-    min-height: 400px;
     width: 100%;
+    height: 400px;
     overflow: hidden;
 }
 
-@media (min-height: 963px) {
-    .container-carac{
-        height: 450px;
-        overflow: hidden;
-    }
-}
 
 /*medida para movil height 75vh*/
 
@@ -161,11 +143,11 @@ main{
 .carousel-item h5{
     font-size: 25px;
     padding: 15px 5px;
-    color: #535157;
+    color: #eae4f7;
 }
 
 .carousel-item h5 strong{
-    color: #05152f;
+    color: #cbc7d2;
 }
 
 .carousel-item article {
@@ -227,7 +209,7 @@ main{
 
 .item_carru h5{
     font-size: 28px;
-    color: #535157;
+    color: #eae4f7;
 }
 
 .ui_carru{
@@ -238,7 +220,7 @@ main{
 
 .ui_fle_carru {
     position: absolute;
-    top: 60%;
+    top: 85%;
     height: 100%;
     width: 100%;
     justify-content: space-between;
@@ -247,7 +229,13 @@ main{
 
 .ui_fle_carru a{
     font-size: 35px;
-    color: #05152f;
+    color: #eae4f7;
+    background: rgba(128, 128, 128, 0.219);
+    padding: 0 ;
+}
+
+.ui_fle_carru a:hover{
+    background: rgba(128, 128, 128, 0.779);
 }
 
 /*stylo para items diferenciar*/
@@ -258,4 +246,81 @@ main{
     margin: 0 auto;
     display: flex;
     padding: 30px;
+}
+
+/*START RESPONSIVE CONTENT*/
+@media (max-width: 600px) {
+    .container-carac{
+        min-width: 100%;
+        margin: 0 auto;
+    }
+
+    /*LECCION 01*/
+    .carousel-item h5{
+        font-size: 17px;
+    }
+
+    .carousel-inner .content{
+        font-size: 11px;
+        padding: 15px;
+        display: block;
+    }
+
+    .carousel-inner .content img{
+        max-width: 150px;
+    }
+    /*LECCION 01*/
+
+    /*OTRAS LECCIONES*/
+    @media (max-width: 600px) {
+        .item_carru h5{
+            font-size: 17px;
+        }
+
+        .item_carru .content-general{
+            display: block;
+            height: 600px;
+            overflow: hidden;
+            overflow-y: scroll;
+            padding: 15px;
+        }
+
+        .item_carru .content-general p{
+            font-size: 11px;
+        }
+
+        .content-general img{
+            width: 110%;
+        }
+
+        .ui_fle_carru{
+            position: absolute;
+            padding: 10px;
+            top: 50%;
+            height: 100%;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;        
+        }
+
+        .ui_fle_carru a{
+            font-size: 27px;
+        }
+
+        .item_carru .btn-leccion{
+            top: 45%;
+        }
+
+        .btn-enlaces-evaluacion{
+            margin-top: -60%;
+            font-size: 12px;
+        }
+
+    }
+
+
+    /*OTRAS LECCIONES*/
+
+
+
 }
