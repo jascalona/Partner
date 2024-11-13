@@ -139,7 +139,8 @@ main{
 }
 
 .container-carac {
-    height: 60vh;
+    max-height: 400px;
+    min-height: 400px;
     width: 100%;
     overflow: hidden;
 }
@@ -182,11 +183,6 @@ main{
     max-width: 250px;
     padding: 15px;
     border-radius: 20px;
-    transition: transform 0.3s;
-}
-
-.container-carac article img:hover{
-    transform: scale(1.1);
 }
 
  .btn-leccion {
@@ -239,19 +235,18 @@ main{
     width: 100%;
 }
 
-.ui_fle_carru{
+
+.ui_fle_carru {
     position: absolute;
-    top: 0;
+    top: 60%;
     height: 100%;
     width: 100%;
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    font-size: 40px;
 }
 
 .ui_fle_carru a{
+    font-size: 35px;
     color: #05152f;
 }
 
