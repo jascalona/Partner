@@ -279,7 +279,6 @@ main{
 
         .item_carru .content-general{
             display: block;
-            background: red;
             padding: 15px;
             height: 350px;
             overflow: hidden;
