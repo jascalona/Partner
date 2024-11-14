@@ -162,7 +162,6 @@ main{
 }
 
 .container-carac article img{
-    background: red;
     max-width: 300px;
     min-width: 250px;
     padding: 15px;
