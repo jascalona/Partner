@@ -1,0 +1,197 @@
+[33mcommit bab6b30b8c4f67e6c4e707e5c06f9b0d2a3dc4ab[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: unknown <JEscalona@Des.lan.xven.com.ve>
+Date:   Thu Nov 14 08:56:02 2024 -0400
+
+    eliminamos la guia de color de condo para la clase content-general
+
+[33mcommit 6ef967cc62ed194435b04fe9e3551ab32f27631d[m
+Author: unknown <JEscalona@Des.lan.xven.com.ve>
+Date:   Thu Nov 14 08:50:47 2024 -0400
+
+    ya se ajusto la vista para dispositivos moviles clave principale para esconder los paneles (height: 350px; overflow-y: scroll;)
+
+[33mcommit 5854a132e9517b78ea986b96c654f3e08c388685[m
+Author: unknown <JEscalona@Des.lan.xven.com.ve>
+Date:   Wed Nov 13 15:41:55 2024 -0400
+
+    ya se termino el ajuste responsive solo falta crear un scroll
+
+[33mcommit 3962d34729094e9b728f41b4dc91e7eb582ebeff[m
+Author: unknown <JEscalona@Des.lan.xven.com.ve>
+Date:   Wed Nov 13 10:01:26 2024 -0400
+
+    se modifico la clase fle_carru para poder reproducir videos
+
+[33mcommit c60bee7529b3f8c4bc81dec48d58e82517d0de60[m
+Author: unknown <JEscalona@Des.lan.xven.com.ve>
+Date:   Tue Nov 12 16:51:22 2024 -0400
+
+    se finalizo la carga de los modulos
+
+[33mcommit 7de90c7ed799975f76f186ecbab517b4c16211be[m
+Author: unknown <JEscalona@Des.lan.xven.com.ve>
+Date:   Tue Nov 12 15:35:18 2024 -0400
+
+    creacion de la leccion XVI
+
+[33mcommit 7f0ea6405c87ba25c76753dfc49eba9a57688c32[m
+Author: unknown <JEscalona@Des.lan.xven.com.ve>
+Date:   Tue Nov 12 15:04:26 2024 -0400
+
+    listo el modulo herramientas y ajustes, solo falta crear la leccion Problemas principales
+
+[33mcommit feacc7ae2c66f766736be0aaa9b0dc7542abd3a7[m
+Author: unknown <JEscalona@Des.lan.xven.com.ve>
+Date:   Tue Nov 12 12:46:57 2024 -0400
+
+    ya se finalizo la leccion XIX ahora se creara el siguiente modulo (Heramientas y Ajustes)
+
+[33mcommit 664a9da054e0d00679051112cfcbde85bb18e82b[m
+Author: unknown <JEscalona@Des.lan.xven.com.ve>
+Date:   Tue Nov 12 11:57:35 2024 -0400
+
+    crear leccion 13
+
+[33mcommit 41fdebc6385f569d443c11c0fea224fedc0f488c[m
+Author: unknown <JEscalona@Des.lan.xven.com.ve>
+Date:   Tue Nov 12 10:17:40 2024 -0400
+
+    creacion leccion 11
+
+[33mcommit 7661c5270da98c61dae3799c26f0605301095b03[m
+Author: unknown <JEscalona@Des.lan.xven.com.ve>
+Date:   Mon Nov 11 16:31:27 2024 -0400
+
+    creacion de la leccion X
+
+[33mcommit a30f440777011dc4e9d02593817c68990e732eaf[m
+Author: unknown <JEscalona@Des.lan.xven.com.ve>
+Date:   Mon Nov 11 12:01:29 2024 -0400
+
+    creacion de la leccion numero VIII
+
+[33mcommit 89ad91a1d8248c36c33f40a1311aece137cc3eae[m
+Author: unknown <JEscalona@Des.lan.xven.com.ve>
+Date:   Mon Nov 11 09:47:02 2024 -0400
+
+    Creacion de la leccion 07 mantenimiento
+
+[33mcommit 8ae96c383bc41fce8fcba14427b22804e02ba0bf[m
+Author: unknown <JEscalona@Des.lan.xven.com.ve>
+Date:   Fri Nov 8 17:04:24 2024 -0400
+
+    solo falta tirar a reproducir el video para culminar el modulo de teoria
+
+[33mcommit da395c72250216177b319fd17877cb994fde036e[m
+Author: unknown <JEscalona@Des.lan.xven.com.ve>
+Date:   Fri Nov 8 16:17:31 2024 -0400
+
+    se agrego el carrusel para la leccion VI
+
+[33mcommit 6368ec1e03bde73385b96a68610ce7a87042692f[m
+Author: unknown <JEscalona@tesd.lan.xven.com.ve>
+Date:   Fri Nov 8 12:35:58 2024 -0400
+
+    se estan cargando los carruseles de los instaladores
+
+[33mcommit 1da2c6751bf62fc0c364e30dcf3fab78b1da4d4c[m
+Author: unknown <JEscalona@tesd.lan.xven.com.ve>
+Date:   Fri Nov 8 09:28:34 2024 -0400
+
+    se agregaron los id a los botones de navegacion par amostrar y ocultar las lecciones
+
+[33mcommit a3f88e03b2fa7523f016c0de54f4f47919c10a85[m
+Author: unknown <JEscalona@tesd.lan.xven.com.ve>
+Date:   Thu Nov 7 17:56:07 2024 -0400
+
+    se culminaron los carrusel hasta la leccion 3 Actuacion
+
+[33mcommit cb13d064e0b31031230c6907f5541303c017d9f0[m
+Author: unknown <JEscalona@tesd.lan.xven.com.ve>
+Date:   Thu Nov 7 15:07:01 2024 -0400
+
+    ajustes de los carruceles
+
+[33mcommit 7e9b07e73e106196514a156cb6b9bc047596cb5a[m
+Author: unknown <JEscalona@Tesg.lan.xven.com.ve>
+Date:   Thu Nov 7 11:14:03 2024 -0400
+
+    se agrego script para mostrar y ocultar las lecciones
+
+[33mcommit 9d94efbded53971ecc5c829e25475cdbe18142c7[m
+Author: unknown <JEscalona@Tesg.lan.xven.com.ve>
+Date:   Wed Nov 6 18:17:22 2024 -0400
+
+    nos quedamos programando el script para mostrar la leccion 2
+
+[33mcommit dc5674a238eca0397ea3d01826ec817939d3b1ab[m
+Author: unknown <JEscalona@Testing.lan.xven.com.ve>
+Date:   Wed Nov 6 16:14:05 2024 -0400
+
+    ajuste de front
+
+[33mcommit 53efc6fd4ed33936e940926f2aeca9e62c53acef[m
+Author: unknown <JEscalona@Testing.lan.xven.com.ve>
+Date:   Wed Nov 6 15:01:13 2024 -0400
+
+    ajuste de front se remplazo usando un carrusel
+
+[33mcommit b2337a6eb264d521a99a7fe02253b63e8fee5dbd[m
+Author: unknown <JEscalona@Tester.lan.xven.com.ve>
+Date:   Wed Nov 6 08:23:44 2024 -0400
+
+    ajustes de front
+
+[33mcommit cb937dc2e9fd7d3d4a8e0f0c90c295b09372e88e[m
+Author: unknown <JEscalona@Tester.lan.xven.com.ve>
+Date:   Mon Nov 4 11:10:48 2024 -0400
+
+    ajuste de carrusel con id y responsivo
+
+[33mcommit 9a912283e11f082854f45dc1ae5778cbc33e7712[m
+Author: unknown <JEscalona@Tester.lan.xven.com.ve>
+Date:   Mon Nov 4 08:32:46 2024 -0400
+
+    empezar incorporacion de pantallas de conetenido
+
+[33mcommit d7dcf93ef1a4302fc613150bdc37fc5ca56f7e88[m
+Author: unknown <JEscalona@Test.lan.xven.com.ve>
+Date:   Fri Nov 1 14:21:09 2024 -0400
+
+    ajuste de interfaz
+
+[33mcommit c28788e297567aacfb1a20be274133b3a760c9fc[m
+Author: unknown <JEscalona@Des.lan.xven.com.ve>
+Date:   Wed Oct 30 17:17:18 2024 -0400
+
+    hay que seguir agregando
+
+[33mcommit 0e36f5f09a71aa611dcdfb46f98b0279696ff15d[m
+Author: unknown <JEscalona@Des.lan.xven.com.ve>
+Date:   Wed Oct 30 16:27:39 2024 -0400
+
+    se estan agregando funcione por id
+
+[33mcommit 8fe9e41a3670ccad5d5d7588d0492302f9cf6777[m
+Author: unknown <JEscalona@Des.lan.xven.com.ve>
+Date:   Wed Oct 30 12:18:03 2024 -0400
+
+    final de class siguiente paso, realizar estructuracion de DB
+
+[33mcommit a28fc174102069f57fb52a3dc2afea33c7887b83[m
+Author: unknown <JEscalona@Des.lan.xven.com.ve>
+Date:   Wed Oct 30 12:02:24 2024 -0400
+
+    new Script for class + function para vistas de datos
+
+[33mcommit 2f1cf9dfdcafb678a1b45b0a842a751b816f8924[m
+Author: unknown <JEscalona@Des.lan.xven.com.ve>
+Date:   Wed Oct 30 09:15:02 2024 -0400
+
+    ajuste de titulo del encabezado
+
+[33mcommit 0d86f15cb383fbe2a32e0efe89912896ec601c90[m
+Author: unknown <JEscalona@Des.lan.xven.com.ve>
+Date:   Tue Oct 29 16:43:20 2024 -0400
+
+    agregar sesion de hardware dentro de los modulos
