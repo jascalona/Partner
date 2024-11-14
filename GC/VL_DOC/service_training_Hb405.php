@@ -503,7 +503,7 @@ if (!empty($_SESSION["name"])) {
               ?>
             </p>
 
-            <img style="height: 300px;" src="./images/H/factores.png" alt="">
+            <img src="./images/H/factores.png" alt="">
 
           </div>
 
@@ -533,7 +533,7 @@ if (!empty($_SESSION["name"])) {
               ?>
             </p>
 
-            <img style="height: 300px;" src="./images/H/factores.png" alt="">
+            <img src="./images/H/factores.png" alt="">
 
           </div>
 
@@ -569,7 +569,7 @@ if (!empty($_SESSION["name"])) {
           </div>
 
           <div class="ui_fle_carru">
-            <a href="#ac_item_3"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#ac_item_2"><i class='bx bxs-chevron-left'></i></a>
             <a href="#ac_item_4"><i class='bx bxs-chevron-right'></i></a>
           </div>
 

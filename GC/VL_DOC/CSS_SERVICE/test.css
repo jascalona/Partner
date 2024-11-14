@@ -279,10 +279,11 @@ main{
 
         .item_carru .content-general{
             display: block;
-            height: 600px;
+            background: red;
+            padding: 15px;
+            height: 350px;
             overflow: hidden;
             overflow-y: scroll;
-            padding: 15px;
         }
 
         .item_carru .content-general p{
@@ -295,8 +296,8 @@ main{
 
         .ui_fle_carru{
             position: absolute;
-            padding: 10px;
-            top: 50%;
+            padding: 5px;
+            top: 80%;
             height: 100%;
             width: 100%;
             justify-content: space-between;
@@ -308,7 +309,7 @@ main{
         }
 
         .item_carru .btn-leccion{
-            top: 45%;
+            top: 80%;
         }
 
         .btn-enlaces-evaluacion{
