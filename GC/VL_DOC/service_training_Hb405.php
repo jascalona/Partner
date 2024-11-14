@@ -1188,8 +1188,8 @@ if (!empty($_SESSION["name"])) {
         <div class="tf_carru" id="tf_item_6">
           <h5>Proceso de Toma de images</h5>
 
-          <div style=" display: flex; justify-content: center  " class="content-general">
-            <img style="min-width: 90%; " src="./images/H/teoria_funcionamiento_3.png" alt="">
+          <div class="content-general">
+            <img style="width: 40%;" src="./images/H/teoria_funcionamiento_3.png" alt="">
           </div>
 
           <div class="ui_fle_carru">
@@ -1235,8 +1235,8 @@ if (!empty($_SESSION["name"])) {
         <div class="tf_carru" id="tf_item_8">
           <h5>Desarrollo y Transferencia</h5>
 
-          <div style=" display: flex; justify-content: center  " class="content-general">
-            <img style="min-width: 250px;" src="./images/H/teoria_funcionamiento_4.png" alt="">
+          <div class="content-general">
+            <img style="width: 40%;" src="./images/H/teoria_funcionamiento_4.png" alt="">
           </div>
 
 
@@ -1266,7 +1266,7 @@ if (!empty($_SESSION["name"])) {
               ?>
             </p>
 
-            <img src="./images/H/teoria_funcionamiento_5.png" alt="">
+            <img style="width: 40%;" src="./images/H/teoria_funcionamiento_5.png" alt="">
 
           </div>
 

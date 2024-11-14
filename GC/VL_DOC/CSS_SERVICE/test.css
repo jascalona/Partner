@@ -162,7 +162,9 @@ main{
 }
 
 .container-carac article img{
-    max-width: 250px;
+    background: red;
+    max-width: 300px;
+    min-width: 250px;
     padding: 15px;
     border-radius: 20px;
 }
@@ -175,18 +177,20 @@ main{
 .btn-leccion button{
     text-decoration: none;
     background: #53515779;
-    padding: 15px;
+    padding: 10px;
     border-radius: 50px;
     border: none;
     color: #ded4f6;
 }
 
+
 .btn-leccion{
+    top: 70%;
     transition: transform 0.3s;
 }
 
 .btn-leccion:hover{
-    transform:scale(1.3);
+    transform:scale(1.1);
 }
 
 .btn-leccion button:hover{
@@ -248,8 +252,12 @@ main{
     padding: 30px;
 }
 
+.content-general p{
+    font-size: 13px;
+}
+
 /*START RESPONSIVE CONTENT*/
-@media (max-width: 600px) {
+@media (max-width: 1350px) {
     .container-carac{
         min-width: 100%;
         margin: 0 auto;
@@ -272,7 +280,7 @@ main{
     /*LECCION 01*/
 
     /*OTRAS LECCIONES*/
-    @media (max-width: 600px) {
+    @media (max-width: 1350px) {
         .item_carru h5{
             font-size: 17px;
         }
@@ -317,10 +325,6 @@ main{
         }
 
     }
-
-
     /*OTRAS LECCIONES*/
-
-
-
 }
+
