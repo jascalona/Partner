@@ -26,9 +26,6 @@ header .text{
     margin-top: 10px;
 }
 
-.btn-nav{
-    display: none;
-}
 
 .btn-nav h5{
     font-size: 30px;
@@ -51,41 +48,18 @@ header .text{
     padding: 10px;
 }
 
-nav{
-    background: #05152f;
-    position: absolute;
-    height: 100vh;
-    max-width: 300px;
-    color: #ded4f6;
-    line-height: 4;
-}
-
-nav .logo img{
-    width: 200px;
-    margin: 30px;
-    border-bottom: solid 1px #f3f3f373;
-    padding: 10px;
-}
-
-nav ul {
-    display: block;
-    list-style: none;
-    padding: 30px;
-    padding-top: 20%;
-}
-
-nav ul li {
-    font-size: 14px;
+.btn-nav button:hover{
+    background: #535157;
+    color: #05152f;
 }
 
 main{
     background: rgb(46, 46, 74);
     color: #eae4f7;
-    max-width: 60%;
+    max-width: 70%;
     max-height: 500px;
     margin: 0 auto;
     margin-top: 50px;
-    margin-left: 25%;
     border-radius: 20px 80px;
     padding: 50px;
 }
@@ -133,6 +107,11 @@ main{
     overflow: hidden;
 }
 
+article {
+    height: auto;
+    overflow: hidden;
+    overflow-y: scroll;
+}
 
 /*medida para movil height 75vh*/
 
@@ -283,9 +262,6 @@ main{
         .item_carru .content-general{
             display: block;
             padding: 15px;
-            height: 350px;
-            overflow: hidden;
-            overflow-y: scroll;
         }
         
         .content-general img{
