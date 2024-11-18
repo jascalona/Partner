@@ -58,7 +58,7 @@ main{
     color: #eae4f7;
     max-width: 70%;
     max-height: 500px;
-    margin: 0 auto;
+    margin: 20px auto;
     margin-top: 50px;
     border-radius: 20px 80px;
     padding: 50px;
@@ -141,8 +141,8 @@ article {
 }
 
 .container-carac article img{
-    max-width: 300px;
-    min-width: 250px;
+    max-width: 50%;
+    min-width: 50%;
     padding: 15px;
     border-radius: 20px;
 }
@@ -247,14 +247,10 @@ article {
         padding: 15px;
         display: block;
     }
-
-    .carousel-inner .content img{
-        max-width: 150px;
-    }
     /*LECCION 01*/
 
     /*OTRAS LECCIONES*/
-    @media (max-width: 1350px) {
+    @media (max-width: 750px) {
         .item_carru h5{
             font-size: 17px;
         }
@@ -264,8 +260,15 @@ article {
             padding: 15px;
         }
         
-        .content-general img{
-            width: 110%;
+        artile .content-general  {
+            max-width: 350px;
+        }
+
+        .container-carac article img{
+            max-width: 100%;
+            min-width: 100%;
+            padding: 15px;
+            border-radius: 20px;
         }
 
         .ui_fle_carru{

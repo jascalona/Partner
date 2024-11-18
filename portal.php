@@ -62,20 +62,7 @@ if (!empty($_SESSION["name"])) {
         <div class="fondo"></div>
         <div class="text">
             <p>Arbol de Aprendizaje</p>
-
-            <!--
-            <div class="dropdown">
-                <button class="btn btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Curso
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Equipos</a></li>
-                    <li><a class="dropdown-item" href="#">Print Management</a></li>
-                    <li><a class="dropdown-item" href="#">Software</a></li>
-                </ul>
-            </div>
--->
-        </div>
+    </div>
 
 
 

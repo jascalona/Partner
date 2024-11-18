@@ -33,10 +33,13 @@
 
 @media (max-width: 700px) {
     .fondo-status{
-        padding: 50px;
+        background: red;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 40px;
     }
 
     .fondo-status p, small, a{
-        font-size: 14px;
+        font-size: 12px;
     }
 }
