@@ -200,3 +200,49 @@ class select_ha{
 
 
 }
+
+class select_sft{
+    private $server = "localhost";
+    private $user = "root";
+    private $password = "";
+    private $db = "gxdeve_apps";
+    private $port = "3306";
+
+    //Instancia for Connection
+    public function Connection(){
+        $conexion = mysqli_connect($this->server,$this->user,$this->password,$this->db,$this->port);
+        return $conexion;
+    }
+
+    //Function Vistas Modulo Herramienta y ajustes
+    public function select_sf(){
+        $sqlSF = " SELECT software FROM vl_b405_s WHERE id=1 ";
+        $conexion = $this->Connection();
+        $resSF = mysqli_query($conexion, $sqlSF)or die("Ha Ocurrido un Error");
+        return $resSF;
+    } 
+
+    public function select_sf2(){
+        $sqlSF2 = " SELECT software FROM vl_b405_s WHERE id=2 ";
+        $conexion = $this->Connection();
+        $resSF2 = mysqli_query($conexion, $sqlSF2)or die("Ha Ocurrido un Error");
+        return $resSF2;
+    } 
+
+    
+    public function select_sf3(){
+        $sqlSF3 = " SELECT software FROM vl_b405_s WHERE id=3 ";
+        $conexion = $this->Connection();
+        $resSF3 = mysqli_query($conexion, $sqlSF3)or die("Ha Ocurrido un Error");
+        return $resSF3;
+    } 
+    
+    public function select_sf4(){
+        $sqlSF4 = " SELECT software FROM vl_b405_s WHERE id=4 ";
+        $conexion = $this->Connection();
+        $resSF4 = mysqli_query($conexion, $sqlSF4)or die("Ha Ocurrido un Error");
+        return $resSF4;
+    } 
+
+
+}
