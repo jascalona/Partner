@@ -154,3 +154,49 @@ class select_pro{
         return $resP3;
     }
 }
+
+class select_ha{
+    private $server = "localhost";
+    private $user = "root";
+    private $password = "";
+    private $db = "gxdeve_apps";
+    private $port = "3306";
+
+    //Instancia for Connection
+    public function Connection(){
+        $conexion = mysqli_connect($this->server,$this->user,$this->password,$this->db,$this->port);
+        return $conexion;
+    }
+
+    //Function Vistas Modulo Herramienta y ajustes
+    public function select_ha(){
+        $sqlHA = " SELECT ajustes FROM vl_b405_s WHERE id=1 ";
+        $conexion = $this->Connection();
+        $resHA = mysqli_query($conexion, $sqlHA)or die("Ha Ocurrido un Error");
+        return $resHA;
+    } 
+
+    public function select_ha2(){
+        $sqlHA2 = " SELECT ajustes FROM vl_b405_s WHERE id=2 ";
+        $conexion = $this->Connection();
+        $resHA2 = mysqli_query($conexion, $sqlHA2)or die("Ha Ocurrido un Error");
+        return $resHA2;
+    } 
+
+    
+    public function select_ha3(){
+        $sqlHA3 = " SELECT ajustes FROM vl_b405_s WHERE id=3 ";
+        $conexion = $this->Connection();
+        $resHA3 = mysqli_query($conexion, $sqlHA3)or die("Ha Ocurrido un Error");
+        return $resHA3;
+    } 
+    
+    public function select_ha4(){
+        $sqlHA4 = " SELECT ajustes FROM vl_b405_s WHERE id=4 ";
+        $conexion = $this->Connection();
+        $resHA4 = mysqli_query($conexion, $sqlHA4)or die("Ha Ocurrido un Error");
+        return $resHA4;
+    } 
+
+
+}

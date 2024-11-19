@@ -95,8 +95,8 @@ if (!empty($_SESSION["name"])) {
                 Herramientas y ajustes
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion10();">¿Cómo acceder a diagnóstico?</a></li>
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion11();">Rutinas NVM</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion6();">¿Cómo acceder a diagnóstico?</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion7();">Rutinas NVM</a></li>
               </ul>
             </li>
 
@@ -665,7 +665,7 @@ if (!empty($_SESSION["name"])) {
     <!--LECCION 05-->
     <style>
       #leccion5 {
-        display: ;
+        display: none;
       }
     </style>
 
@@ -823,18 +823,21 @@ if (!empty($_SESSION["name"])) {
       <!--Carrusel TF 01-->
       <article class="item_carru" id="item1_carru">
         <div class="tf_carru" id="tf_item_1">
-          <h5>Teoría del Funcionamiento</h5>
+          <h5>Herramientas y ajustes</h5>
 
           <div class="content-general">
-            <p style="font-size: 11px;">
+            <p>
               <?php
-              $optf = new select_tf();
-              $resFT = $optf->select_tf();
-              while ($row = mysqli_fetch_array($resFT)) {
-                echo $row['teoria_funtion'];
+              $opha = new select_ha();
+              $resHA = $opha->select_ha();
+              while ($row = mysqli_fetch_array($resHA)) {
+                echo $row['ajustes'];
               }
               ?>
             </p>
+          
+            <img src="./images/S/ha1.png" alt="">
+
           </div>
 
           <div class="ui_fle_carru">
@@ -850,14 +853,20 @@ if (!empty($_SESSION["name"])) {
       <!--Carrusel TF 02-->
       <article class="item_carru" id="item2_carru">
         <div class="tf_carru" id="tf_item_2">
-          <h5>Teoría del Funcionamiento Video</h5>
+          <h5>Cómo Acceder a diagnóstico?</h5>
 
           <div class="content-general">
+            <p>  
+              <?php
+                $opha = new select_ha();
+                $resHA2 = $opha->select_ha2();
+                while ($row = mysqli_fetch_array($resHA2)){
+                  echo $row['ajustes'];
+                }
+              ?>
+            </p>
 
-            <video width="100%" height="230" controls>
-              <source src="./images/H/teoria_funcionamiento_1.mp4" type="video/mp4">
-              Su navegador no es compatible con la etiqueta de vídeo.
-            </video>
+            <img src="./images/S/ha2.png" alt="">
 
           </div>
 
@@ -872,7 +881,7 @@ if (!empty($_SESSION["name"])) {
       </article>
       <!--Carrusel TF 02-->
 
-      <!--Carrusel TF 03-->
+      <!--Carrusel TF 05-->
       <article class="item_carru" id="item3_carru">
         <div class="tf_carru" id="tf_item_3">
 
@@ -895,7 +904,7 @@ if (!empty($_SESSION["name"])) {
 
         </div>
       </article>
-      <!--Carrusel TF 03-->
+      <!--Carrusel TF 05-->
 
 
     </div>
@@ -911,25 +920,26 @@ if (!empty($_SESSION["name"])) {
 
     <div id="leccion7" class="container-carac">
 
-      <!--Carrusel TF 04-->
-      <article class="item_carru" id="item4_carru">
+     <!--Carrusel TF 03-->
+     <article class="item_carru" id="item4_carru">
         <div class="tf_carru" id="tf_item_4">
-          <h5>Creado de Imágenes</h5>
+          <h5>Rutinas NVM</h5>
 
           <div class="content-general">
-            <p>
+            <p>  
               <?php
-              $optf = new select_tf();
-              $resTF2  = $optf->select_tf2();
-              while ($row = mysqli_fetch_array($resTF2)) {
-                echo $row['teoria_funtion'];
-              }
+                $opha = new select_ha();
+                $resHA3 = $opha->select_ha3();
+                while ($row = mysqli_fetch_array($resHA3)){
+                  echo $row['ajustes'];
+                }
               ?>
             </p>
 
-            <img src="./images/H/teoria_funcionamiento_2.png" alt="">
+            <img src="./images/S/ha3.png" alt="">
 
           </div>
+
 
           <div class="ui_fle_carru">
             <a href=""></a>
@@ -939,25 +949,28 @@ if (!empty($_SESSION["name"])) {
         </div>
 
       </article>
-      <!--Carrusel TF 04-->
+      <!--Carrusel TF 03-->
 
-      <!--Carrusel TF 05-->
-      <article class="item_carru" id="item5_carru">
+        <!--Carrusel TF 04-->
+        <article class="item_carru" id="item5_carru">
         <div class="tf_carru" id="tf_item_5">
-          <h5>Proceso de Toma de images</h5>
+          <h5>Acceso a referencias y rutinas de NVM</h5>
 
           <div class="content-general">
-            <p>
+            <p>  
               <?php
-              $optf = new select_tf();
-              $resTF3  = $optf->select_tf3();
-              while ($row = mysqli_fetch_array($resTF3)) {
-                echo $row['teoria_funtion'];
-              }
+                $opha = new select_ha();
+                $resHA4 = $opha->select_ha4();
+                while ($row = mysqli_fetch_array($resHA4)){
+                  echo $row['ajustes'];
+                }
               ?>
             </p>
 
+            <img src="./images/S/ha4.png" alt="">
+
           </div>
+
 
           <div class="ui_fle_carru">
             <a href="#tf_item_4"><i class='bx bxs-chevron-left'></i></a>
@@ -967,146 +980,18 @@ if (!empty($_SESSION["name"])) {
         </div>
 
       </article>
-      <!--Carrusel TF 05-->
+      <!--Carrusel TF 04-->
 
-      <!--Carrusel TF 06-->
-      <article class="item_carru" id="item6_carru">
-        <div class="tf_carru" id="tf_item_6">
-          <h5>Proceso de Toma de images</h5>
-
-          <div class="content-general">
-            <img style="width: 40%;" src="./images/H/teoria_funcionamiento_3.png" alt="">
-          </div>
-
-          <div class="ui_fle_carru">
-            <a href="#tf_item_5"><i class='bx bxs-chevron-left'></i></a>
-            <a href="#tf_item_7"><i class='bx bxs-chevron-right'></i></a>
-          </div>
-
-        </div>
-
-      </article>
-      <!--Carrusel TF 06-->
-
-      <!--Carrusel TF 07-->
-      <article class="item_carru" id="item7_carru">
-        <div class="tf_carru" id="tf_item_7">
-          <h5>Desarrollo y Transferencia</h5>
-
-          <div class="content-general">
-            <p>
-              <?php
-              $optf = new select_tf();
-              $resTF4 = $optf->select_tf4();
-              while ($row = mysqli_fetch_array($resTF4)) {
-                echo $row["teoria_funtion"];
-              }
-              ?>
-            </p>
-          </div>
-
-          <div class="ui_fle_carru">
-            <a href="#tf_item_6"><i class='bx bxs-chevron-left'></i></a>
-            <a href="#tf_item_8"><i class='bx bxs-chevron-right'></i></a>
-          </div>
-
-        </div>
-
-      </article>
-      <!--Carrusel TF 07-->
-
-
-      <!--Carrusel TF 08-->
-      <article class="item_carru" id="item8_carru">
-        <div class="tf_carru" id="tf_item_8">
-          <h5>Desarrollo y Transferencia</h5>
-
-          <div class="content-general">
-            <img style="width: 40%;" src="./images/H/teoria_funcionamiento_4.png" alt="">
-          </div>
-
-
-          <div class="ui_fle_carru">
-            <a href="#tf_item_7"><i class='bx bxs-chevron-left'></i></a>
-            <a href="#tf_item_9"><i class='bx bxs-chevron-right'></i></a>
-          </div>
-
-        </div>
-
-      </article>
-      <!--Carrusel TF 08-->
-
-      <!--Carrusel TF 09-->
-      <article class="item_carru" id="item9_carru">
-        <div class="tf_carru" id="tf_item_9">
-          <h5>Fusionando</h5>
-
-          <div class="content-general">
-            <p>
-              <?php
-              $optf = new select_tf();
-              $resTF5 = $optf->select_tf5();
-              while ($row = mysqli_fetch_array($resTF5)) {
-                echo $row["teoria_funtion"];
-              }
-              ?>
-            </p>
-
-            <img style="width: 40%;" src="./images/H/teoria_funcionamiento_5.png" alt="">
-
-          </div>
-
-
-          <div class="ui_fle_carru">
-            <a href="#tf_item_8"><i class='bx bxs-chevron-left'></i></a>
-            <a href="#tf_item_10"><i class='bx bxs-chevron-right'></i></a>
-          </div>
-
-        </div>
-
-      </article>
-      <!--Carrusel TF 09-->
-
-      <!--Carrusel TF 10-->
-      <article class="item_carru" id="item10_carru">
-        <div class="tf_carru" id="tf_item_10">
-          <h5>Descripción general de la limpieza</h5>
-
-          <div class="content-general">
-            <p>
-              <?php
-              $optf = new select_tf();
-              $resTF6 = $optf->select_tf6();
-              while ($row = mysqli_fetch_array($resTF6)) {
-                echo $row["teoria_funtion"];
-              }
-              ?>
-            </p>
-
-            <img src="./images/H/teoria_funcionamiento_6.png" alt="">
-
-          </div>
-
-
-          <div class="ui_fle_carru">
-            <a href="#tf_item_9"><i class='bx bxs-chevron-left'></i></a>
-            <a href="#tf_item_11"><i class='bx bxs-chevron-right'></i></a>
-          </div>
-
-        </div>
-
-      </article>
-      <!--Carrusel TF 10-->
 
       <!--Carrusel TF 11-->
-      <article class="item_carru" id="item11_carru">
-        <div class="tf_carru" id="tf_item_11">
+      <article class="item_carru" id="item6_carru">
+        <div class="tf_carru" id="tf_item_6">
 
           <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección de formación Técnica</h5>
 
           <div class="content-general">
             <p class="paragraph">
-              De Click en "Siguiente" para acceder a la lección <i class="ri-vidicon-fill"></i>
+              De Click en "Siguiente" para acceder a la lección VIII
             </p>
 
             <img src="./images/H/siguiente.jpg" alt="">
@@ -1140,7 +1025,7 @@ if (!empty($_SESSION["name"])) {
       <!--Carrusel TF 12-->
       <article class="item_carru" id="item12_carru">
         <div class="tf_carru" id="tf_item_12">
-          <h5>Ruta de papel y Sistema de alimentación</h5>
+          <h5>Carga de Software y actualizaciones</h5>
 
           <div class="content-general">
             <p>
