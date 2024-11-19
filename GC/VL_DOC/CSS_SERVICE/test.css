@@ -250,7 +250,7 @@ article {
     /*LECCION 01*/
 
     /*OTRAS LECCIONES*/
-    @media (max-width: 750px) {
+    @media (max-width: 1260px) {
         .item_carru h5{
             font-size: 17px;
         }
@@ -290,7 +290,6 @@ article {
         }
 
         .btn-enlaces-evaluacion{
-            margin-top: -60%;
             font-size: 12px;
         }
 
