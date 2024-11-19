@@ -660,14 +660,12 @@ if (!empty($_SESSION["name"])) {
 
     </div>
     <!--LECCION 04-->
-    <!--END MODULO DE CARACTERISTICAS-->
 
-
-    <!--MODULO DE INSTALACION-->
+    <!--MODULO PROTOCOLOS DE RED-->
     <!--LECCION 05-->
     <style>
       #leccion5 {
-        display: none;
+        display: ;
       }
     </style>
 
@@ -681,15 +679,15 @@ if (!empty($_SESSION["name"])) {
           <div class="content-general">
             <p>
               <?php
-              $opi = new select_i();
-              $resI1 = $opi->SelecI();
-              while ($row = mysqli_fetch_array($resI1)) {
-                echo $row['instalacion'];
+              $oppro = new select_pro();
+              $resP = $oppro->select_prot();
+              while ($row = mysqli_fetch_array($resP)) {
+                echo $row['protocolos'];
               }
               ?>
             </p>
 
-            <img src="./images/H/INSTALACION_P.png" alt="img">
+            <img src="./images/S/protocol1.png" alt="img">
           </div>
 
           <div class="ui_fle_carru">
@@ -704,20 +702,20 @@ if (!empty($_SESSION["name"])) {
       <!--Carrusel IP 02-->
       <article class="item_carru" id="item2_carru">
         <div class="in_carru" id="in_item_2">
-          <h5>Traslado del Producto</h5>
+          <h5>Configuración protocolo LDAP</h5>
 
           <div class="content-general">
             <p>
               <?php
-              $opi = new select_i();
-              $resI2 = $opi->SelecI2();
+              $oppro = new select_pro();
+              $resI2 = $oppro->select_prot2();
               while ($row = mysqli_fetch_array($resI2)) {
-                echo $row['instalacion'];
+                echo $row['protocolos'];
               }
               ?>
             </p>
 
-            <img src="./images/H/instalacion1.png" alt="img">
+            <img src="./images/S/protocol2.png" alt="img">
           </div>
 
           <div class="ui_fle_carru">
@@ -732,20 +730,20 @@ if (!empty($_SESSION["name"])) {
       <!--Carrusel IP 03-->
       <article class="item_carru" id="item3_carru">
         <div class="in_carru" id="in_item_3">
-          <h5>Requsitos de Energia</h5>
+          <h5>Test protocolo LDAP</h5>
 
           <div class="content-general">
             <p>
               <?php
-              $opi = new select_i();
-              $resI3 = $opi->SelecI3();
-              while ($row = mysqli_fetch_array($resI3)) {
-                echo $row['instalacion'];
+              $oppro = new select_pro();
+              $resP3 = $oppro->select_prot3();
+              while ($row = mysqli_fetch_array($resP3)) {
+                echo $row['protocolos'];
               }
               ?>
             </p>
 
-            <img src="./images/H/instalacion2.png" alt="img">
+            <img src="./images/S/protocol3.png" alt="img">
           </div>
 
           <div class="ui_fle_carru">
@@ -757,65 +755,9 @@ if (!empty($_SESSION["name"])) {
       </article>
       <!--Carrusel IP 03-->
 
-      <!--Carrusel IP 04-->
+      <!--Carrusel IP 05-->
       <article class="item_carru" id="item4_carru">
-        <div class="in_carru" id="in_item_4">
-          <h5>Secuencia de Encendido/Apagado</h5>
-
-          <div class="content-general">
-            <p>
-              <?php
-              $opi = new select_i();
-              $resI4 = $opi->SelecI4();
-              while ($row = mysqli_fetch_array($resI4)) {
-                echo $row['instalacion'];
-              }
-              ?>
-            </p>
-          </div>
-
-          <div class="ui_fle_carru">
-            <a href="#in_item_3"><i class='bx bxs-chevron-left'></i></a>
-            <a href="#in_item_5"><i class='bx bxs-chevron-right'></i></a>
-          </div>
-
-        </div>
-      </article>
-      <!--Carrusel IP 04-->
-
-      <!--Carrusel IP 05-->
-      <article class="item_carru" id="item5_carru">
-        <div class="in_carru" id="in_item_5">
-          <h5>Conexión de Red</h5>
-
-          <div class="content-general">
-            <p>
-              <?php
-              $opi = new select_i();
-              $resI5 = $opi->SelecI5();
-              while ($row = mysqli_fetch_array($resI5)) {
-                echo $row['instalacion'];
-              }
-              ?>
-              <br><br>
-              Puede conseguir más documentación en la formación de Software
-            </p>
-
-            <img src="./images/H/instalacion3.png" alt="img">
-          </div>
-
-          <div class="ui_fle_carru">
-            <a href="#in_item_4"><i class='bx bxs-chevron-left'></i></a>
-            <a href="#in_item_6"><i class='bx bxs-chevron-right'></i></a>
-          </div>
-
-        </div>
-      </article>
-      <!--Carrusel IP 05-->
-
-      <!--Carrusel IP 05-->
-      <article class="item_carru" id="item6_carru">
-        <div class="hr_carru" id="in_item_6">
+        <div class="hr_carru" id="in_item_4">
 
           <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección de formación Técnica</h5>
 
@@ -869,7 +811,6 @@ if (!empty($_SESSION["name"])) {
     <!--LECCION 05-->
 
 
-    <!--MODULO DE TEORIA DEL FUNCIONAMIENTO-->
     <!--LECCION 06-->
     <style>
       #leccion6 {

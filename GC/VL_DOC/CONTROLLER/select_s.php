@@ -117,4 +117,40 @@ class select_cred{
         return $resR8;
     }
 
+}   
+
+class select_pro{
+    private $server = "localhost";
+    private $user = "root";
+    private $password = "";
+    private $db = "gxdeve_apps";
+    private $port = "3306";
+
+    //Instancia for Connection
+    public function Connection(){
+        $conexion = mysqli_connect($this->server,$this->user,$this->password,$this->db,$this->port);
+        return $conexion;
+    }
+
+    //Function for Modulo Protocolos
+    public function select_prot(){
+        $sqlP = " SELECT protocolos FROM vl_b405_s WHERE id=1 ";
+        $conexion = $this->Connection();
+        $resP = mysqli_query($conexion,$sqlP);
+        return $resP;
+    }
+
+    public function select_prot2(){
+        $sqlP2 = " SELECT protocolos FROM vl_b405_s WHERE id=2 ";
+        $conexion = $this->Connection();
+        $resP2 = mysqli_query($conexion,$sqlP2);
+        return $resP2;
+    }
+
+    public function select_prot3(){
+        $sqlP3 = " SELECT protocolos FROM vl_b405_s WHERE id=3 ";
+        $conexion = $this->Connection();
+        $resP3 = mysqli_query($conexion,$sqlP3);
+        return $resP3;
+    }
 }

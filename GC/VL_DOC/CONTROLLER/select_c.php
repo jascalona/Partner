@@ -509,7 +509,7 @@ class select_pp{
     public function select_pp(){
         $sqlPP = " SELECT pp FROM vl_b405 WHERE id=1 ";
         $conexion = $this->Connection();
-        $resPP = mysqli_query($conexion,$sqlPP) or die ("Ha Ocurrido un Error");
+        $resPP = mysqli_query(mysql: $conexion,query: $sqlPP) or die ("Ha Ocurrido un Error");
         return $resPP;
     }
 
