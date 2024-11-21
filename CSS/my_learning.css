@@ -472,3 +472,72 @@ footer .footer a i:hover{
     }
 }
 /*:::Fin Ventana Modal:::*/
+
+/*SESION MODAL 04*/
+/*:::Boton Modal:::*/
+#btn-modal-4{
+    display: none;
+}
+
+.container-modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+#btn-modal-4:checked ~ .container-modal{
+    display: flex;
+}
+.content-modal{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.content-modal h6{
+    margin-bottom: 15px;
+}
+.content-modal p{
+    padding: 15px 0px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+.content-modal .btn-option{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: initial;
+    align-items: center;
+}
+.content-modal .btn-option label{
+    margin-right: 13px;
+    padding: 5px 8px;
+    background-color: #424344;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+
+.content-modal .btn-option label:hover{
+    background-color:#8e8f8f;
+}
+.cerrar-modal{
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    top:0; left: 0;
+    z-index: -1;
+}
+@media screen and (max-width:800px) {
+    .content-modal{
+        width: 90%;
+    }
+}

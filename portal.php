@@ -110,13 +110,13 @@ if (!empty($_SESSION["name"])) {
                     <!--VersaLink B405-->
 
 
-                    <!--Print Management-->
+                    <!--KIP G71-->
                     <div class="card" style="width: 15rem; height: 22rem;">
-                        <img src="./IMG/printMana.png" class="card-img-top" alt="...">
+                        <img src="./IMG/kip.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Print Management</h5>
+                            <h5 class="card-title">KIP G71 SERIES</h5>
                             <small>Publicado:</small>
-                            <small>11/08/2024</small>
+                            <small>21/11/2024</small>
 
                             <!--Boton-->
                             <div class="boton-modal">
@@ -129,13 +129,50 @@ if (!empty($_SESSION["name"])) {
                             <input type="checkbox" id="btn-modal-3">
                             <div class="container-modal">
                                 <div class="content-modal">
+                                    <h6>Entrenamiento del nuevo Plotter KIP G71 SERIES</h6>
+                                    <p><small>
+                                            Este Curso autodidacta proporciona una descripción general
+                                            del producto y explica como instalar, configurar y usar el nuevo producto KIP G71.
+                                        </small></p>
+                                    <div class="btn-option">
+                                        <label for="btn-modal-3">Cerrar</label>
+                                        <a href="./GC/KIPG71.php">Enroll</a>
+                                    </div>
+                                </div>
+                                <label for="btn-modal" class="cerrar-modal"></label>
+                            </div>
+                            <!--Fin de Ventana Modal-->
+                        </div>
+                    </div>
+                    <!--KIP G71-->
+
+
+                    <!--Print Management-->
+                    <div class="card" style="width: 15rem; height: 22rem;">
+                        <img src="./IMG/printMana.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Print Management</h5>
+                            <small>Publicado:</small>
+                            <small>11/08/2024</small>
+
+                            <!--Boton-->
+                            <div class="boton-modal">
+                                <label for="btn-modal-4">
+                                    Detalles
+                                </label>
+                            </div>
+                            <!--Fin de Boton-->
+                            <!--Ventana Modal-->
+                            <input type="checkbox" id="btn-modal-4">
+                            <div class="container-modal">
+                                <div class="content-modal">
                                     <h6>Documentacion Print Management (Colas de Impresión)</h6>
                                     <p><small>
                                             Este Curso autodidacta proporciona una descripción general
                                             del producto y explica como configurar y usar el Print Management.
                                         </small></p>
                                     <div class="btn-option">
-                                        <label for="btn-modal-3">Cerrar</label>
+                                        <label for="btn-modal-4">Cerrar</label>
 
                                     </div>
                                 </div>
