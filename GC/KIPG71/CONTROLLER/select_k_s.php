@@ -86,7 +86,7 @@ class select_k_s{
         return $resR2;
     }
 
-    //Funciones leccion 03
+    //Funciones para Leccion 04
     public function driver(){
         $sqlD = " SELECT driver FROM kip_g71_s WHERE id=1";
         $conexion = $this->Connection();
@@ -121,40 +121,91 @@ class select_k_s{
         $resD5 = mysqli_query($conexion,$sqlD5)or die("Error");
         return $resD5;
     }
+    
+    public function driver6(){
+        $sqlD6 = " SELECT driver FROM kip_g71_s WHERE id=6";
+        $conexion = $this->Connection();
+        $resD6 = mysqli_query($conexion,$sqlD6)or die("Error");
+        return $resD6;
+    }
 
+    public function driver7(){
+        $sqlD7 = " SELECT driver FROM kip_g71_s WHERE id=7";
+        $conexion = $this->Connection();
+        $resD7 = mysqli_query($conexion,$sqlD7)or die("Error");
+        return $resD7;
+    }
+
+    public function driver8(){
+        $sqlD8 = " SELECT driver FROM kip_g71_s WHERE id=8";
+        $conexion = $this->Connection();
+        $resD8 = mysqli_query($conexion,$sqlD8)or die("Error");
+        return $resD8;
+    }
+
+    public function driver9(){
+        $sqlD9 = " SELECT driver FROM kip_g71_s WHERE id=9";
+        $conexion = $this->Connection();
+        $resD9 = mysqli_query($conexion,$sqlD9)or die("Error");
+        return $resD9;
+    }
+
+    //Funcion de interfazP
     public function interfazP(){
-        $sqlI = " SELECT driver FROM kip_g71_s WHERE id=6";
+        $sqlI = " SELECT interfazP FROM kip_g71_s WHERE id=1";
         $conexion = $this->Connection();
         $resI = mysqli_query($conexion,$sqlI)or die("Error");
         return $resI;
     }
 
     public function interfazP2(){
-        $sqlI2 = " SELECT driver FROM kip_g71_s WHERE id=7";
+        $sqlI2 = " SELECT interfazP FROM kip_g71_s WHERE id=2";
         $conexion = $this->Connection();
         $resI2 = mysqli_query($conexion,$sqlI2)or die("Error");
         return $resI2;
     }
 
     public function interfazP3(){
-        $sqlI3 = " SELECT driver FROM kip_g71_s WHERE id=8";
+        $sqlI3 = " SELECT interfazP FROM kip_g71_s WHERE id=3";
         $conexion = $this->Connection();
         $resI3 = mysqli_query($conexion,$sqlI3)or die("Error");
         return $resI3;
     }
 
     public function interfazP4(){
-        $sqlI4 = " SELECT driver FROM kip_g71_s WHERE id=9";
+        $sqlI4 = " SELECT interfazP FROM kip_g71_s WHERE id=4";
         $conexion = $this->Connection();
         $resI4 = mysqli_query($conexion,$sqlI4)or die("Error");
         return $resI4;
     }
 
     public function interfazP5(){
-        $sqlI5 = " SELECT driver FROM kip_g71_s WHERE id=10";
+        $sqlI5 = " SELECT interfazP FROM kip_g71_s WHERE id=5";
         $conexion = $this->Connection();
         $resI5 = mysqli_query($conexion,$sqlI5)or die("Error");
         return $resI5;
+    }
+
+    //Funciones para Leccion 05
+    public function scanR(){
+        $sqlSD = " SELECT driver FROM kip_g71_s WHERE id=1";
+        $conexion = $this->Connection();
+        $resSD = mysqli_query($conexion,$sqlSD)or die("Error");
+        return $resSD;
+    }
+
+    public function scanR2(){
+        $sqlSD2 = " SELECT driver FROM kip_g71_s WHERE id=2";
+        $conexion = $this->Connection();
+        $resSD2 = mysqli_query($conexion,$sqlSD2)or die("Error");
+        return $resSD2;
+    }
+
+    public function scanR3(){
+        $sqlSD3 = " SELECT driver FROM kip_g71_s WHERE id=3";
+        $conexion = $this->Connection();
+        $resSD3 = mysqli_query($conexion,$sqlSD3)or die("Error");
+        return $resSD3;
     }
 
 }

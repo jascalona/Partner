@@ -571,7 +571,7 @@ if (!empty($_SESSION["name"])) {
     <!--LECCION 04-->
     <style>
       #leccion4 {
-        display: none;
+        display: ;
       }
     </style>
 
@@ -717,9 +717,119 @@ if (!empty($_SESSION["name"])) {
             </article>
             <!--Carrusel IP 05-->
 
-          <!--Carrusel IP 05-->
-          <article class="item_carru" id="item6_carru">
-            <div class="hr_carru" id="in_item_6">
+              <!--Carrusel IP 06-->
+              <article class="item_carru" id="item6_carru">
+              <div class="in_carru" id="in_item_6">
+                <h5>¿Cómo remover el controlador de impresión?</h5>
+
+                <div class="content-general">
+                  <p>
+                    <?php
+                    $op = new select_k_s();
+                    $resD6 = $op->driver6();
+                    while ($row = mysqli_fetch_array($resD6)) {
+                      echo $row['driver'];
+                    }
+                    ?>
+                  </p>
+                    <img src="./images/S/driver6.png" alt="">
+                </div>
+
+                <div class="ui_fle_carru">
+                  <a href="#in_item_5"><i class='bx bxs-chevron-left'></i></a>
+                  <a href="#in_item_7"><i class='bx bxs-chevron-right'></i></a>
+                </div>
+
+              </div>
+            </article>
+            <!--Carrusel IP 06-->
+
+            
+              <!--Carrusel IP 07-->
+              <article class="item_carru" id="item7_carru">
+              <div class="in_carru" id="in_item_7">
+                <h5>¿Cómo remover el controlador de impresión?</h5>
+
+                <div class="content-general">
+                  <p>
+                    <?php
+                    $op = new select_k_s();
+                    $resD7 = $op->driver7();
+                    while ($row = mysqli_fetch_array($resD7)) {
+                      echo $row['driver'];
+                    }
+                    ?>
+                  </p>
+                    <img src="./images/S/driver7.png" alt="">
+                </div>
+
+                <div class="ui_fle_carru">
+                  <a href="#in_item_6"><i class='bx bxs-chevron-left'></i></a>
+                  <a href="#in_item_8"><i class='bx bxs-chevron-right'></i></a>
+                </div>
+
+              </div>
+            </article>
+            <!--Carrusel IP 07-->
+
+          <!--Carrusel IP 08-->
+          <article class="item_carru" id="item8_carru">
+              <div class="in_carru" id="in_item_8">
+                <h5>¿Cómo usar el controlador de impresión?</h5>
+
+                <div class="content-general">
+                  <p>
+                    <?php
+                    $op = new select_k_s();
+                    $resD8 = $op->driver8();
+                    while ($row = mysqli_fetch_array($resD8)) {
+                      echo $row['driver'];
+                    }
+                    ?>
+                  </p>
+                    <img src="./images/S/driver8.png" alt="">
+                </div>
+
+                <div class="ui_fle_carru">
+                  <a href="#in_item_7"><i class='bx bxs-chevron-left'></i></a>
+                  <a href="#in_item_9"><i class='bx bxs-chevron-right'></i></a>
+                </div>
+
+              </div>
+            </article>
+            <!--Carrusel IP 08-->
+
+          <!--Carrusel IP 09-->
+          <article class="item_carru" id="item9_carru">
+              <div class="in_carru" id="in_item_9">
+                <h5>¿Cómo usar las propedades del controlador?</h5>
+
+                <div class="content-general">
+                  <p>
+                    <?php
+                    $op = new select_k_s();
+                    $resD9 = $op->driver9();
+                    while ($row = mysqli_fetch_array($resD9)) {
+                      echo $row['driver'];
+                    }
+                    ?>
+                  </p>
+                    <img src="./images/S/driver9.png" alt="">
+                </div>
+
+                <div class="ui_fle_carru">
+                  <a href="#in_item_8"><i class='bx bxs-chevron-left'></i></a>
+                  <a href="#in_item_10"><i class='bx bxs-chevron-right'></i></a>
+                </div>
+
+              </div>
+            </article>
+            <!--Carrusel IP 09-->
+
+
+          <!--Carrusel IP 10-->
+          <article class="item_carru" id="item10_carru">
+            <div class="hr_carru" id="in_item_10">
 
               <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección</h5>
 
@@ -740,7 +850,7 @@ if (!empty($_SESSION["name"])) {
 
             </div>
           </article>
-          <!--Carrusel IP 05-->
+          <!--Carrusel IP 10-->
 
     </div>
     <!--LECCION 04-->
@@ -749,7 +859,7 @@ if (!empty($_SESSION["name"])) {
     <!--LECCION 06-->
     <style>
       #leccion6 {
-        display: ;
+        display: none;
       }
     </style>
 
@@ -766,7 +876,7 @@ if (!empty($_SESSION["name"])) {
               $op = new select_k_s();
               $resI = $op->interfazP();
               while ($row = mysqli_fetch_array($resI)) {
-                echo $row['driver'];
+                echo $row['interfazP'];
               }
               ?>
             </p>
@@ -796,7 +906,7 @@ if (!empty($_SESSION["name"])) {
                 $op = new select_k_s();
                 $resI2 = $op->interfazP2();
                 while ($row = mysqli_fetch_array($resI2)){
-                  echo $row['driver'];
+                  echo $row['interfazP'];
                 }
               ?>
             </p>
@@ -849,7 +959,7 @@ if (!empty($_SESSION["name"])) {
                 $op = new select_k_s();
                 $resI3 = $op->interfazP3();
                 while ($row = mysqli_fetch_array($resI3)){
-                  echo $row['driver'];
+                  echo $row['interfazP'];
                 }
               ?>
             </p>
@@ -880,7 +990,7 @@ if (!empty($_SESSION["name"])) {
                 $op = new select_k_s();
                 $resI4 = $op->interfazP4();
                 while ($row = mysqli_fetch_array($resI4)){
-                  echo $row['driver'];
+                  echo $row['interfazP'];
                 }
               ?>
             </p>
@@ -911,7 +1021,7 @@ if (!empty($_SESSION["name"])) {
                 $op = new select_k_s();
                 $resI5 = $op->interfazP5();
                 while ($row = mysqli_fetch_array($resI5)){
-                  echo $row['driver'];
+                  echo $row['interfazP'];
                 }
               ?>
             </p>
@@ -975,7 +1085,7 @@ if (!empty($_SESSION["name"])) {
      <!--Carrusel TF 03-->
      <article class="item_carru" id="item4_carru">
         <div class="tf_carru" id="tf_item_4">
-          <h5>Rutinas NVM</h5>
+          <h5>Digitalización en red</h5>
 
           <div class="content-general">
             <p>  
