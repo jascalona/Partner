@@ -51,7 +51,7 @@ if (!empty($_SESSION["name"])) {
 
       <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="staticBackdropLabel"><strong>ELearning VLB405</strong></h5>
+          <h5 class="offcanvas-title" id="staticBackdropLabel"><strong>ELearning KIPG71</strong></h5>
           <button style="padding: 10px;" type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
             <i class='bx bx-x' style='color:#ded4f6'></i>
           </button>
@@ -65,14 +65,9 @@ if (!empty($_SESSION["name"])) {
                 Caracteristicas de Producto
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="">Producto</a></li>
-                <li><ct class="dropdown-item" href="">Caracteristicas</a></li>
+                <li><a class="dropdown-item" href="">Caracteristicas del Producto</a></li>
                 <li><a class="dropdown-item" href="">Tecnología de impresión de alta definición (HDP)</a></li>
-                <li><a class="dropdown-item" href="">Máxima durabilidad de la imagen</a></li>
-                <li><a class="dropdown-item" href="">Software System K de KIP</a></li>
-
-                
-
+                <li><a class="dropdown-item" href="">Máxima durabilidad de la imagen</a></li>                
               </ul>
             </li>
 
@@ -151,194 +146,38 @@ if (!empty($_SESSION["name"])) {
   <main>
 
     <?php
-    include './CONTROLLER/Conexion.php';
-    include './CONTROLLER/select_s.php';
+    include './CONTROLLER/select_k_s.php';
     ?>
 
     <!--END MODULO DE CARACTERISTICAS-->
-    <div class="container-carac" id="leccion1">
 
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-
-
-          <!--Carrusel 01-->
-          <div class="carousel-item active">
-            <h5>Soporte para Productos VersaLink</h5>
-
-            <article class="content">
-              <p class="paragraph">
-                <?php
-                $op = new select_cac();
-                $res = $op->select_c2();
-                while ($row = mysqli_fetch_array($res)) {
-                  echo $row['carac'];
-                }
-                ?>
-              </p>
-
-              <img src="./images/S/carrusel_1.png" alt="IMG">
-
-              <!--Navegation-->
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="bx bx-chevron-right" style="color: #000; font-size: 50px;" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-              <!--Navegation-->
-            </article>
-          </div>
-          <!--Carrusel 01-->
-
-          <!--Carrusel 02-->
-          <div class="carousel-item">
-            <h5>Características</h5>
-
-            <article style="padding: 50pxs;" class="content">
-              <p class="paragraph">
-                <?php
-                $op = new select_cac();
-                $res3 = $op->select_c3();
-                while ($row = mysqli_fetch_array($res3)) {
-                  echo $row['carac'];
-                }
-                ?>
-              </p>
-
-              <img src="./images/H/medidas.png" alt="">
-
-              <!--Navegation-->
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="bx bx-chevron-left" style="color: #000; font-size: 50px;" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="bx bx-chevron-right" style="color: #000; font-size: 50px;" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-              <!--Navegation-->
-
-            </article>
-          </div>
-          <!--Carrusel 02-->
-
-          <!--Carrusel 03-->
-          <div class="carousel-item" id="">
-            <h5>Menú de navegación (Browser)</h5>
-
-            <article class="content">
-              <p class="paragraph">
-                <?php
-                $op = new select_cac();
-                $res3 = $op->select_c4();
-                while ($row = mysqli_fetch_array($res3)) {
-                  echo $row['carac'];
-                }
-                ?>
-              </p>
-
-              <img src="./images/S/carrusel_4.png" alt="">
-
-
-              <!--Navegation-->
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="bx bx-chevron-left" style="color: #000; font-size: 50px;" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="bx bx-chevron-right" style="color: #000; font-size: 50px;" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-              <!--Navegation-->
-
-            </article>
-          </div>
-          <!--Carrusel 03-->
-
-           <!--Carrusel 04-->
-           <div class="carousel-item" id="">
-            <h5>Menú de navegación (Browser)</h5>
-
-            <article class="content">
-              <p class="paragraph">
-                <?php
-                $op = new select_cac();
-                $res5 = $op->select_c5();
-                while ($row = mysqli_fetch_array($res5)) {
-                  echo $row['carac'];
-                }
-                ?>
-              </p>
-
-              <!--Navegation-->
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="bx bx-chevron-left" style="color: #000; font-size: 50px;" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="bx bx-chevron-right" style="color: #000; font-size: 50px;" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-              <!--Navegation-->
-
-            </article>
-          </div>
-          <!--Carrusel 04-->
-
-          <!--Carrusel 04-->
-          <div class="carousel-item" id="">
-            <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección de formación Técnica</h5>
-
-            <article class="content">
-              <p class="paragraph">
-                De Click en "Siguiente" para acceder a la lección II
-              </p>
-              <img src="./images/H/siguiente.jpg" alt="">
-            </article>
-
-            <div class="btn-leccion">
-              <button id="boton" onclick="ir_leccion2();">
-                Siguiente
-              </button>
-            </div>
-
-          </div>
-          <!--Carrusel 04-->
-
-        </div>
-
-      </div>
-    </div>
-
-    <!--LECCION 02-->
+    <!--LECCION 01-->
     <style>
-      #leccion2 {
+     #leccion1 {
         display: none;
-      }
+    }
     </style>
 
-    <div id="leccion2" class="container-carac">
+    <div id="leccion1" class="container-carac">
 
 
       <!--Carrusel ui 1-->
       <article class="item_carru" id="item1_carru">
         <div class="ui_carru" id="ui_item_1">
-          <h5>Conexiones de Red</h5>
+          <h5>Plotter KIP G71</h5>
 
           <div class="content-general">
             <p class="paragraph">
               <?php
-              $op = new select_cred();
-              $res = $op->select_r();
-              while ($row = mysqli_fetch_array($res)) {
-                echo $row['red'];
+              $op = new select_k_s();
+              $resP = $op->producto();
+              while ($row = mysqli_fetch_array($resP)) {
+                echo $row['product'];
               }
               ?>
             </p>
 
-            <img src="./images/S/red1.png" alt="">
+            <img src="./images/S/p1.png" alt="">
 
           </div>
 
@@ -356,20 +195,20 @@ if (!empty($_SESSION["name"])) {
       <!--Carrusel ui 2-->
       <article class="item_carru" id="item2_carru">
         <div class="ui_carru" id="ui_item_2">
-          <h5>Conexiones Cableadas</h5>
+          <h5>Caracteristicas Generales</h5>
 
           <div class="content-general">
             <p class="paragraph">
               <?php
-              $op = new select_cred();
-              $res2 = $op->select_r2();
-              while ($row2 = mysqli_fetch_array($res2)) {
-                echo $row2['red'];
+              $op = new select_k_s();
+              $resP2 = $op->producto2();
+              while ($row = mysqli_fetch_array($resP2)) {
+                echo $row['product'];
               }
               ?>
             </p>
 
-            <img src="./images/S/red2.png" alt="">
+            <img src="./images/S/P2.png" alt="">
 
           </div>
 
@@ -386,20 +225,20 @@ if (!empty($_SESSION["name"])) {
       <!--Carrusel ui 3-->
       <article class="item_carru" id="item3_carru">
         <div class="ui_carru" id="ui_item_3">
-          <h5>¿Qué se debe tener en cuenta para conectarse a través de USB?</h5>
+        <h5>Caracteristicas de Impresora</h5>
 
           <div class="content-general">
             <p>
               <?php
-              $op = new select_cred();
-              $res3 = $op->select_r3();
-              while ($row = mysqli_fetch_array($res3)) {
-                echo $row['red'];
+              $op = new select_k_s();
+              $resP3 = $op->producto3();
+              while ($row = mysqli_fetch_array($resP3)) {
+                echo $row['product'];
               }
               ?>
             </p>
 
-            <img src="./images/S/red3.png" alt="">
+            <img src="./images/S/p3.png" alt="">
 
           </div>
 
@@ -417,20 +256,20 @@ if (!empty($_SESSION["name"])) {
        <!--Carrusel ui 4-->
        <article class="item_carru" id="item4_carru">
         <div class="ui_carru" id="ui_item_4">
-          <h5>¿Qué se debe tener en cuenta para conectarse a través de Ethernet?</h5>
+        <h5>Caracteristicas Controlador</h5>
 
           <div class="content-general">
             <p>
               <?php
-              $op = new select_cred();
-              $res3 = $op->select_r4();
-              while ($row = mysqli_fetch_array($res3)) {
-                echo $row['red'];
+              $op = new select_k_s();
+              $resP4 = $op->producto4();
+              while ($row = mysqli_fetch_array($resP4)) {
+                echo $row['product'];
               }
               ?>
             </p>
 
-            <img src="./images/S/red2.png" alt="">
+            <img src="./images/S/p4.png" alt="">
 
           </div>
 
@@ -443,22 +282,54 @@ if (!empty($_SESSION["name"])) {
         </div>
 
       </article>
+      <!--Carrusel ui 4-->
+
+
+       <!--Carrusel ui 5-->
+       <article class="item_carru" id="item5_carru">
+        <div class="ui_carru" id="ui_item_5">
+        <h5>Caracteristicas Escáner</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $resP5 = $op->producto5();
+              while ($row = mysqli_fetch_array($resP5)) {
+                echo $row['product'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/P2.png" alt="">
+
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#ui_item_4"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#ui_item_6"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
       <!--Carrusel ui 3-->
 
       
 
       <!--Carrusel ui 04-->
-      <article class="item_carru" id="item5_carru">
-        <div class="ui_carru" id="ui_item_5">
+      <article class="item_carru" id="item6_carru">
+        <div class="ui_carru" id="ui_item_6">
 
-          <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección de formación Técnica</h5>
+          <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección</h5>
 
           <div class="content-general">
             <p class="paragraph">
-              De Click en "Siguiente" para acceder a la lección III
+              De Click en "Siguiente" para acceder a la siguiente lección
             </p>
 
-            <img src="./images/H/siguiente2.jpg" alt="">
+            <img src="./images/siguiente.jpg" alt="">
 
           </div>
 
@@ -474,36 +345,34 @@ if (!empty($_SESSION["name"])) {
 
 
     </div>
+    <!--LECCION 01-->
+
+
     <!--LECCION 02-->
-
-
-    <!--LECCION 03-->
     <style>
-      #leccion3 {
+      #leccion2 {
         display: none;
       }
     </style>
 
-    <div id="leccion3" class="container-carac">
+    <div id="leccion2" class="container-carac">
 
 
       <!--Carrusel ui 1-->
       <article class="item_carru" id="item1_carru">
         <div class="ac_carru" id="ac_item_1">
-          <h5>Conexión Inalámbrica</h5>
+          <h5>Tecnología de impresión de alta definición (HDP)</h5>
 
           <div class="content-general">
             <p>
               <?php
-              $op = new select_cred();
-              $res6 = $op->select_r5();
-              while ($row = mysqli_fetch_array($res6)) {
-                echo $row['red'];
+              $op = new select_k_s();
+              $resT = $op->tecnologia();
+              while ($row = mysqli_fetch_array($resT)) {
+                echo $row['product'];
               }
               ?>
             </p>
-
-            <img src="./images/S/red4.png" alt="">
 
           </div>
 
@@ -520,20 +389,19 @@ if (!empty($_SESSION["name"])) {
       <!--Carrusel ui 2-->
       <article class="item_carru" id="item2_carru">
         <div class="ui_carru" id="ac_item_2">
-          <h5>Instalación de adaptador Wi-Fi</h5>
+        <h5>Tecnología de impresión de alta definición (HDP)</h5>
 
-          <div class="content-general">
+        <div class="content-general">
             <p>
               <?php
-              $op = new select_cred();
-              $res7 = $op->select_r6();
-              while ($row = mysqli_fetch_array($res7)) {
-                echo $row['red'];
+              $op = new select_k_s();
+              $resT2 = $op->tecnologia2();
+              while ($row = mysqli_fetch_array($resT2)) {
+                echo $row['product'];
               }
               ?>
             </p>
-
-            <img src="./images/S/red5.png" alt="">
+            <img src="./images/S/t1.png" alt="">
 
           </div>
 
@@ -551,20 +419,19 @@ if (!empty($_SESSION["name"])) {
       <!--Carrusel ui 3-->
       <article class="item_carru" id="item3_carru">
         <div class="ui_carru" id="ac_item_3">
-          <h5>Configuración de red Wi-Fi</h5>
+          <h5>Tecnología de Velocidad Constante</h5>
 
           <div class="content-general">
             <p>
               <?php
-              $op = new select_cred();
-              $res8 = $op->select_r7();
-              while ($row = mysqli_fetch_array($res8)) {
-                echo $row['red'];
+              $op = new select_k_s();
+              $resT3 = $op->tecnologia3();
+              while ($row = mysqli_fetch_array($resT3)) {
+                echo $row['product'];
               }
               ?>
             </p>
-
-            <img src="./images/H/soluciones_terceros.png" alt="">
+            <img src="./images/S/t2.png" alt="">
 
           </div>
 
@@ -583,11 +450,11 @@ if (!empty($_SESSION["name"])) {
       <article class="item_carru" id="item4_carru">
         <div class="ui_carru" id="ac_item_4">
 
-          <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección de formación Técnica</h5>
+        <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección</h5>
 
           <div class="content-general">
             <p class="paragraph">
-              De Click en "Siguiente" para acceder a la lección IV
+              De Click en "Siguiente" para acceder a la siguiente leccion
             </p>
 
             <img src="./images/H/siguiente2.jpg" alt="">
@@ -605,35 +472,35 @@ if (!empty($_SESSION["name"])) {
       <!--Carrusel ui 04-->
 
     </div>
+    <!--LECCION 02-->
+
+
     <!--LECCION 03-->
-
-
-    <!--LECCION 04-->
     <style>
-      #leccion4 {
+      #leccion3 {
         display: none;
       }
     </style>
 
-    <div id="leccion4" class="container-carac">
+    <div id="leccion3" class="container-carac">
 
       <!--Carrusel HR 01-->
       <article class="item_carru" id="item1_carru">
         <div class="hr_carru" id="hr_item_1">
-          <h5>Configurar una ip estática</h5>
+          <h5>Máxima durabilidad de la imagen</h5>
 
           <div class="content-general">
             <p>
               <?php
-              $op = new select_cred();
-              $res8 = $op->select_r8();
-              while ($row = mysqli_fetch_array($res8)) {
-                echo $row['red'];
+              $op = new select_k_s();
+              $resR = $op->rendimiento();
+              while ($row = mysqli_fetch_array($resR)) {
+                echo $row['product'];
               }
               ?>
             </p>
 
-            <img src="./images/S/red6.png" alt="img">
+            <img src="./images/S/t3.png" alt="img">
           </div>
 
           <div class="ui_fle_carru">
@@ -645,18 +512,46 @@ if (!empty($_SESSION["name"])) {
       </article>
       <!--Carrusel HR 01-->
 
-      <!--Carrusel HR 07-->
-      <article class="item_carru" id="item2_carru">
-        <div class="hr_carru" id="hr_item_2">
+    <!--Carrusel HR 02-->
+    <article class="item_carru" id="item2_carru">
+            <div class="hr_carru" id="hr_item_2">
+            <h5>Capacidad del medio</h5>
 
-          <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección de formación Técnica</h5>
+            <div class="content-general">
+                <p>
+                <?php
+                $op = new select_k_s();
+                $resR2 = $op->rendimiento2();
+                while ($row = mysqli_fetch_array($resR2)) {
+                    echo $row['product'];
+                }
+                ?>
+                </p>
+
+                <img src="./images/S/t4.png" alt="img">
+            </div>
+
+            <div class="ui_fle_carru">
+                <a href="#hr_item_1"><i class='bx bxs-chevron-left'></i></a>
+                <a href="#hr_item_3"><i class='bx bxs-chevron-right'></i></a>
+            </div>
+
+            </div>
+        </article>
+        <!--Carrusel HR 01-->
+
+      <!--Carrusel HR 07-->
+      <article class="item_carru" id="item3_carru">
+        <div class="hr_carru" id="hr_item_3">
+
+          <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección.</h5>
 
           <div class="content-general">
             <p class="paragraph">
-              De Click en "Siguiente" para acceder a la lección V
+              De Click en "Siguiente" para acceder a la siguiente lección 
             </p>
 
-            <img src="./images/H/siguiente2.jpg" alt="">
+            <img src="./images/siguiente2.jpg" alt="">
 
           </div>
 
@@ -672,35 +567,34 @@ if (!empty($_SESSION["name"])) {
 
 
     </div>
-    <!--LECCION 04-->
+    <!--LECCION 03-->
 
-    <!--MODULO PROTOCOLOS DE RED-->
-    <!--LECCION 05-->
+    <!--LECCION 04-->
     <style>
-      #leccion5 {
-        display: none;
+      #leccion4 {
+        display: ;
       }
     </style>
 
-    <div id="leccion5" class="container-carac">
+    <div id="leccion4" class="container-carac">
 
       <!--Carrusel IP 01-->
       <article class="item_carru" id="item1_carru">
         <div class="in_carru" id="in_item_1">
-          <h5>Configuración protocolo SMTP</h5>
+          <h5>Descarga del Controlador</h5>
 
           <div class="content-general">
             <p>
               <?php
-              $oppro = new select_pro();
-              $resP = $oppro->select_prot();
-              while ($row = mysqli_fetch_array($resP)) {
-                echo $row['protocolos'];
+              $op= new select_k_s();
+              $resD = $op->driver();
+              while ($row = mysqli_fetch_array($resD)) {
+                echo $row['driver'];
               }
               ?>
             </p>
 
-            <img src="./images/S/protocol1.png" alt="img">
+            <img src="./images/S/driver1.png" alt="img">
           </div>
 
           <div class="ui_fle_carru">
@@ -715,20 +609,20 @@ if (!empty($_SESSION["name"])) {
       <!--Carrusel IP 02-->
       <article class="item_carru" id="item2_carru">
         <div class="in_carru" id="in_item_2">
-          <h5>Configuración protocolo LDAP</h5>
+          <h5>Instalación del Controlador</h5>
 
           <div class="content-general">
             <p>
               <?php
-              $oppro = new select_pro();
-              $resI2 = $oppro->select_prot2();
-              while ($row = mysqli_fetch_array($resI2)) {
-                echo $row['protocolos'];
+              $op = new select_k_s();
+              $resD2 = $op->driver2();
+              while ($row = mysqli_fetch_array($resD2)) {
+                echo $row['driver'];
               }
               ?>
             </p>
 
-            <img src="./images/S/protocol2.png" alt="img">
+            <img src="./images/S/driver2.png" alt="img">
           </div>
 
           <div class="ui_fle_carru">
@@ -743,20 +637,20 @@ if (!empty($_SESSION["name"])) {
       <!--Carrusel IP 03-->
       <article class="item_carru" id="item3_carru">
         <div class="in_carru" id="in_item_3">
-          <h5>Test protocolo LDAP</h5>
+          <h5>Instalación del Controlador .EXE</h5>
 
           <div class="content-general">
             <p>
               <?php
-              $oppro = new select_pro();
-              $resP3 = $oppro->select_prot3();
-              while ($row = mysqli_fetch_array($resP3)) {
-                echo $row['protocolos'];
+              $op = new select_k_s();
+              $resD3 = $op->driver3();
+              while ($row = mysqli_fetch_array($resD3)) {
+                echo $row['driver'];
               }
               ?>
             </p>
 
-            <img src="./images/S/protocol3.png" alt="img">
+            <img src="./images/S/driver3.png" alt="img">
           </div>
 
           <div class="ui_fle_carru">
@@ -768,60 +662,89 @@ if (!empty($_SESSION["name"])) {
       </article>
       <!--Carrusel IP 03-->
 
-      <!--Carrusel IP 05-->
+      <!--Carrusel IP 04-->
       <article class="item_carru" id="item4_carru">
-        <div class="hr_carru" id="in_item_4">
+              <div class="in_carru" id="in_item_4">
+                <h5>Configuración del Controlador de Impresión</h5>
 
-          <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección de formación Técnica</h5>
+                <div class="content-general">
+                  <p>
+                    <?php
+                    $op = new select_k_s();
+                    $resD4 = $op->driver4();
+                    while ($row = mysqli_fetch_array($resD4)) {
+                      echo $row['driver'];
+                    }
+                    ?>
+                  </p>
 
-          <div class="content-general">
-            <p class="paragraph">
-              De Click en "Siguiente" para acceder a la lección VI
-            </p>
+                </div>
+                <img src="./images/S/driver4.png" alt="img">
 
-            <img src="./images/H/siguiente3.jpg" alt="">
+                <div class="ui_fle_carru">
+                  <a href="#in_item_3"><i class='bx bxs-chevron-left'></i></a>
+                  <a href="#in_item_5"><i class='bx bxs-chevron-right'></i></a>
+                </div>
 
-          </div>
+              </div>
+            </article>
+            <!--Carrusel IP 04-->
 
-          <div class="btn-leccion">
-            <button id="boton" onclick="ir_leccion6();">
-              Siguiente
-            </button>
-          </div>
 
-        </div>
-      </article>
-      <!--Carrusel IP 05-->
+            <!--Carrusel IP 05-->
+            <article class="item_carru" id="item5_carru">
+              <div class="in_carru" id="in_item_5">
+                <h5>Configuración del Controlador de Impresión</h5>
 
-      <!--LECCION 05-->
+                <div class="content-general">
+                  <p>
+                    <?php
+                    $op = new select_k_s();
+                    $resD4 = $op->driver5();
+                    while ($row = mysqli_fetch_array($resD4)) {
+                      echo $row['driver'];
+                    }
+                    ?>
+                  </p>
+                    <img src="./images/S/driver5.png" alt="">
+                </div>
 
-      <!--Carrusel IP 06-->
-      <article class="item_carru" id="item6_carru">
-        <div class="hr_carru" id="in_item_6">
+                <div class="ui_fle_carru">
+                  <a href="#in_item_4"><i class='bx bxs-chevron-left'></i></a>
+                  <a href="#in_item_6"><i class='bx bxs-chevron-right'></i></a>
+                </div>
 
-          <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección de formación Técnica</h5>
+              </div>
+            </article>
+            <!--Carrusel IP 05-->
 
-          <div class="content-general">
-            <p class="paragraph">
-              De Click en "Siguiente" para acceder a la lección VI
-            </p>
+          <!--Carrusel IP 05-->
+          <article class="item_carru" id="item6_carru">
+            <div class="hr_carru" id="in_item_6">
 
-            <img src="./images/H/siguiente3.jpg" alt="">
+              <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección</h5>
 
-          </div>
+              <div class="content-general">
+                <p class="paragraph">
+                  De Click en "Siguiente" para acceder a la siguiente lección 
+                </p>
 
-          <div class="btn-leccion">
-            <button id="boton" onclick="ir_leccion5();">
-              Siguiente
-            </button>
-          </div>
+                <img src="./images/siguiente4.jpg" alt="">
 
-        </div>
-      </article>
-      <!--Carrusel IP 06-->
+              </div>
+
+              <div class="btn-leccion">
+                <button id="boton" onclick="ir_leccion6();">
+                  Siguiente
+                </button>
+              </div>
+
+            </div>
+          </article>
+          <!--Carrusel IP 05-->
 
     </div>
-    <!--LECCION 05-->
+    <!--LECCION 04-->
 
 
     <!--LECCION 06-->
