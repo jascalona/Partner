@@ -121,5 +121,41 @@ class select_k_s{
         $resD5 = mysqli_query($conexion,$sqlD5)or die("Error");
         return $resD5;
     }
+
+    public function interfazP(){
+        $sqlI = " SELECT driver FROM kip_g71_s WHERE id=6";
+        $conexion = $this->Connection();
+        $resI = mysqli_query($conexion,$sqlI)or die("Error");
+        return $resI;
+    }
+
+    public function interfazP2(){
+        $sqlI2 = " SELECT driver FROM kip_g71_s WHERE id=7";
+        $conexion = $this->Connection();
+        $resI2 = mysqli_query($conexion,$sqlI2)or die("Error");
+        return $resI2;
+    }
+
+    public function interfazP3(){
+        $sqlI3 = " SELECT driver FROM kip_g71_s WHERE id=8";
+        $conexion = $this->Connection();
+        $resI3 = mysqli_query($conexion,$sqlI3)or die("Error");
+        return $resI3;
+    }
+
+    public function interfazP4(){
+        $sqlI4 = " SELECT driver FROM kip_g71_s WHERE id=9";
+        $conexion = $this->Connection();
+        $resI4 = mysqli_query($conexion,$sqlI4)or die("Error");
+        return $resI4;
+    }
+
+    public function interfazP5(){
+        $sqlI5 = " SELECT driver FROM kip_g71_s WHERE id=10";
+        $conexion = $this->Connection();
+        $resI5 = mysqli_query($conexion,$sqlI5)or die("Error");
+        return $resI5;
+    }
+
 }
 

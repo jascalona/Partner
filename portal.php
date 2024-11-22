@@ -147,13 +147,13 @@ if (!empty($_SESSION["name"])) {
                     <!--KIP G71-->
 
 
-                    <!--Print Management-->
-                    <div class="card" style="width: 15rem; height: 22rem;">
-                        <img src="./IMG/printMana.png" class="card-img-top" alt="...">
+                     <!--COLOR-PRESS-1000-->
+                     <div class="card" style="width: 15rem; height: 22rem;">
+                        <img src="./IMG/Color-press-1000.webp" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Print Management</h5>
+                            <h5 class="card-title">Color-Press 1000</h5>
                             <small>Publicado:</small>
-                            <small>11/08/2024</small>
+                            <small>22/11/2024</small>
 
                             <!--Boton-->
                             <div class="boton-modal">
@@ -166,13 +166,49 @@ if (!empty($_SESSION["name"])) {
                             <input type="checkbox" id="btn-modal-4">
                             <div class="container-modal">
                                 <div class="content-modal">
+                                    <h6>Entrenamiento del Color-Press 1000</h6>
+                                    <p><small>
+                                            Este Curso autodidacta proporciona una descripción general
+                                            del producto y explica como instalar, configurar y usar la Color-Press 1000.
+                                        </small></p>
+                                    <div class="btn-option">
+                                        <label for="btn-modal-4">Cerrar</label>
+
+                                    </div>
+                                </div>
+                                <label for="btn-modal" class="cerrar-modal"></label>
+                            </div>
+                            <!--Fin de Ventana Modal-->
+                        </div>
+                    </div>
+                    <!--COLOR-PRESS-1000-->
+
+                    <!--Print Management-->
+                    <div class="card" style="width: 15rem; height: 22rem;">
+                        <img src="./IMG/printMana.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Print Management</h5>
+                            <small>Publicado:</small>
+                            <small>11/08/2024</small>
+
+                            <!--Boton-->
+                            <div class="boton-modal">
+                                <label for="btn-modal-5">
+                                    Detalles
+                                </label>
+                            </div>
+                            <!--Fin de Boton-->
+                            <!--Ventana Modal-->
+                            <input type="checkbox" id="btn-modal-5">
+                            <div class="container-modal">
+                                <div class="content-modal">
                                     <h6>Documentacion Print Management (Colas de Impresión)</h6>
                                     <p><small>
                                             Este Curso autodidacta proporciona una descripción general
                                             del producto y explica como configurar y usar el Print Management.
                                         </small></p>
                                     <div class="btn-option">
-                                        <label for="btn-modal-4">Cerrar</label>
+                                        <label for="btn-modal-5">Cerrar</label>
 
                                     </div>
                                 </div>

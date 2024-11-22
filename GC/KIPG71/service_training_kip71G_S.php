@@ -78,7 +78,6 @@ if (!empty($_SESSION["name"])) {
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" id="boton" onclick="ir_leccion2();">Instalación del Controlador</a></li>
                 <li><a class="dropdown-item" id="boton" onclick="ir_leccion3();">Interfaz de Impresión</a></li>
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion4();">Herramienta Web</a></li>
               </ul>
             </li>
 
@@ -572,7 +571,7 @@ if (!empty($_SESSION["name"])) {
     <!--LECCION 04-->
     <style>
       #leccion4 {
-        display: ;
+        display: none;
       }
     </style>
 
@@ -750,7 +749,7 @@ if (!empty($_SESSION["name"])) {
     <!--LECCION 06-->
     <style>
       #leccion6 {
-        display: none;
+        display: ;
       }
     </style>
 
@@ -759,20 +758,20 @@ if (!empty($_SESSION["name"])) {
       <!--Carrusel TF 01-->
       <article class="item_carru" id="item1_carru">
         <div class="tf_carru" id="tf_item_1">
-          <h5>Herramientas y ajustes</h5>
+          <h5>Interfaz de Impresión</h5>
 
           <div class="content-general">
             <p>
               <?php
-              $opha = new select_ha();
-              $resHA = $opha->select_ha();
-              while ($row = mysqli_fetch_array($resHA)) {
-                echo $row['ajustes'];
+              $op = new select_k_s();
+              $resI = $op->interfazP();
+              while ($row = mysqli_fetch_array($resI)) {
+                echo $row['driver'];
               }
               ?>
             </p>
           
-            <img src="./images/S/ha1.png" alt="">
+            <img src="./images/S/interfazP1.png" alt="">
 
           </div>
 
@@ -789,20 +788,20 @@ if (!empty($_SESSION["name"])) {
       <!--Carrusel TF 02-->
       <article class="item_carru" id="item2_carru">
         <div class="tf_carru" id="tf_item_2">
-          <h5>Cómo Acceder a diagnóstico?</h5>
+          <h5>KIP ImagePro</h5>
 
           <div class="content-general">
             <p>  
               <?php
-                $opha = new select_ha();
-                $resHA2 = $opha->select_ha2();
-                while ($row = mysqli_fetch_array($resHA2)){
-                  echo $row['ajustes'];
+                $op = new select_k_s();
+                $resI2 = $op->interfazP2();
+                while ($row = mysqli_fetch_array($resI2)){
+                  echo $row['driver'];
                 }
               ?>
             </p>
 
-            <img src="./images/S/ha2.png" alt="">
+            <img src="./images/S/interfazP3.png" alt="">
 
           </div>
 
@@ -817,18 +816,135 @@ if (!empty($_SESSION["name"])) {
       </article>
       <!--Carrusel TF 02-->
 
-      <!--Carrusel TF 05-->
+      <!--Carrusel TF 03-->
       <article class="item_carru" id="item3_carru">
         <div class="tf_carru" id="tf_item_3">
+          <h5>KIP ImagePro (Resumen de Uso)</h5>
 
-          <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección de formación Técnica</h5>
+          <div class="content-general">
+                <video width="100%" height="280" controls>
+                  <source src="./images/S/KIP ImagePro SP.mp4" type="video/mp4" >
+                </video>
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#tf_item_2"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#tf_item_4"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel TF 03-->
+
+      <!--Carrusel TF 04-->
+      <article class="item_carru" id="item4_carru">
+        <div class="tf_carru" id="tf_item_4">
+          <h5>KIP PrintPro.net</h5>
+
+          <div class="content-general">
+            <p>  
+              <?php
+                $op = new select_k_s();
+                $resI3 = $op->interfazP3();
+                while ($row = mysqli_fetch_array($resI3)){
+                  echo $row['driver'];
+                }
+              ?>
+            </p>
+
+              <img src="./images/S/interfazP2.png" alt="">
+
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#tf_item_3"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#tf_item_5"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel TF 04-->
+
+        <!--Carrusel TF 05-->
+        <article class="item_carru" id="item5_carru">
+        <div class="tf_carru" id="tf_item_5">
+          <h5>¿Cómo Descargar el KIP ImagePro?</h5>
+
+          <div class="content-general">
+            <p>  
+              <?php
+                $op = new select_k_s();
+                $resI4 = $op->interfazP4();
+                while ($row = mysqli_fetch_array($resI4)){
+                  echo $row['driver'];
+                }
+              ?>
+            </p>
+
+              <img src="./images/S/driver2.png" alt="">
+
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#tf_item_4"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#tf_item_6"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel TF 05-->
+
+        <!--Carrusel TF 06-->
+        <article class="item_carru" id="item6_carru">
+        <div class="tf_carru" id="tf_item_6">
+          <h5>¿Cómo Instalar el KIP ImagePro?</h5>
+
+          <div class="content-general">
+            <p>  
+              <?php
+                $op = new select_k_s();
+                $resI5 = $op->interfazP5();
+                while ($row = mysqli_fetch_array($resI5)){
+                  echo $row['driver'];
+                }
+              ?>
+            </p>
+
+              <img src="./images/S/interfazP4.png" alt="">
+
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#tf_item_5"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#tf_item_7"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel TF 06-->
+
+
+
+      <!--Carrusel TF 07-->
+      <article class="item_carru" id="item7_carru">
+        <div class="tf_carru" id="tf_item_7">
+
+          <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección.</h5>
 
           <div class="content-general">
             <p class="paragraph">
-              De Click en "Siguiente" para acceder a la lección VII
+              De Click en "Siguiente" para acceder a la siguiente lección.
             </p>
 
-            <img src="./images/H/siguiente4.jpg" alt="">
+            <img src="./images/siguiente5.jpg" alt="">
 
           </div>
 
