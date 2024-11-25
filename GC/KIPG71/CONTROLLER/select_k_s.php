@@ -249,5 +249,92 @@ class select_k_s{
         $resSL4 = mysqli_query($conexion,$sqlSL4)or die("Error");
         return $resSL4;
     }
+
+
+    //Funcion para la leccion9
+    public function so(){
+        $sqlSO = " SELECT so FROM kip_g71_s WHERE id=1";
+        $conexion = $this->Connection();
+        $resSO = mysqli_query($conexion,$sqlSO)or die("Error");
+        return $resSO;
+    }
+
+    public function so2(){
+        $sqlSO2 = " SELECT so FROM kip_g71_s WHERE id=2";
+        $conexion = $this->Connection();
+        $resSO2 = mysqli_query($conexion,$sqlSO2)or die("Error");
+        return $resSO2;
+    }
+
+    public function so3(){
+        $sqlSO3 = " SELECT so FROM kip_g71_s WHERE id=3";
+        $conexion = $this->Connection();
+        $resSO3 = mysqli_query($conexion,$sqlSO3)or die("Error");
+        return $resSO3;
+    }
+
+    public function so4(){
+        $sqlSO4 = " SELECT so FROM kip_g71_s WHERE id=4";
+        $conexion = $this->Connection();
+        $resSO4 = mysqli_query($conexion,$sqlSO4)or die("Error");
+        return $resSO4;
+    }
+
+    public function so5(){
+        $sqlSO5 = " SELECT so FROM kip_g71_s WHERE id=5";
+        $conexion = $this->Connection();
+        $resSO5 = mysqli_query($conexion,$sqlSO5)or die("Error");
+        return $resSO5;
+    }
+
+    public function so6(){
+        $sqlSO6 = " SELECT so FROM kip_g71_s WHERE id=6";
+        $conexion = $this->Connection();
+        $resSO6 = mysqli_query($conexion,$sqlSO6)or die("Error");
+        return $resSO6;
+    }
+
+    public function so7(){
+        $sqlSO7 = " SELECT so FROM kip_g71_s WHERE id=7";
+        $conexion = $this->Connection();
+        $resSO7 = mysqli_query($conexion,$sqlSO7)or die("Error");
+        return $resSO7;
+    }
+
+    public function so8(){
+        $sqlSO8 = " SELECT so FROM kip_g71_s WHERE id=8";
+        $conexion = $this->Connection();
+        $resSO8 = mysqli_query($conexion,$sqlSO8)or die("Error");
+        return $resSO8;
+    }
+
+    public function so9(){
+        $sqlSO9 = " SELECT so FROM kip_g71_s WHERE id=9";
+        $conexion = $this->Connection();
+        $resSO9 = mysqli_query($conexion,$sqlSO9)or die("Error");
+        return $resSO9;
+    }
+
+    public function so10(){
+        $sqlSO10 = " SELECT so FROM kip_g71_s WHERE id=10";
+        $conexion = $this->Connection();
+        $resSO10 = mysqli_query($conexion,$sqlSO10)or die("Error");
+        return $resSO10;
+    }
+
+    public function so11(){
+        $sqlSO11 = " SELECT so FROM kip_g71_s WHERE id=11";
+        $conexion = $this->Connection();
+        $resSO11 = mysqli_query($conexion,$sqlSO11)or die("Error");
+        return $resSO11;
+    }
+
+    public function so12(){
+        $sqlSO12 = " SELECT so FROM kip_g71_s WHERE id=12";
+        $conexion = $this->Connection();
+        $resSO12 = mysqli_query($conexion,$sqlSO12)or die("Error");
+        return $resSO12;
+    }
+
 }
 
