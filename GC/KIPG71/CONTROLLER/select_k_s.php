@@ -188,25 +188,66 @@ class select_k_s{
 
     //Funciones para Leccion 05
     public function scanR(){
-        $sqlSD = " SELECT driver FROM kip_g71_s WHERE id=1";
+        $sqlSD = " SELECT conf_b FROM kip_g71_s WHERE id=1";
         $conexion = $this->Connection();
         $resSD = mysqli_query($conexion,$sqlSD)or die("Error");
         return $resSD;
     }
 
     public function scanR2(){
-        $sqlSD2 = " SELECT driver FROM kip_g71_s WHERE id=2";
+        $sqlSD2 = " SELECT conf_b FROM kip_g71_s WHERE id=2";
         $conexion = $this->Connection();
         $resSD2 = mysqli_query($conexion,$sqlSD2)or die("Error");
         return $resSD2;
     }
 
     public function scanR3(){
-        $sqlSD3 = " SELECT driver FROM kip_g71_s WHERE id=3";
+        $sqlSD3 = " SELECT conf_b FROM kip_g71_s WHERE id=3";
         $conexion = $this->Connection();
         $resSD3 = mysqli_query($conexion,$sqlSD3)or die("Error");
         return $resSD3;
     }
 
+    public function scanR4(){
+        $sqlSD4 = " SELECT conf_b FROM kip_g71_s WHERE id=4";
+        $conexion = $this->Connection();
+        $resSD4 = mysqli_query($conexion,$sqlSD4)or die("Error");
+        return $resSD4;
+    }
+
+    public function scanR5(){
+        $sqlSD5 = " SELECT conf_b FROM kip_g71_s WHERE id=5";
+        $conexion = $this->Connection();
+        $resSD5 = mysqli_query($conexion,$sqlSD5)or die("Error");
+        return $resSD5;
+    }
+
+    public function scanL(){
+        $sqlSL = " SELECT conf_b FROM kip_g71_s WHERE id=6";
+        $conexion = $this->Connection();
+        $resSL = mysqli_query($conexion,$sqlSL)or die("Error");
+        return $resSL;
+    }
+
+    public function scanL2(){
+        $sqlSL2 = " SELECT conf_b FROM kip_g71_s WHERE id=7";
+        $conexion = $this->Connection();
+        $resSL2 = mysqli_query($conexion,$sqlSL2)or die("Error");
+        return $resSL2;
+    }
+
+    public function scanL3(){
+        $sqlSL3 = " SELECT conf_b FROM kip_g71_s WHERE id=8";
+        $conexion = $this->Connection();
+        $resSL3 = mysqli_query($conexion,$sqlSL3)or die("Error");
+        return $resSL3;
+    }
+
+    public function scanL4(){
+        $sqlSL4 = " SELECT conf_b FROM kip_g71_s WHERE id=9";
+        $conexion = $this->Connection();
+        $resSL4 = mysqli_query($conexion,$sqlSL4)or die("Error");
+        return $resSL4;
+    }
 }
 

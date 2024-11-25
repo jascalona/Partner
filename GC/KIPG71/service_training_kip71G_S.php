@@ -88,7 +88,6 @@ if (!empty($_SESSION["name"])) {
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" id="boton" onclick="ir_leccion5();">Digitalización en Red</a></li>
                 <li><a class="dropdown-item" id="boton" onclick="ir_leccion6();">Local Mailbox</a></li>
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion6();">Email</a></li>
               </ul>
             </li>
 
@@ -859,7 +858,7 @@ if (!empty($_SESSION["name"])) {
     <!--LECCION 06-->
     <style>
       #leccion6 {
-        display: ;
+        display: none;
       }
     </style>
 
@@ -1170,61 +1169,124 @@ if (!empty($_SESSION["name"])) {
 
     <div id="leccion7" class="container-carac">
 
-     <!--Carrusel TF 03-->
+     <!--Carrusel TF 01-->
      <article class="item_carru" id="item4_carru">
-        <div class="tf_carru" id="tf_item_4">
+        <div class="tf_carru" id="sr_item_1">
           <h5>Digitalización en red</h5>
 
           <div class="content-general">
             <p>  
               <?php
-                $opha = new select_ha();
-                $resHA3 = $opha->select_ha3();
-                while ($row = mysqli_fetch_array($resHA3)){
-                  echo $row['ajustes'];
+                $op = new select_k_s();
+                $res = $op->scanR();
+                while ($row = mysqli_fetch_array($res)){
+                  echo $row['conf_b'];
                 }
               ?>
             </p>
 
-            <img src="./images/S/ha3.png" alt="">
+              <img src="./images/S/scanerR1.png" alt="">
 
           </div>
 
 
           <div class="ui_fle_carru">
             <a href=""></a>
-            <a href="#tf_item_5"><i class='bx bxs-chevron-right'></i></a>
+            <a href="#sr_item_2"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel TF 01-->
+
+        <!--Carrusel TF 02-->
+        <article class="item_carru" id="item5_carru">
+        <div class="tf_carru" id="sr_item_2">
+          <h5>Digitalización en red</h5>
+
+          <div class="content-general">
+            <p>  
+              <?php
+                $op = new select_k_s();
+                $res = $op->scanR2();
+                while ($row = mysqli_fetch_array($res)){
+                  echo $row['conf_b'];
+                }
+              ?>
+            </p>
+
+            <img src="./images/S/scanerR2.png" alt="">
+
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#sr_item_1"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#sr_item_3"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel TF 02-->
+
+      
+        <!--Carrusel TF 03-->
+        <article class="item_carru" id="item5_carru">
+        <div class="tf_carru" id="sr_item_3">
+          <h5>Digitalización en red (New Mailbox)</h5>
+
+          <div class="content-general">
+            <p>  
+              <?php
+                $op = new select_k_s();
+                $res = $op->scanR3();
+                while ($row = mysqli_fetch_array($res)){
+                  echo $row['conf_b'];
+                }
+              ?>
+            </p>
+
+            <img src="./images/S/scanerR3.png" alt="">
+
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#sr_item_2"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#sr_item_4"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
         </div>
 
       </article>
       <!--Carrusel TF 03-->
-
+      
         <!--Carrusel TF 04-->
-        <article class="item_carru" id="item5_carru">
-        <div class="tf_carru" id="tf_item_5">
-          <h5>Acceso a referencias y rutinas de NVM</h5>
+        <article class="item_carru" id="item4_carru">
+        <div class="tf_carru" id="sr_item_4">
+          <h5>Digitalización en red (New Mailbox)</h5>
 
           <div class="content-general">
             <p>  
               <?php
-                $opha = new select_ha();
-                $resHA4 = $opha->select_ha4();
-                while ($row = mysqli_fetch_array($resHA4)){
-                  echo $row['ajustes'];
+                $op = new select_k_s();
+                $res = $op->scanR4();
+                while ($row = mysqli_fetch_array($res)){
+                  echo $row['conf_b'];
                 }
               ?>
             </p>
 
-            <img src="./images/S/ha4.png" alt="">
+            <img src="./images/S/scanerR4.png" alt="">
 
           </div>
 
 
           <div class="ui_fle_carru">
-            <a href="#tf_item_4"><i class='bx bxs-chevron-left'></i></a>
-            <a href="#tf_item_6"><i class='bx bxs-chevron-right'></i></a>
+            <a href="#sr_item_3"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#sr_item_5"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
         </div>
@@ -1232,19 +1294,81 @@ if (!empty($_SESSION["name"])) {
       </article>
       <!--Carrusel TF 04-->
 
+       <!--Carrusel TF 05-->
+       <article class="item_carru" id="item5_carru">
+        <div class="tf_carru" id="sr_item_5">
+          <h5>Digitalización en red (Configuración del Buzón)</h5>
 
-      <!--Carrusel TF 11-->
-      <article class="item_carru" id="item6_carru">
-        <div class="tf_carru" id="tf_item_6">
+          <div class="content-general">
+            <p>  
+              <?php
+                $op = new select_k_s();
+                $res = $op->scanR5();
+                while ($row = mysqli_fetch_array($res)){
+                  echo $row['conf_b'];
+                }
+              ?>
+            </p>
 
-          <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección de formación Técnica</h5>
+            <img src="./images/S/scanerR5.png" alt="">
+
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#sr_item_4"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#sr_item_6"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel TF 05-->
+
+    <!--Carrusel TF 06-->
+    <article class="item_carru" id="item6_carru">
+            <div class="tf_carru" id="sr_item_6">
+              <h5>Digitalización en red (Configuración del Buzón)</h5>
+
+              <div class="content-general">
+                <p>  
+                  <?php
+                    $op = new select_k_s();
+                    $res = $op->scanL3();
+                    while ($row = mysqli_fetch_array($res)){
+                      echo $row['conf_b'];
+                    }
+                  ?>
+                </p>
+
+                <img src="./images/S/scanerR5.png" alt="">
+
+              </div>
+
+
+              <div class="ui_fle_carru">
+                <a href="#sr_item_4"><i class='bx bxs-chevron-left'></i></a>
+                <a href="#sr_item_6"><i class='bx bxs-chevron-right'></i></a>
+              </div>
+
+            </div>
+
+          </article>
+          <!--Carrusel TF 05-->
+
+
+      <!--Carrusel TF 06-->
+      <article class="item_carru" id="item7_carru">
+        <div class="tf_carru" id="sr_item_7">
+
+          <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección.</h5>
 
           <div class="content-general">
             <p class="paragraph">
-              De Click en "Siguiente" para acceder a la lección VIII
+              De Click en "Siguiente" para acceder a la lección.
             </p>
 
-            <img src="./images/H/siguiente.jpg" alt="">
+            <img src="./images/siguiente.jpg" alt="">
 
           </div>
 
@@ -1256,7 +1380,7 @@ if (!empty($_SESSION["name"])) {
 
         </div>
       </article>
-      <!--Carrusel IP 11-->
+      <!--Carrusel IP 06-->
 
 
     </div>
@@ -1266,7 +1390,7 @@ if (!empty($_SESSION["name"])) {
     <!--LECCION 08-->
     <style>
       #leccion8 {
-        display: none;
+        display: ;
       }
     </style>
 
@@ -1275,20 +1399,20 @@ if (!empty($_SESSION["name"])) {
       <!--Carrusel TF 12-->
       <article class="item_carru" id="item12_carru">
         <div class="tf_carru" id="tf_item_12">
-          <h5>Carga de Software y actualizaciones</h5>
+          <h5>Local Mailbox</h5>
 
           <div class="content-general">
             <p>
               <?php
-              $opsf = new select_sft();
-              $resSF  = $opsf->select_sf();
-              while ($row = mysqli_fetch_array($resSF)) {
-                echo $row['software'];
+              $op = new select_k_s();
+              $res  = $op->scanL();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['conf_b'];
               }
               ?>
             </p>
 
-            <img src="./images/S/sf2.png" alt="">
+            <img src="./images/S/scanerR5.png" alt="">
 
           </div>
 
@@ -1305,22 +1429,22 @@ if (!empty($_SESSION["name"])) {
       <!--Carrusel TF 13-->
       <article class="item_carru" id="item13_carru">
         <div class="tf_carru" id="tf_item_13">
-          <h5>Identificar la versión de firmware</h5>
+          <h5>Local Mailbox</h5>
 
           <div class="content-general">
             <p>
               <?php
-              $opsf = new select_sft();
-              $resSF2  = $opsf->select_sf2();
+              $op = new select_k_s();
+              $resSF2  = $op->scanR2();
               while ($row = mysqli_fetch_array($resSF2)) {
-                echo $row['software'];
+                echo $row['conf_b'];
               }
               ?>
             </p>
 
+            <img src="./images/S/scanerR2.png" alt="">
+
           </div>
-
-
 
           <div class="ui_fle_carru">
             <a href="#tf_item_12"><i class='bx bxs-chevron-left'></i></a>
@@ -1335,19 +1459,19 @@ if (!empty($_SESSION["name"])) {
       <!--Carrusel TF 14-->
       <article class="item_carru" id="item14_carru">
         <div class="tf_carru" id="tf_item_14">
-          <h5>Actualización automática de software</h5>
+          <h5>Digitalización Local (New Mailbox)</h5>
             <div class="content-general">
             <p>
                 <?php
-                $opsf = new select_sft();
-                $resSF3  = $opsf->select_sf3();
+                $op = new select_k_s();
+                $resSF3  = $op->scanR3();
                 while ($row = mysqli_fetch_array($resSF3)) {
-                  echo $row['software'];
+                  echo $row['conf_b'];
                 }
                 ?>
               </p>
 
-              <img src="./images/S/sf4.png" alt="">
+              <img src="./images/S/scanerR3.png" alt="">
             </div>
 
           <div class="ui_fle_carru">
@@ -1363,20 +1487,20 @@ if (!empty($_SESSION["name"])) {
       <!--Carrusel TF 15-->
       <article class="item_carru" id="item15_carru">
         <div class="tf_carru" id="tf_item_15">
-          <h5>Actualización de firmware mediante una unidad USB</h5>
+          <h5>Local Mailbox (Configuración del Buzón)</h5>
 
           <div class="content-general">
             <p>
               <?php
-              $opsf = new select_sft();
-              $resSF4 = $opsf->select_sf4();
+              $opsf = new select_k_s();
+              $resSF4 = $opsf->scanL2();
               while ($row = mysqli_fetch_array($resSF4)) {
-                echo $row["software"];
+                echo $row["conf_b"];
               }
               ?>
             </p>
 
-            <img src="./images/S/sf5.png" alt="">
+            <img src="./images/S/scanerL1.png" alt="">
 
           </div>
 
@@ -1390,24 +1514,115 @@ if (!empty($_SESSION["name"])) {
       </article>
       <!--Carrusel TF 15-->
 
-
-      <!--Carrusel TF 19-->
-      <article class="item_carru" id="item16_carru">
-        <div class="tf_carru" id="tf_item_16">
-          <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito la formación de Servicio Técnico para VersaLink B405</h5>
+       <!--Carrusel TF 15-->
+       <article class="item_carru" id="item15_carru">
+        <div class="tf_carru" id="tf_item_15">
+          <h5>Local Mailbox (Configuración del Buzón)</h5>
 
           <div class="content-general">
-            <p class="paragraph">
-              De Click en "Ir a la Evaluación" para comenzar la evaluación diagnostica
+            <p>
+              <?php
+              $opsf = new select_k_s();
+              $resSF4 = $opsf->scanL2();
+              while ($row = mysqli_fetch_array($resSF4)) {
+                echo $row["conf_b"];
+              }
+              ?>
             </p>
+
+            <img src="./images/S/scanerL1.png" alt="">
+
           </div>
 
-          <div class="btn-enlaces-evaluacion">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScrdZvXcq-K4OoceGqDd4ul1S1_L4TPFZzW_KbdbbuvzquXvg/viewform">Ir a la Evaluación</a>
-            <br>
-            <a href="../VL_B405.php">Volver a los detalles de Inscripción</a>
+          <div class="ui_fle_carru">
+            <a href="#tf_item_14"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#tf_item_16"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
+        </div>
+
+      </article>
+      <!--Carrusel TF 15-->
+
+        <!--Carrusel TF 16-->
+        <article class="item_carru" id="item16_carru">
+        <div class="tf_carru" id="tf_item_16">
+          <h5>Local Mailbox (Configuración del Buzón)</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $resSF4 = $op->scanL3();
+              while ($row = mysqli_fetch_array($resSF4)) {
+                echo $row["conf_b"];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/scanerL2.png" alt="">
+
+          </div>
+
+          <div class="ui_fle_carru">
+            <a href="#tf_item_15"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#tf_item_17"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel TF 16-->
+
+      
+        <!--Carrusel TF 17-->
+        <article class="item_carru" id="item17_carru">
+        <div class="tf_carru" id="tf_item_17">
+          <h5>Local Mailbox (Vista Previa del directorio Local)</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $resSF4 = $op->scanL4();
+              while ($row = mysqli_fetch_array($resSF4)) {
+                echo $row["conf_b"];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/scanerL3.png" alt="">
+
+          </div>
+
+          <div class="ui_fle_carru">
+            <a href="#tf_item_16"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#tf_item_18"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel TF 17-->
+
+      <!--Carrusel TF 18-->
+      <article class="item_carru" id="item18_carru">
+        <div class="tf_carru" id="tf_item_18">
+        <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección.</h5>
+
+        <div class="content-general">
+          <p class="paragraph">
+            De Click en "Siguiente" para acceder a la lección.
+          </p>
+
+          <img src="./images/siguiente4.jpg" alt="">
+        </div>
+
+          <div class="btn-leccion">
+            <button id="boton" onclick="ir_leccion8();">
+              Siguiente
+            </button>
+          </div>
 
         </div>
       </article>
