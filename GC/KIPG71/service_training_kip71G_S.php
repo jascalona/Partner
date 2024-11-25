@@ -1010,10 +1010,98 @@ if (!empty($_SESSION["name"])) {
       </article>
       <!--Carrusel TF 06-->
 
-
-      <!--Carrusel TF 04-->
-      <article class="item_carru" id="item6_carru">
+        <!--Carrusel TF 06-->
+        <article class="item_carru" id="item6_carru">
         <div class="tf_carru" id="tf_item_6">
+          <h5>Creación y guardado de trabajos</h5>
+
+          <div class="content-general">
+                <video width="100%" height="280" controls>
+                  <source src="./images/S/creado_guardado_trabajos.mp4" type="video/mp4" >
+                </video>
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#tf_item_5"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#tf_item_7"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel TF 06-->
+
+       <!--Carrusel TF 07-->
+       <article class="item_carru" id="item7_carru">
+        <div class="tf_carru" id="tf_item_7">
+          <h5>Creación u uso de ajustes prestablecidos</h5>
+
+          <div class="content-general">
+                <video width="100%" height="280" controls>
+                  <source src="./images/S/creacion_ajustes_prestablecidos.mp4" type="video/mp4" >
+                </video>
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#tf_item_6"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#tf_item_8"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel TF 07-->
+
+         <!--Carrusel TF 08-->
+         <article class="item_carru" id="item8_carru">
+        <div class="tf_carru" id="tf_item_8">
+          <h5>Creación de múltiples trabajos</h5>
+
+          <div class="content-general">
+                <video width="100%" height="280" controls>
+                  <source src="./images/S/creacion_multiples_trabajos.mp4" type="video/mp4" >
+                </video>
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#tf_item_7"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#tf_item_9"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel TF 08-->
+
+       <!--Carrusel TF 09-->
+        <article class="item_carru" id="item9_carru">
+        <div class="tf_carru" id="tf_item_9">
+          <h5>Cómo utilizar la configuración de calidad de impresión</h5>
+
+          <div class="content-general">
+                <video width="100%" height="280" controls>
+                  <source src="./images/S/calidad_impresion.mp4" type="video/mp4" >
+                </video>
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#tf_item_8"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#tf_item_10"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel TF 09-->
+
+
+      <!--Carrusel TF 10-->
+      <article class="item_carru" id="item10_carru">
+        <div class="tf_carru" id="tf_item_10">
           <h5>KIP PrintPro.net</h5>
 
           <div class="content-general">
@@ -1033,19 +1121,19 @@ if (!empty($_SESSION["name"])) {
 
 
           <div class="ui_fle_carru">
-            <a href="#tf_item_5"><i class='bx bxs-chevron-left'></i></a>
-            <a href="#tf_item_7"><i class='bx bxs-chevron-right'></i></a>
+            <a href="#tf_item_9"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#tf_item_11"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
         </div>
 
       </article>
-      <!--Carrusel TF 04-->
+      <!--Carrusel TF 10-->
 
 
-      <!--Carrusel TF 07-->
-      <article class="item_carru" id="item7_carru">
-        <div class="tf_carru" id="tf_item_7">
+      <!--Carrusel TF 11-->
+      <article class="item_carru" id="item11_carru">
+        <div class="tf_carru" id="tf_item_11">
 
           <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección.</h5>
 
@@ -1066,7 +1154,7 @@ if (!empty($_SESSION["name"])) {
 
         </div>
       </article>
-      <!--Carrusel TF 05-->
+      <!--Carrusel TF 11-->
 
 
     </div>
