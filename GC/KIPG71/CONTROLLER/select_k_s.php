@@ -336,5 +336,72 @@ class select_k_s{
         return $resSO12;
     }
 
+    //Funciones leccion10
+    public function cs(){
+        $sqlCS = " SELECT so FROM kip_g71_s WHERE id=13";
+        $conexion = $this->Connection();
+        $resCS = mysqli_query($conexion,$sqlCS)or die("Error");
+        return $resCS;
+    }
+
+    public function cs2(){
+        $sqlCS2 = " SELECT so FROM kip_g71_s WHERE id=14";
+        $conexion = $this->Connection();
+        $resCS2 = mysqli_query($conexion,$sqlCS2)or die("Error");
+        return $resCS2;
+    }
+
+    public function cs3(){
+        $sqlCS3 = " SELECT so FROM kip_g71_s WHERE id=15";
+        $conexion = $this->Connection();
+        $resCS3 = mysqli_query($conexion,$sqlCS3)or die("Error");
+        return $resCS3;
+    }
+
+    public function cs4(){
+        $sqlCS4 = " SELECT so FROM kip_g71_s WHERE id=16";
+        $conexion = $this->Connection();
+        $resCS4 = mysqli_query($conexion,$sqlCS4)or die("Error");
+        return $resCS4;
+    }
+
+    public function cs5(){
+        $sqlCS5 = " SELECT so FROM kip_g71_s WHERE id=17";
+        $conexion = $this->Connection();
+        $resCS5 = mysqli_query($conexion,$sqlCS5)or die("Error");
+        return $resCS5;
+    }
+
+    public function cs6(){
+        $sqlCS6 = " SELECT so FROM kip_g71_s WHERE id=18";
+        $conexion = $this->Connection();
+        $resCS6 = mysqli_query($conexion,$sqlCS6)or die("Error");
+        return $resCS6;
+    }
+
+    public function cs7(){
+        $sqlCS7 = " SELECT so FROM kip_g71_s WHERE id=19";
+        $conexion = $this->Connection();
+        $resCS7 = mysqli_query($conexion,$sqlCS7)or die("Error");
+        return $resCS7;
+    }
+
+    public function cs8(){
+        $sqlCS8 = " SELECT so FROM kip_g71_s WHERE id=20";
+        $conexion = $this->Connection();
+        $resCS8 = mysqli_query($conexion,$sqlCS8)or die("Error");
+        return $resCS8;
+    }
+    
+    public function cs9(){
+        $sqlCS9 = " SELECT so FROM kip_g71_s WHERE id=21";
+        $conexion = $this->Connection();
+        $resCS9 = mysqli_query($conexion,$sqlCS9)or die("Error");
+        return $resCS9;
+    }
+
+
+
+
 }
 

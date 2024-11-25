@@ -1971,6 +1971,338 @@ if (!empty($_SESSION["name"])) {
     </div>
     <!--LECCION 09-->
 
+    <!--LECCION 09-->
+    <style>
+      #leccion10{
+        display: ;
+      }
+    </style>    
+
+    <div id="leccion10" class="container-carac">
+          
+    <!--Carrusel  01-->
+      <article class="item_carru" id="item1_carru">
+        <div class="cs_carru" id="cs_item_1">
+          <h5>Actualización usando el Parche de Seguridad</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->cs();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['so'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/cSeguridad1.png" alt="">
+
+          </div>
+
+          <div class="ui_fle_carru">
+            <a href=""></a>
+            <a href="#cs_item_2"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 01-->
+
+
+      <!--Carrusel  02-->
+      <article class="item_carru" id="item2_carru">
+        <div class="cs_carru" id="cs_item_2">
+          <h5>Actualización usando el Parche de Seguridad</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->cs2();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['so'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/cSeguridad2.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+          <a href="#cs_item_1"><i class='bx bxs-chevron-left'></i></a>
+          <a href="#cs_item_3"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 02-->
+
+
+      <!--Carrusel  03-->
+      <article class="item_carru" id="item3_carru">
+        <div class="cs_carru" id="cs_item_3">
+          <h5>Actualización usando el Parche de Seguridad</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->cs3();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['so'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/cSeguridad3.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+          <a href="#cs_item_2"><i class='bx bxs-chevron-left'></i></a>
+          <a href="#cs_item_4"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 03-->
+
+
+       <!--Carrusel  04-->
+       <article class="item_carru" id="item4_carru">
+        <div class="cs_carru" id="cs_item_4">
+          <h5>Actualización usando el Parche de Seguridad</h5>
+
+          <div class="content-general">
+            <p> 
+              <?php
+              $op = new select_k_s();
+              $res  = $op->cs4();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['so'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/cSeguridad4.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+          <a href="#cs_item_3"><i class='bx bxs-chevron-left'></i></a>
+          <a href="#cs_item_5"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 04-->
+
+
+       <!--Carrusel  05-->
+       <article class="item_carru" id="item5_carru">
+        <div class="cs_carru" id="cs_item_5">
+          <h5>Actualización usando el Parche de Seguridad</h5>
+
+          <div class="content-general">
+            <p> 
+              <?php
+              $op = new select_k_s();
+              $res  = $op->cs5();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['so'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/cSeguridad5.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+          <a href="#cs_item_4"><i class='bx bxs-chevron-left'></i></a>
+          <a href="#cs_item_6"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 05-->
+
+
+      <!--Carrusel  06-->
+      <article class="item_carru" id="item6_carru">
+        <div class="cs_carru" id="cs_item_6">
+          <h5>Actualización usando el Parche de Seguridad</h5>
+
+          <div class="content-general">
+            <p> 
+              <?php
+              $op = new select_k_s();
+              $res  = $op->cs6();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['so'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/cSeguridad6.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+          <a href="#cs_item_5"><i class='bx bxs-chevron-left'></i></a>
+          <a href="#cs_item_7"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 06-->
+
+      <!--Carrusel  07-->
+      <article class="item_carru" id="item7_carru">
+        <div class="cs_carru" id="cs_item_7">
+          <h5>Actualización usando el Parche de Seguridad</h5>
+
+          <div class="content-general">
+            <p> 
+              <?php
+              $op = new select_k_s();
+              $res  = $op->cs7();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['so'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/cSeguridad7.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+          <a href="#cs_item_6"><i class='bx bxs-chevron-left'></i></a>
+          <a href="#cs_item_8"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 07-->
+
+      <!--Carrusel  08-->
+      <article class="item_carru" id="item8_carru">
+        <div class="cs_carru" id="cs_item_8">
+          <h5>Actualización usando el Parche de Seguridad</h5>
+
+          <div class="content-general">
+            <p> 
+              <?php
+              $op = new select_k_s();
+              $res  = $op->cs8();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['so'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/cSeguridad8.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+          <a href="#cs_item_7"><i class='bx bxs-chevron-left'></i></a>
+          <a href="#cs_item_9"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 08-->
+
+      <!--Carrusel  09-->
+      <article class="item_carru" id="item9_carru">
+        <div class="cs_carru" id="cs_item_9">
+          <h5>Proceso de Actualización</h5>
+
+          <div class="content-general">
+            <p>No apague el equipo!</p>
+            <img src="./images/S/cSeguridad9.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+          <a href="#cs_item_8"><i class='bx bxs-chevron-left'></i></a>
+          <a href="#cs_item_10"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 09-->
+
+      <!--Carrusel  10-->
+      <article class="item_carru" id="item10_carru">
+        <div class="cs_carru" id="cs_item_10">
+          <h5>Actualización usando el Parche de Seguridad</h5>
+
+          <div class="content-general">
+          <p> 
+              <?php
+              $op = new select_k_s();
+              $res  = $op->cs9();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['so'];
+              }
+              ?>
+            </p>
+
+
+            <img src="./images/S/cSeguridad11.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+          <a href="#cs_item_9"><i class='bx bxs-chevron-left'></i></a>
+          <a href="#cs_item_11"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 10-->
+
+      <!--Carrusel TF 11-->
+      <article class="item_carru" id="item11_carru">
+        <div class="cs_carru" id="cs_item_11">
+          <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección.</h5>
+
+          <div class="content-general">
+            <p class="paragraph">
+              De Click en "Siguiente" para acceder a la lección.
+            </p>
+
+            <img src="./images/siguiente3.jpg" alt="">
+          </div>
+
+          <div class="btn-leccion">
+            <button id="boton" onclick="ir_leccion8();">
+              Siguiente
+            </button>
+          </div>
+
+        </div>
+      </article>
+      <!--Carrusel IP 11-->
+
+    </div>
+    <!--LECCION 10-->
+
 
   </main>
   <!--Content-->
