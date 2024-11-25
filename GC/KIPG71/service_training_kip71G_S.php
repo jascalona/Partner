@@ -571,7 +571,7 @@ if (!empty($_SESSION["name"])) {
     <!--LECCION 04-->
     <style>
       #leccion4 {
-        display: ;
+        display: none;
       }
     </style>
 
@@ -802,7 +802,7 @@ if (!empty($_SESSION["name"])) {
           <!--Carrusel IP 09-->
           <article class="item_carru" id="item9_carru">
               <div class="in_carru" id="in_item_9">
-                <h5>¿Cómo usar las propedades del controlador?</h5>
+                <h5>¿Cómo usar las propiedades del controlador?</h5>
 
                 <div class="content-general">
                   <p>
@@ -859,7 +859,7 @@ if (!empty($_SESSION["name"])) {
     <!--LECCION 06-->
     <style>
       #leccion6 {
-        display: none;
+        display: ;
       }
     </style>
 
@@ -948,40 +948,9 @@ if (!empty($_SESSION["name"])) {
       </article>
       <!--Carrusel TF 03-->
 
-      <!--Carrusel TF 04-->
-      <article class="item_carru" id="item4_carru">
-        <div class="tf_carru" id="tf_item_4">
-          <h5>KIP PrintPro.net</h5>
-
-          <div class="content-general">
-            <p>  
-              <?php
-                $op = new select_k_s();
-                $resI3 = $op->interfazP3();
-                while ($row = mysqli_fetch_array($resI3)){
-                  echo $row['interfazP'];
-                }
-              ?>
-            </p>
-
-              <img src="./images/S/interfazP2.png" alt="">
-
-          </div>
-
-
-          <div class="ui_fle_carru">
-            <a href="#tf_item_3"><i class='bx bxs-chevron-left'></i></a>
-            <a href="#tf_item_5"><i class='bx bxs-chevron-right'></i></a>
-          </div>
-
-        </div>
-
-      </article>
-      <!--Carrusel TF 04-->
-
         <!--Carrusel TF 05-->
-        <article class="item_carru" id="item5_carru">
-        <div class="tf_carru" id="tf_item_5">
+        <article class="item_carru" id="item4_carru">
+        <div class="tf_carru" id="tf_item_4">
           <h5>¿Cómo Descargar el KIP ImagePro?</h5>
 
           <div class="content-general">
@@ -1001,8 +970,8 @@ if (!empty($_SESSION["name"])) {
 
 
           <div class="ui_fle_carru">
-            <a href="#tf_item_4"><i class='bx bxs-chevron-left'></i></a>
-            <a href="#tf_item_6"><i class='bx bxs-chevron-right'></i></a>
+            <a href="#tf_item_3"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#tf_item_5"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
         </div>
@@ -1011,8 +980,8 @@ if (!empty($_SESSION["name"])) {
       <!--Carrusel TF 05-->
 
         <!--Carrusel TF 06-->
-        <article class="item_carru" id="item6_carru">
-        <div class="tf_carru" id="tf_item_6">
+        <article class="item_carru" id="item5_carru">
+        <div class="tf_carru" id="tf_item_5">
           <h5>¿Cómo Instalar el KIP ImagePro?</h5>
 
           <div class="content-general">
@@ -1032,8 +1001,8 @@ if (!empty($_SESSION["name"])) {
 
 
           <div class="ui_fle_carru">
-            <a href="#tf_item_5"><i class='bx bxs-chevron-left'></i></a>
-            <a href="#tf_item_7"><i class='bx bxs-chevron-right'></i></a>
+            <a href="#tf_item_4"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#tf_item_6"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
         </div>
@@ -1041,6 +1010,37 @@ if (!empty($_SESSION["name"])) {
       </article>
       <!--Carrusel TF 06-->
 
+
+      <!--Carrusel TF 04-->
+      <article class="item_carru" id="item6_carru">
+        <div class="tf_carru" id="tf_item_6">
+          <h5>KIP PrintPro.net</h5>
+
+          <div class="content-general">
+            <p>  
+              <?php
+                $op = new select_k_s();
+                $resI3 = $op->interfazP3();
+                while ($row = mysqli_fetch_array($resI3)){
+                  echo $row['interfazP'];
+                }
+              ?>
+            </p>
+
+              <img src="./images/S/interfazP2.png" alt="">
+
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#tf_item_5"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#tf_item_7"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel TF 04-->
 
 
       <!--Carrusel TF 07-->
