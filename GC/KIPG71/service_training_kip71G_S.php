@@ -1971,10 +1971,10 @@ if (!empty($_SESSION["name"])) {
     </div>
     <!--LECCION 09-->
 
-    <!--LECCION 09-->
+    <!--LECCION 10-->
     <style>
       #leccion10{
-        display: ;
+        display: none;
       }
     </style>    
 
@@ -2302,6 +2302,196 @@ if (!empty($_SESSION["name"])) {
 
     </div>
     <!--LECCION 10-->
+
+    <!--LECCION 11-->
+    <style>
+      #leccion11{
+        display: ;
+      }
+    </style>    
+
+    <div id="leccion11" class="container-carac">
+          
+    <!--Carrusel  01-->
+      <article class="item_carru" id="item1_carru">
+        <div class="ri_carru" id="ri_item_1">
+          <h5>Restauración Interna</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->restauracion();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['restauracion'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/kip.png" alt="">
+
+          </div>
+
+          <div class="ui_fle_carru">
+            <a href=""></a>
+            <a href="#ri_item_2"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 01-->
+
+
+      <!--Carrusel  02-->
+      <article class="item_carru" id="item2_carru">
+        <div class="ri_carru" id="ri_item_2">
+          <h5>Restauración Interna</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->restauracion2();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['restauracion'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/restauracion2.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+          <a href="#ri_item_1"><i class='bx bxs-chevron-left'></i></a>
+          <a href="#ri_item_3"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 02-->
+
+
+      <!--Carrusel  03-->
+      <article class="item_carru" id="item3_carru">
+        <div class="ri_carru" id="ri_item_3">
+          <h5>Restauración Interna</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->restauracion3();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['restauracion'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/restauracion3.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+          <a href="#ri_item_2"><i class='bx bxs-chevron-left'></i></a>
+          <a href="#ri_item_4"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 03-->
+
+
+       <!--Carrusel  04-->
+       <article class="item_carru" id="item4_carru">
+        <div class="ri_carru" id="ri_item_4">
+          <h5>Restauración Interna</h5>
+
+          <div class="content-general">
+            <p> 
+              <?php
+              $op = new select_k_s();
+              $res  = $op->restauracion4();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['restauracion'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/restauracion4.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+          <a href="#ri_item_3"><i class='bx bxs-chevron-left'></i></a>
+          <a href="#ri_item_5"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 04-->
+
+
+       <!--Carrusel  05-->
+       <article class="item_carru" id="item5_carru">
+        <div class="ri_carru" id="ri_item_5">
+          <h5>Actualización usando el Parche de Seguridad</h5>
+
+          <div class="content-general">
+            <p> 
+              <?php
+              $op = new select_k_s();
+              $res  = $op->restauracion5();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['restauracion'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/restauracion6.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+          <a href="#ri_item_4"><i class='bx bxs-chevron-left'></i></a>
+          <a href="#ri_item_6"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 05-->
+
+
+      <!--Carrusel TF 11-->
+      <article class="item_carru" id="item6_carru">
+        <div class="ir_carru" id="ri_item_6">
+          <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección.</h5>
+
+          <div class="content-general">
+            <p class="paragraph">
+              De Click en "Siguiente" para acceder a la lección.
+            </p>
+
+            <img src="./images/siguiente5.jpg" alt="">
+          </div>
+
+          <div class="btn-leccion">
+            <button id="boton" onclick="ir_leccion8();">
+              Siguiente
+            </button>
+          </div>
+
+        </div>
+      </article>
+      <!--Carrusel IP 11-->
+
+    </div>
+    <!--LECCION 11-->
 
 
   </main>

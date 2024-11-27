@@ -400,7 +400,42 @@ class select_k_s{
         return $resCS9;
     }
 
+    
+    //Funcion para leccion11
+    public function restauracion(){
+        $sqlRI = " SELECT restauracion FROM kip_g71_s WHERE id=1 ";
+        $conexion = $this->Connection();
+        $resRI = mysqli_query($conexion,$sqlRI)or die("Error");
+        return $resRI;
+    }
 
+    public function restauracion2(){
+        $sqlRI2 = " SELECT restauracion FROM kip_g71_s WHERE id=2 ";
+        $conexion = $this->Connection();
+        $resRI2 = mysqli_query($conexion,$sqlRI2)or die("Error");
+        return $resRI2;
+    }
+
+    public function restauracion3(){
+        $sqlRI3 = " SELECT restauracion FROM kip_g71_s WHERE id=3 ";
+        $conexion = $this->Connection();
+        $resRI3 = mysqli_query($conexion,$sqlRI3)or die("Error");
+        return $resRI3;
+    }
+
+    public function restauracion4(){
+        $sqlRI4 = " SELECT restauracion FROM kip_g71_s WHERE id=4 ";
+        $conexion = $this->Connection();
+        $resRI4 = mysqli_query($conexion,$sqlRI4)or die("Error");
+        return $resRI4;
+    }
+
+    public function restauracion5(){
+        $sqlRI5 = " SELECT restauracion FROM kip_g71_s WHERE id=5 ";
+        $conexion = $this->Connection();
+        $resRI5 = mysqli_query($conexion,$sqlRI5)or die("Error");
+        return $resRI5;
+    }
 
 
 }
