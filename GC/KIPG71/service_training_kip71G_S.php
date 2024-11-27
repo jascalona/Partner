@@ -98,7 +98,6 @@ if (!empty($_SESSION["name"])) {
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" id="boton" onclick="ir_leccion6();">Firmware USB serie 71</a></li>
                 <li><a class="dropdown-item" id="boton" onclick="ir_leccion6();">Actualización usando parche de seguridad</a></li>
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion8();">Copia de Seguridad</a></li>
                 <li><a class="dropdown-item" id="boton" onclick="ir_leccion8();">Restauracion Interna</a></li>
               </ul>
             </li>
