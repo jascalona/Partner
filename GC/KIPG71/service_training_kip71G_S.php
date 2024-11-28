@@ -65,7 +65,7 @@ if (!empty($_SESSION["name"])) {
                 Caracteristicas de Producto
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion1_s();" >Caracteristicas del Producto</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion1_s();">Caracteristicas del Producto</a></li>
                 <li><a class="dropdown-item" id="boton" onclick="ir_leccion2_s();">Tecnología de impresión de alta definición (HDP)</a></li>
                 <li><a class="dropdown-item" id="boton" onclick="ir_leccion3_s();">Máxima durabilidad de la imagen</a></li>
               </ul>
@@ -107,8 +107,7 @@ if (!empty($_SESSION["name"])) {
                 Contabilidad
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion8();">Contabilidad Local</a></li>
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion8();">Contabilidad con LDAP</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion11_s();">Contabilidad Local</a></li>
               </ul>
             </li>
 
@@ -1571,14 +1570,14 @@ if (!empty($_SESSION["name"])) {
 
     <!--LECCION 08-->
     <style>
-      #leccion8{
+      #leccion8 {
         display: none;
       }
-    </style>    
+    </style>
 
     <div id="leccion8" class="container-carac">
-          
-    <!--Carrusel  01-->
+
+      <!--Carrusel  01-->
       <article class="item_carru" id="item1_carru">
         <div class="sok_carru" id="sok_item_1">
           <h5>Actualización de Firmware USB (Preparar el archivo)</h5>
@@ -1630,8 +1629,8 @@ if (!empty($_SESSION["name"])) {
 
 
           <div class="ui_fle_carru">
-          <a href="#sok_item_1"><i class='bx bxs-chevron-left'></i></a>
-          <a href="#sok_item_3"><i class='bx bxs-chevron-right'></i></a>
+            <a href="#sok_item_1"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#sok_item_3"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
         </div>
@@ -1661,8 +1660,8 @@ if (!empty($_SESSION["name"])) {
 
 
           <div class="ui_fle_carru">
-          <a href="#sok_item_2"><i class='bx bxs-chevron-left'></i></a>
-          <a href="#sok_item_4"><i class='bx bxs-chevron-right'></i></a>
+            <a href="#sok_item_2"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#sok_item_4"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
         </div>
@@ -1671,13 +1670,13 @@ if (!empty($_SESSION["name"])) {
       <!--Carrusel 03-->
 
 
-       <!--Carrusel  04-->
-       <article class="item_carru" id="item4_carru">
+      <!--Carrusel  04-->
+      <article class="item_carru" id="item4_carru">
         <div class="sok_carru" id="sok_item_4">
           <h5>Actualización de Firmware (Abrir la GUI del mantenimiento de KCS)</h5>
 
           <div class="content-general">
-            <p> 
+            <p>
               <?php
               $op = new select_k_s();
               $res  = $op->so4();
@@ -1692,8 +1691,8 @@ if (!empty($_SESSION["name"])) {
 
 
           <div class="ui_fle_carru">
-          <a href="#sok_item_3"><i class='bx bxs-chevron-left'></i></a>
-          <a href="#sok_item_5"><i class='bx bxs-chevron-right'></i></a>
+            <a href="#sok_item_3"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#sok_item_5"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
         </div>
@@ -1702,13 +1701,13 @@ if (!empty($_SESSION["name"])) {
       <!--Carrusel 04-->
 
 
-       <!--Carrusel  05-->
-       <article class="item_carru" id="item5_carru">
+      <!--Carrusel  05-->
+      <article class="item_carru" id="item5_carru">
         <div class="sok_carru" id="sok_item_5">
           <h5>Actualización de Firmware (Abrir la GUI del mantenimiento de KCS)</h5>
 
           <div class="content-general">
-            <p> 
+            <p>
               <?php
               $op = new select_k_s();
               $res  = $op->so5();
@@ -1723,8 +1722,8 @@ if (!empty($_SESSION["name"])) {
 
 
           <div class="ui_fle_carru">
-          <a href="#sok_item_4"><i class='bx bxs-chevron-left'></i></a>
-          <a href="#sok_item_6"><i class='bx bxs-chevron-right'></i></a>
+            <a href="#sok_item_4"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#sok_item_6"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
         </div>
@@ -1739,7 +1738,7 @@ if (!empty($_SESSION["name"])) {
           <h5>Actualización de Firmware (Abrir la GUI del mantenimiento de KCS)</h5>
 
           <div class="content-general">
-            <p> 
+            <p>
               <?php
               $op = new select_k_s();
               $res  = $op->so6();
@@ -1754,8 +1753,8 @@ if (!empty($_SESSION["name"])) {
 
 
           <div class="ui_fle_carru">
-          <a href="#sok_item_5"><i class='bx bxs-chevron-left'></i></a>
-          <a href="#sok_item_7"><i class='bx bxs-chevron-right'></i></a>
+            <a href="#sok_item_5"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#sok_item_7"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
         </div>
@@ -1769,7 +1768,7 @@ if (!empty($_SESSION["name"])) {
           <h5>Actualización de Firmware (Abrir la GUI del mantenimiento de KCS)</h5>
 
           <div class="content-general">
-            <p> 
+            <p>
               <?php
               $op = new select_k_s();
               $res  = $op->so7();
@@ -1784,8 +1783,8 @@ if (!empty($_SESSION["name"])) {
 
 
           <div class="ui_fle_carru">
-          <a href="#sok_item_6"><i class='bx bxs-chevron-left'></i></a>
-          <a href="#sok_item_8"><i class='bx bxs-chevron-right'></i></a>
+            <a href="#sok_item_6"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#sok_item_8"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
         </div>
@@ -1799,7 +1798,7 @@ if (!empty($_SESSION["name"])) {
           <h5>Actualización de Firmware (Abrir la GUI del mantenimiento de KCS)</h5>
 
           <div class="content-general">
-            <p> 
+            <p>
               <?php
               $op = new select_k_s();
               $res  = $op->so8();
@@ -1814,8 +1813,8 @@ if (!empty($_SESSION["name"])) {
 
 
           <div class="ui_fle_carru">
-          <a href="#sok_item_7"><i class='bx bxs-chevron-left'></i></a>
-          <a href="#sok_item_9"><i class='bx bxs-chevron-right'></i></a>
+            <a href="#sok_item_7"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#sok_item_9"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
         </div>
@@ -1829,7 +1828,7 @@ if (!empty($_SESSION["name"])) {
           <h5>Actualización de Firmware (Abrir la GUI del mantenimiento de KCS)</h5>
 
           <div class="content-general">
-            <p> 
+            <p>
               <?php
               $op = new select_k_s();
               $res  = $op->so9();
@@ -1844,8 +1843,8 @@ if (!empty($_SESSION["name"])) {
 
 
           <div class="ui_fle_carru">
-          <a href="#sok_item_8"><i class='bx bxs-chevron-left'></i></a>
-          <a href="#sok_item_10"><i class='bx bxs-chevron-right'></i></a>
+            <a href="#sok_item_8"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#sok_item_10"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
         </div>
@@ -1859,7 +1858,7 @@ if (!empty($_SESSION["name"])) {
           <h5>Actualización de Firmware (Abrir la GUI del mantenimiento de KCS)</h5>
 
           <div class="content-general">
-            <p> 
+            <p>
               <?php
               $op = new select_k_s();
               $res  = $op->so10();
@@ -1874,8 +1873,8 @@ if (!empty($_SESSION["name"])) {
 
 
           <div class="ui_fle_carru">
-          <a href="#sok_item_9"><i class='bx bxs-chevron-left'></i></a>
-          <a href="#sok_item_11"><i class='bx bxs-chevron-right'></i></a>
+            <a href="#sok_item_9"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#sok_item_11"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
         </div>
@@ -1889,7 +1888,7 @@ if (!empty($_SESSION["name"])) {
           <h5>Actualización de Firmware (Abrir la GUI del mantenimiento de KCS)</h5>
 
           <div class="content-general">
-            <p> 
+            <p>
               <?php
               $op = new select_k_s();
               $res  = $op->so11();
@@ -1904,8 +1903,8 @@ if (!empty($_SESSION["name"])) {
 
 
           <div class="ui_fle_carru">
-          <a href="#sok_item_10"><i class='bx bxs-chevron-left'></i></a>
-          <a href="#sok_item_12"><i class='bx bxs-chevron-right'></i></a>
+            <a href="#sok_item_10"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#sok_item_12"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
         </div>
@@ -1920,7 +1919,7 @@ if (!empty($_SESSION["name"])) {
           <h5>Actualización de Firmware (Abrir la GUI del mantenimiento de KCS)</h5>
 
           <div class="content-general">
-            <p> 
+            <p>
               <?php
               $op = new select_k_s();
               $res  = $op->so12();
@@ -1935,8 +1934,8 @@ if (!empty($_SESSION["name"])) {
 
 
           <div class="ui_fle_carru">
-          <a href="#sok_item_11"><i class='bx bxs-chevron-left'></i></a>
-          <a href="#sok_item_13"><i class='bx bxs-chevron-right'></i></a>
+            <a href="#sok_item_11"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#sok_item_13"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
         </div>
@@ -1973,14 +1972,14 @@ if (!empty($_SESSION["name"])) {
 
     <!--LECCION 09-->
     <style>
-      #leccion9{
+      #leccion9 {
         display: none;
       }
-    </style>    
+    </style>
 
     <div id="leccion9" class="container-carac">
-          
-    <!--Carrusel  01-->
+
+      <!--Carrusel  01-->
       <article class="item_carru" id="item1_carru">
         <div class="cs_carru" id="cs_item_1">
           <h5>Actualización usando el Parche de Seguridad</h5>
@@ -2032,8 +2031,8 @@ if (!empty($_SESSION["name"])) {
 
 
           <div class="ui_fle_carru">
-          <a href="#cs_item_1"><i class='bx bxs-chevron-left'></i></a>
-          <a href="#cs_item_3"><i class='bx bxs-chevron-right'></i></a>
+            <a href="#cs_item_1"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#cs_item_3"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
         </div>
@@ -2063,8 +2062,8 @@ if (!empty($_SESSION["name"])) {
 
 
           <div class="ui_fle_carru">
-          <a href="#cs_item_2"><i class='bx bxs-chevron-left'></i></a>
-          <a href="#cs_item_4"><i class='bx bxs-chevron-right'></i></a>
+            <a href="#cs_item_2"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#cs_item_4"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
         </div>
@@ -2073,13 +2072,13 @@ if (!empty($_SESSION["name"])) {
       <!--Carrusel 03-->
 
 
-       <!--Carrusel  04-->
-       <article class="item_carru" id="item4_carru">
+      <!--Carrusel  04-->
+      <article class="item_carru" id="item4_carru">
         <div class="cs_carru" id="cs_item_4">
           <h5>Actualización usando el Parche de Seguridad</h5>
 
           <div class="content-general">
-            <p> 
+            <p>
               <?php
               $op = new select_k_s();
               $res  = $op->cs4();
@@ -2094,8 +2093,8 @@ if (!empty($_SESSION["name"])) {
 
 
           <div class="ui_fle_carru">
-          <a href="#cs_item_3"><i class='bx bxs-chevron-left'></i></a>
-          <a href="#cs_item_5"><i class='bx bxs-chevron-right'></i></a>
+            <a href="#cs_item_3"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#cs_item_5"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
         </div>
@@ -2104,13 +2103,13 @@ if (!empty($_SESSION["name"])) {
       <!--Carrusel 04-->
 
 
-       <!--Carrusel  05-->
-       <article class="item_carru" id="item5_carru">
+      <!--Carrusel  05-->
+      <article class="item_carru" id="item5_carru">
         <div class="cs_carru" id="cs_item_5">
           <h5>Actualización usando el Parche de Seguridad</h5>
 
           <div class="content-general">
-            <p> 
+            <p>
               <?php
               $op = new select_k_s();
               $res  = $op->cs5();
@@ -2125,8 +2124,8 @@ if (!empty($_SESSION["name"])) {
 
 
           <div class="ui_fle_carru">
-          <a href="#cs_item_4"><i class='bx bxs-chevron-left'></i></a>
-          <a href="#cs_item_6"><i class='bx bxs-chevron-right'></i></a>
+            <a href="#cs_item_4"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#cs_item_6"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
         </div>
@@ -2141,7 +2140,7 @@ if (!empty($_SESSION["name"])) {
           <h5>Actualización usando el Parche de Seguridad</h5>
 
           <div class="content-general">
-            <p> 
+            <p>
               <?php
               $op = new select_k_s();
               $res  = $op->cs6();
@@ -2156,8 +2155,8 @@ if (!empty($_SESSION["name"])) {
 
 
           <div class="ui_fle_carru">
-          <a href="#cs_item_5"><i class='bx bxs-chevron-left'></i></a>
-          <a href="#cs_item_7"><i class='bx bxs-chevron-right'></i></a>
+            <a href="#cs_item_5"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#cs_item_7"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
         </div>
@@ -2171,7 +2170,7 @@ if (!empty($_SESSION["name"])) {
           <h5>Actualización usando el Parche de Seguridad</h5>
 
           <div class="content-general">
-            <p> 
+            <p>
               <?php
               $op = new select_k_s();
               $res  = $op->cs7();
@@ -2186,8 +2185,8 @@ if (!empty($_SESSION["name"])) {
 
 
           <div class="ui_fle_carru">
-          <a href="#cs_item_6"><i class='bx bxs-chevron-left'></i></a>
-          <a href="#cs_item_8"><i class='bx bxs-chevron-right'></i></a>
+            <a href="#cs_item_6"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#cs_item_8"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
         </div>
@@ -2201,7 +2200,7 @@ if (!empty($_SESSION["name"])) {
           <h5>Actualización usando el Parche de Seguridad</h5>
 
           <div class="content-general">
-            <p> 
+            <p>
               <?php
               $op = new select_k_s();
               $res  = $op->cs8();
@@ -2216,8 +2215,8 @@ if (!empty($_SESSION["name"])) {
 
 
           <div class="ui_fle_carru">
-          <a href="#cs_item_7"><i class='bx bxs-chevron-left'></i></a>
-          <a href="#cs_item_9"><i class='bx bxs-chevron-right'></i></a>
+            <a href="#cs_item_7"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#cs_item_9"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
         </div>
@@ -2237,8 +2236,8 @@ if (!empty($_SESSION["name"])) {
 
 
           <div class="ui_fle_carru">
-          <a href="#cs_item_8"><i class='bx bxs-chevron-left'></i></a>
-          <a href="#cs_item_10"><i class='bx bxs-chevron-right'></i></a>
+            <a href="#cs_item_8"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#cs_item_10"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
         </div>
@@ -2252,7 +2251,7 @@ if (!empty($_SESSION["name"])) {
           <h5>Actualización usando el Parche de Seguridad</h5>
 
           <div class="content-general">
-          <p> 
+            <p>
               <?php
               $op = new select_k_s();
               $res  = $op->cs9();
@@ -2268,8 +2267,8 @@ if (!empty($_SESSION["name"])) {
 
 
           <div class="ui_fle_carru">
-          <a href="#cs_item_9"><i class='bx bxs-chevron-left'></i></a>
-          <a href="#cs_item_11"><i class='bx bxs-chevron-right'></i></a>
+            <a href="#cs_item_9"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#cs_item_11"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
         </div>
@@ -2306,14 +2305,14 @@ if (!empty($_SESSION["name"])) {
 
     <!--LECCION 10-->
     <style>
-      #leccion10{
+      #leccion10 {
         display: none;
       }
-    </style>    
+    </style>
 
     <div id="leccion10" class="container-carac">
-          
-    <!--Carrusel  01-->
+
+      <!--Carrusel  01-->
       <article class="item_carru" id="item1_carru">
         <div class="ri_carru" id="ri_item_1">
           <h5>Restauración Interna</h5>
@@ -2365,8 +2364,8 @@ if (!empty($_SESSION["name"])) {
 
 
           <div class="ui_fle_carru">
-          <a href="#ri_item_1"><i class='bx bxs-chevron-left'></i></a>
-          <a href="#ri_item_3"><i class='bx bxs-chevron-right'></i></a>
+            <a href="#ri_item_1"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#ri_item_3"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
         </div>
@@ -2396,8 +2395,8 @@ if (!empty($_SESSION["name"])) {
 
 
           <div class="ui_fle_carru">
-          <a href="#ri_item_2"><i class='bx bxs-chevron-left'></i></a>
-          <a href="#ri_item_4"><i class='bx bxs-chevron-right'></i></a>
+            <a href="#ri_item_2"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#ri_item_4"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
         </div>
@@ -2406,13 +2405,13 @@ if (!empty($_SESSION["name"])) {
       <!--Carrusel 03-->
 
 
-       <!--Carrusel  04-->
-       <article class="item_carru" id="item4_carru">
+      <!--Carrusel  04-->
+      <article class="item_carru" id="item4_carru">
         <div class="ri_carru" id="ri_item_4">
           <h5>Restauración Interna</h5>
 
           <div class="content-general">
-            <p> 
+            <p>
               <?php
               $op = new select_k_s();
               $res  = $op->restauracion4();
@@ -2427,8 +2426,8 @@ if (!empty($_SESSION["name"])) {
 
 
           <div class="ui_fle_carru">
-          <a href="#ri_item_3"><i class='bx bxs-chevron-left'></i></a>
-          <a href="#ri_item_5"><i class='bx bxs-chevron-right'></i></a>
+            <a href="#ri_item_3"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#ri_item_5"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
         </div>
@@ -2437,13 +2436,13 @@ if (!empty($_SESSION["name"])) {
       <!--Carrusel 04-->
 
 
-       <!--Carrusel  05-->
-       <article class="item_carru" id="item5_carru">
+      <!--Carrusel  05-->
+      <article class="item_carru" id="item5_carru">
         <div class="ri_carru" id="ri_item_5">
           <h5>Actualización usando el Parche de Seguridad</h5>
 
           <div class="content-general">
-            <p> 
+            <p>
               <?php
               $op = new select_k_s();
               $res  = $op->restauracion5();
@@ -2458,8 +2457,8 @@ if (!empty($_SESSION["name"])) {
 
 
           <div class="ui_fle_carru">
-          <a href="#ri_item_4"><i class='bx bxs-chevron-left'></i></a>
-          <a href="#ri_item_6"><i class='bx bxs-chevron-right'></i></a>
+            <a href="#ri_item_4"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#ri_item_6"><i class='bx bxs-chevron-right'></i></a>
           </div>
 
         </div>
@@ -2494,6 +2493,405 @@ if (!empty($_SESSION["name"])) {
     </div>
     <!--LECCION 10-->
 
+
+    <!--LECCION 11-->
+    <style>
+      #leccion11 {
+        display: none;
+      }
+    </style>
+
+    <div id="leccion11" class="container-carac">
+
+      <!--Carrusel  01-->
+      <article class="item_carru" id="item1_carru">
+        <div class="c_carru" id="c_item_1">
+          <h5>Centro de Contabilidad</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->contabilidad();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['contabilidad'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/kip.png" alt="">
+
+          </div>
+
+          <div class="ui_fle_carru">
+            <a href=""></a>
+            <a href="#c_item_2"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 01-->
+
+
+      <!--Carrusel  02-->
+      <article class="item_carru" id="item2_carru">
+        <div class="c_carru" id="c_item_2">
+          <h5>Centro de Contabilidad</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->contabilidad2();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['contabilidad'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/contabilidad1.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#c_item_1"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#c_item_3"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 02-->
+
+
+      <!--Carrusel  03-->
+      <article class="item_carru" id="item3_carru">
+        <div class="c_carru" id="c_item_3">
+          <h5>Centro de Contabilidad</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->contabilidad3();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['contabilidad'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/contabilidad2.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#c_item_2"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#c_item_4"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 03-->
+
+
+      <!--Carrusel  04-->
+      <article class="item_carru" id="item4_carru">
+        <div class="c_carru" id="c_item_4">
+          <h5>Centro de Contabilidad (Copia)</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->contabilidad4();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['contabilidad'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/contabilidad3.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#c_item_3"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#c_item_5"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 04-->
+
+
+      <!--Carrusel  05-->
+      <article class="item_carru" id="item5_carru">
+        <div class="c_carru" id="c_item_5">
+          <h5>Centro de Contabilidad (Scan)</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->contabilidad5();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['contabilidad'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/contabilidadS.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#c_item_4"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#c_item_6"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 05-->
+
+      <!--Carrusel  06-->
+      <article class="item_carru" id="item6_carru">
+        <div class="c_carru" id="c_item_6">
+          <h5>Centro de Contabilidad</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->contabilidad6();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['contabilidad'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/contabilidad5.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#c_item_5"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#c_item_7"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 06-->
+
+      <!--Carrusel  07-->
+      <article class="item_carru" id="item7_carru">
+        <div class="c_carru" id="c_item_7">
+          <h5>Centro de Contabilidad</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->contabilidad7();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['contabilidad'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/contabilidad6.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#c_item_6"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#c_item_8"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 07-->
+
+      <!--Carrusel  08-->
+      <article class="item_carru" id="item8_carru">
+        <div class="c_carru" id="c_item_8">
+          <h5>Centro de Contabilidad (Nuevo Usuario)</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->contabilidad8();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['contabilidad'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/contabilidad8.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#c_item_7"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#c_item_9"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 08-->
+
+      <!--Carrusel  09-->
+      <article class="item_carru" id="item9_carru">
+        <div class="c_carru" id="c_item_9">
+          <h5>Centro de Contabilidad (Asignar PIN)</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->contabilidad9();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['contabilidad'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/contabilidad9.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#c_item_8"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#c_item_10"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 09-->
+
+      <!--Carrusel  10-->
+      <article class="item_carru" id="item10_carru">
+        <div class="c_carru" id="c_item_10">
+          <h5>Centro de Contabilidad (Nuevo Roll)</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->contabilidad10();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['contabilidad'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/contabilidad10.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#c_item_9"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#c_item_11"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 10-->
+
+      <!--Carrusel  11-->
+      <article class="item_carru" id="item11_carru">
+        <div class="c_carru" id="c_item_11">
+          <h5>Centro de Contabilidad (Permisos y Privilegios)</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->contabilidad11();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['contabilidad'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/contabilidad11.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#c_item_10"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#c_item_12"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 11-->
+
+      <!--Carrusel  12-->
+      <article class="item_carru" id="item12_carru">
+        <div class="c_carru" id="c_item_12">
+          <h5>Centro de Contabilidad (Permisos y Privilegios)</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->contabilidad12();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['contabilidad'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/contabilidad12.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#c_item_11"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#c_item_13"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 12-->
+
+      <!--Carrusel TF 13-->
+      <article class="item_carru" id="item13_carru">
+        <div class="c_carru" id="c_item_13">
+          <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección.</h5>
+
+          <div class="content-general">
+            <p class="paragraph">
+              De Click en "Siguiente" para acceder a la lección.
+            </p>
+
+            <img src="./images/siguiente2.jpg" alt="">
+          </div>
+
+          <div class="btn-leccion">
+            <button id="boton" onclick="ir_leccion11_s();">
+              Siguiente
+            </button>
+          </div>
+
+        </div>
+      </article>
+      <!--Carrusel IP 11-->
+
+    </div>
+    <!--LECCION 11-->
 
   </main>
   <!--Content-->

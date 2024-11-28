@@ -13,7 +13,7 @@ class select_k_s{
         return $conexion;
     }
 
-    //Vistas Modulo Producto
+    //Funcion leccion Producto
     public function producto(){
         $sqlP = " SELECT product FROM kip_g71_s WHERE id=1 ";
         $conexion = $this->Connection();
@@ -49,7 +49,7 @@ class select_k_s{
         return $resP5;
     }
 
-    //Funciones para Leccion 02
+    //Funcion leccion tecnologia
     public function tecnologia(){
         $sqlT = " SELECT product FROM kip_g71_s WHERE id=6 ";
         $conexion = $this->Connection();
@@ -71,7 +71,7 @@ class select_k_s{
         return $resT3;
     }
 
-    //Funciones para Leccion 03
+    //Funcio leccion rendimiento
     public function rendimiento(){
         $sqlR = " SELECT product FROM kip_g71_s WHERE id=9 ";
         $conexion = $this->Connection();
@@ -86,7 +86,7 @@ class select_k_s{
         return $resR2;
     }
 
-    //Funciones para Leccion 04
+    //Funcio leccion Driver
     public function driver(){
         $sqlD = " SELECT driver FROM kip_g71_s WHERE id=1";
         $conexion = $this->Connection();
@@ -186,7 +186,7 @@ class select_k_s{
         return $resI5;
     }
 
-    //Funciones para Leccion 05
+    //Funcion Scaner
     public function scanR(){
         $sqlSD = " SELECT conf_b FROM kip_g71_s WHERE id=1";
         $conexion = $this->Connection();
@@ -251,7 +251,7 @@ class select_k_s{
     }
 
 
-    //Funcion para la leccion9
+    //Funcion leccion Sistema Operativo
     public function so(){
         $sqlSO = " SELECT so FROM kip_g71_s WHERE id=1";
         $conexion = $this->Connection();
@@ -336,7 +336,7 @@ class select_k_s{
         return $resSO12;
     }
 
-    //Funciones leccion10
+    //Funcion leccion Sistema Operativo
     public function cs(){
         $sqlCS = " SELECT so FROM kip_g71_s WHERE id=13";
         $conexion = $this->Connection();
@@ -401,7 +401,7 @@ class select_k_s{
     }
 
     
-    //Funcion para leccion11
+    //Funcion leccion Restauracion interna
     public function restauracion(){
         $sqlRI = " SELECT restauracion FROM kip_g71_s WHERE id=1 ";
         $conexion = $this->Connection();
@@ -436,6 +436,91 @@ class select_k_s{
         $resRI5 = mysqli_query($conexion,$sqlRI5)or die("Error");
         return $resRI5;
     }
+
+    //Funcion leccion Contabilidad
+    public function contabilidad(){
+        $sqlC = " SELECT contabilidad FROM kip_g71_s WHERE id=1 ";
+        $conexion = $this->Connection();
+        $resC = mysqli_query($conexion,$sqlC)or die("Error");
+        return $resC;
+    }
+
+    public function contabilidad2(){
+        $sqlC2 = " SELECT contabilidad FROM kip_g71_s WHERE id=2 ";
+        $conexion = $this->Connection();
+        $resC2 = mysqli_query($conexion,$sqlC2)or die("Error");
+        return $resC2;
+    }
+
+    public function contabilidad3(){
+        $sqlC3 = " SELECT contabilidad FROM kip_g71_s WHERE id=3 ";
+        $conexion = $this->Connection();
+        $resC3 = mysqli_query($conexion,$sqlC3)or die("Error");
+        return $resC3;
+    }
+
+    public function contabilidad4(){
+        $sqlC4 = " SELECT contabilidad FROM kip_g71_s WHERE id=4 ";
+        $conexion = $this->Connection();
+        $resC4 = mysqli_query($conexion,$sqlC4)or die("Error");
+        return $resC4;
+    }
+
+    public function contabilidad5(){
+        $sqlC5 = " SELECT contabilidad FROM kip_g71_s WHERE id=5 ";
+        $conexion = $this->Connection();
+        $resC5 = mysqli_query($conexion,$sqlC5)or die("Error");
+        return $resC5;
+    }
+
+    public function contabilidad6(){
+        $sqlC6 = " SELECT contabilidad FROM kip_g71_s WHERE id=6 ";
+        $conexion = $this->Connection();
+        $resC6 = mysqli_query($conexion,$sqlC6)or die("Error");
+        return $resC6;
+    }
+
+    public function contabilidad7(){
+        $sqlC7 = " SELECT contabilidad FROM kip_g71_s WHERE id=7 ";
+        $conexion = $this->Connection();
+        $resC7 = mysqli_query($conexion,$sqlC7)or die("Error");
+        return $resC7;
+    }
+    public function contabilidad8(){
+        $sqlC8 = " SELECT contabilidad FROM kip_g71_s WHERE id=8 ";
+        $conexion = $this->Connection();
+        $resC8 = mysqli_query($conexion,$sqlC8)or die("Error");
+        return $resC8;
+    }
+
+    public function contabilidad9(){
+        $sqlC9 = " SELECT contabilidad FROM kip_g71_s WHERE id=9 ";
+        $conexion = $this->Connection();
+        $resC9 = mysqli_query($conexion,$sqlC9)or die("Error");
+        return $resC9;
+    }
+
+    public function contabilidad10(){
+        $sqlC10 = " SELECT contabilidad FROM kip_g71_s WHERE id=10 ";
+        $conexion = $this->Connection();
+        $resC10 = mysqli_query($conexion,$sqlC10)or die("Error");
+        return $resC10;
+    }
+
+    public function contabilidad11(){
+        $sqlC11 = " SELECT contabilidad FROM kip_g71_s WHERE id=11 ";
+        $conexion = $this->Connection();
+        $resC11 = mysqli_query($conexion,$sqlC11)or die("Error");
+        return $resC11;
+    }
+
+    public function contabilidad12(){
+        $sqlC12 = " SELECT contabilidad FROM kip_g71_s WHERE id=12 ";
+        $conexion = $this->Connection();
+        $resC12 = mysqli_query($conexion,$sqlC12)or die("Error");
+        return $resC12;
+    }
+
 
 
 }
