@@ -65,9 +65,9 @@ if (!empty($_SESSION["name"])) {
                 Caracteristicas de Producto
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="">Caracteristicas del Producto</a></li>
-                <li><a class="dropdown-item" href="">Tecnología de impresión de alta definición (HDP)</a></li>
-                <li><a class="dropdown-item" href="">Máxima durabilidad de la imagen</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion1_s();" >Caracteristicas del Producto</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion2_s();">Tecnología de impresión de alta definición (HDP)</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion3_s();">Máxima durabilidad de la imagen</a></li>
               </ul>
             </li>
 
@@ -76,8 +76,8 @@ if (!empty($_SESSION["name"])) {
                 Controlador y Utilidades
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion2();">Instalación del Controlador</a></li>
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion3();">Interfaz de Impresión</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion4_s();">Instalación del Controlador</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion5_s();">Interfaz de Impresión</a></li>
               </ul>
             </li>
 
@@ -151,7 +151,6 @@ if (!empty($_SESSION["name"])) {
     <!--LECCION 01-->
     <style>
       #leccion1 {
-        display: none;
       }
     </style>
 
@@ -854,14 +853,14 @@ if (!empty($_SESSION["name"])) {
     <!--LECCION 04-->
 
 
-    <!--LECCION 06-->
+    <!--LECCION 05-->
     <style>
-      #leccion6 {
+      #leccion5 {
         display: none;
       }
     </style>
 
-    <div id="leccion6" class="container-carac">
+    <div id="leccion5" class="container-carac">
 
       <!--Carrusel TF 01-->
       <article class="item_carru" id="item1_carru">
@@ -1156,17 +1155,17 @@ if (!empty($_SESSION["name"])) {
 
 
     </div>
+    <!--LECCION 05-->
+
+
     <!--LECCION 06-->
-
-
-    <!--LECCION 07-->
     <style>
-      #leccion7 {
+      #leccion6 {
         display: none;
       }
     </style>
 
-    <div id="leccion7" class="container-carac">
+    <div id="leccion6" class="container-carac">
 
       <!--Carrusel TF 01-->
       <article class="item_carru" id="item4_carru">
@@ -1351,17 +1350,17 @@ if (!empty($_SESSION["name"])) {
 
 
     </div>
+    <!--LECCION 06-->
+
+
     <!--LECCION 07-->
-
-
-    <!--LECCION 08-->
     <style>
-      #leccion8 {
+      #leccion7 {
         display: none;
       }
     </style>
 
-    <div id="leccion8" class="container-carac">
+    <div id="leccion7" class="container-carac">
 
       <!--Carrusel TF 12-->
       <article class="item_carru" id="item12_carru">
@@ -1567,7 +1566,7 @@ if (!empty($_SESSION["name"])) {
 
 
     </div>
-    <!--LECCION 08-->
+    <!--LECCION 07-->
 
     <!--LECCION 09-->
     <style>
@@ -2305,7 +2304,7 @@ if (!empty($_SESSION["name"])) {
     <!--LECCION 11-->
     <style>
       #leccion11{
-        display: ;
+        display: none;
       }
     </style>    
 
