@@ -86,8 +86,8 @@ if (!empty($_SESSION["name"])) {
                 Configuración de Buzón KIP
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion5();">Digitalización en Red</a></li>
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion6();">Local Mailbox</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion6_s();">Digitalización en Red</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion7_s();">Local Mailbox</a></li>
               </ul>
             </li>
 
@@ -96,9 +96,9 @@ if (!empty($_SESSION["name"])) {
                 Sistema Operativo
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion6();">Firmware USB serie 71</a></li>
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion6();">Actualización usando parche de seguridad</a></li>
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion8();">Restauracion Interna</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion8_s();">Firmware USB serie 71</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion9_s();">Actualización usando parche de seguridad</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion10_s();">Restauracion Interna</a></li>
               </ul>
             </li>
 
@@ -117,12 +117,12 @@ if (!empty($_SESSION["name"])) {
                 Funciones UI
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion8();">Instalación DEMO</a></li>
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion8();">Perzonalización de la Interfaz de Usuario</a></li>
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion8();">Anidamiento</a></li>
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion8();">Creación de Plantillas</a></li>
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion8();">Funciones de Configuración y Servicios I</a></li>
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion8();">Funciones de Configuración y ServiciosII</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion11_s();">Instalación DEMO</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion12_s();">Perzonalización de la Interfaz de Usuario</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion13_s();">Anidamiento</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion14_s();">Creación de Plantillas</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion15_s();">Funciones de Configuración y Servicios I</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion16_s();">Funciones de Configuración y ServiciosII</a></li>
               </ul>
             </li>
 
@@ -330,7 +330,7 @@ if (!empty($_SESSION["name"])) {
           </div>
 
           <div class="btn-leccion">
-            <button id="boton" onclick="ir_leccion3();">
+            <button id="boton" onclick="ir_leccion2_s();">
               Siguiente
             </button>
           </div>
@@ -458,7 +458,7 @@ if (!empty($_SESSION["name"])) {
           </div>
 
           <div class="btn-leccion">
-            <button id="boton" onclick="ir_leccion4();">
+            <button id="boton" onclick="ir_leccion3_s();">
               Siguiente
             </button>
           </div>
@@ -552,7 +552,7 @@ if (!empty($_SESSION["name"])) {
           </div>
 
           <div class="btn-leccion">
-            <button id="boton" onclick="ir_leccion5();">
+            <button id="boton" onclick="ir_leccion4_s();">
               Siguiente
             </button>
           </div>
@@ -828,11 +828,11 @@ if (!empty($_SESSION["name"])) {
       <article class="item_carru" id="item10_carru">
         <div class="hr_carru" id="in_item_10">
 
-          <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección</h5>
+          <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección.</h5>
 
           <div class="content-general">
             <p class="paragraph">
-              De Click en "Siguiente" para acceder a la siguiente lección
+              De Click en "Siguiente" para acceder a la siguiente lección.
             </p>
 
             <img src="./images/siguiente4.jpg" alt="">
@@ -840,7 +840,7 @@ if (!empty($_SESSION["name"])) {
           </div>
 
           <div class="btn-leccion">
-            <button id="boton" onclick="ir_leccion6();">
+            <button id="boton" onclick="ir_leccion5_s();">
               Siguiente
             </button>
           </div>
@@ -1144,7 +1144,7 @@ if (!empty($_SESSION["name"])) {
           </div>
 
           <div class="btn-leccion">
-            <button id="boton" onclick="ir_leccion7();">
+            <button id="boton" onclick="ir_leccion6_s();">
               Siguiente
             </button>
           </div>
@@ -1339,7 +1339,7 @@ if (!empty($_SESSION["name"])) {
           </div>
 
           <div class="btn-leccion">
-            <button id="boton" onclick="ir_leccion8();">
+            <button id="boton" onclick="ir_leccion7_s();">
               Siguiente
             </button>
           </div>
@@ -1555,7 +1555,7 @@ if (!empty($_SESSION["name"])) {
           </div>
 
           <div class="btn-leccion">
-            <button id="boton" onclick="ir_leccion8();">
+            <button id="boton" onclick="ir_leccion8_s();">
               Siguiente
             </button>
           </div>
@@ -1568,14 +1568,15 @@ if (!empty($_SESSION["name"])) {
     </div>
     <!--LECCION 07-->
 
-    <!--LECCION 09-->
+
+    <!--LECCION 08-->
     <style>
-      #leccion9{
+      #leccion8{
         display: none;
       }
     </style>    
 
-    <div id="leccion9" class="container-carac">
+    <div id="leccion8" class="container-carac">
           
     <!--Carrusel  01-->
       <article class="item_carru" id="item1_carru">
@@ -1957,7 +1958,7 @@ if (!empty($_SESSION["name"])) {
           </div>
 
           <div class="btn-leccion">
-            <button id="boton" onclick="ir_leccion8();">
+            <button id="boton" onclick="ir_leccion9_s();">
               Siguiente
             </button>
           </div>
@@ -1967,16 +1968,17 @@ if (!empty($_SESSION["name"])) {
       <!--Carrusel IP 19-->
 
     </div>
-    <!--LECCION 09-->
+    <!--LECCION 08-->
 
-    <!--LECCION 10-->
+
+    <!--LECCION 09-->
     <style>
-      #leccion10{
+      #leccion9{
         display: none;
       }
     </style>    
 
-    <div id="leccion10" class="container-carac">
+    <div id="leccion9" class="container-carac">
           
     <!--Carrusel  01-->
       <article class="item_carru" id="item1_carru">
@@ -2289,7 +2291,7 @@ if (!empty($_SESSION["name"])) {
           </div>
 
           <div class="btn-leccion">
-            <button id="boton" onclick="ir_leccion8();">
+            <button id="boton" onclick="ir_leccion10_s();">
               Siguiente
             </button>
           </div>
@@ -2299,16 +2301,17 @@ if (!empty($_SESSION["name"])) {
       <!--Carrusel IP 11-->
 
     </div>
-    <!--LECCION 10-->
+    <!--LECCION 09-->
 
-    <!--LECCION 11-->
+
+    <!--LECCION 10-->
     <style>
-      #leccion11{
+      #leccion10{
         display: none;
       }
     </style>    
 
-    <div id="leccion11" class="container-carac">
+    <div id="leccion10" class="container-carac">
           
     <!--Carrusel  01-->
       <article class="item_carru" id="item1_carru">
@@ -2479,7 +2482,7 @@ if (!empty($_SESSION["name"])) {
           </div>
 
           <div class="btn-leccion">
-            <button id="boton" onclick="ir_leccion8();">
+            <button id="boton" onclick="ir_leccion11_s();">
               Siguiente
             </button>
           </div>
@@ -2489,7 +2492,7 @@ if (!empty($_SESSION["name"])) {
       <!--Carrusel IP 11-->
 
     </div>
-    <!--LECCION 11-->
+    <!--LECCION 10-->
 
 
   </main>
