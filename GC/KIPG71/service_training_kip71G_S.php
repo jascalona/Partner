@@ -116,12 +116,11 @@ if (!empty($_SESSION["name"])) {
                 Funciones UI
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion11_s();">Instalación DEMO</a></li>
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion12_s();">Perzonalización de la Interfaz de Usuario</a></li>
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion13_s();">Anidamiento</a></li>
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion14_s();">Creación de Plantillas</a></li>
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion15_s();">Funciones de Configuración y Servicios I</a></li>
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion16_s();">Funciones de Configuración y ServiciosII</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion11_s();">Perzonalización de la Interfaz de Usuario</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion12_s();">Anidamiento</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion13_s();">Creación de Plantillas</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion14_s();">Funciones de Configuración y Servicios I</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion15_s();">Funciones de Configuración y ServiciosII</a></li>
               </ul>
             </li>
 
@@ -150,6 +149,7 @@ if (!empty($_SESSION["name"])) {
     <!--LECCION 01-->
     <style>
       #leccion1 {
+        display: none;
       }
     </style>
 
@@ -2881,7 +2881,7 @@ if (!empty($_SESSION["name"])) {
           </div>
 
           <div class="btn-leccion">
-            <button id="boton" onclick="ir_leccion11_s();">
+            <button id="boton" onclick="ir_leccion12_s();">
               Siguiente
             </button>
           </div>
@@ -2892,6 +2892,168 @@ if (!empty($_SESSION["name"])) {
 
     </div>
     <!--LECCION 11-->
+
+
+    <!--LECCION 12-->
+    <style>
+      #leccion12 {
+        display: ;
+      }
+    </style>
+
+    <div id="leccion12" class="container-carac">
+
+      <!--Carrusel  01-->
+      <article class="item_carru" id="item1_carru">
+        <div class="d_carru" id="d_item_1">
+          <h5>Personalización de la Interfaz de Usuario</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->interfazU();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['function_ui'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/p_interfaz_u1.png" alt="">
+
+          </div>
+
+          <div class="ui_fle_carru">
+            <a href=""></a>
+            <a href="#d_item_2"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 01-->
+
+
+      <!--Carrusel  02-->
+      <article class="item_carru" id="item2_carru">
+        <div class="d_carru" id="d_item_2">
+          <h5>Personalización de la Interfaz de Usuario</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->interfazU2();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['function_ui'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/p_interfaz_u2.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#d_item_1"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#d_item_3"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 02-->
+
+
+      <!--Carrusel  03-->
+      <article class="item_carru" id="item3_carru">
+        <div class="d_carru" id="d_item_3">
+          <h5>Personalización de la Interfaz de Usuario</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->interfazU3();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['function_ui'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/p_interfaz_u3.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#d_item_2"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#d_item_4"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 03-->
+
+
+      <!--Carrusel  04-->
+      <article class="item_carru" id="item4_carru">
+        <div class="d_carru" id="d_item_4">
+          <h5>Personalización de ña Interfaz de Usuario</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->interfazU4();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['function_ui'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/p_interfaz_u4.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#d_item_3"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#d_item_5"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 04-->
+
+
+      <!--Carrusel 05-->
+      <article class="item_carru" id="item5_carru">
+        <div class="d_carru" id="d_item_5">
+          <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección.</h5>
+
+          <div class="content-general">
+            <p class="paragraph">
+              De Click en "Siguiente" para acceder a la lección.
+            </p>
+
+            <img src="./images/siguiente.jpg" alt="">
+          </div>
+
+          <div class="btn-leccion">
+            <button id="boton" onclick="ir_leccion13_s();">
+              Siguiente
+            </button>
+          </div>
+
+        </div>
+      </article>
+      <!--Carrusel 05-->
+
+    </div>
+    <!--LECCION 12-->
+
+
 
   </main>
   <!--Content-->

@@ -521,7 +521,48 @@ class select_k_s{
         return $resC12;
     }
 
+    //Funcion de leccion personalizacion de interfaz de usuario
+    public function interfazU(){
+        $sqlI = " SELECT function_ui FROM kip_g71_s WHERE id=1 ";
+        $conexion = $this->Connection();
+        $resI = mysqli_query($conexion,$sqlI)or die("Error");
+        return $resI;
+    }
 
+    public function interfazU2(){
+        $sqlI2 = " SELECT function_ui FROM kip_g71_s WHERE id=2 ";
+        $conexion = $this->Connection();
+        $resI2 = mysqli_query($conexion,$sqlI2)or die("Error");
+        return $resI2;
+    }
+    
+    public function interfazU3(){
+        $sqlI3 = " SELECT function_ui FROM kip_g71_s WHERE id=3 ";
+        $conexion = $this->Connection();
+        $resI3 = mysqli_query($conexion,$sqlI3)or die("Error");
+        return $resI3;
+    }
+
+    public function interfazU4(){
+        $sqlI4 = " SELECT function_ui FROM kip_g71_s WHERE id=4 ";
+        $conexion = $this->Connection();
+        $resI4 = mysqli_query($conexion,$sqlI4)or die("Error");
+        return $resI4;
+    }
+
+    public function interfazU5(){
+        $sqlI5 = " SELECT function_ui FROM kip_g71_s WHERE id=5 ";
+        $conexion = $this->Connection();
+        $resI5 = mysqli_query($conexion,$sqlI5)or die("Error");
+        return $resI5;
+    }
+
+    public function interfazU6(){
+        $sqlI6 = " SELECT function_ui FROM kip_g71_s WHERE id=6 ";
+        $conexion = $this->Connection();
+        $resI6 = mysqli_query($conexion,$sqlI6)or die("Error");
+        return $resI6;
+    }
 
 }
 
