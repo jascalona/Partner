@@ -557,12 +557,33 @@ class select_k_s{
         return $resI5;
     }
 
-    public function interfazU6(){
-        $sqlI6 = " SELECT function_ui FROM kip_g71_s WHERE id=6 ";
+    //Funcion de leccion Anidamiento
+    public function anidamiento(){
+        $sqlA = " SELECT function_ui FROM kip_g71_s WHERE id=5 ";
         $conexion = $this->Connection();
-        $resI6 = mysqli_query($conexion,$sqlI6)or die("Error");
-        return $resI6;
+        $resA = mysqli_query($conexion,$sqlA)or die("Error");
+        return $resA;
     }
 
+    public function anidamiento2(){
+        $sqlA2 = " SELECT function_ui FROM kip_g71_s WHERE id=6 ";
+        $conexion = $this->Connection();
+        $resA2 = mysqli_query($conexion,$sqlA2)or die("Error");
+        return $resA2;
+    }
+
+    public function anidamiento3(){
+        $sqlA3 = " SELECT function_ui FROM kip_g71_s WHERE id=7 ";
+        $conexion = $this->Connection();
+        $resA3 = mysqli_query($conexion,$sqlA3  )or die("Error");
+        return $resA3;
+    }
+
+    public function anidamiento4(){
+        $sqlA4 = " SELECT function_ui FROM kip_g71_s WHERE id=8 ";
+        $conexion = $this->Connection();
+        $resA4 = mysqli_query($conexion,$sqlA4  )or die("Error");
+        return $resA4;
+    }
 }
 

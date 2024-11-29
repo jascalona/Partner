@@ -116,8 +116,8 @@ if (!empty($_SESSION["name"])) {
                 Funciones UI
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion11_s();">Perzonalización de la Interfaz de Usuario</a></li>
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion12_s();">Anidamiento</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion12_s();">Perzonalización de la Interfaz de Usuario</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion13_s();">Anidamiento</a></li>
                 <li><a class="dropdown-item" id="boton" onclick="ir_leccion13_s();">Creación de Plantillas</a></li>
                 <li><a class="dropdown-item" id="boton" onclick="ir_leccion14_s();">Funciones de Configuración y Servicios I</a></li>
                 <li><a class="dropdown-item" id="boton" onclick="ir_leccion15_s();">Funciones de Configuración y ServiciosII</a></li>
@@ -149,7 +149,7 @@ if (!empty($_SESSION["name"])) {
     <!--LECCION 01-->
     <style>
       #leccion1 {
-        display: none;
+
       }
     </style>
 
@@ -2897,7 +2897,7 @@ if (!empty($_SESSION["name"])) {
     <!--LECCION 12-->
     <style>
       #leccion12 {
-        display: ;
+        display: none;
       }
     </style>
 
@@ -3054,6 +3054,164 @@ if (!empty($_SESSION["name"])) {
     <!--LECCION 12-->
 
 
+    <!--LECCION 13-->
+    <style>
+      #leccion13 {
+        display: none;
+      }
+    </style>
+
+    <div id="leccion13" class="container-carac">
+
+      <!--Carrusel  01-->
+      <article class="item_carru" id="item1_carru">
+        <div class="a_carru" id="a_item_1">
+          <h5>Anidamiento de Tarbajos</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->anidamiento();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['function_ui'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/anidamiento1.png" alt="">
+
+          </div>
+
+          <div class="ui_fle_carru">
+            <a href=""></a>
+            <a href="#a_item_2"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 01-->
+
+
+      <!--Carrusel  02-->
+      <article class="item_carru" id="item2_carru">
+        <div class="a_carru" id="a_item_2">
+          <h5>Anidamiento de Tarbajos</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->anidamiento2();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['function_ui'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/anidamiento2.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#a_item_1"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#a_item_3"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 02-->
+
+
+      <!--Carrusel  03-->
+      <article class="item_carru" id="item3_carru">
+        <div class="a_carru" id="a_item_3">
+          <h5>Anidamiento de Tarbajos</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->anidamiento3();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['function_ui'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/anidamiento3.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#a_item_2"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#a_item_4"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 03-->
+
+
+      <!--Carrusel  04-->
+      <article class="item_carru" id="item4_carru">
+        <div class="a_carru" id="a_item_4">
+          <h5>Anidamiento de Trabajos</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->anidamiento4();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['function_ui'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/anidamiento4.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#a_item_3"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#a_item_5"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 04-->
+
+
+      <!--Carrusel 05-->
+      <article class="item_carru" id="item5_carru">
+        <div class="a_carru" id="a_item_5">
+          <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección.</h5>
+
+          <div class="content-general">
+            <p class="paragraph">
+              De Click en "Siguiente" para acceder a la lección.
+            </p>
+
+            <img src="./images/siguiente5.jpg" alt="">
+          </div>
+
+          <div class="btn-leccion">
+            <button id="boton" onclick="ir_leccion14_s();">
+              Siguiente
+            </button>
+          </div>
+
+        </div>
+      </article>
+      <!--Carrusel 05-->
+
+    </div>
+    <!--LECCION 13-->
 
   </main>
   <!--Content-->
