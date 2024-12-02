@@ -585,5 +585,145 @@ class select_k_s{
         $resA4 = mysqli_query($conexion,$sqlA4  )or die("Error");
         return $resA4;
     }
+
+
+    //Funcion de leccion Creacion de Plantillas
+    public function plantillas(){
+        $sqlP = " SELECT function_ui FROM kip_g71_s WHERE id=9 ";
+        $conexion = $this->Connection();
+        $resP = mysqli_query($conexion,$sqlP  )or die("Error");
+        return $resP;
+    }
+
+    public function plantillas2(){
+        $sqlP = " SELECT function_ui FROM kip_g71_s WHERE id=10 ";
+        $conexion = $this->Connection();
+        $resP = mysqli_query($conexion,$sqlP  )or die("Error");
+        return $resP;
+    }
+
+    public function plantillas3(){
+        $sqlP = " SELECT function_ui FROM kip_g71_s WHERE id=11 ";
+        $conexion = $this->Connection();
+        $resP = mysqli_query($conexion,$sqlP  )or die("Error");
+        return $resP;
+    }
+
+    
+    public function plantillas4(){
+        $sqlP = " SELECT function_ui FROM kip_g71_s WHERE id=12 ";
+        $conexion = $this->Connection();
+        $resP = mysqli_query($conexion,$sqlP  )or die("Error");
+        return $resP;
+    }
+
+    
+    public function plantillas5(){
+        $sqlP = " SELECT function_ui FROM kip_g71_s WHERE id=13 ";
+        $conexion = $this->Connection();
+        $resP = mysqli_query($conexion,$sqlP  )or die("Error");
+        return $resP;
+    }
+
+    public function plantillas6(){
+        $sqlP = " SELECT function_ui FROM kip_g71_s WHERE id=14 ";
+        $conexion = $this->Connection();
+        $resP = mysqli_query($conexion,$sqlP  )or die("Error");
+        return $resP;
+    }
+
+    //Funcion de leccion Funciones de configuuracion y servicios I
+    public function funcionesC1(){
+        $sqlP = " SELECT function_cog_i FROM kip_g71_s WHERE id=1 ";
+        $conexion = $this->Connection();
+        $resP = mysqli_query($conexion,$sqlP  )or die("Error");
+        return $resP;
+    }
+    
+    public function funcionesC2(){
+        $sqlP = " SELECT function_cog_i FROM kip_g71_s WHERE id=2 ";
+        $conexion = $this->Connection();
+        $resP = mysqli_query($conexion,$sqlP  )or die("Error");
+        return $resP;
+    }
+    
+    public function funcionesC3(){
+        $sqlP = " SELECT function_cog_i FROM kip_g71_s WHERE id=3 ";
+        $conexion = $this->Connection();
+        $resP = mysqli_query($conexion,$sqlP  )or die("Error");
+        return $resP;
+    }
+
+    
+    public function funcionesC4(){
+        $sqlP = " SELECT function_cog_i FROM kip_g71_s WHERE id=4 ";
+        $conexion = $this->Connection();
+        $resP = mysqli_query($conexion,$sqlP  )or die("Error");
+        return $resP;
+    }
+    
+    public function funcionesC5(){
+        $sqlP = " SELECT function_cog_i FROM kip_g71_s WHERE id=5 ";
+        $conexion = $this->Connection();
+        $resP = mysqli_query($conexion,$sqlP  )or die("Error");
+        return $resP;
+    }
+
+    public function funcionesC6(){
+        $sqlP = " SELECT function_cog_i FROM kip_g71_s WHERE id=6 ";
+        $conexion = $this->Connection();
+        $resP = mysqli_query($conexion,$sqlP  )or die("Error");
+        return $resP;
+    }
+
+    public function funcionesC7(){
+        $sqlP = " SELECT function_cog_i FROM kip_g71_s WHERE id=7 ";
+        $conexion = $this->Connection();
+        $resP = mysqli_query($conexion,$sqlP  )or die("Error");
+        return $resP;
+    }
+
+    //Funcion de leccion Funciones de configuuracion y servicios II
+    public function funcionesCII(){
+        $sqlP = " SELECT function_cog_ii FROM kip_g71_s WHERE id=1 ";
+        $conexion = $this->Connection();
+        $resP = mysqli_query($conexion,$sqlP  )or die("Error");
+        return $resP;
+    }
+
+    public function funcionesCII2(){
+        $sqlP = " SELECT function_cog_ii FROM kip_g71_s WHERE id=2 ";
+        $conexion = $this->Connection();
+        $resP = mysqli_query($conexion,$sqlP  )or die("Error");
+        return $resP;
+    }
+
+    public function funcionesCII3(){
+        $sqlP = " SELECT function_cog_ii FROM kip_g71_s WHERE id=3 ";
+        $conexion = $this->Connection();
+        $resP = mysqli_query($conexion,$sqlP  )or die("Error");
+        return $resP;
+    }
+
+    public function funcionesCII4(){
+        $sqlP = " SELECT function_cog_ii FROM kip_g71_s WHERE id=4 ";
+        $conexion = $this->Connection();
+        $resP = mysqli_query($conexion,$sqlP  )or die("Error");
+        return $resP;
+    }
+
+    public function funcionesCII5(){
+        $sqlP = " SELECT function_cog_ii FROM kip_g71_s WHERE id=5 ";
+        $conexion = $this->Connection();
+        $resP = mysqli_query($conexion,$sqlP  )or die("Error");
+        return $resP;
+    }
+
+    public function funcionesCII6(){
+        $sqlP = " SELECT function_cog_ii FROM kip_g71_s WHERE id=6 ";
+        $conexion = $this->Connection();
+        $resP = mysqli_query($conexion,$sqlP  )or die("Error");
+        return $resP;
+    }
 }
 

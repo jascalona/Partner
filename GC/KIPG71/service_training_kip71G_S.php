@@ -149,7 +149,7 @@ if (!empty($_SESSION["name"])) {
     <!--LECCION 01-->
     <style>
       #leccion1 {
-
+        display: none;
       }
     </style>
 
@@ -3213,6 +3213,725 @@ if (!empty($_SESSION["name"])) {
     </div>
     <!--LECCION 13-->
 
+
+    <!--LECCION 14-->
+    <style>
+      #leccion14 {
+        display: none;
+      }
+    </style>
+
+    <div id="leccion14" class="container-carac">
+
+      <!--Carrusel  01-->
+      <article class="item_carru" id="item1_carru">
+        <div class="p_carru" id="p_item_1">
+          <h5>Creado de Planatillas</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->plantillas();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['function_ui'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/plantillas1.png" alt="">
+
+          </div>
+
+          <div class="ui_fle_carru">
+            <a href=""></a>
+            <a href="#p_item_2"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 01-->
+
+
+      <!--Carrusel  02-->
+      <article class="item_carru" id="item2_carru">
+        <div class="p_carru" id="p_item_2">
+          <h5>Creado de Plantillas (Templates)</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->plantillas2();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['function_ui'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/plantillas2.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#p_item_1"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#p_item_3"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 02-->
+
+
+      <!--Carrusel  03-->
+      <article class="item_carru" id="item3_carru">
+        <div class="p_carru" id="p_item_3">
+          <h5>Creado de Planatillas (Propiedades de plantilla)</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->plantillas3();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['function_ui'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/plantillas3.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#p_item_2"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#p_item_4"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 03-->
+
+
+      <!--Carrusel  04-->
+      <article class="item_carru" id="item4_carru">
+        <div class="p_carru" id="p_item_4">
+          <h5>Creado de Plantillas (Guardar Plantilla)</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->plantillas4();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['function_ui'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/plantillas4.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#p_item_3"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#p_item_5"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 04-->
+
+      <!--Carrusel  05-->
+      <article class="item_carru" id="item5_carru">
+        <div class="p_carru" id="p_item_5">
+          <h5>Creado de Plantillas (Guardar Plantilla)</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->plantillas5();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['function_ui'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/plantillas5.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#p_item_4"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#p_item_6"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 05-->
+
+      <!--Carrusel  05-->
+      <article class="item_carru" id="item6_carru">
+        <div class="p_carru" id="p_item_6">
+          <h5>¿Como usar las plantillas generadas?</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->plantillas6();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['function_ui'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/plantillas6.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#p_item_5"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#p_item_7"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 06-->
+
+      <!--Carrusel 07-->
+      <article class="item_carru" id="item7_carru">
+        <div class="p_carru" id="p_item_7">
+          <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección.</h5>
+
+          <div class="content-general">
+            <p class="paragraph">
+              De Click en "Siguiente" para acceder a la lección.
+            </p>
+
+            <img src="./images/siguiente.jpg" alt="">
+          </div>
+
+          <div class="btn-leccion">
+            <button id="boton" onclick="ir_leccion15_s();">
+              Siguiente
+            </button>
+          </div>
+
+        </div>
+      </article>
+      <!--Carrusel 07-->
+
+    </div>
+    <!--LECCION 14-->
+
+
+    <!--LECCION 15-->
+    <style>
+      #leccion15 {
+        display: none;
+      }
+    </style>
+
+    <div id="leccion15" class="container-carac">
+
+      <!--Carrusel  01-->
+      <article class="item_carru" id="item1_carru">
+        <div class="fc_carru" id="fc_item_1">
+          <h5>Funciones de Configuración y Servicios I</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->funcionesC1();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['function_cog_i'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/kip.png" alt="">
+
+          </div>
+
+          <div class="ui_fle_carru">
+            <a href=""></a>
+            <a href="#fc_item_2"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 01-->
+
+
+      <!--Carrusel  02-->
+      <article class="item_carru" id="item2_carru">
+        <div class="fc_carru" id="fc_item_2">
+          <h5>Guías de Usuario</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->funcionesC2();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['function_cog_i'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/guias1.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#fc_item_1"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#fc_item_3"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 02-->
+
+
+      <!--Carrusel  03-->
+      <article class="item_carru" id="item3_carru">
+        <div class="fc_carru" id="fc_item_3">
+          <h5>Ajustes de Servicio</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->funcionesC3();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['function_cog_i'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/ajustes1.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#fc_item_2"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#fc_item_4"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 03-->
+
+
+      <!--Carrusel  04-->
+      <article class="item_carru" id="item4_carru">
+        <div class="fc_carru" id="fc_item_4">
+          <h5>Niveles de Impresión y copiado (Medium)</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->funcionesC4();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['function_cog_i'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/ajustes2.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#fc_item_3"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#fc_item_5"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 04-->
+
+      <!--Carrusel  05-->
+      <article class="item_carru" id="item5_carru">
+        <div class="fc_carru" id="fc_item_5">
+          <h5>Hotname</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->funcionesC5();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['function_cog_i'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/hotname.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#fc_item_4"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#fc_item_6"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 05-->
+
+      <!--Carrusel  06-->
+      <article class="item_carru" id="item6_carru">
+        <div class="fc_carru" id="fc_item_6">
+          <h5>Idioma</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->funcionesC6();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['function_cog_i'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/idioma.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#fc_item_5"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#fc_item_7"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 06-->
+
+       <!--Carrusel  07-->
+       <article class="item_carru" id="item7_carru">
+        <div class="fc_carru" id="fc_item_7">
+          <h5>Protocolo IPV4 & DNS</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->funcionesC7();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['function_cog_i'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/red.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#fc_item_6"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#fc_item_8"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 07-->
+
+      <!--Carrusel 07-->
+      <article class="item_carru" id="item8_carru">
+        <div class="fc_carru" id="fc_item_8">
+          <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección.</h5>
+
+          <div class="content-general">
+            <p class="paragraph">
+              De Click en "Siguiente" para acceder a la lección.
+            </p>
+
+            <img src="./images/siguiente5.jpg" alt="">
+          </div>
+
+          <div class="btn-leccion">
+            <button id="boton" onclick="ir_leccion16_s();">
+              Siguiente
+            </button>
+          </div>
+
+        </div>
+      </article>
+      <!--Carrusel 07-->
+
+    </div>
+    <!--LECCION 15-->
+
+    
+    <!--LECCION 16-->
+    <style>
+      #leccion16 {
+        display: ;
+      }
+    </style>
+
+    <div id="leccion16" class="container-carac">
+
+      <!--Carrusel  01-->
+      <article class="item_carru" id="item1_carru">
+        <div class="fcii_carru" id="fcii_item_1">
+          <h5>Funciones de Configuración y Servicios II</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->funcionesCII();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['function_cog_ii'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/kip.png" alt="">
+
+          </div>
+
+          <div class="ui_fle_carru">
+            <a href=""></a>
+            <a href="#fcii_item_2"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 01-->
+
+
+      <!--Carrusel  02-->
+      <article class="item_carru" id="item2_carru">
+        <div class="fcii_carru" id="fcii_item_2">
+          <h5>Configuración de Fecha y hora</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->funcionesCII2();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['function_cog_ii'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/fh.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#fcii_item_1"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#fcii_item_3"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 02-->
+
+
+      <!--Carrusel  03-->
+      <article class="item_carru" id="item3_carru">
+        <div class="fcii_carru" id="fcii_item_3">
+          <h5>Calibración de Toner</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->funcionesCII3();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['function_cog_ii'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/calibracionT.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#fcii_item_2"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#fcii_item_4"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 03-->
+
+
+      <!--Carrusel  04-->
+      <article class="item_carru" id="item4_carru">
+        <div class="fcii_carru" id="fcii_item_4">
+          <h5>Licencia</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->funcionesCII4();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['function_cog_ii'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/licencia1.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#fcii_item_3"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#fcii_item_5"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 04-->
+
+      <!--Carrusel  05-->
+      <article class="item_carru" id="item5_carru">
+        <div class="fcii_carru" id="fcii_item_5">
+          <h5>Licencia (Activación de Servicios)</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->funcionesCII5();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['function_cog_ii'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/licencia2.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#fcii_item_4"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#fcii_item_6"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 05-->
+
+      <!--Carrusel  06-->
+      <article class="item_carru" id="item6_carru">
+        <div class="fc_carru" id="fc_item_6">
+          <h5>Idioma</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->funcionesCII6();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['function_cog_ii'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/idioma.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#fc_item_5"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#fc_item_7"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 06-->
+
+       <!--Carrusel  07-->
+       <article class="item_carru" id="item7_carru">
+        <div class="fc_carru" id="fc_item_7">
+          <h5>Protocolo IPV4 & DNS</h5>
+
+          <div class="content-general">
+            <p>
+              <?php
+              $op = new select_k_s();
+              $res  = $op->funcionesC7();
+              while ($row = mysqli_fetch_array($res)) {
+                echo $row['function_cog_i'];
+              }
+              ?>
+            </p>
+
+            <img src="./images/S/red.png" alt="">
+          </div>
+
+
+          <div class="ui_fle_carru">
+            <a href="#fc_item_6"><i class='bx bxs-chevron-left'></i></a>
+            <a href="#fc_item_8"><i class='bx bxs-chevron-right'></i></a>
+          </div>
+
+        </div>
+
+      </article>
+      <!--Carrusel 07-->
+
+      <!--Carrusel 07-->
+      <article class="item_carru" id="item8_carru">
+        <div class="fc_carru" id="fc_item_8">
+          <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección.</h5>
+
+          <div class="content-general">
+            <p class="paragraph">
+              De Click en "Siguiente" para acceder a la lección.
+            </p>
+
+            <img src="./images/siguiente5.jpg" alt="">
+          </div>
+
+          <div class="btn-leccion">
+            <button id="boton" onclick="ir_leccion15_s();">
+              Siguiente
+            </button>
+          </div>
+
+        </div>
+      </article>
+      <!--Carrusel 07-->
+
+    </div>
+    <!--LECCION 16-->
+
+
+    
   </main>
   <!--Content-->
 
