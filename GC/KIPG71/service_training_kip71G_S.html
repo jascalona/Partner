@@ -118,9 +118,9 @@ if (!empty($_SESSION["name"])) {
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" id="boton" onclick="ir_leccion12_s();">Perzonalización de la Interfaz de Usuario</a></li>
                 <li><a class="dropdown-item" id="boton" onclick="ir_leccion13_s();">Anidamiento</a></li>
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion13_s();">Creación de Plantillas</a></li>
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion14_s();">Funciones de Configuración y Servicios I</a></li>
-                <li><a class="dropdown-item" id="boton" onclick="ir_leccion15_s();">Funciones de Configuración y ServiciosII</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion14_s();">Creación de Plantillas</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion15_s();">Funciones de Configuración y Servicios I</a></li>
+                <li><a class="dropdown-item" id="boton" onclick="ir_leccion16_s();">Funciones de Configuración y ServiciosII</a></li>
               </ul>
             </li>
 
@@ -149,7 +149,7 @@ if (!empty($_SESSION["name"])) {
     <!--LECCION 01-->
     <style>
       #leccion1 {
-        display: none;
+
       }
     </style>
 
@@ -3625,8 +3625,8 @@ if (!empty($_SESSION["name"])) {
       </article>
       <!--Carrusel 06-->
 
-       <!--Carrusel  07-->
-       <article class="item_carru" id="item7_carru">
+      <!--Carrusel  07-->
+      <article class="item_carru" id="item7_carru">
         <div class="fc_carru" id="fc_item_7">
           <h5>Protocolo IPV4 & DNS</h5>
 
@@ -3681,11 +3681,11 @@ if (!empty($_SESSION["name"])) {
     </div>
     <!--LECCION 15-->
 
-    
+
     <!--LECCION 16-->
     <style>
       #leccion16 {
-        display: ;
+        display: none;
       }
     </style>
 
@@ -3844,83 +3844,23 @@ if (!empty($_SESSION["name"])) {
       </article>
       <!--Carrusel 05-->
 
-      <!--Carrusel  06-->
+
+      <!--Carrusel 07-->
       <article class="item_carru" id="item6_carru">
-        <div class="fc_carru" id="fc_item_6">
-          <h5>Idioma</h5>
+        <div class="fcii_carru" id="fcii_item_6">
 
-          <div class="content-general">
-            <p>
-              <?php
-              $op = new select_k_s();
-              $res  = $op->funcionesCII6();
-              while ($row = mysqli_fetch_array($res)) {
-                echo $row['function_cog_ii'];
-              }
-              ?>
-            </p>
-
-            <img src="./images/S/idioma.png" alt="">
-          </div>
-
-
-          <div class="ui_fle_carru">
-            <a href="#fc_item_5"><i class='bx bxs-chevron-left'></i></a>
-            <a href="#fc_item_7"><i class='bx bxs-chevron-right'></i></a>
-          </div>
-
-        </div>
-
-      </article>
-      <!--Carrusel 06-->
-
-       <!--Carrusel  07-->
-       <article class="item_carru" id="item7_carru">
-        <div class="fc_carru" id="fc_item_7">
-          <h5>Protocolo IPV4 & DNS</h5>
-
-          <div class="content-general">
-            <p>
-              <?php
-              $op = new select_k_s();
-              $res  = $op->funcionesC7();
-              while ($row = mysqli_fetch_array($res)) {
-                echo $row['function_cog_i'];
-              }
-              ?>
-            </p>
-
-            <img src="./images/S/red.png" alt="">
-          </div>
-
-
-          <div class="ui_fle_carru">
-            <a href="#fc_item_6"><i class='bx bxs-chevron-left'></i></a>
-            <a href="#fc_item_8"><i class='bx bxs-chevron-right'></i></a>
-          </div>
-
-        </div>
-
-      </article>
-      <!--Carrusel 07-->
-
-      <!--Carrusel 07-->
-      <article class="item_carru" id="item8_carru">
-        <div class="fc_carru" id="fc_item_8">
-          <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito está lección.</h5>
+          <h5>Felicidades <strong><?php echo $_SESSION['name']; ?></strong>, has culminado con exito la formación de Soporte para KIP G71</h5>
 
           <div class="content-general">
             <p class="paragraph">
-              De Click en "Siguiente" para acceder a la lección.
+              De Click en "Ir a la Evaluación" para comenzar la evaluación diagnostica<i class="ri-xbox-fill"></i> a</i> <i class="ri-vidicon-fill"></i>
             </p>
-
-            <img src="./images/siguiente5.jpg" alt="">
           </div>
 
-          <div class="btn-leccion">
-            <button id="boton" onclick="ir_leccion15_s();">
-              Siguiente
-            </button>
+          <div class="btn-enlaces-evaluacion">
+            <a href="#">Ir a la Evaluación</a>
+            <br>
+            <a href="../KIPG71.php">Volver a los detalles de Inscripción</a>
           </div>
 
         </div>
@@ -3931,7 +3871,7 @@ if (!empty($_SESSION["name"])) {
     <!--LECCION 16-->
 
 
-    
+
   </main>
   <!--Content-->
 
