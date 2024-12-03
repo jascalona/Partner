@@ -247,3 +247,22 @@ footer{
     }
 }
 
+/*SESION PARA EL BANEL DE MANTENIMIENTO*/
+.container-primary{
+    max-width: 50%;
+    margin: 8% auto;
+    text-align: center;
+}
+
+.container-mantenimiento img{
+    width: 50%;
+    padding: 10px;
+}
+
+.container-mantenimiento h4{
+    font-size: 30px;
+}
+
+.container-mantenimiento p{
+    font-size: 20px;
+}
