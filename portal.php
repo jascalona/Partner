@@ -35,7 +35,7 @@ if (!empty($_SESSION["name"])) {
 <body style="background: #d0d0d0;">
 
 
-    <header style="background: #170067;" class="header-menu">
+    <header style="background: rgb(98, 3, 16);" class="header-menu">
 
         <div class="logo">
             <img src="./IMG/x.png" alt="">
