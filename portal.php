@@ -62,7 +62,7 @@ if (!empty($_SESSION["name"])) {
         <div class="fondo"></div>
         <div class="text">
             <p>Arbol de Aprendizaje</p>
-    </div>
+        </div>
 
 
 
@@ -147,8 +147,8 @@ if (!empty($_SESSION["name"])) {
                     <!--KIP G71-->
 
 
-                     <!--COLOR-PRESS-1000-->
-                     <div class="card" style="width: 15rem; height: 22rem;">
+                    <!--COLOR-PRESS-1000-->
+                    <div class="card" style="width: 15rem; height: 22rem;">
                         <img src="./IMG/Color-press-1000.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Color-Press 1000</h5>
@@ -173,7 +173,7 @@ if (!empty($_SESSION["name"])) {
                                         </small></p>
                                     <div class="btn-option">
                                         <label for="btn-modal-4">Cerrar</label>
-
+                                        <a href="./GC/CP_1000.php">Enroll</a>
                                     </div>
                                 </div>
                                 <label for="btn-modal" class="cerrar-modal"></label>
