@@ -30,6 +30,7 @@ if (!empty($_SESSION["name"])) {
 
   <!--SCRIPT-->
   <script src="./JS/Bootstrap.js"></script>
+  <script src="./JS/search.js"></script>
   <!--SCRIPT-->
 </head>
 
