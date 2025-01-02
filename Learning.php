@@ -3,7 +3,8 @@ session_start();
 if (!empty($_SESSION["name"])) {
   header("loaction: ./intranet.php");
 } else {
-  if ((time() - $_SESSION['time']) >
+  if (
+    (time() - $_SESSION['time']) >
     40
   ) {
     header("location: ./intranet.php");
@@ -23,8 +24,7 @@ if (!empty($_SESSION["name"])) {
   <link rel="stylesheet" href="./CSS/style.css" />
   <link rel="stylesheet" href="./CSS/FRAMEWORK/Bootstrap.css" />
   <link rel="stylesheet" href="./CSS/FRAMEWORK/Bootstrap.css" />
-  <link
-    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <!--STYLE ICON-->
 
   <!--SCRIPT-->
@@ -46,6 +46,7 @@ if (!empty($_SESSION["name"])) {
 
     <ul>
       <li><a href="./portal.php">Portal de Aprendizaje</a></li>
+      <li><a href="./cod_fail.php">código de Fallas</a></li>
       <li><a href="./CONTROLLER/close.php">Cerrar Sesion</a></li>
     </ul>
   </header>
@@ -61,7 +62,7 @@ if (!empty($_SESSION["name"])) {
     <!--CONTAINER-LEARNING-PUBLIC-->
     <div class="container-learning">
       <div class="img-public">
-        <img src="./IMG/cubo.jpg" alt="" />
+        <img src="https://images.pexels.com/photos/159751/book-address-book-learning-learn-159751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
       </div>
 
       <div class="container-learning-text">
@@ -102,7 +103,7 @@ if (!empty($_SESSION["name"])) {
           </div>
         </div>
 
-        
+
         <div class="card" style="width: 20rem">
           <img src="./IMG/ysoft.png" class="card-img-top" alt="..." />
           <div class="card-body">
@@ -120,27 +121,29 @@ if (!empty($_SESSION["name"])) {
     <!--CONTAINER-LEARNING-PUBLIC-->
   </main>
 
-    <!--START FOOTER-->
-    <div class="container-fluid" style="display: flex; justify-content: center; margin-top: 50px;">
-        <div class="row">
-            <div class="">
-                <p style="color: black;" class="m-0">Portal de Aliados XDV
-                    &copy;  Todos los derechos reservados. XDV® | Designed by <a href="https://portafoliosjesclona.000webhostapp.com/" style="color: blue;">JE</a>
-                </p>
-                <div class="linear"></div>
-                <div class="icons">
-                    <a href="https://www.linkedin.com/public-profile/settings"><img src="IMG/linkdin.svg" alt=""></a>
-                    <a href="https://github.com/jascalona"><img src="IMG/github.svg" alt=""></a>
-                    <a href="https://wa.me/4129854529?text=Hola,%20Me%20Intersa!"><img src="IMG/whatsapp.svg" alt=""></a>
-                    <a href="https://www.instagram.com/abrahamescalona.84?igsh=MTg2YWQ1ODh6bWt6NA=="><img src="IMG/intagram.svg" alt=""></a>
-                </div>
-
-            </div>
+  <!--START FOOTER-->
+  <div class="container-fluid" style="display: flex; justify-content: center; margin-top: 50px;">
+    <div class="row">
+      <div class="">
+        <p style="color: black;" class="m-0">Portal de Aliados XDV
+          &copy; Todos los derechos reservados. XDV® | Designed by <a
+            href="https://portafoliosjesclona.000webhostapp.com/" style="color: blue;">JE</a>
+        </p>
+        <div class="linear"></div>
+        <div class="icons">
+          <a href="https://www.linkedin.com/public-profile/settings"><img src="IMG/linkdin.svg" alt=""></a>
+          <a href="https://github.com/jascalona"><img src="IMG/github.svg" alt=""></a>
+          <a href="https://wa.me/4129854529?text=Hola,%20Me%20Intersa!"><img src="IMG/whatsapp.svg" alt=""></a>
+          <a href="https://www.instagram.com/abrahamescalona.84?igsh=MTg2YWQ1ODh6bWt6NA=="><img src="IMG/intagram.svg"
+              alt=""></a>
         </div>
-    </div>
-    <!--START FOOTER-->
 
-     <!-- Footer Start 
+      </div>
+    </div>
+  </div>
+  <!--START FOOTER-->
+
+  <!-- Footer Start 
     
      <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
       <div class="row pt-5">
