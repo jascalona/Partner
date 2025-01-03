@@ -83,6 +83,38 @@ if (!empty($_SESSION["name"])) {
 
     <!--Table-->
 
+
+    <!--Model device-->
+    <div class="gallery-model-device">
+
+      <article class="item-gal">
+        <p><small>Versalink B400/B405</small></p>
+      </article>
+    
+      <article>
+        <p><small>VersaLink B7100 Family</small></p>
+      </article>
+
+      <article>
+        <p><small>VersaLink C7100 Family</small></p>
+      </article>  
+
+      <article>
+        <p><small>AltaLink B8170 Family</small></p>
+      </article>    
+
+      <article>
+        <p><small>Versalink C8170 Family</small></p>
+      </article>
+
+      <article>
+        <p><small>VersaLink B625</small></p>
+      </article>
+
+
+    </div>
+    <!--Model device-->
+
     <?php include './CONTROLLER/conexion.php' ?>
 
     <table class="table">
@@ -114,7 +146,7 @@ if (!empty($_SESSION["name"])) {
               <div class="container-modal-desc">
                 <h6>Como abordar el error <i style="color: red;"><?php echo $datos->codigoF ?></i></h6>
                 <p><small>
-                    <?php echo $datos->desc ?>
+                    <?php echo "Chain " . $datos->chain ?>
                   </small></p>
 
                 <div class="btn-calification">
@@ -137,50 +169,7 @@ if (!empty($_SESSION["name"])) {
 
                       <br>
 
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="excelente">
-                        <label class="form-check-label" for="excelente">
-                          Excelente, fue muy útil esta información
-                        </label>
-                      </div>
 
-                      <br>
-
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="impreciso">
-                        <label class="form-check-label" for="impreciso">
-                          Impreciso: no conincide con lo que veo en el producto
-                        </label>
-                      </div>
-
-                      <br>
-                      
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="dificil"
-                          checked>
-                        <label class="form-check-label" for="dificil">
-                          Difícil de entender: traducción poco clara o incorrecta
-                        </label>
-                      </div>
-
-                      <br>
-
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="falta"
-                          checked>
-                        <label class="form-check-label" for="falta">
-                          Falta información: es relevante pero no está completa
-                        </label>
-                      </div>
-
-                      <br>
-
-                      <div class="comentario-adicional">
-                        <h6>Compartir información o sugerencias adicionales</h6>
-                        <textarea class="form-control" name="message" id="message" placeholder="Ingrese un Comentario..."></textarea>
-                      
-                        <button class="btn btn-dark">Enviar</button>
-                      </div>
           
                     </div>
                   </div>
