@@ -37,8 +37,7 @@ if (!empty($_SESSION["name"])) {
 <body>
   <header>
     <div class="logo">
-      <img src="./IMG/x.png" alt="" />
-      <div class="line">Portal ST</div>
+      <img src="./IMG/xdv.png" alt="" />
     </div>
 
     <input type="checkbox" id="check" />
@@ -52,94 +51,19 @@ if (!empty($_SESSION["name"])) {
     </ul>
   </header>
 
-  <main>
-    <article class="text-bienvenida">
-      <p>
 
-      </p>
-    </article>
+  <div class="container-header-library">
+    <img src="./IMG/animation/cuboazul.gif" alt="">
+    <h6 clas="title">Hola, <b><?php echo $_SESSION['name']; ?></b> Bienvenido al Potal ST</h6>
+    <p><small>"Genius is made up of 1% talent and 99% effort."</small></p>
 
-    <!--CONTAINER-LEARNING-PUBLIC-->
-    <div class="container-baner">
-      <div class="text-baner">
-
-        <p> Hola <strong><?php echo $_SESSION['name']; ?></strong>, Bienvenido al Portal ST</p>
-
-        <small>"El genio se hace con un 1% de talento y un 99% de esfuerzo".</small>
-
-        <br>
-
-        <div class="btn">
-          <button type="button" class="btn btn-dark"><a href="./cod_fail.php">Service Library</a></button>
-        </div>
-
-      </div>
-
-      <!--SECTION IMG-->
-      <div class="container-baner-image">
-
-        <div class="img-item1" id="img1">
-          <img src="./IMG/animation/crumpled-paper02.svg" alt="">
-        </div>
-
-        <div class="img-item0" id="img1">
-          <img src="./IMG/animation/cubo-3d.png" alt="">
-        </div>
-
-        <div class="img-item2" id="img2">
-          <img src="./IMG/animation/coffeecup.svg" alt="">
-        </div>
-
-        <div class="img-item3" id="img3">
-          <img src="./IMG/animation/gestion.png" alt="">
-        </div>
-
-
-        <div class="img-item4" id="img9">
-          <img src="./IMG/animation/iphone.svg" alt="">
-        </div>
-
-
-        <div class="img-item9" id="img10">
-          <img src="./IMG/animation/pen02.svg" alt="">
-        </div>
-
-        <div class="img-item10" id="img4">
-          <img src="./IMG/animation/pen01.svg" alt="">
-        </div>
-
-        <div class="img-item5" id="img5">
-          <img src="./IMG/animation/nota1.svg" alt="">
-        </div>
-
-
-        <div class="img-item6" id="img6">
-          <img src="./IMG/animation/nota2.svg" alt="">
-        </div>
-
-
-        <div class="img-item7" id="img7">
-          <img src="./IMG/animation/notepad.svg" alt="">
-        </div>
-
-
-        <div class="img-item8" id="img8">
-          <img src="./IMG/animation/crumpled-paper02.svg" alt="">
-        </div>
-
-
-      </div>
-
-      <div class="baner-movil">
-        <img src="./IMG/header2.png" alt="">
-      </div>
-
-      <div class="baner-movil-2">
-        <img src="./IMG/animation/gestion.png" alt="">
-      </div>
-      <!--SECTION IMG-->
-
+    <div class="icon-item">
+      <button type="button" class="btn btn-secondary"><a href="./cod_fail.php">Service Library</a></button>
     </div>
+
+  </div>
+
+  <main>
 
     <div class="text">
 

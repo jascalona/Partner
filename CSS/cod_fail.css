@@ -25,6 +25,13 @@
     width: 350px;
 }
 
+@media (max-width: 750px) {
+    .container-header-library img{
+        margin: 3%;
+        width: 250px;
+    }
+}
+
 .container-header-library h6 {
     color: grey;
     font-weight: 700;

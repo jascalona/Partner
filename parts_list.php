@@ -41,8 +41,7 @@ if (!empty($_SESSION["name"])) {
 <body>
   <header>
     <div class="logo">
-      <img src="./IMG/x.png" alt="" />
-      <div class="line">Portal ST</div>
+      <img src="./IMG/xdv.png" alt="" />
     </div>
 
     <input type="checkbox" id="check" />

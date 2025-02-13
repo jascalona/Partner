@@ -29,16 +29,8 @@ header .logo{
 }
 
 header .logo img {
-    width: 60px;
+    width: 100px;
     padding: 15px;
-}
-
-header .logo .line{
-    border-left: solid grey 1px;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: 600;
-    color: #565555;
 }
 
 header {
@@ -88,17 +80,56 @@ header .btn-sesion{
     display: none;
 }
 
-.carousel .carousel-item{
-    max-height: 400px;
+
+/*header-library*/
+.container-header-library{
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-image: url(../IMG/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-/* SESION LEARNNING*/
-/*LEARNNING*/
-.text-bienvenida{
-    max-width: 800px;
-    margin: 25px auto;
-    text-align: initial;
+.container-header-library img{
+    margin: 3%;
+    width: 400px;
 }
+
+@media (max-width: 750px) {
+    .container-header-library img{
+        margin: 3%;
+        width: 300px;
+    }
+}
+
+.container-header-library .icon-item button{
+    margin: 10px;
+}
+
+.container-header-library .icon-item button a{
+    color: #f3f3f3f3;
+    text-decoration: none;
+}
+
+.container-header-library h6 {
+    color: #beb9b9;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.container-header-library h6 b{
+    color: grey;
+}
+
+.container-header-library p{
+    font-size: 20px;
+    color: rgb(89, 88, 88);
+}
+/*header-library*/
+
 
 main{
     max-width: 80%;
@@ -120,49 +151,6 @@ main{
 }
 
 
-/*SECTION CARD*/
-
-.container-learning-card .we-make img{
-    width: 100%;
-}
-
-.container-learning-card article .title{
-    text-align: center;
-    padding-top: 4%;
-    font-size: 25px;
-}
-
-.container-learning-card .gallery .card{
-    padding: 4%;
-    border-radius: 8px;
-}
-
-
-.container-learning-card .gallery{
-    display: flex;
-    justify-content: center;
-}
-
-.gallery{
-    display: grid;
-    gap: 4%;
-}
-
-@media (min-width: 992px) {
-    .gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 720px) {
-    .gallery {
-        flex-wrap: wrap;
-    }
-
-    .gallery .card {
-        margin: 30px;
-    }
-}
 
 
 footer{
