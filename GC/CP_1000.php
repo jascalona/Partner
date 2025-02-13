@@ -38,8 +38,7 @@ if (!empty($_SESSION["name"])) {
     <header style="background: rgb(98, 3, 16);" class="header-menu">
 
         <div class="logo">
-            <img src="../IMG/x.png" alt="">
-            <div class="line">Portal de Aprendizaje</div>
+        <img src="../IMG/xdv.png" alt="">
         </div>
 
         <div class=""></div>

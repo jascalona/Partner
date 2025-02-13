@@ -50,8 +50,8 @@ if (!empty($_SESSION["name"])) {
     </label>
 
     <ul>
+      <li><a href="./Learning.php">Inicio</a></li>
       <li><a href="./portal.php">Portal de Aprendizaje</a></li>
-      <li><a href="">Service Library</a></li>
       <li><a href="./CONTROLLER/close.php">Cerrar Sesion</a></li>
     </ul>
   </header>
@@ -75,19 +75,19 @@ if (!empty($_SESSION["name"])) {
     <!--Boton flotante modelos-->
     <div class="container-btn">
       <input type="checkbox" id="btn-mas">
-      
+
       <div class="modelos">
         <a id="device" onclick="ab8155();">B81</a>
         <a id="device" onclick="ab8255();">B82</a>
       </div>
-    
+
       <div class="btn-mas">
-        <label for="btn-mas"><i class='bx bx-plus' style='color:#9fa3a9'  ></i></label>
+        <label for="btn-mas"><i class='bx bx-plus' style='color:#9fa3a9'></i></label>
       </div>
-    
+
     </div>
     <!--Boton flotante modelos-->
-  
+
 
     <div class="container-content">
 

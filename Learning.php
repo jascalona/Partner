@@ -46,6 +46,7 @@ if (!empty($_SESSION["name"])) {
     </label>
 
     <ul>
+      <li><a href="./Learning.php">Inicio</a></li>
       <li><a href="./portal.php">Portal de Aprendizaje</a></li>
       <li><a href="./CONTROLLER/close.php">Cerrar Sesion</a></li>
     </ul>
@@ -65,28 +66,67 @@ if (!empty($_SESSION["name"])) {
 
   <main>
 
-    <div class="text">
-
-      <h6>¡Le damos la bienvenida al Portal de servicio técnico!</h6>
-
+    <div class="text-public">
+      <small>XDV CORPORATION</small><br>
+      <h6>¡Le damos la bienvenida al Portal de servicio y entrenamiento!</h6>
       <p>
-        Descubra un concentrador integral para todos los recursos,
-        herramientas y asistencia que necesita para mejorar su negocio.
-        Manténgase informado sobre las últimas noticias de Xerox y explore
-        información detallada sobre productos, software, servicios y
-        programas exclusivos. Acceda a materiales de marketing, módulos de
-        formación y gestione su cuenta sin esfuerzo para racionalizar las
-        operaciones de su negocio, en un solo lugar.
       </p>
-
     </div>
 
-    <div class="container-learning-card">
-      <div class="we-make">
-        <img src="./IMG/we_make.png" alt="" />
+
+    <div class="container-learning">
+      <article>
+        <div class="contenct">
+          <img src="./IMG/pc_learning.png" alt="">
+          <small><b>Comunicado Servicio</b></small>
+          <p>
+            Deshazte de las malas prácticas y herramientas no optimizadas. El portal de entrenamiento XDV
+            ofrece un acceso exclusivo a documentación y herramientas eficaces y de facil manejo.
+
+            Mejora tu experiencia a la hora de atender una llamada de servicio, este portal fue diseñado
+            con el proposito brindar a cada técnico y/o aliado de servicio, una formación completa sobre
+            cada producto comercializado a nivel nacional en la gama de prodcutos Xerox y aliados comerciales
+            tales como plataformas de control, herramientas para automatización de procesos y por su puesto equipos
+            de gestión documental a fin de brindar soluciones digitales.
+
+          </p>
+        </div>
+      </article>
+    </div>
+
+    <!--Section Public-1-->
+    <section class="fondo-public-1" id="section-1">
+      <div class="public-1" id="public">
+        <article class="item-public">
+          <div class="contenido" id="item_1">
+            <small><b>Desarrollos Recientes</b></small>
+            <div class="contenct">
+              <img src="./IMG/pantalla-learning.png" alt="#">
+              <p>
+                La plataforma Service Library hace más que optimizar la entrega y la administración de su contenido: los
+                usuarios tienen control total sobre cómo se utiliza el contenido. Los usuarios pueden anotar, resaltar
+                Lorem
+                ipsum, dolor sit amet consectetur adipisicing elit. Modi totam, nisi libero ea fugit ex laboriosam quam
+                earum quidem laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis explicabo
+                excepturi quisquam soluta. Ratione eos, beatae, quisquam ea repellendus nemo minus voluptatibus laborum
+                aliquid libero architecto consequatur mollitia illum. Fugit, id nesciunt, beatae delectus praesentium
+                dignissimos repellendus ut ipsa quae tempora sequi dolorum odit debitis consectetur totam asperiores
+                porro
+                officiis.
+              </p>
+            </div>
+          </div>
+        </article>
       </div>
-    </div>
-    <!--CONTAINER-LEARNING-PUBLIC-->
+    </section>
+    <!--Section Public-1-->
+
+
+
+
+
+
+
   </main>
 
   <!--START FOOTER-->
