@@ -1,0 +1,77 @@
+
+@media (max-width: 500px) {
+    .text-bienvenida p{
+        font-size: 21px;
+    }
+    .container-learning-text .title-learning p{
+        font-size: 10px;
+    }
+    footer{
+        margin-top: 10%;
+    }
+
+    /*SECTION LIBRARY*/
+    .icons{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .icon-item{
+        padding: auto;
+        margin: 4%;
+    }
+
+    .icons .icon-item a small{
+        font-size: 12px;
+    }
+
+    .contador{
+        margin: 3%;
+        font-size: 13px;
+    }
+
+    .contador p b{
+        color: rgb(190, 6, 6);
+    }
+
+}
+
+/*SECTION TABLE MOVIL*/
+@media (max-width: 800px) {
+    .container-table-desktop {
+        overflow: scroll;
+    }    
+
+    .container-table-desktop table thead tr th{
+        font-size: 10px;
+    }
+
+    .container-table-desktop table tbody tr td{
+        font-size: 13px;
+    }
+
+    .container-table-movil{
+        display: none;
+    }
+
+/*Diseño Movil*/
+.container-table-movil{
+    max-width: 100%;
+    margin: 0 auto;
+    background: #fff;
+}
+
+}
+
+
+/*SESION PARA PARTS LIST*/
+@media (max-width: 800px) {
+    .show .show-header  img{
+        width: auto;
+    }
+    
+    .show-header table{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
