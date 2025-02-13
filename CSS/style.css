@@ -154,6 +154,15 @@ main{
     font-size: 30px;
 }
 
+@media (max-width: 600px) {
+    .text-public h6{
+        font-size: 15px;
+    }
+    .text-public small{
+        font-size: 11px;
+    }
+}
+
 .text-public p{
     font-size: 15px;
     max-width: 700;

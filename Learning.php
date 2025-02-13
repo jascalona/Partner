@@ -105,14 +105,16 @@ if (!empty($_SESSION["name"])) {
               <p>
                 La plataforma Service Library hace más que optimizar la entrega y la administración de su contenido: los
                 usuarios tienen control total sobre cómo se utiliza el contenido. Los usuarios pueden anotar, resaltar
-                Lorem
-                ipsum, dolor sit amet consectetur adipisicing elit. Modi totam, nisi libero ea fugit ex laboriosam quam
-                earum quidem laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis explicabo
-                excepturi quisquam soluta. Ratione eos, beatae, quisquam ea repellendus nemo minus voluptatibus laborum
-                aliquid libero architecto consequatur mollitia illum. Fugit, id nesciunt, beatae delectus praesentium
-                dignissimos repellendus ut ipsa quae tempora sequi dolorum odit debitis consectetur totam asperiores
-                porro
-                officiis.
+                filtrar e interactuar con su contenido en todos los dispositivos y sistemas operativos estándar de la industria a velocidades sin procedentes.
+
+                Service Library es la plataforma de entrega de contenido interactiva, flexible y multidispositivo 
+                que has estado buscando. Ya sea que su usuario de contenido esté anotando procedimientos de prueba o 
+                desglosando manuales de hardware, Service Library les brinda la capacidad que han estado buscando.
+                <br><br>
+                Mejora la experiencia de las comunicaciones técnicas al dar a los expertos un control 
+                total sobre la forma en que interactúan con el 
+                contenido gracias a nuestra interacción única con las capacidades de resaltar, anotar y referenciar. 
+
               </p>
             </div>
           </div>

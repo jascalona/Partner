@@ -62,9 +62,9 @@ if (!empty($_SESSION["name"])) {
 
     <div class="icon-item">
       <button type="button" class="btn btn-secondary"><a href="./library_raps.php">Library RAPs <i class='bx bxs-book'
-      style='color:#f3f3f3f3'></i></a></button>
+            style='color:#f3f3f3f3'></i></a></button>
       <button type="button" class="btn btn-secondary"><a href="./parts_list.php">Parts List <i class='bx bxs-cog'
-      style='color:#f3f3f3f3'></i></small></a></button>
+            style='color:#f3f3f3f3'></i></small></a></button>
     </div>
   </div>
 
@@ -78,16 +78,14 @@ if (!empty($_SESSION["name"])) {
           <div class="contenct">
             <img src="./IMG/animation/public_1.gif" alt="#">
             <p>
-              La plataforma Service Library hace más que optimizar la entrega y la administración de su contenido: los
-              usuarios tienen control total sobre cómo se utiliza el contenido. Los usuarios pueden anotar, resaltar
-              Lorem
-              ipsum, dolor sit amet consectetur adipisicing elit. Modi totam, nisi libero ea fugit ex laboriosam quam
-              earum quidem laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis explicabo
-              excepturi quisquam soluta. Ratione eos, beatae, quisquam ea repellendus nemo minus voluptatibus laborum
-              aliquid libero architecto consequatur mollitia illum. Fugit, id nesciunt, beatae delectus praesentium
-              dignissimos repellendus ut ipsa quae tempora sequi dolorum odit debitis consectetur totam asperiores
-              porro
-              officiis.
+              Service Library es la solución perfecta para las empresas de comunicación técnica que están interesadas en optimizar
+              su entrega de contenido digital, hacer que su contenido sea
+              fácil de encontrar y dar a sus usuarios el poder de interactuar con su contenido libremente.
+              <br><br>
+              Service Library  empodera a su audiencia con un control sin precedentes sobre su contenido con acceso a múltiples 
+              dispositivos y un arsenal de herramientas. Desde la entrega e integración sin interrupciones 
+              hasta el análisis empresarial y las actualizaciones sin interrupciones, 
+              Service Library es la plataforma que necesita para modernizar su entrega de contenido digital.
             </p>
           </div>
         </div>
@@ -145,16 +143,18 @@ if (!empty($_SESSION["name"])) {
   <section class="fondo-public-3" id="section-3">
     <div class="public-3" id="public">
       <article class="item-public">
-          <div class="contenct">
-            <img src="https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="#">           
-            <h6>Contactanos ahora para obtener más información sobre Service Library</h6>
-            <br>
-            <p>
-              ¿Busca modernizar su entrega de contenido digital?
-              Ponte en contacto con nosotros y colaboraremos para implementar
-              tu plataforma de entrega de contenido personalizada.
-            </p>
-          </div>
+        <div class="contenct">
+          <img
+            src="https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="#">
+          <h6>Contactanos ahora para obtener más información sobre Service Library</h6>
+          <br>
+          <p>
+            ¿Busca modernizar su entrega de contenido digital?
+            Ponte en contacto con nosotros y colaboraremos para implementar
+            tu plataforma de entrega de contenido personalizada.
+          </p>
+        </div>
       </article>
     </div>
   </section>
@@ -175,7 +175,7 @@ if (!empty($_SESSION["name"])) {
     -->
 
 
-  
+
   <footer>
     <p class="m-0">Service Library
       2010-2024 &copy; Xerox de Venezuela Todos los derechos reservados. <small style="color:brown;">XDV®</small>
