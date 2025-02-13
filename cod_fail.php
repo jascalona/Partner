@@ -29,11 +29,7 @@ if (!empty($_SESSION["name"])) {
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <!--STYLE ICON-->
 
-  <!--SCRIPT-->
-  <script src="./JS/Bootstrap.js"></script>
-  <script src="./JS/search.js"></script>
-  <script src="./JS/search_m.js"></script>
-  <!--SCRIPT-->
+
 </head>
 
 <body>
@@ -174,7 +170,11 @@ if (!empty($_SESSION["name"])) {
     </div>
     -->
 
-
+  <!--SCRIPT-->
+  <script src="./JS/Bootstrap.js"></script>
+  <script src="./JS/search.js"></script>
+  <script src="./JS/search_m.js"></script>
+  <!--SCRIPT-->
 
   <footer>
     <p class="m-0">Service Library

@@ -30,12 +30,6 @@ if (!empty($_SESSION["name"])) {
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <!--STYLE ICON-->
 
-  <!--SCRIPT-->
-  <script src="./JS/Bootstrap.js"></script>
-  <script src="./JS/search.js"></script>
-  <script src="./JS/btn-show-part.js"></script>
-  <script src="./JS/btn-show-devices.js"></script>
-  <!--SCRIPT-->
 </head>
 
 <body>
@@ -4957,3 +4951,11 @@ if (!empty($_SESSION["name"])) {
     </footer>
 
   </main>
+
+
+  <!--SCRIPT-->
+  <script src="./JS/Bootstrap.js"></script>
+  <script src="./JS/search.js"></script>
+  <script src="./JS/btn-show-part.js"></script>
+  <script src="./JS/btn-show-devices.js"></script>
+  <!--SCRIPT-->
