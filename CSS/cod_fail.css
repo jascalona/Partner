@@ -390,7 +390,7 @@ table tbody .container-modal-desc .chain-nota {
     right: 30px;
 }
 
-.modelos a, .btn-mas label{
+.modelos button, .btn-mas label{
     display: block;
     text-decoration: none;
     background: #393d42;
@@ -400,25 +400,26 @@ table tbody .container-modal-desc .chain-nota {
     text-align: center;
     padding: 12px;
     border-radius: 50%;
+    border: none;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
     transition:  all 500ms ease;
 }
 
-.modelos a{
+.modelos button{
     margin-bottom: -15px;
     opacity: 0;
     visibility: hidden;
     cursor: pointer;
 }
 
-#btn-mas:checked~ .modelos a{
+#btn-mas:checked~ .modelos button{
     margin-bottom: 10px;
     opacity: 1;
     visibility: visible;
     color: #fff;
 }
 
-.modelos a:hover{
+.modelos button:hover{
     background: #6a6e73;
 }
 
