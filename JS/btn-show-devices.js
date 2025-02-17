@@ -1,6 +1,8 @@
 
 //Function show device B8155
 function ab8155(){
+    alert("Hola, Haz Seleccionado el Parts Lists de AltaLink B8155");
+
     document.getElementById('xerox-family').style.display = "none";
     document.getElementById('modal-8255').style.display = "none";
 
@@ -111,6 +113,8 @@ function ab8155(){
 
 //Function show device B8155
 function ab8255(){
+    alert("Hola, Haz Seleccionado el Parts Lists de AltaLink B8255");
+
    //hidden otros
     document.getElementById('xerox-family').style.display = "none";
     document.getElementById('modal-8155').style.display = "none";
@@ -216,34 +220,3 @@ function ab8255(){
     document.getElementById('part96').style.display = "none";
 }
 
-
-
-
-/*
-
-
-
-
-
-90
-91
-92
-93
-94
-95
-96
-97
-
-
-
-
-*/
-
-
-document.getElementById('part90').style.display = "none";
-document.getElementById('part91').style.display = "none";
-document.getElementById('part92').style.display = "none";
-document.getElementById('part93').style.display = "none";
-document.getElementById('part94').style.display = "none";
-document.getElementById('part95').style.display = "none";
-document.getElementById('part96').style.display = "none";
