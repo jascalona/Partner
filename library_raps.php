@@ -66,7 +66,6 @@ if (!empty($_SESSION["name"])) {
     <!--Boton flotante modelos-->
     <div class="container-btn">
 
-
         <input type="checkbox" id="btn-mas">
 
         <div class="modelos">
