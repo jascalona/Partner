@@ -1,6 +1,6 @@
 
 //Function show device B8155
-function ab8155(){
+function ab8155() {
     alert("Hola, Haz Seleccionado el Parts Lists de AltaLink B8155");
 
     document.getElementById('xerox-family').style.display = "none";
@@ -105,6 +105,108 @@ function ab8155(){
     document.getElementById('part95').style.display = "none";
     document.getElementById('part96').style.display = "none";
 
+
+    //hidden Content B8255
+    //hidden B8255
+    document.getElementById('b8255_0').style.display = "none";
+    document.getElementById('b8255_1').style.display = "none";
+    document.getElementById('b8255_2').style.display = "none";
+    document.getElementById('b8255_3').style.display = "none";
+    document.getElementById('b8255_4').style.display = "none";
+    document.getElementById('b8255_5').style.display = "none";
+    document.getElementById('b8255_6').style.display = "none";
+    document.getElementById('b8255_7').style.display = "none";
+    document.getElementById('b8255_8').style.display = "none";
+    document.getElementById('b8255_9').style.display = "none";
+    document.getElementById('b8255_10').style.display = "none";
+    document.getElementById('b8255_11').style.display = "none";
+    document.getElementById('b8255_12').style.display = "none";
+    document.getElementById('b8255_13').style.display = "none";
+    document.getElementById('b8255_14').style.display = "none";
+    document.getElementById('b8255_15').style.display = "none";
+    document.getElementById('b8255_16').style.display = "none";
+    document.getElementById('b8255_17').style.display = "none";
+    document.getElementById('b8255_18').style.display = "none";
+    document.getElementById('b8255_19').style.display = "none";
+    document.getElementById('b8255_20').style.display = "none";
+    document.getElementById('b8255_21').style.display = "none";
+    document.getElementById('b8255_22').style.display = "none";
+    document.getElementById('b8255_23').style.display = "none";
+    document.getElementById('b8255_24').style.display = "none";
+    document.getElementById('b8255_25').style.display = "none";
+    document.getElementById('b8255_26').style.display = "none";
+    document.getElementById('b8255_27').style.display = "none";
+    document.getElementById('b8255_28').style.display = "none";
+    document.getElementById('b8255_29').style.display = "none";
+    document.getElementById('b8255_30').style.display = "none";
+    document.getElementById('b8255_31').style.display = "none";
+    document.getElementById('b8255_32').style.display = "none";
+    document.getElementById('b8255_33').style.display = "none";
+    document.getElementById('b8255_34').style.display = "none";
+    document.getElementById('b8255_35').style.display = "none";
+    document.getElementById('b8255_36').style.display = "none";
+    document.getElementById('b8255_37').style.display = "none";
+    document.getElementById('b8255_38').style.display = "none";
+    document.getElementById('b8255_39').style.display = "none";
+    document.getElementById('b8255_40').style.display = "none";
+    document.getElementById('b8255_41').style.display = "none";
+    document.getElementById('b8255_42').style.display = "none";
+    document.getElementById('b8255_43').style.display = "none";
+    document.getElementById('b8255_44').style.display = "none";
+    document.getElementById('b8255_45').style.display = "none";
+    document.getElementById('b8255_46').style.display = "none";
+    document.getElementById('b8255_47').style.display = "none";
+    document.getElementById('b8255_48').style.display = "none";
+    document.getElementById('b8255_49').style.display = "none";
+    document.getElementById('b8255_50').style.display = "none";
+    document.getElementById('b8255_51').style.display = "none";
+    document.getElementById('b8255_52').style.display = "none";
+    document.getElementById('b8255_53').style.display = "none";
+    document.getElementById('b8255_54').style.display = "none";
+    document.getElementById('b8255_55').style.display = "none";
+    document.getElementById('b8255_56').style.display = "none";
+    document.getElementById('b8255_57').style.display = "none";
+    document.getElementById('b8255_58').style.display = "none";
+    document.getElementById('b8255_59').style.display = "none";
+    document.getElementById('b8255_60').style.display = "none";
+    document.getElementById('b8255_61').style.display = "none";
+    document.getElementById('b8255_62').style.display = "none";
+    document.getElementById('b8255_63').style.display = "none";
+    document.getElementById('b8255_64').style.display = "none";
+    document.getElementById('b8255_65').style.display = "none";
+    document.getElementById('b8255_66').style.display = "none";
+    document.getElementById('b8255_67').style.display = "none";
+    document.getElementById('b8255_68').style.display = "none";
+    document.getElementById('b8255_69').style.display = "none";
+    document.getElementById('b8255_70').style.display = "none";
+    document.getElementById('b8255_71').style.display = "none";
+    document.getElementById('b8255_72').style.display = "none";
+    document.getElementById('b8255_73').style.display = "none";
+    document.getElementById('b8255_74').style.display = "none";
+    document.getElementById('b8255_75').style.display = "none";
+    document.getElementById('b8255_76').style.display = "none";
+    document.getElementById('b8255_77').style.display = "none";
+    document.getElementById('b8255_78').style.display = "none";
+    document.getElementById('b8255_79').style.display = "none";
+    document.getElementById('b8255_80').style.display = "none";
+    document.getElementById('b8255_81').style.display = "none";
+    document.getElementById('b8255_82').style.display = "none";
+    document.getElementById('b8255_83').style.display = "none";
+    document.getElementById('b8255_84').style.display = "none";
+    document.getElementById('b8255_85').style.display = "none";
+    document.getElementById('b8255_86').style.display = "none";
+    document.getElementById('b8255_87').style.display = "none";
+    document.getElementById('b8255_88').style.display = "none";
+    document.getElementById('b8255_89').style.display = "none";
+    document.getElementById('b8255_90').style.display = "none";
+    document.getElementById('b8255_91').style.display = "none";
+    document.getElementById('b8255_92').style.display = "none";
+    document.getElementById('b8255_93').style.display = "none";
+    document.getElementById('b8255_94').style.display = "none";
+    document.getElementById('b8255_95').style.display = "none";
+    //hidden B8255
+
+
     document.getElementById('part0').style.display = "block"
     document.getElementById('modal-8155').style.display = "block";
 
@@ -112,13 +214,11 @@ function ab8155(){
 
 
 //Function show device B8155
-function ab8255(){
+function ab8255() {
     alert("Hola, Haz Seleccionado el Parts Lists de AltaLink B8255");
 
-   //hidden otros
     document.getElementById('xerox-family').style.display = "none";
     document.getElementById('modal-8155').style.display = "none";
-    document.getElementById('modal-8255').style.display = "block";
 
     //hidden Content B8155
     document.getElementById('part0').style.display = "none";
@@ -218,5 +318,108 @@ function ab8255(){
     document.getElementById('part94').style.display = "none";
     document.getElementById('part95').style.display = "none";
     document.getElementById('part96').style.display = "none";
+
+
+    //hidden B8255
+    document.getElementById('b8255_0').style.display = "none";
+    document.getElementById('b8255_1').style.display = "none";
+    document.getElementById('b8255_2').style.display = "none";
+    document.getElementById('b8255_3').style.display = "none";
+    document.getElementById('b8255_4').style.display = "none";
+    document.getElementById('b8255_5').style.display = "none";
+    document.getElementById('b8255_6').style.display = "none";
+    document.getElementById('b8255_7').style.display = "none";
+    document.getElementById('b8255_8').style.display = "none";
+    document.getElementById('b8255_9').style.display = "none";
+    document.getElementById('b8255_10').style.display = "none";
+    document.getElementById('b8255_11').style.display = "none";
+    document.getElementById('b8255_12').style.display = "none";
+    document.getElementById('b8255_13').style.display = "none";
+    document.getElementById('b8255_14').style.display = "none";
+    document.getElementById('b8255_15').style.display = "none";
+    document.getElementById('b8255_16').style.display = "none";
+    document.getElementById('b8255_17').style.display = "none";
+    document.getElementById('b8255_18').style.display = "none";
+    document.getElementById('b8255_19').style.display = "none";
+    document.getElementById('b8255_20').style.display = "none";
+    document.getElementById('b8255_21').style.display = "none";
+    document.getElementById('b8255_22').style.display = "none";
+    document.getElementById('b8255_23').style.display = "none";
+    document.getElementById('b8255_24').style.display = "none";
+    document.getElementById('b8255_25').style.display = "none";
+    document.getElementById('b8255_26').style.display = "none";
+    document.getElementById('b8255_27').style.display = "none";
+    document.getElementById('b8255_28').style.display = "none";
+    document.getElementById('b8255_29').style.display = "none";
+    document.getElementById('b8255_30').style.display = "none";
+    document.getElementById('b8255_31').style.display = "none";
+    document.getElementById('b8255_32').style.display = "none";
+    document.getElementById('b8255_33').style.display = "none";
+    document.getElementById('b8255_34').style.display = "none";
+    document.getElementById('b8255_35').style.display = "none";
+    document.getElementById('b8255_36').style.display = "none";
+    document.getElementById('b8255_37').style.display = "none";
+    document.getElementById('b8255_38').style.display = "none";
+    document.getElementById('b8255_39').style.display = "none";
+    document.getElementById('b8255_40').style.display = "none";
+    document.getElementById('b8255_41').style.display = "none";
+    document.getElementById('b8255_42').style.display = "none";
+    document.getElementById('b8255_43').style.display = "none";
+    document.getElementById('b8255_44').style.display = "none";
+    document.getElementById('b8255_45').style.display = "none";
+    document.getElementById('b8255_46').style.display = "none";
+    document.getElementById('b8255_47').style.display = "none";
+    document.getElementById('b8255_48').style.display = "none";
+    document.getElementById('b8255_49').style.display = "none";
+    document.getElementById('b8255_50').style.display = "none";
+    document.getElementById('b8255_51').style.display = "none";
+    document.getElementById('b8255_52').style.display = "none";
+    document.getElementById('b8255_53').style.display = "none";
+    document.getElementById('b8255_54').style.display = "none";
+    document.getElementById('b8255_55').style.display = "none";
+    document.getElementById('b8255_56').style.display = "none";
+    document.getElementById('b8255_57').style.display = "none";
+    document.getElementById('b8255_58').style.display = "none";
+    document.getElementById('b8255_59').style.display = "none";
+    document.getElementById('b8255_60').style.display = "none";
+    document.getElementById('b8255_61').style.display = "none";
+    document.getElementById('b8255_62').style.display = "none";
+    document.getElementById('b8255_63').style.display = "none";
+    document.getElementById('b8255_64').style.display = "none";
+    document.getElementById('b8255_65').style.display = "none";
+    document.getElementById('b8255_66').style.display = "none";
+    document.getElementById('b8255_67').style.display = "none";
+    document.getElementById('b8255_68').style.display = "none";
+    document.getElementById('b8255_69').style.display = "none";
+    document.getElementById('b8255_70').style.display = "none";
+    document.getElementById('b8255_71').style.display = "none";
+    document.getElementById('b8255_72').style.display = "none";
+    document.getElementById('b8255_73').style.display = "none";
+    document.getElementById('b8255_74').style.display = "none";
+    document.getElementById('b8255_75').style.display = "none";
+    document.getElementById('b8255_76').style.display = "none";
+    document.getElementById('b8255_77').style.display = "none";
+    document.getElementById('b8255_78').style.display = "none";
+    document.getElementById('b8255_79').style.display = "none";
+    document.getElementById('b8255_80').style.display = "none";
+    document.getElementById('b8255_81').style.display = "none";
+    document.getElementById('b8255_82').style.display = "none";
+    document.getElementById('b8255_83').style.display = "none";
+    document.getElementById('b8255_84').style.display = "none";
+    document.getElementById('b8255_85').style.display = "none";
+    document.getElementById('b8255_86').style.display = "none";
+    document.getElementById('b8255_87').style.display = "none";
+    document.getElementById('b8255_88').style.display = "none";
+    document.getElementById('b8255_89').style.display = "none";
+    document.getElementById('b8255_90').style.display = "none";
+    document.getElementById('b8255_91').style.display = "none";
+    document.getElementById('b8255_92').style.display = "none";
+    document.getElementById('b8255_93').style.display = "none";
+    document.getElementById('b8255_94').style.display = "none";
+    document.getElementById('b8255_95').style.display = "none";
+    //hidden B8255
+
+    document.getElementById('b8255_0').style.display = "block"
+    document.getElementById('modal-8255').style.display = "block";
 }
 
