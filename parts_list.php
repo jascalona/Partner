@@ -4913,6 +4913,8 @@ if (!empty($_SESSION["name"])) {
           <!--container-b8155-->
 
 
+
+
           <!--container-b8255-->
           <div class="menu-modal-part" id="modal-8255">
             <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExampleB82"
@@ -5215,7 +5217,7 @@ if (!empty($_SESSION["name"])) {
                       <br>
                       <a id="boton" onclick="ir_b8255_95();">PL 90.30 IBT Belt Unit Components</a>
                       <br>
-                      <a id="boton" onclick="();">PL 90.35 IBT Belt Unit Assembly</a>
+                      <a id="boton" onclick="ir_b8255_96();">PL 90.35 IBT Belt Unit Assembly</a>
                     </small></p>
                 </details>
                 <!--#13-->
@@ -5337,8 +5339,8 @@ if (!empty($_SESSION["name"])) {
             </article>
             <!--article id 02-->
 
-            <!--article id 04-->
-            <style>
+              <!--article id 03-->
+              <style>
               #b8255_3 {
                 display: none;
               }
@@ -5346,8 +5348,8 @@ if (!empty($_SESSION["name"])) {
 
             <article class="item-article" id="b8255_3">
               <h6>PL 1 - Standby Power</h6>
-              <p>PL 1.20 Electrical - Front/Right</p>
-              <img src="./IMG/images_pl/PL 1.20 Electrical - Front_Right.png" alt="">
+              <p>PL 1.15 Electrical - Front/Right</p>
+              <img src="./IMG/images_pl_8255/PL 1.15 Electrical - Rear (3 of 3).png " alt="">
 
               <table class="table table table-hover">
 
@@ -5362,7 +5364,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL1.20' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL1.15' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -5381,9 +5383,9 @@ if (!empty($_SESSION["name"])) {
               </table>
 
             </article>
-            <!--article id 04-->
+            <!--article id 03-->
 
-            <!--article id 05-->
+            <!--article id 04-->
             <style>
               #b8255_4 {
                 display: none;
@@ -5392,8 +5394,8 @@ if (!empty($_SESSION["name"])) {
 
             <article class="item-article" id="b8255_4">
               <h6>PL 1 - Standby Power</h6>
-              <p>PL 1.25 Wire Harness</p>
-              <img src="./IMG/images_pl/PL 1.25 Wire Harness.png" alt="">
+              <p>PL 1.20 Electrical - Front/Right</p>
+              <img src="./IMG/images_pl_8255/PL 1.20 Electrical - Front_Right.png" alt="">
 
               <table class="table table table-hover">
 
@@ -5408,7 +5410,53 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL1.25' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL1.20' ");
+                while ($datos = $sql_part->fetch_object()) { ?>
+
+
+                  <tbody>
+                    <tr>
+                      <td><?= $datos->item ?></td>
+                      <td><?= $datos->part ?></td>
+                      <td><?= $datos->descr ?></td>
+                    </tr>
+                  </tbody>
+
+                  <?php
+                }
+                ?>
+
+              </table>
+
+            </article>
+            <!--article id 04-->
+
+            <!--article id 05-->
+            <style>
+              #b8255_5 {
+                display: none;
+              }
+            </style>
+
+            <article class="item-article" id="b8255_5">
+              <h6>PL 1 - Standby Power</h6>
+              <p>PL 1.25 Wire Harness</p>
+              <img src="./IMG/images_pl_8255/PL 1.25 Wire Harness.png" alt="">
+
+              <table class="table table table-hover">
+
+                <thead class="table">
+                  <tr>
+                    <th style="color:  rgb(95, 95, 95);" scope="col">Item</th>
+                    <th style="color:  rgb(95, 95, 95);" scope="col">Part</th>
+                    <th style="color:  rgb(95, 95, 95);" scope="col">Description</th>
+                  </tr>
+                </thead>
+
+
+                <?php include("./CONTROLLER/conexion.php");
+                //SELECT TABLE 
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL1.25' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -5431,15 +5479,15 @@ if (!empty($_SESSION["name"])) {
 
             <!--article id 06-->
             <style>
-              #b8255_5 {
+              #b8255_6 {
                 display: none;
               }
             </style>
 
-            <article class="item-article" id="b8255_5">
+            <article class="item-article" id="b8255_6">
               <h6>PL 2 - User Interface</h6>
-              <p>PL 2.05 User Interface (B8145/B8155)</p>
-              <img src="./IMG/images_pl/PL 2.05 User Interface (B8145-B8155).png" alt="">
+              <p>PL 2.05 User Interface (B8245/B8255)</p>
+              <img src="./IMG/images_pl_8255/PL 2.05 User Interface (B8245_B8255).png" alt="">
 
               <table class="table table table-hover">
 
@@ -5454,7 +5502,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL2.05' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL2.05' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -5477,15 +5525,15 @@ if (!empty($_SESSION["name"])) {
 
             <!--article id 07-->
             <style>
-              #b8255_6 {
+              #b8255_7 {
                 display: none;
               }
             </style>
 
-            <article class="item-article" id="b8255_6">
+            <article class="item-article" id="b8255_7">
               <h6>PL 2 - User Interface</h6>
-              <p>PL 2.10 User Interface (B8170)</p>
-              <img src="./IMG/images_pl/PL 2.10 User Interface (B8170).png" alt="">
+              <p>PL 2.10 User Interface (B8270)</p>
+              <img src="./IMG/images_pl_8255/PL 2.10 User Interface (B8270).png" alt="">
 
               <table class="table table table-hover">
 
@@ -5500,7 +5548,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL2.10' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL2.10' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -5523,15 +5571,15 @@ if (!empty($_SESSION["name"])) {
 
             <!--article id 08-->
             <style>
-              #b8255_7 {
+              #b8255_8 {
                 display: none;
               }
             </style>
 
-            <article class="item-article" id="b8255_7">
+            <article class="item-article" id="b8255_8">
               <h6>PL 3 - Machine Run Control</h6>
               <p>PL 3.05 Single Board Control Unit (SBC PWB) (Type A)</p>
-              <img src="./IMG/images_pl/PL 3.05 Single Board Control Unit (SBC PWB) (Type A).png" alt="">
+              <img src="./IMG/images_pl_8255/PL 3.05 Single Board Control Unit (SBC PWB).png" alt="">
 
               <table class="table table table-hover">
 
@@ -5546,7 +5594,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL3.05' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL3.05' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -5568,52 +5616,6 @@ if (!empty($_SESSION["name"])) {
             <!--article id 08-->
 
             <!--article id 09-->
-            <style>
-              #b8255_8 {
-                display: none;
-              }
-            </style>
-
-            <article class="item-article" id="b8255_8">
-              <h6>PL 3 - Machine Run Control</h6>
-              <p>PL 3.06 Single Board Control Unit (SBC PWB) (Type B)</p>
-              <img src="./IMG/images_pl/PL 3.06 Single Board Control Unit (SBC PWB) (Type B).png" alt="">
-
-              <table class="table table table-hover">
-
-                <thead class="table">
-                  <tr>
-                    <th style="color:  rgb(95, 95, 95);" scope="col">Item</th>
-                    <th style="color:  rgb(95, 95, 95);" scope="col">Part</th>
-                    <th style="color:  rgb(95, 95, 95);" scope="col">Description</th>
-                  </tr>
-                </thead>
-
-
-                <?php include("./CONTROLLER/conexion.php");
-                //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL3.06' ");
-                while ($datos = $sql_part->fetch_object()) { ?>
-
-
-                  <tbody>
-                    <tr>
-                      <td><?= $datos->item ?></td>
-                      <td><?= $datos->part ?></td>
-                      <td><?= $datos->descr ?></td>
-                    </tr>
-                  </tbody>
-
-                  <?php
-                }
-                ?>
-
-              </table>
-
-            </article>
-            <!--article id 09-->
-
-            <!--article id 10-->
             <style>
               #b8255_9 {
                 display: none;
@@ -5638,7 +5640,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL3.10' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL3.10' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -5657,9 +5659,9 @@ if (!empty($_SESSION["name"])) {
               </table>
 
             </article>
-            <!--article id 10-->
+            <!--article id 09-->
 
-            <!--article id 11-->
+            <!--article id 10-->
             <style>
               #b8255_10 {
                 display: none;
@@ -5703,9 +5705,9 @@ if (!empty($_SESSION["name"])) {
               </table>
 
             </article>
-            <!--article id 11-->
+            <!--article id 10-->
 
-            <!--article id 12-->
+            <!--article id 11-->
             <style>
               #b8255_11 {
                 display: none;
@@ -5713,8 +5715,8 @@ if (!empty($_SESSION["name"])) {
             </style>
 
             <article class="item-article" id="b8255_11">
-              <h6>PL 5 - DADF (250)</h6>
-              <p>PL 5.1 DADF Component (250) (B8170)</p>
+              <h6>PL 3 - Machine Run Control</h6>
+              <p>PL 5.1 DADF Component (250) (B8270)</p>
               <img src="./IMG/images_pl/PL 5.1 DADF Component (250) (B8170).png" alt="">
 
               <table class="table table table-hover">
@@ -5730,7 +5732,53 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL5.1' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL5.1' ");
+                while ($datos = $sql_part->fetch_object()) { ?>
+
+
+                  <tbody>
+                    <tr>
+                      <td><?= $datos->item ?></td>
+                      <td><?= $datos->part ?></td>
+                      <td><?= $datos->descr ?></td>
+                    </tr>
+                  </tbody>
+
+                  <?php
+                }
+                ?>
+
+              </table>
+
+            </article>
+            <!--article id 11-->
+
+            <!--article id 12-->
+            <style>
+              #b8255_12 {
+                display: none;
+              }
+            </style>
+
+            <article class="item-article" id="b8255_12">
+              <h6>PL 5 - DADF (250)</h6>
+              <p>PL 5.2 DADF, DADF Cover (250) (B8270)</p>
+              <img src="./IMG/images_pl_8255/PL 5.2 DADF, DADF Cover (250) (B8270).png" alt="">
+
+              <table class="table table table-hover">
+
+                <thead class="table">
+                  <tr>
+                    <th style="color:  rgb(95, 95, 95);" scope="col">Item</th>
+                    <th style="color:  rgb(95, 95, 95);" scope="col">Part</th>
+                    <th style="color:  rgb(95, 95, 95);" scope="col">Description</th>
+                  </tr>
+                </thead>
+
+
+                <?php include("./CONTROLLER/conexion.php");
+                //SELECT TABLE 
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL5.2' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -5753,12 +5801,12 @@ if (!empty($_SESSION["name"])) {
 
             <!--article id 13-->
             <style>
-              #b8255_12 {
+              #b8255_13 {
                 display: none;
               }
             </style>
 
-            <article class="item-article" id="b8255_12">
+            <article class="item-article" id="b8255_13">
               <h6>PL 5 - DADF (250)</h6>
               <p>PL 5.2 DADF, DADF Cover (250) (B8170)</p>
               <img src="./IMG/images_pl/PL 5.2 DADF, DADF Cover (250) (B8170).png" alt="">
@@ -5800,15 +5848,15 @@ if (!empty($_SESSION["name"])) {
 
             <!--article id 14-->
             <style>
-              #b8255_13 {
+              #b8255_14 {
                 display: none;
               }
             </style>
 
-            <article class="item-article" id="b8255_13">
+            <article class="item-article" id="b8255_14">
               <h6>PL 5 - DADF (250)</h6>
-              <p>PL 5.3 DADF PWB (250) (B8170)</p>
-              <img src="./IMG/images_pl/PL 5.3 DADF PWB (250) (B8170).png" alt="">
+              <p>PL 5.3 DADF PWB (250) (B8270)</p>
+              <img src="./IMG/images_pl_8255/PL 5.3 DADF PWB (250) (B8270).png" alt="">
 
               <table class="table table table-hover">
 
@@ -5823,7 +5871,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL5.3' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL5.3' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -5847,15 +5895,15 @@ if (!empty($_SESSION["name"])) {
 
             <!--article id 15-->
             <style>
-              #b8255_14 {
+              #b8255_15 {
                 display: none;
               }
             </style>
 
-            <article class="item-article" id="b8255_14">
+            <article class="item-article" id="b8255_">
               <h6>PL 5 - DADF (250)</h6>
-              <p>PL 5.4 DCDC PWB (250) (B8170)</p>
-              <img src="./IMG/images_pl/PL 5.4 DCDC PWB (250) (B8170).png" alt="">
+              <p>PL 5.4 DCDC PWB (250) (B8270)</p>
+              <img src="./IMG/images_pl_8255/PL 5.4 DCDC PWB (250) (B8270).png" alt="">
 
               <table class="table table table-hover">
 
@@ -5870,7 +5918,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL5.4' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL5.4' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
