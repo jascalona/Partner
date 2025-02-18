@@ -5900,7 +5900,7 @@ if (!empty($_SESSION["name"])) {
               }
             </style>
 
-            <article class="item-article" id="b8255_">
+            <article class="item-article" id="b8255_15">
               <h6>PL 5 - DADF (250)</h6>
               <p>PL 5.4 DCDC PWB (250) (B8270)</p>
               <img src="./IMG/images_pl_8255/PL 5.4 DCDC PWB (250) (B8270).png" alt="">
