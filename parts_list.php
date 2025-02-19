@@ -7426,7 +7426,7 @@ if (!empty($_SESSION["name"])) {
               }
             </style>
 
-            <article class="item-article" id="b8255_">
+            <article class="item-article" id="b8255_47">
               <h6>PL 28 - Covers</h6>
               <p>PL 28.30 Workshelf</p>
               <img src="./IMG/images_pl_8255/PL 28.30 Workshelf.png" alt="">
@@ -7475,7 +7475,7 @@ if (!empty($_SESSION["name"])) {
             <article class="item-article" id="b8255_48">
               <h6>PL 40 - Main Drive Assembly</h6>
               <p>PL 40.05 Main Drive Assembly</p>
-              <img src="./IMG/images_pl/PL 40.05 Main Drive Assembly.png" alt="">
+              <img src="./IMG/images_pl_8255/PL 40.05 Main Drive Assembly.png" alt="">
 
               <table class="table table table-hover">
 
@@ -7490,7 +7490,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL40.05' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL40.05' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -7522,7 +7522,7 @@ if (!empty($_SESSION["name"])) {
             <article class="item-article" id="b8255_49">
               <h6>PL 40 - Main Drive Assembly</h6>
               <p>PL 40.10 NOHAD (front)</p>
-              <img src="./IMG/images_pl/PL 40.10 NOHAD (front).png" alt="">
+              <img src="./IMG/images_pl_8255/PL 40.10 NOHAD (front).png" alt="">
 
               <table class="table table table-hover">
 
@@ -7537,7 +7537,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL40.10' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL40.10' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -7570,7 +7570,7 @@ if (!empty($_SESSION["name"])) {
             <article class="item-article" id="b8255_50">
               <h6>PL 40 - Main Drive Assembly</h6>
               <p>PL 40.15 NOHAD (rear)</p>
-              <img src="./IMG/images_pl/PL 40.15 NOHAD (rear).png" alt="">
+              <img src="./IMG/images_pl_8255/PL 40.15 NOHAD (rear).png" alt="">
 
               <table class="table table table-hover">
 
@@ -7585,7 +7585,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL40.15' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL40.15' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -7617,7 +7617,7 @@ if (!empty($_SESSION["name"])) {
             <article class="item-article" id="b8255_51">
               <h6>PL 60 - Imaging</h6>
               <p>PL 60.05 LPH Module</p>
-              <img src="./IMG/images_pl/PL 60.05 LPH Module.png" alt="">
+              <img src="./IMG/images_pl_8255/PL 60.05 LPH Module.png" alt="">
 
               <table class="table table table-hover">
 
@@ -7632,7 +7632,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL60.05' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL60.05' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -7662,8 +7662,8 @@ if (!empty($_SESSION["name"])) {
 
             <article class="item-article" id="b8255_52">
               <h6>PL 60 - Imaging</h6>
-              <p>PL 60.10 Platen/IIT Cover (B8170)</p>
-              <img src="./IMG/images_pl/PL 60.10 Platen_IIT Cover (B8170).png" alt="">
+              <p>PL 60.10 Platen/IIT Cover (B8270)</p>
+              <img src="./IMG/images_pl_8255/PL 60.10 Platen_IIT Cover (B8270).png" alt="">
 
               <table class="table table table-hover">
 
@@ -7678,7 +7678,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL60.10' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL60.10' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -7709,8 +7709,8 @@ if (!empty($_SESSION["name"])) {
 
             <article class="item-article" id="b8255_53">
               <h6>PL 60 - Imaging</h6>
-              <p>PL 60.15 Platen Glass (B8170)</p>
-              <img src="./IMG/images_pl/PL 60.15 Platen Glass (B8170).png" alt="">
+              <p>PL 60.15 Platen Glass (B8270)</p>
+              <img src="./IMG/images_pl_8255/PL 60.15 Platen Glass (B8270).png" alt="">
 
               <table class="table table table-hover">
 
@@ -7725,7 +7725,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL60.15' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL60.15' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -7756,8 +7756,8 @@ if (!empty($_SESSION["name"])) {
 
             <article class="item-article" id="b8255_54">
               <h6>PL 60 - Imaging</h6>
-              <p>PL 60.20 CCD Lens (B8170)</p>
-              <img src="./IMG/images_pl/PL 60.20 CCD Lens (B8170).png" alt="">
+              <p>PL 60.20 CCD Lens (B8270)</p>
+              <img src="./IMG/images_pl_8255/PL 60.20 CCD Lens (B8270).png" alt="">
 
               <table class="table table table-hover">
 
@@ -7772,7 +7772,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL60.20' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL60.20' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -7803,8 +7803,8 @@ if (!empty($_SESSION["name"])) {
 
             <article class="item-article" id="b8255_55">
               <h6>PL 60 - Imaging</h6>
-              <p>PL 60.25 Carriage Cable/Motor (B8170)</p>
-              <img src="./IMG/images_pl/PL 60.25 Carriage Cable_Motor (B8170).png" alt="">
+              <p>PL 60.25 Carriage Cable/Motor (B8270)</p>
+              <img src="./IMG/images_pl_8255/PL 60.25 Carriage Cable_Motor (B8270).png" alt="">
 
               <table class="table table table-hover">
 
@@ -7819,7 +7819,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL60.25' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL60.25' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -7850,8 +7850,8 @@ if (!empty($_SESSION["name"])) {
 
             <article class="item-article" id="b8255_56">
               <h6>PL 60 - Imaging</h6>
-              <p>PL 60.30 Full/Half Carriage (B8170)</p>
-              <img src="./IMG/images_pl/PL 60.30 Full_Half Carriage (B8170).png" alt="">
+              <p>PL 60.30 Full/Half Carriage (B8270)</p>
+              <img src="./IMG/images_pl_8255/PL 60.30 Full_Half Carriage (B8270).png" alt="">
 
               <table class="table table table-hover">
 
@@ -7866,7 +7866,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL60.30' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL60.30' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -7897,8 +7897,8 @@ if (!empty($_SESSION["name"])) {
 
             <article class="item-article" id="b8255_57">
               <h6>PL 60 - Imaging</h6>
-              <p>PL 60.35 Platen/IIT Cover (B8145/B8155)</p>
-              <img src="./IMG/images_pl/PL 60.35 Platen_IIT Cover (B8145_B8155).png" alt="">
+              <p>PL 60.35 Platen/IIT Cover (B8245/B8255)</p>
+              <img src="./IMG/images_pl_8255/PL 60.35 Platen_IIT Cover (B8245_B8255).png" alt="">
 
               <table class="table table table-hover">
 
@@ -7913,7 +7913,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL60.35' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL60.35' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -7944,8 +7944,8 @@ if (!empty($_SESSION["name"])) {
 
             <article class="item-article" id="b8255_58">
               <h6>PL 60 - Imaging</h6>
-              <p>PL 60.40 Platen Glass (B8145/B8155)</p>
-              <img src="./IMG/images_pl/PL 60.40 Platen Glass (B8145_B8155).png" alt="">
+              <p>PL 60.40 Platen Glass (B8245/B8255)</p>
+              <img src="./IMG/images_pl_8255/PL 60.40 Platen Glass (B8245_B8255).png" alt="">
 
               <table class="table table table-hover">
 
@@ -7960,7 +7960,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL60.40' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL60.40' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -7991,8 +7991,8 @@ if (!empty($_SESSION["name"])) {
 
             <article class="item-article" id="b8255_59">
               <h6>PL 60 - Imaging</h6>
-              <p>PL 60.45 CCD Lens (B8145/B8155)</p>
-              <img src="./IMG/images_pl/PL 60.45 CCD Lens (B8145_B8155).png" alt="">
+              <p>PL 60.45 CCD Lens (B8245/B8255)</p>
+              <img src="./IMG/images_pl_8255/PL 60.45 CCD Lens (B8245_B8255).png" alt="">
 
               <table class="table table table-hover">
 
@@ -8007,7 +8007,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL60.45' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL60.45' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -8038,8 +8038,8 @@ if (!empty($_SESSION["name"])) {
 
             <article class="item-article" id="b8255_60">
               <h6>PL 60 - Imaging</h6>
-              <p>PL 60.50 Carriage Cable/Motor (B8145/B8155)</p>
-              <img src="./IMG/images_pl/PL 60.50 Carriage Cable_Motor (B8145_B8155).png" alt="">
+              <p>PL 60.50 Carriage Cable/Motor (B8245/B8255)</p>
+              <img src="./IMG/images_pl_8255/PL 60.50 Carriage Cable_Motor (B8245_B8255).png" alt="">
 
               <table class="table table table-hover">
 
@@ -8054,7 +8054,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL60.50' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL60.50' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -8085,8 +8085,8 @@ if (!empty($_SESSION["name"])) {
 
             <article class="item-article" id="b8255_61">
               <h6>PL 60 - Imaging</h6>
-              <p>PL 60.55 Full/Half Carriage (B8145/B8155)</p>
-              <img src="./IMG/images_pl/PL 60.55 Full_Half Carriage (B8145_B8155).png" alt="">
+              <p>PL 60.55 Full/Half Carriage (B8245/B8255)</p>
+              <img src="./IMG/images_pl_8255/PL 60.55 Full_Half Carriage (B8245_B8255).png" alt="">
 
               <table class="table table table-hover">
 
@@ -8101,7 +8101,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL60.55' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL60.55' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -8133,7 +8133,7 @@ if (!empty($_SESSION["name"])) {
             <article class="item-article" id="b8255_62">
               <h6>PL 70 - Paper Supply</h6>
               <p>PL 70.05 Tray 1 and 2 Assembly</p>
-              <img src="./IMG/images_pl/PL 70.05 Tray 1 and 2 Assembly.png" alt="">
+              <img src="./IMG/images_pl_8255/PL 70.05 Tray 1 and 2 Assembly.png" alt="">
 
               <table class="table table table-hover">
 
@@ -8148,7 +8148,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL70.05' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL70.05' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -8179,7 +8179,7 @@ if (!empty($_SESSION["name"])) {
             <article class="item-article" id="b8255_63">
               <h6>PL 70 - Paper Supply</h6>
               <p>PL 70.10 Tray 1 Assembly</p>
-              <img src="./IMG/images_pl/PL 70.10 Tray 1 Assembly.png" alt="">
+              <img src="./IMG/images_pl_8255/PL 70.10 Tray 1 Assembly.png" alt="">
 
               <table class="table table table-hover">
 
@@ -8194,7 +8194,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL70.10' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL70.10' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -8226,7 +8226,7 @@ if (!empty($_SESSION["name"])) {
             <article class="item-article" id="b8255_64">
               <h6>PL 70 - Paper Supply</h6>
               <p>PL 70.15 Tray 2 Assembly</p>
-              <img src="./IMG/images_pl/PL 70.15 Tray 2 Assembly.png" alt="">
+              <img src="./IMG/images_pl_8255/PL 70.15 Tray 2 Assembly.png" alt="">
 
               <table class="table table table-hover">
 
@@ -8241,7 +8241,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL70.15' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL70.15' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -8273,7 +8273,7 @@ if (!empty($_SESSION["name"])) {
             <article class="item-article" id="b8255_65">
               <h6>PL 70 - Paper Supply</h6>
               <p>PL 70.30 TTM Components</p>
-              <img src="./IMG/images_pl/PL 70.30 TTM Components.png" alt="">
+              <img src="./IMG/images_pl_8255/PL 70.30 TTM Components.png" alt="">
 
               <table class="table table table-hover">
 
@@ -8288,7 +8288,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL70.30' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL70.30' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -8320,7 +8320,7 @@ if (!empty($_SESSION["name"])) {
             <article class="item-article" id="b8255_66">
               <h6>PL 70 - Paper Supply</h6>
               <p>PL 70.35 TTM Covers and Tray 3/4 Assembly</p>
-              <img src="./IMG/images_pl/PL 70.35 TTM Covers and Tray 3_4 Assembly.png" alt="">
+              <img src="./IMG/images_pl_8255/PL 70.35 TTM Covers and Tray 3_4 Assembly.png" alt="">
 
               <table class="table table table-hover">
 
@@ -8335,7 +8335,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL70.35' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL70.35' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -8367,7 +8367,7 @@ if (!empty($_SESSION["name"])) {
             <article class="item-article" id="b8255_67">
               <h6>PL 70 - Paper Supply</h6>
               <p>PL 70.40 TTM Tray 3 Assembly</p>
-              <img src="./IMG/images_pl/PL 70.40 TTM Tray 3 Assembly.png" alt="">
+              <img src="./IMG/images_pl_8255/PL 70.40 TTM Tray 3 Assembly.png" alt="">
 
               <table class="table table table-hover">
 
@@ -8382,7 +8382,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL70.40' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL70.40' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -8414,7 +8414,7 @@ if (!empty($_SESSION["name"])) {
             <article class="item-article" id="b8255_68">
               <h6>PL 70 - Paper Supply</h6>
               <p>PL 70.45 TTM Tray 4 Assembly</p>
-              <img src="./IMG/images_pl/PL 70.45 TTM Tray 4 Assembly.png" alt="">
+              <img src="./IMG/images_pl_8255/PL 70.45 TTM Tray 4 Assembly.png" alt="">
 
               <table class="table table table-hover">
 
@@ -8429,7 +8429,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL70.45' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL70.45' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -8460,7 +8460,7 @@ if (!empty($_SESSION["name"])) {
             <article class="item-article" id="b8255_69">
               <h6>PL 70 - Paper Supply</h6>
               <p>PL 70.50 Bypass Tray Components</p>
-              <img src="./IMG/images_pl/PL 70.50 Bypass Tray Components.png" alt="">
+              <img src="./IMG/images_pl_8255/PL 70.50 Bypass Tray Components.png" alt="">
 
               <table class="table table table-hover">
 
@@ -8475,7 +8475,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL70.50' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL70.50' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -8507,7 +8507,7 @@ if (!empty($_SESSION["name"])) {
             <article class="item-article" id="b8255_70">
               <h6>PL 70 - Paper Supply</h6>
               <p>PL 70.55 Bypass Tray Assembly</p>
-              <img src="./IMG/images_pl/PL 70.55 Bypass Tray Assembly.png" alt="">
+              <img src="./IMG/images_pl_8255/PL 70.55 Bypass Tray Assembly.png" alt="">
 
               <table class="table table table-hover">
 
@@ -8522,7 +8522,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL70.55' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL70.55' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
@@ -8554,7 +8554,7 @@ if (!empty($_SESSION["name"])) {
             <article class="item-article" id="b8255_71">
               <h6>PL 70 - Paper Supply</h6>
               <p>PL 70.70 Envelope Tray</p>
-              <img src="./IMG/images_pl/PL 70.70 Envelope Tray.png" alt="">
+              <img src="./IMG/images_pl_8255/PL 70.70 Envelope Tray.png" alt="">
 
               <table class="table table table-hover">
 
@@ -8569,7 +8569,7 @@ if (!empty($_SESSION["name"])) {
 
                 <?php include("./CONTROLLER/conexion.php");
                 //SELECT TABLE 
-                $sql_part = $conexion->query(" SELECT *FROM part_list_b8155 WHERE codPL='PL70.70' ");
+                $sql_part = $conexion->query(" SELECT *FROM part_list_b8255 WHERE codPL='PL70.70' ");
                 while ($datos = $sql_part->fetch_object()) { ?>
 
 
