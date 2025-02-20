@@ -130,8 +130,8 @@ if (!empty($_SESSION["name"])) {
 
   <!--START FOOTER-->
   <footer>
-    <p class="m-0">Service Library
-      2010-2024 &copy; Xerox de Venezuela Todos los derechos reservados. <small style="color:brown;">XDV®</small></p>
+    <p class="m-0"> 
+    &copy; 2010-2024 Xerox de Venezuela Todos los derechos reservados. <small style="color:brown;">XDV®</small></p>
   </footer>
   <!--START FOOTER-->
 

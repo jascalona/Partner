@@ -119,12 +119,28 @@ if (!empty($_SESSION["name"])) {
             <div class="container">
                 <form class="">
                     <input class="form-control me-2 light-table-filter" data-table="table" type="text"
-                        placeholder="Buscar...">
+                        placeholder="Search...">
                 </form>
             </div>
         </div>
         <!-- end search filter -->
 
+        <!-- start search filter b8255-->
+        <style>
+            #search-82 {
+                display: none;
+            }
+        </style>
+
+        <div class="search" data-aos="fade-up" data-aos-duration="1000" id="search-82">
+            <div class="container">
+                <form class="">
+                    <input class="form-control me-2 light-table-filter" data-table="table" type="text"
+                        placeholder="Searchsgdf">
+                </form>
+            </div>
+        </div>
+        <!-- start search filter b8255-->
 
         <?php include './CONTROLLER/conexion.php' ?>
 
@@ -185,7 +201,8 @@ if (!empty($_SESSION["name"])) {
 
 
                                     <div class="chain-nota">
-                                        <h6>How to deal with the error <i style="color: red;"><?php echo $datos->chain ?></i>
+                                        <h6>How to deal with the error <i
+                                                style="color: red;"><?php echo $datos->chain ?></i>
                                         </h6>
                                         <p><small>
                                                 <?php echo "Chain " . $datos->nota ?>
@@ -493,7 +510,8 @@ if (!empty($_SESSION["name"])) {
 
 
                                     <div class="chain-nota">
-                                        <h6>How to deal with the error <i style="color: red;"><?php echo $datos->chain ?></i>
+                                        <h6>How to deal with the error <i
+                                                style="color: red;"><?php echo $datos->chain ?></i>
                                         </h6>
                                         <p><small>
                                                 <?php echo "Chain " . $datos->nota ?>
@@ -751,20 +769,6 @@ if (!empty($_SESSION["name"])) {
     </main>
 
 
-    <!--
-    <div class="vistas-data">
-      <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
-        <div class="btn-group me-2" role="group" aria-label="First group">
-
-          <button type="button" class="btn btn-outline-secondary">1</button>
-          <button type="button" class="btn btn-outline-secondary">2</button>
-          <button type="button" class="btn btn-outline-secondary">3</button>
-          <button type="button" class="btn btn-outline-secondary">4</button>
-        </div>
-      </div>
-    </div>
-    -->
-
 
     <footer>
         <p class="m-0">Service Library
@@ -777,6 +781,6 @@ if (!empty($_SESSION["name"])) {
     <!--SCRIPT-->
     <script src="./JS/Bootstrap.js"></script>
     <script src="./JS/search.js"></script>
-    <script src="./JS/search_m.js"></script>
+    <script src="./JS/search_82.js"></script>
     <script src="./JS/btn-show-RAPs.js"></script>
     <!--SCRIPT-->

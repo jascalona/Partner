@@ -94,18 +94,16 @@ if (!empty($_SESSION["name"])) {
             <article>
               <div class="contenct">
                 <img src="./IMG/gif_part.gif" alt="">
-                <small><b>Xerox Family</b></small>
+                <small><b>Parts List</b></small>
                 <p>
-                  Deshazte de las malas prácticas y herramientas no optimizadas. El portal de entrenamiento XDV
-                  ofrece un acceso exclusivo a documentación y herramientas eficaces y de facil manejo.
-
-                  Mejora tu experiencia a la hora de atender una llamada de servicio, este portal fue diseñado
-                  con el proposito brindar a cada técnico y/o aliado de servicio, una formación completa sobre
-                  cada producto comercializado a nivel nacional en la gama de prodcutos Xerox y aliados comerciales
-                  tales como plataformas de control, herramientas para automatización de procesos y por su puesto
-                  equipos
-                  de gestión documental a fin de brindar soluciones digitales.
-
+                  Find and know the part code to request after answering a service call. Optimize your time by easily
+                  locating each component when performing a diagnosis, from sensors and gears to fuses inside logic
+                  boards. Compare parts and components similar or alternative to other equipment.
+                  <br>
+                  Service Library is a secure, next-generation, professional-grade digital distribution platform
+                  designed to deliver advanced design and research capabilities. It is also specifically designed for
+                  knowledge workers who need constant access to reference content – ​​customers working in the legal,
+                  financial, educational, or scientific and technological sectors.
                 </p>
               </div>
             </article>
