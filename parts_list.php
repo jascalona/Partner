@@ -101,7 +101,7 @@ if (!empty($_SESSION["name"])) {
         <div class="menu-modal-part" id="modal-8155">
           <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
             aria-controls="offcanvasExample">
-            Parts List <i class='bx bxs-home'></i>
+            <i class='bx bx-food-menu'></i>
           </button>
 
           <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
@@ -408,7 +408,324 @@ if (!empty($_SESSION["name"])) {
         </div>
         <!--Modal para B8155-->
 
+        <!--Sesion para modelo B8255-->
         <!--Modal para B8255-->
+        <style>
+          #modal-8255{
+            display: none;
+
+          }
+        </style>
+        
+        <div class="menu-modal-part" id="modal-8255">
+          <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExampleB82"
+            aria-controls="offcanvasExampleB82">
+            <i class='bx bx-food-menu'></i>
+          </button>
+
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExampleB82"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu Parts Lists</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+
+              <details>
+                <summary>PL 1 - Standby Power <i class='bx bx-chevron-down' style='color:#4c4c4c'></i></summary>
+                <p><small>
+                    <a id="boton" onclick="ir_b8255_1();">PL 1.05 Electrical - Rear (1 of 3)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_2();">PL 1.10 Electrical - Rear (2 of 3)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_3()">PL 1.15 Electrical - Rear (3 of 3)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_4()">PL 1.20 Electrical - Front/Right</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_5()">PL 1.25 Wire Harness</a></li>
+                  </small></p>
+              </details>
+              <!--#01-->
+
+              <!--#02-->
+              <details>
+                <summary>PL 2 - User Interface <i class='bx bx-chevron-down' style='color:#4c4c4c'></i></summary>
+                <p><small>
+                    <a id="boton" onclick="ir_b8255_6();">PL 2.05 User Interface (B8245/B8255)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_7();">PL 2.10 User Interface (B8270)</a>
+                  </small></p>
+              </details>
+              <!--#02-->
+
+              <!--#03-->
+              <details>
+                <summary>PL 3 - Machine Run Control <i class='bx bx-chevron-down' style='color:#4c4c4c'></i></summary>
+                <p><small>
+                    <a id="boton" onclick="ir_b8255_8();">PL 3.05 Single Board Control Unit (SBC PWB)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_9();">PL 3.10 Video Contact Chassis Unit</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_10();">PL 3.15 Video Contact Chassis Assembly</a>
+                  </small></p>
+              </details>
+              <!--#03-->
+
+              <!--#04-->
+              <details>
+                <summary>PL 5 - DADF (250) <i class='bx bx-chevron-down' style='color:#4c4c4c'></i></summary>
+                <p><small>
+                    <a id="boton" onclick="ir_b8255_11();">PL 5.1 DADF Component (250) (B8270)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_12();">PL 5.2 DADF, DADF Cover (250) (B8270)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_13();">PL 5.3 DADF PWB (250) (B8270)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_14();">PL 5.4 DCDC PWB (250) (B8270)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_15();">PL 5.5 Document Tray, Tray Feed (250)(B8270)</a></li>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_16();">PL 5.6 DADF Document Tray (250) (B8270)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_17();">PL 5.7 DADF Feeder Cover Unit (250) (B8270)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_18();">PL 5.8 DADF Feeder Cover Assembly (250) (B8270)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_19();">PL 5.9 Sensor Component (250) (B8270)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_20();">PL 5.10 Drive Component (250) (B8270)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_21();">PL 5.11 Lower Chute Assembly, Retard Roll (250) (B8270)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_22();">PL 5.12 Pre Regi. In Chute, Platen High Roll (250)
+                      (B8270)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_23();">PL 5.13 Exit Lower Chute, Out Chute Assembly (250)
+                      (B8270)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_24();">PL 5.14 DADF Nudger Housing Assembly (250) (B8270)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_25();">PL 5.15 Sonic Sensor Assembly (250) (B8270)</a>
+                  </small></p>
+              </details>
+              <!--#04-->
+
+              <!--#05-->
+              <details>
+                <summary>PL 5 - DADF (130) <i class='bx bx-chevron-down' style='color:#4c4c4c'></i></summary>
+                <p><small>
+                    <a id="boton" onclick="ir_b8255_26();">PL 5.50 DADF Component (130) (B8245/B8255)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_27();">PL 5.51 DADF Cover (130) (B8245/B8255)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_28();">PL 5.52 DADF Top Cover, Document Tray (130) (B8245/B8255)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_29();">PL 5.53 DADF Base Frame Assembly (130) (B8245/B8255)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_30();">PL 5.54 Regi. / Retard Chute/ Invert Unit (130)
+                      (B8245/B8255)</a></li>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_31();">PL 5.55 Top Cover (130) (B8245/B8255)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_32();">PL 5.56 Feeder / Nudger Roll Assembly (130) (B8245/B8255)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_33();">PL 5.57 DADF Document Tray (130) (B8245/B8255)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_34();">PL 5.58 DADF Drive (130) (B8245/B8255)</a>
+                  </small></p>
+              </details>
+              <!--#05-->
+
+              <!--#06-->
+              <details>
+                <summary>PL 10 - Copy Transportation and Fusing <i class='bx bx-chevron-down' style='color:#4c4c4c'></i>
+                </summary>
+                <p><small>
+                    <a id="boton" onclick="ir_b8255_35();">PL 10.05 Fuser</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_36();">PL 10.10 Exit 1 Transport Components</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_37();">PL 10.15 Exit 2 Transport Components</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_38();">PL 10.20 Face Up Tray Assembly</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_39();">PL 10.25 Exit 2 Transport Assembly</a></li>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_40();">PL 10.30 Face Up Chute Assembly</a>
+                  </small></p>
+              </details>
+              <!--#06-->
+
+              <!--#07-->
+              <details>
+                <summary>PL 26 - Consumables and Tools <i class='bx bx-chevron-down' style='color:#4c4c4c'></i>
+                </summary>
+                <p><small>
+                    <a id="boton" onclick="ir_b8255_41();">PL 26.10 Consumables and Tools</a>
+                  </small></p>
+              </details>
+              <!--#7-->
+
+              <!--#08-->
+              <details>
+                <summary>PL 28 - Covers <i class='bx bx-chevron-down' style='color:#4c4c4c'></i></summary>
+                <p><small>
+                    <a id="boton" onclick="ir_b8255_42();">PL 28.05 Covers (Front)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_43();">PL 28.10 Covers (Rear)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_44();">PL 28.15 Covers (B8245/B8255)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_45();">PL 28.20 Covers (B8270)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_46();">PL 28.25 Front Left Cover Compartment</a></li>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_47();">PL 28.30 Workshelf</a>
+                  </small></p>
+              </details>
+              <!--#8-->
+
+              <!--#09-->
+              <details>
+                <summary>PL 40 - Main Drive Assembly <i class='bx bx-chevron-down' style='color:#4c4c4c'></i>
+                </summary>
+                <p><small>
+                    <a id="boton" onclick="ir_b8255_48();">PL 40.05 Main Drive Assembly</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_49();">PL 40.10 NOHAD (front)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_50();">PL 40.15 NOHAD (rear)</a>
+                  </small></p>
+              </details>
+              <!--#9-->
+
+              <!--#10-->
+              <details>
+                <summary>PL 60 - Imaging <i class='bx bx-chevron-down' style='color:#4c4c4c'></i>
+                </summary>
+                <p><small>
+                    <a id="boton" onclick="ir_b8255_51();">PL 60.05 LPH Module</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_52();">PL 60.10 Platen/IIT Cover (B8270)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_53();">PL 60.15 Platen Glass (B8270)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_54();">PL 60.20 CCD Lens (B8270)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_55();">PL 60.25 Carriage Cable/Motor (B8270)</a></li>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_56();">PL 60.30 Full/Half Carriage (B8270)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_57();">PL 60.35 Platen/IIT Cover (B8245/B8255)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_58();">PL 60.40 Platen Glass (B8245/B8255)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_59();">PL 60.45 CCD Lens (B8245/B8255)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_60();">PL 60.50 Carriage Cable/Motor (B8245/B8255)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_61();">PL 60.55 Full/Half Carriage (B8245/B8255)</a>
+                  </small></p>
+              </details>
+              <!--#10-->
+
+              <!--#011-->
+              <details>
+                <summary>PL 70 - Paper Supply <i class='bx bx-chevron-down' style='color:#4c4c4c'></i>
+                </summary>
+                <p><small>
+                    <a id="boton" onclick="ir_b8255_62();">PL 70.05 Tray 1 and 2 Assembly</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_63();">PL 70.10 Tray 1 Assembly</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_64();">PL 70.15 Tray 2 Assembly</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_65();">PL 70.30 TTM Components</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_66();">PL 70.35 TTM Covers and Tray 3/4 Assembly</a></li>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_67();">PL 70.40 TTM Tray 3 Assembly</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_68();">PL 70.45 TTM Tray 4 Assembly</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_69();">PL 70.50 Bypass Tray Components</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_70();">PL 70.55 Bypass Tray Assembly</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_71();">PL 70.70 Envelope Tray</a>
+                  </small></p>
+              </details>
+              <!--#11-->
+
+              <!--#012-->
+              <details>
+                <summary>PL 80 - Paper Transport <i class='bx bx-chevron-down' style='color:#4c4c4c'></i>
+                </summary>
+                <p><small>
+                    <a id="boton" onclick="ir_b8255_72();">PL 80.05 Tray 1 and 2 Feedhead Assembly</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_73();">PL 80.10 Tray 1 Feedhead Assembly</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_74();">PL 80.15 Tray 2 Feedhead Assembly</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_75();">PL 80.40 TTM Transport Assembly / Tray 3 and 4 Feedhead
+                      Assembly</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_76();">PL 80.45 TTM Drive Assembly</a></li>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_77();">PL 80.50 TTM Tray 3 Feedhead Assembly</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_78();">PL 80.55 TTM Tray 4 Feedhead Assembly</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_79();">PL 80.60 TTM Transport Assembly</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_80();">PL 80.65 Left Cover Components</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_81();">PL 80.70 Left Cover Transport Components</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_82();">PL 80.75 Left Cover Transport Assembly</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_83();">PL 80.80 Duplex Inner Chute Assembly</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_84();">PL 80.85 Duplex Chute Assembly</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_85();">PL 80.90 Registration Transport Assembly</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_86();">PL 80.95 Registration Drive Assembly</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_87();">PL 80.115 Bypass Tray Takeaway Assembly</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_88();">PL 80.120 Bypass Tray Feedhead Assembly</a>
+                  </small></p>
+              </details>
+              <!--#12-->
+
+              <!--#013-->
+              <details>
+                <summary>PL 90 - Xerographics <i class='bx bx-chevron-down' style='color:#4c4c4c'></i>
+                </summary>
+                <p><small>
+                    <a id="boton" onclick="ir_b8255_89();">PL 90.05 Developer Unit</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_90();">PL 90.10 Toner Dispense</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_91();">PL 90.15 Xerographic Components</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_92();">PL 90.20 Xerographic Assembly (1 of 2)</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_93();">PL 90.25 Xerographic Assembly (2 of 2)</a></li>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_94();">PL 90.30 IBT Belt Unit Components</a>
+                    <br>
+                    <a id="boton" onclick="ir_b8255_95();">PL 90.35 IBT Belt Unit Assembly</a>
+                  </small></p>
+              </details>
+              <!--#13-->
+
+            </div>
+
+          </div>
+        </div>
         <!--Modal para B8255-->
 
       </div>
@@ -4913,320 +5230,6 @@ if (!empty($_SESSION["name"])) {
           <!--container-b8155-->
 
 
-
-
-          <!--container-b8255-->
-          <div class="menu-modal-part" id="modal-8255">
-            <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExampleB82"
-              aria-controls="offcanvasExampleB82">
-              Parts List 82<i class='bx bxs-home'></i>
-            </button>
-
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExampleB82"
-              aria-labelledby="offcanvasExampleLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu Parts Lists</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-
-                <details>
-                  <summary>PL 1 - Standby Power <i class='bx bx-chevron-down' style='color:#4c4c4c'></i></summary>
-                  <p><small>
-                      <a id="boton" onclick="ir_b8255_1();">PL 1.05 Electrical - Rear (1 of 3)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_2();">PL 1.10 Electrical - Rear (2 of 3)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_3()">PL 1.15 Electrical - Rear (3 of 3)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_4()">PL 1.20 Electrical - Front/Right</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_5()">PL 1.25 Wire Harness</a></li>
-                    </small></p>
-                </details>
-                <!--#01-->
-
-                <!--#02-->
-                <details>
-                  <summary>PL 2 - User Interface <i class='bx bx-chevron-down' style='color:#4c4c4c'></i></summary>
-                  <p><small>
-                      <a id="boton" onclick="ir_b8255_6();">PL 2.05 User Interface (B8245/B8255)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_7();">PL 2.10 User Interface (B8270)</a>
-                    </small></p>
-                </details>
-                <!--#02-->
-
-                <!--#03-->
-                <details>
-                  <summary>PL 3 - Machine Run Control <i class='bx bx-chevron-down' style='color:#4c4c4c'></i></summary>
-                  <p><small>
-                      <a id="boton" onclick="ir_b8255_8();">PL 3.05 Single Board Control Unit (SBC PWB)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_9();">PL 3.10 Video Contact Chassis Unit</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_10();">PL 3.15 Video Contact Chassis Assembly</a>
-                    </small></p>
-                </details>
-                <!--#03-->
-
-                <!--#04-->
-                <details>
-                  <summary>PL 5 - DADF (250) <i class='bx bx-chevron-down' style='color:#4c4c4c'></i></summary>
-                  <p><small>
-                      <a id="boton" onclick="ir_b8255_11();">PL 5.1 DADF Component (250) (B8270)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_12();">PL 5.2 DADF, DADF Cover (250) (B8270)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_13();">PL 5.3 DADF PWB (250) (B8270)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_14();">PL 5.4 DCDC PWB (250) (B8270)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_15();">PL 5.5 Document Tray, Tray Feed (250)(B8270)</a></li>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_16();">PL 5.6 DADF Document Tray (250) (B8270)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_17();">PL 5.7 DADF Feeder Cover Unit (250) (B8270)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_18();">PL 5.8 DADF Feeder Cover Assembly (250) (B8270)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_19();">PL 5.9 Sensor Component (250) (B8270)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_20();">PL 5.10 Drive Component (250) (B8270)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_21();">PL 5.11 Lower Chute Assembly, Retard Roll (250) (B8270)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_22();">PL 5.12 Pre Regi. In Chute, Platen High Roll (250)
-                        (B8270)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_23();">PL 5.13 Exit Lower Chute, Out Chute Assembly (250)
-                        (B8270)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_24();">PL 5.14 DADF Nudger Housing Assembly (250) (B8270)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_25();">PL 5.15 Sonic Sensor Assembly (250) (B8270)</a>
-                    </small></p>
-                </details>
-                <!--#04-->
-
-                <!--#05-->
-                <details>
-                  <summary>PL 5 - DADF (130) <i class='bx bx-chevron-down' style='color:#4c4c4c'></i></summary>
-                  <p><small>
-                      <a id="boton" onclick="ir_b8255_26();">PL 5.50 DADF Component (130) (B8245/B8255)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_27();">PL 5.51 DADF Cover (130) (B8245/B8255)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_28();">PL 5.52 DADF Top Cover, Document Tray (130) (B8245/B8255)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_29();">PL 5.53 DADF Base Frame Assembly (130) (B8245/B8255)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_30();">PL 5.54 Regi. / Retard Chute/ Invert Unit (130)
-                        (B8245/B8255)</a></li>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_31();">PL 5.55 Top Cover (130) (B8245/B8255)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_32();">PL 5.56 Feeder / Nudger Roll Assembly (130) (B8245/B8255)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_33();">PL 5.57 DADF Document Tray (130) (B8245/B8255)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_34();">PL 5.58 DADF Drive (130) (B8245/B8255)</a>
-                    </small></p>
-                </details>
-                <!--#05-->
-
-                <!--#06-->
-                <details>
-                  <summary>PL 10 - Copy Transportation and Fusing <i class='bx bx-chevron-down'
-                      style='color:#4c4c4c'></i>
-                  </summary>
-                  <p><small>
-                      <a id="boton" onclick="ir_b8255_35();">PL 10.05 Fuser</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_36();">PL 10.10 Exit 1 Transport Components</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_37();">PL 10.15 Exit 2 Transport Components</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_38();">PL 10.20 Face Up Tray Assembly</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_39();">PL 10.25 Exit 2 Transport Assembly</a></li>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_40();">PL 10.30 Face Up Chute Assembly</a>
-                    </small></p>
-                </details>
-                <!--#06-->
-
-                <!--#07-->
-                <details>
-                  <summary>PL 26 - Consumables and Tools <i class='bx bx-chevron-down' style='color:#4c4c4c'></i>
-                  </summary>
-                  <p><small>
-                      <a id="boton" onclick="ir_b8255_41();">PL 26.10 Consumables and Tools</a>
-                    </small></p>
-                </details>
-                <!--#7-->
-
-                <!--#08-->
-                <details>
-                  <summary>PL 28 - Covers <i class='bx bx-chevron-down' style='color:#4c4c4c'></i></summary>
-                  <p><small>
-                      <a id="boton" onclick="ir_b8255_42();">PL 28.05 Covers (Front)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_43();">PL 28.10 Covers (Rear)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_44();">PL 28.15 Covers (B8245/B8255)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_45();">PL 28.20 Covers (B8270)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_46();">PL 28.25 Front Left Cover Compartment</a></li>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_47();">PL 28.30 Workshelf</a>
-                    </small></p>
-                </details>
-                <!--#8-->
-
-                <!--#09-->
-                <details>
-                  <summary>PL 40 - Main Drive Assembly <i class='bx bx-chevron-down' style='color:#4c4c4c'></i>
-                  </summary>
-                  <p><small>
-                      <a id="boton" onclick="ir_b8255_48();">PL 40.05 Main Drive Assembly</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_49();">PL 40.10 NOHAD (front)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_50();">PL 40.15 NOHAD (rear)</a>
-                    </small></p>
-                </details>
-                <!--#9-->
-
-                <!--#10-->
-                <details>
-                  <summary>PL 60 - Imaging <i class='bx bx-chevron-down' style='color:#4c4c4c'></i>
-                  </summary>
-                  <p><small>
-                      <a id="boton" onclick="ir_b8255_51();">PL 60.05 LPH Module</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_52();">PL 60.10 Platen/IIT Cover (B8270)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_53();">PL 60.15 Platen Glass (B8270)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_54();">PL 60.20 CCD Lens (B8270)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_55();">PL 60.25 Carriage Cable/Motor (B8270)</a></li>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_56();">PL 60.30 Full/Half Carriage (B8270)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_57();">PL 60.35 Platen/IIT Cover (B8245/B8255)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_58();">PL 60.40 Platen Glass (B8245/B8255)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_59();">PL 60.45 CCD Lens (B8245/B8255)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_60();">PL 60.50 Carriage Cable/Motor (B8245/B8255)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_61();">PL 60.55 Full/Half Carriage (B8245/B8255)</a>
-                    </small></p>
-                </details>
-                <!--#10-->
-
-                <!--#011-->
-                <details>
-                  <summary>PL 70 - Paper Supply <i class='bx bx-chevron-down' style='color:#4c4c4c'></i>
-                  </summary>
-                  <p><small>
-                      <a id="boton" onclick="ir_b8255_62();">PL 70.05 Tray 1 and 2 Assembly</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_63();">PL 70.10 Tray 1 Assembly</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_64();">PL 70.15 Tray 2 Assembly</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_65();">PL 70.30 TTM Components</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_66();">PL 70.35 TTM Covers and Tray 3/4 Assembly</a></li>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_67();">PL 70.40 TTM Tray 3 Assembly</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_68();">PL 70.45 TTM Tray 4 Assembly</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_69();">PL 70.50 Bypass Tray Components</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_70();">PL 70.55 Bypass Tray Assembly</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_71();">PL 70.70 Envelope Tray</a>
-                    </small></p>
-                </details>
-                <!--#11-->
-
-                <!--#012-->
-                <details>
-                  <summary>PL 80 - Paper Transport <i class='bx bx-chevron-down' style='color:#4c4c4c'></i>
-                  </summary>
-                  <p><small>
-                      <a id="boton" onclick="ir_b8255_72();">PL 80.05 Tray 1 and 2 Feedhead Assembly</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_73();">PL 80.10 Tray 1 Feedhead Assembly</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_74();">PL 80.15 Tray 2 Feedhead Assembly</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_75();">PL 80.40 TTM Transport Assembly / Tray 3 and 4 Feedhead
-                        Assembly</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_76();">PL 80.45 TTM Drive Assembly</a></li>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_77();">PL 80.50 TTM Tray 3 Feedhead Assembly</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_78();">PL 80.55 TTM Tray 4 Feedhead Assembly</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_79();">PL 80.60 TTM Transport Assembly</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_81();">PL 80.65 Left Cover Components</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_82();">PL 80.70 Left Cover Transport Components</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_83();">PL 80.75 Left Cover Transport Assembly</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_84();">PL 80.80 Duplex Inner Chute Assembly</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_85();">PL 80.85 Duplex Chute Assembly</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_86();">PL 80.90 Registration Transport Assembly</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_87();">PL 80.95 Registration Drive Assembly</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_88();">PL 80.115 Bypass Tray Takeaway Assembly</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_89();">PL 80.120 Bypass Tray Feedhead Assembly</a>
-                    </small></p>
-                </details>
-                <!--#12-->
-
-                <!--#013-->
-                <details>
-                  <summary>PL 90 - Xerographics <i class='bx bx-chevron-down' style='color:#4c4c4c'></i>
-                  </summary>
-                  <p><small>
-                      <a id="boton" onclick="ir_b8255_90();">PL 90.05 Developer Unit</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_91();">PL 90.10 Toner Dispense</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_92();">PL 90.15 Xerographic Components</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_93();">PL 90.20 Xerographic Assembly (1 of 2)</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_94();">PL 90.25 Xerographic Assembly (2 of 2)</a></li>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_95();">PL 90.30 IBT Belt Unit Components</a>
-                      <br>
-                      <a id="boton" onclick="ir_b8255_96();">PL 90.35 IBT Belt Unit Assembly</a>
-                    </small></p>
-                </details>
-                <!--#13-->
-
-              </div>
-
-            </div>
-          </div>
-          
           <!--container-b8255-->
           <div class="container-b8255">
             <!--article id 00-->
@@ -5234,7 +5237,7 @@ if (!empty($_SESSION["name"])) {
               #b8255_0 {
                 display: none;
               }
-              
+
               #modal-8255 {
                 display: none;
               }
@@ -5339,8 +5342,8 @@ if (!empty($_SESSION["name"])) {
             </article>
             <!--article id 02-->
 
-              <!--article id 03-->
-              <style>
+            <!--article id 03-->
+            <style>
               #b8255_3 {
                 display: none;
               }
@@ -8742,7 +8745,8 @@ if (!empty($_SESSION["name"])) {
             <article class="item-article" id="b8255_75">
               <h6>PL 80 - Paper Transport</h6>
               <p>PL 80.40 TTM Transport Assembly / Tray 3 and 4 Feedhead Assembly</p>
-              <img src="./IMG/images_pl_8255/PL 80.40 TTM Transport Assembly - Tray 3 and 4 Feedhead Assembly.png" alt="">
+              <img src="./IMG/images_pl_8255/PL 80.40 TTM Transport Assembly - Tray 3 and 4 Feedhead Assembly.png"
+                alt="">
 
               <table class="table table table-hover">
 
@@ -9733,7 +9737,6 @@ if (!empty($_SESSION["name"])) {
     </div>
 
 
-    <br>
 
     <footer>
       <p class="m-0">Service Library
