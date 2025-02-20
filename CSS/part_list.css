@@ -40,32 +40,6 @@
     padding: 5px;
 }
 
-.xerox-family{
-    text-align: center;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.xerox-family img{
-    width: 90%;
-}
-
-.xerox-family h6{
-    font-size: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(59, 59, 59);
-}
-
-.xerox-family small{
-    font-size: 11px;
-    color: red;
-}
-
-.xerox-family p{
-    margin: 15px 20px;
-    font-size: 13px;
-}
-
 .offcanvas .offcanvas-header h5{
     font-size: 15px;
 }
@@ -89,7 +63,13 @@
 }
 
 .show .show-header article img{
-    width: 50%;
+    width: 570px;
+}
+
+@media (max-width: 750px) {
+    .show .show-header article img{
+        width: 100%;
+    }
 }
 
 .show .show-header article table {

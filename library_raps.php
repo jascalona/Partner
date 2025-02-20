@@ -89,23 +89,13 @@ if (!empty($_SESSION["name"])) {
                     <div class="contenct">
                         <img style="width: 400px; margin-top: -25px;" src="./IMG/animation/nube.gif" alt="#">
                         <p>
-                            La plataforma Service Library hace más que optimizar la entrega y la administración de su
-                            contenido: los
-                            usuarios tienen control total sobre cómo se utiliza el contenido. Los usuarios pueden
-                            anotar, resaltar
-                            Lorem
-                            ipsum, dolor sit amet consectetur adipisicing elit. Modi totam, nisi libero ea fugit ex
-                            laboriosam quam
-                            earum quidem laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-                            explicabo
-                            excepturi quisquam soluta. Ratione eos, beatae, quisquam ea repellendus nemo minus
-                            voluptatibus laborum
-                            aliquid libero architecto consequatur mollitia illum. Fugit, id nesciunt, beatae delectus
-                            praesentium
-                            dignissimos repellendus ut ipsa quae tempora sequi dolorum odit debitis consectetur totam
-                            asperiores
-                            porro
-                            officiis.
+                            The Service Library platform does more than streamline the delivery and management of your
+                            content—users have complete control over how their content is used. Users can annotate,
+                            highlight, filter, and interact with their content across all industry-standard devices and
+                            operating systems at unprecedented speeds. Service Library is the interactive, flexible,
+                            multi-device content delivery platform you’ve been looking for. Whether your content user is
+                            annotating test procedures or breaking down hardware manuals, Service Library gives them the
+                            capability they’ve been looking for.
                         </p>
                     </div>
                 </div>
@@ -113,6 +103,7 @@ if (!empty($_SESSION["name"])) {
         </div>
     </section>
     <!--Section Public-1-->
+    <br>
 
 
     <main>
@@ -156,7 +147,7 @@ if (!empty($_SESSION["name"])) {
         </style>
 
         <div class="contador" id="cont-b8155">
-            <p class="text-end">Resultas encontrados(<b><?php echo $num_rows; ?></b>)</p>
+            <p class="text-end">results (<b><?php echo $num_rows; ?></b>)</p>
         </div>
         <!--Contador row-->
 
@@ -194,7 +185,7 @@ if (!empty($_SESSION["name"])) {
 
 
                                     <div class="chain-nota">
-                                        <h6>Como abordar el error <i style="color: red;"><?php echo $datos->chain ?></i>
+                                        <h6>How to deal with the error <i style="color: red;"><?php echo $datos->chain ?></i>
                                         </h6>
                                         <p><small>
                                                 <?php echo "Chain " . $datos->nota ?>
@@ -466,7 +457,7 @@ if (!empty($_SESSION["name"])) {
         ?>
 
         <div class="contador" id="cont-b8255">
-            <p class="text-end">Resultas encontrados(<b><?php echo $num_rows; ?></b>)</p>
+            <p class="text-end">results (<b><?php echo $num_rows; ?></b>)</p>
         </div>
         <!--Contador row-->
 
@@ -502,7 +493,7 @@ if (!empty($_SESSION["name"])) {
 
 
                                     <div class="chain-nota">
-                                        <h6>Como abordar el error <i style="color: red;"><?php echo $datos->chain ?></i>
+                                        <h6>How to deal with the error <i style="color: red;"><?php echo $datos->chain ?></i>
                                         </h6>
                                         <p><small>
                                                 <?php echo "Chain " . $datos->nota ?>

@@ -89,10 +89,27 @@ if (!empty($_SESSION["name"])) {
 
 
         <div class="xerox-family" id="xerox-family">
-          <h6>Xerox Family</h6>
-          <small>NOTE: Select the model you want to consult</small>
-          <img src="./IMG/XeroxFamilia.png" alt="">
-          <p>In this session you will be able to consult the part numbers and/or pieces of the Xerox family.</p>
+
+          <div class="container-learning">
+            <article>
+              <div class="contenct">
+                <img src="./IMG/gif_part.gif" alt="">
+                <small><b>Xerox Family</b></small>
+                <p>
+                  Deshazte de las malas prácticas y herramientas no optimizadas. El portal de entrenamiento XDV
+                  ofrece un acceso exclusivo a documentación y herramientas eficaces y de facil manejo.
+
+                  Mejora tu experiencia a la hora de atender una llamada de servicio, este portal fue diseñado
+                  con el proposito brindar a cada técnico y/o aliado de servicio, una formación completa sobre
+                  cada producto comercializado a nivel nacional en la gama de prodcutos Xerox y aliados comerciales
+                  tales como plataformas de control, herramientas para automatización de procesos y por su puesto
+                  equipos
+                  de gestión documental a fin de brindar soluciones digitales.
+
+                </p>
+              </div>
+            </article>
+          </div>
         </div>
 
 
@@ -411,12 +428,12 @@ if (!empty($_SESSION["name"])) {
         <!--Sesion para modelo B8255-->
         <!--Modal para B8255-->
         <style>
-          #modal-8255{
+          #modal-8255 {
             display: none;
 
           }
         </style>
-        
+
         <div class="menu-modal-part" id="modal-8255">
           <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExampleB82"
             aria-controls="offcanvasExampleB82">

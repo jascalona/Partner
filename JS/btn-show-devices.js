@@ -1,7 +1,7 @@
 
 //Function show device B8155
 function ab8155() {
-    alert("Hola, Haz Seleccionado el Parts Lists de AltaLink B8155");
+    alert("Hello, you have selected the parts lists for AltaLink B8155");
 
     document.getElementById('xerox-family').style.display = "none";
     document.getElementById('modal-8255').style.display = "none";
@@ -213,9 +213,9 @@ function ab8155() {
 }
 
 
-//Function show device B8155
+//Function show device B8255
 function ab8255() {
-    alert("Hola, Haz Seleccionado el Parts Lists de AltaLink B8255");
+    alert("Hello, you have selected the parts lists for AltaLink B8255");
 
     document.getElementById('xerox-family').style.display = "none";
     document.getElementById('modal-8155').style.display = "none";
