@@ -125,22 +125,7 @@ if (!empty($_SESSION["name"])) {
         </div>
         <!-- end search filter -->
 
-        <!-- start search filter b8255-->
-        <style>
-            #search-82 {
-                display: none;
-            }
-        </style>
 
-        <div class="search" data-aos="fade-up" data-aos-duration="1000" id="search-82">
-            <div class="container">
-                <form class="">
-                    <input class="form-control me-2 light-table-filter" data-table="table" type="text"
-                        placeholder="Searchsgdf">
-                </form>
-            </div>
-        </div>
-        <!-- start search filter b8255-->
 
         <?php include './CONTROLLER/conexion.php' ?>
 
@@ -455,6 +440,31 @@ if (!empty($_SESSION["name"])) {
         <!--container-table-desktop-->
 
 
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+        <!-- start search filter b8255-->
+        <style>
+            #search-82 {
+                display: none;
+            }
+        </style>
+
+        <div class="search" data-aos="fade-up" data-aos-duration="1000" id="search-82">
+            <div class="container">
+                <form class="">
+                    <input class="" type="text"
+                        placeholder="Searchsgdf">
+                </form>
+            </div>
+        </div>
+
+        <div class="errors-container">
+            <p style="display: none;"></p>
+        </div>
+        <!-- start search filter b8255-->
 
 
         <!--Vistas para 8255-->
@@ -481,7 +491,7 @@ if (!empty($_SESSION["name"])) {
 
         <!--container-table-desktop-->
         <div class="container-table-desktop" id="raps-b8255">
-            <table class="table table table-hover">
+            <table class="table table table-hover" id="results82">
 
                 <thead class="table">
                     <tr>
