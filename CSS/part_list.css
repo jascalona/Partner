@@ -1,0 +1,146 @@
+.container-content{
+    max-width: 100%;
+    margin: 0 auto;
+    border: solid 1px #2d2d2d61;
+    background: #fff;
+    height: 100%;
+    padding: 20px;
+}
+
+.container-devices{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.container-devices .item-device{
+    border: solid 1px #00000048;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 7px 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.container-devices .item-device a{
+    color: #000;
+    font-size: 12px;
+}
+
+.container-devices .item-device:hover{  
+    transform: scale(1.1);
+}
+
+.container-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.offcanvas .offcanvas-header h5{
+    font-size: 15px;
+}
+
+.offcanvas .offcanvas-body details summary{
+    font-size: 12px;
+}
+
+.offcanvas .offcanvas-body details p a{
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.show .show-header{
+    text-align: center;
+}
+
+.show .show-header article {
+    max-width: 100%;
+    margin: 20px;
+}
+
+.show .show-header article img{
+    width: 570px;
+}
+
+@media (max-width: 750px) {
+    .show .show-header article img{
+        width: 100%;
+    }
+}
+
+.show .show-header article table {
+    text-align: center;
+    width: 500px;
+    margin: 20px auto;
+}
+
+.show .show-header .b8255 img{
+    width: 40%;
+}
+
+.show .show-header .b8255 h3{
+    font-size: 20px;
+}
+
+.show .show-header .b8255 p{
+    font-size: 13px;
+}
+
+/*BOTON FLOTANTE*/
+#btn-mas{
+    display: none;
+}
+
+.container-btn{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.modelos a, .btn-mas label{
+    display: block;
+    text-decoration: none;
+    background: #393d42;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    transition:  all 500ms ease;
+}
+
+.modelos a{
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+#btn-mas:checked~ .modelos a{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+    color: #fff;
+}
+
+.modelos a:hover{
+    background: #6a6e73;
+}
+
+.btn-mas label{
+    cursor: pointer;
+    background: #171718;
+    font-size: 23px;
+}
+
+#btn-mas:checked ~ .btn-mas label{
+    transform: rotate(135deg);
+    font-size: 25px;
+}

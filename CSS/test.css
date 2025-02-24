@@ -1,0 +1,181 @@
+
+.container-baner{
+    max-width: 90%;
+    margin: 0 auto;
+    background: #fff;
+}
+
+@media (max-width: 700px) {
+    .text-baner p{
+        font-size: 20px;
+    }
+
+    .text-baner small{
+        font-size: 10px;
+    }
+}
+
+.container-baner .text-baner{
+    text-align: center;
+}
+
+.container-baner p{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.container-baner small{
+    text-align: center;
+}
+
+.text-baner .btn{
+    margin: 10px;
+}
+
+.btn button{
+    border: none;
+}
+
+.btn button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 800px) {
+    .text h6{
+        font-size: 25px;
+    }
+    .text p{
+        padding: 10px;
+        font-size: 13px;
+    }
+}
+
+.text-baner .btn button{
+    padding: 10px;
+    border-radius: 8px;
+    border: solid 1px #00000096;
+}
+
+.container-baner .container-baner-image{
+    max-width: 1200px;
+    margin: -50px auto;
+    height: 100%;
+    padding: 100px;
+    display: flex;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.baner-movil{
+    display: none;
+}
+
+.baner-movil-2{
+    display: none;
+}
+
+
+.container-baner-image .img-item1 img{
+    width: 40px;
+    margin-left: -5%;
+}
+
+.container-baner-image .img-item0 img{
+    width: 70px;
+    margin-left: 18%;
+    display: none;
+}
+
+
+.container-baner-image .img-item2 img{
+    width: 180px;
+    margin: 20%;
+}
+
+.container-baner-image .img-item3 img{
+    width: 150px;
+    margin-top: 150%;
+}
+
+
+.container-baner-image .img-item4 img{
+    width: 190px;
+    margin-top: 20%;
+    margin-left: -30%;
+}
+
+.container-baner-image .img-item5 img{
+    width: 120px;
+    margin-top: 5%;
+    margin-left: -150%;
+}
+
+.container-baner-image .img-item6 img{
+    width: 105px;
+    margin-left: -150%;
+}
+
+.container-baner-image .img-item7 img{
+    width: 250px;
+    margin-left: -50%;
+
+}
+
+.container-baner-image .img-item8 img{
+    width: 100px;
+    margin-left: -150%;
+}
+
+.container-baner-image .img-item9 img{
+    width: 70px;
+    margin: 200%;
+}
+
+
+.container-baner-image .img-item10 img{
+    width: 80px;
+    margin-top: 200%;
+}
+
+@media (max-width: 1300px) {
+    .container-baner-image img{
+        display: none;
+    }
+
+    .baner-movil{
+        display: block;
+
+    }
+
+    .baner-movil img{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        max-height: 350px;
+    }
+
+}
+
+    /*Pantallas de movil*/
+    @media (max-width: 550px) {
+        .container-baner-image img{
+            display: none;
+        }           
+
+        .baner-movil{
+            display: none;
+        }
+
+        .baner-movil-2{
+            display: block;
+        }
+
+        .baner-movil-2 img{
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            max-height: 350px;
+        }
+    }

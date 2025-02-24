@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height: 100%;
+}
+
+header{
+    background: #ffffffe3;
+    position: relative;
+    height: 70px;
+    font-size: 25px;
+    border: solid 1px #d6d3d3f3;
+    box-shadow: 0 1px 10px rgba(83, 82, 82, 0.446);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+header .text{
+    padding: 20px;
+    margin-top: 10px;
+}
+
+
+.btn-nav h5{
+    font-size: 30px;
+    margin: 20px;
+    color: #ded4f6;
+}
+
+.btn-nav .offcanvas-header{
+    background: #05152f;
+}
+
+.btn-nav .btn-cont{
+    list-style: none;
+    margin-top: 30%;
+    line-height: 3;
+}
+
+.btn-nav button{
+    background: #05152f;
+    padding: 10px;
+}
+
+.btn-nav button:hover{
+    background: #535157;
+    color: #05152f;
+}
+
+main{
+    background: rgb(46, 46, 74);
+    color: #eae4f7;
+    max-width: 70%;
+    max-height: 500px;
+    margin: 20px auto;
+    margin-top: 50px;
+    border-radius: 20px 80px;
+    padding: 50px;
+}
+
+/*RESPONSIVE NAV NAVIGATION*/
+@media (max-width: 1220px) {
+    nav{
+        display: none;
+    }
+
+    header .btn-nav{
+        display: block;
+    }
+
+    main{
+        max-width: 80%;
+        margin: 50px auto;
+    }
+}
+
+@media (max-width: 980px) {
+    header{
+        font-size: 22px;
+    }
+} 
+    
+@media (max-width: 830px) {
+    header {
+        font-size: 16px;
+    }
+}
+
+/*END RESPONSIVE NAV NAVIGATION*/
+
+
+main{
+    height: auto;
+    width: 100%;
+}
+
+.container-carac {
+    max-height: 400px;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+article {
+    height: auto;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+/*medida para movil height 75vh*/
+
+.carousel-inner{
+    height: 100vh;
+}
+
+.carousel-item h5{
+    font-size: 25px;
+    padding: 15px 5px;
+    color: #eae4f7;
+}
+
+.carousel-item h5 strong{
+    color: #cbc7d2;
+}
+
+.carousel-item article {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    padding: 30px;
+}
+
+.carousel-inner article button{
+    padding: 20px;
+}
+
+.container-carac article img{
+    max-width: 50%;
+    min-width: 50%;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+ .btn-leccion {
+    position: absolute;
+    padding: 5px 40px;
+}
+
+.btn-leccion button{
+    text-decoration: none;
+    background: #53515779;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    color: #ded4f6;
+}
+
+
+.btn-leccion{
+    top: 70%;
+    transition: transform 0.3s;
+}
+
+.btn-leccion:hover{
+    transform:scale(1.1);
+}
+
+.btn-leccion button:hover{
+    background: #535157;    
+}
+
+/*Carrusel 2*/
+
+.cont_items_carru{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+} 
+
+.item_carru{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.item_carru h5{
+    font-size: 28px;
+    color: #eae4f7;
+}
+
+.ui_carru{
+    height: 100%;
+    width: 100%;
+}
+
+
+.ui_fle_carru {
+    position: absolute;
+    top: 85%;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ui_fle_carru a{
+    font-size: 35px;
+    color: #eae4f7;
+    background: rgba(128, 128, 128, 0.219);
+    padding: 0 ;
+}
+
+.ui_fle_carru a:hover{
+    background: rgba(128, 128, 128, 0.779);
+}
+
+/*stylo para items diferenciar*/
+
+
+.content-general{
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    padding: 30px;
+}
+
+.content-general p{
+    font-size: 13px;
+}
+
+/*START RESPONSIVE CONTENT*/
+@media (max-width: 1350px) {
+    .container-carac{
+        min-width: 100%;
+        margin: 0 auto;
+    }
+
+    /*LECCION 01*/
+    .carousel-inner .content{
+        font-size: 14px;
+        padding: 15px;
+        display: block;
+    }
+    /*LECCION 01*/
+
+    /*OTRAS LECCIONES*/
+    @media (max-width: 1260px) {
+        .item_carru h5{
+            font-size: 17px;
+        }
+
+        .item_carru .content-general{
+            display: block;
+            padding: 15px;
+        }
+        
+        artile .content-general  {
+            max-width: 350px;
+        }
+
+        .container-carac article img{
+            max-width: 100%;
+            min-width: 100%;
+            padding: 15px;
+            border-radius: 20px;
+        }
+
+        .ui_fle_carru{
+            position: absolute;
+            padding: 5px;
+            top: 80%;
+            height: 100%;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;        
+        }
+
+        .ui_fle_carru a{
+            font-size: 27px;
+        }
+
+        .item_carru .btn-leccion{
+            top: 80%;
+        }
+
+        .btn-enlaces-evaluacion{
+            font-size: 12px;
+        }
+
+    }
+    /*OTRAS LECCIONES*/
+}
+
+@media (max-width: 800px) {
+    .carousel-item h5{
+        font-size: 17px;
+    }
+
+    .carousel-inner .content{
+        font-size: 11px;
+    }
+
+    .item_carru .content-general p{
+        font-size: 11px;
+    }
+}
