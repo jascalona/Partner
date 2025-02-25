@@ -9,7 +9,9 @@ if (!empty($_SESSION["name"])) {
   ) {
     header("location: ./intranet.php");
   }
-} ?>
+} 
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">

@@ -1,0 +1,14 @@
+
+#Security
+
+#Neutralizar acceso a directorios
+Options All -Indexes
+
+#Crear condicion para deshabilitar las extensiones
+
+RewriteEngine on
+RewriteBase /partner/
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+ 
+RewriteRule ^(.*)$ $1.php
