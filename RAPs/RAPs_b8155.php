@@ -44,9 +44,9 @@ if (!empty($_SESSION["name"])) {
         </label>
 
         <ul>
-            <li><a href="../Learning.php">Inicio</a></li>
-            <li><a href="../portal.php">Portal de Aprendizaje</a></li>
-            <li><a href="../CONTROLLER/close.php">Cerrar Sesion</a></li>
+            <li><a href="../URLs/config?URL1=Learning?">Inicio</a></li>
+            <li><a href="../URLs/config?URL2=portal?">Portal de Aprendizaje</a></li>
+            <li><a href="../URLs/config?URL3=close?">Cerrar Sesion</a></li>
         </ul>
     </header>
 
@@ -56,10 +56,10 @@ if (!empty($_SESSION["name"])) {
         <p><small>ST Lightweight Knowledge Library</small></p>
 
         <div class="icon-item">
-            <button type="button" class="btn btn-secondary"><a href="../library_raps.php">Library RAPs <i
+            <button type="button" class="btn btn-secondary"><a href="../URLs/config?URL5=Library?">Library RAPs <i
                         class='bx bxs-book' style='color:#f3f3f3f3'></i></a></button>
-            <button type="button" class="btn btn-secondary"><a href="../parts_list.php">Parts List <i class='bx bxs-cog'
-                        style='color:#f3f3f3f3'></i></small></a></button>
+            <button type="button" class="btn btn-secondary"><a href="../URLs/config?URL6=partList">Parts List <i
+                        class='bx bxs-cog' style='color:#f3f3f3f3'></i></small></a></button>
         </div>
     </div>
 
@@ -69,8 +69,10 @@ if (!empty($_SESSION["name"])) {
         <input type="checkbox" id="btn-mas">
 
         <div class="modelos">
-            <button name="b8155" type="" value="cod_fail_b8155" id="device" onclick="ab8155();"><a href="../RAPs/RAPs_b8155.php">B81</a></button>
-            <button name="b8255" type="" value="cod_fail_b8255" id="device" onclick="ab8255();"><a href="../RAPs/RAPs_b8255.php">B82</a></button>
+            <button name="b8155" type="" value="cod_fail_b8155" id="device" onclick="ab8155();"><a
+                    href="../URLs/config?URL7=RAPs1?">B81</a></button>
+            <button name="b8255" type="" value="cod_fail_b8255" id="device" onclick="ab8255();"><a
+                    href="../URLs/config?URL8=RAPs2?">B82</a></button>
         </div>
 
         <div class="btn-mas">

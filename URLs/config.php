@@ -10,7 +10,7 @@ $ruta3 = base64_encode ('Location: ../library_raps');
 $ruta4 = base64_encode ('Location: ../Learning_part_list');
 $ruta5 = base64_encode ('Location: ../CONTROLLER/close');
 
-
+//RAPs
 $ruta6 = base64_encode('Location: ../RAPs/RAPs_b8155?');
 $ruta7 = base64_encode(string: 'Location: ../RAPs/RAPs_b8255?');
 
@@ -41,17 +41,16 @@ if (isset($_GET['URL5']) == 'library_raps') {
     header('Location: ../library_raps?' .  openssl_encrypt($ruta5, AES,passphrase: KEY));
 }
 
-if (isset($_GET['URL6']) == 'part_list') {
-    header('Location: ../part_list?' .  openssl_encrypt($ruta6, AES,passphrase: KEY));
+if (isset($_GET['URL6']) == 'partList') {
+    header('Location: ../parts_list?' .  openssl_encrypt($ruta6, AES,passphrase: KEY));
 }
 
 
 //RAPs server
-
-if (isset($_GET['URL5']) == 'RAPs1') {
-    header('Location: ../RAPs/RAPs_b8155?' .  openssl_encrypt($ruta6, AES,passphrase: KEY));
+if (isset($_GET['URL7']) == 'RAPs1') {
+    header('Location: ../RAPs/RAPs_b8155?' .  openssl_encrypt($ruta7, AES,passphrase: KEY));
 }
 
-if (isset($_GET['URL6']) == 'RAPs2') {
-    header('Location: ../RAPs/RAPs_b8255?' .  openssl_encrypt($ruta7, AES,passphrase: KEY));
+if (isset($_GET['URL8']) == 'RAPs2') {
+    header('Location: ../RAPs/RAPs_b8255?' .  openssl_encrypt($ruta8, AES,passphrase: KEY));
 }

@@ -42,7 +42,7 @@ if (!empty($_SESSION["name"])) {
     <label style="float: right" for="check" class="checkbtn">
       <i class="bx bx-menu" undefined></i>
     </label>
-    
+
     <ul>
       <li><a href="./URLs/config?URL1=Learning?">Inicio</a></li>
       <li><a href="./URLs/config?URL2=portal?">Portal de Aprendizaje</a></li>
@@ -57,9 +57,9 @@ if (!empty($_SESSION["name"])) {
     <p><small>ST Lightweight Knowledge Library</small></p>
 
     <div class="icon-item">
-      <button type="button" class="btn btn-secondary"><a href="./library_raps.php">Library RAPs <i class='bx bxs-book'
+      <button type="button" class="btn btn-secondary"><a href="./URLs/config?URL5=Library?">Library RAPs <i class='bx bxs-book'
             style='color:#f3f3f3f3'></i></a></button>
-      <button type="button" class="btn btn-secondary"><a href="./parts_list.php">Parts List <i class='bx bxs-cog'
+      <button type="button" class="btn btn-secondary"><a href="./URLs/config?URL6=partList">Parts List <i class='bx bxs-cog'
             style='color:#f3f3f3f3'></i></small></a></button>
     </div>
   </div>
