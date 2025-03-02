@@ -1,14 +1,15 @@
 <?php
 session_start();
 if (!empty($_SESSION["name"])) {
-    header("loaction: ./log.php");
+    header("loaction: ../");
 } else {
-    if ((time() - $_SESSION['time']) > 40) {
-        header("location: ./intranet.php");
+    if (
+        (time() - $_SESSION['time']) >
+        40
+    ) {
+        header("location: ./URLs/config?URL0=intranet?");
     }
-}
-?>
-
+} ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +22,6 @@ if (!empty($_SESSION["name"])) {
 
     <!--STYLE ICON-->
     <link rel="stylesheet" href="./CSS/my_learning.css">
-    <link rel="stylesheet" href="./CSS/FRAMEWORK/Bootstrap.css">
     <link rel="stylesheet" href="./CSS/FRAMEWORK/Bootstrap.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!--STYLE ICON-->
@@ -69,13 +69,10 @@ if (!empty($_SESSION["name"])) {
             </div>
 
 
-
             <main>
 
                 <div class="fondo-card">
-
                     <section class="gallery">
-
                         <!--VersaLink B405-->
                         <div class="card" style="width: 15rem; height: 22rem;">
                             <img src="./IMG/b405.jpg" class="card-img-top" alt="...">
@@ -102,7 +99,7 @@ if (!empty($_SESSION["name"])) {
                                             </small></p>
                                         <div class="btn-option">
                                             <label for="btn-modal">Cerrar</label>
-                                            <a href="./GC/VL_B405.php">Enroll</a>
+                                            <a href="./URLs/config_gc.php?B405=VLB405">Enroll</a>
 
                                         </div>
                                     </div>
@@ -141,7 +138,7 @@ if (!empty($_SESSION["name"])) {
                                             </small></p>
                                         <div class="btn-option">
                                             <label for="btn-modal-3">Cerrar</label>
-                                            <a href="./GC/KIPG71.php">Enroll</a>
+                                            <a href="./URLs/config_gc.php?KIP71=KIP71">Enroll</a>
                                         </div>
                                     </div>
                                     <label for="btn-modal" class="cerrar-modal"></label>
@@ -178,7 +175,7 @@ if (!empty($_SESSION["name"])) {
                                             </small></p>
                                         <div class="btn-option">
                                             <label for="btn-modal-4">Cerrar</label>
-                                            <a href="./GC/CP_1000.php">Enroll</a>
+                                            <a href="./URLs/config_gc.php?CP1000=CP1000">Enroll</a>
                                         </div>
                                     </div>
                                     <label for="btn-modal" class="cerrar-modal"></label>
@@ -250,7 +247,7 @@ if (!empty($_SESSION["name"])) {
                                             </small></p>
                                         <div class="btn-option">
                                             <label for="btn-modal-2">Cerrar</label>
-                                            <a href="./GC/B8155.php">Enroll</a>
+                                            <a href="./URLs/config_gc.php?B8155=VLB8155">Enroll</a>
                                         </div>
                                     </div>
                                     <label for="btn-modal" class="cerrar-modal"></label>
@@ -318,7 +315,7 @@ if (!empty($_SESSION["name"])) {
                                             </small></p>
                                         <div class="btn-option">
                                             <label for="btn-modal">Cerrar</label>
-                                            <a href="./GC/VL_B405.php">Enroll</a>
+                                            <a href="./URLs/config_gc.php?B405=VLB405">Enroll</a>
 
                                         </div>
                                     </div>
@@ -357,7 +354,7 @@ if (!empty($_SESSION["name"])) {
                                             </small></p>
                                         <div class="btn-option">
                                             <label for="btn-modal-3">Cerrar</label>
-                                            <a href="./GC/KIPG71.php">Enroll</a>
+                                            <a href="./URLs/config_gc.php?KIP71=KIP71">Enroll</a>
                                         </div>
                                     </div>
                                     <label for="btn-modal" class="cerrar-modal"></label>
@@ -394,7 +391,7 @@ if (!empty($_SESSION["name"])) {
                                             </small></p>
                                         <div class="btn-option">
                                             <label for="btn-modal-4">Cerrar</label>
-                                            <a href="./GC/CP_1000.php">Enroll</a>
+                                            <a href="./URLs/config_gc.php?CP1000=CP1000">Enroll</a>
                                         </div>
                                     </div>
                                     <label for="btn-modal" class="cerrar-modal"></label>
@@ -466,7 +463,7 @@ if (!empty($_SESSION["name"])) {
                                             </small></p>
                                         <div class="btn-option">
                                             <label for="btn-modal-2">Cerrar</label>
-                                            <a href="./GC/B8155.php">Enroll</a>
+                                            <a href="./URLs/config_gc.php?B8155=VLB8155">Enroll</a>
                                         </div>
                                     </div>
                                     <label for="btn-modal" class="cerrar-modal"></label>
@@ -533,7 +530,7 @@ if (!empty($_SESSION["name"])) {
                                             </small></p>
                                         <div class="btn-option">
                                             <label for="btn-modal-2">Cerrar</label>
-                                            <a href="./GC/B8155.php">Enroll</a>
+                                            <a href="./URLs/config_gc.php?B8155=VLB8155">Enroll</a>
                                         </div>
                                     </div>
                                     <label for="btn-modal" class="cerrar-modal"></label>

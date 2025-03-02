@@ -1,14 +1,14 @@
 <?php
 session_start();
 if (!empty($_SESSION["name"])) {
-  header("loaction: ./intranet.php");
+    header("loaction: ../");
 } else {
-  if (
-    (time() - $_SESSION['time']) >
-    40
-  ) {
-    header("location: ./intranet.php");
-  }
+    if (
+        (time() - $_SESSION['time']) >
+        40
+    ) {
+        header("location: ./URLs/config?URL0=intranet?");
+    }
 } ?>
 
 <!DOCTYPE html>
@@ -25,7 +25,6 @@ if (!empty($_SESSION["name"])) {
   <link rel="stylesheet" href="./CSS/responsive.css">
   <link rel="stylesheet" href="./CSS/cod_fail.css">
   <link rel="stylesheet" href="./CSS/part_list.css">
-  <link rel="stylesheet" href="./CSS/FRAMEWORK/Bootstrap.css" />
   <link rel="stylesheet" href="./CSS/FRAMEWORK/Bootstrap.css" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <!--STYLE ICON-->

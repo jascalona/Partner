@@ -1,16 +1,15 @@
 <?php
 session_start();
 if (!empty($_SESSION["name"])) {
-  header("loaction: ./intranet.php");
+    header("loaction: ../");
 } else {
-  if (
-    (time() - $_SESSION['time']) >
-    40
-  ) {
-    header("location: ./intranet.php");
-  }
-} 
-?>
+    if (
+        (time() - $_SESSION['time']) >
+        40
+    ) {
+        header("location: ./URLs/config?URL0=intranet?");
+    }
+} ?>
 
 <!DOCTYPE html>
 <html lang="en">
