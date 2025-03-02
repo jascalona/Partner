@@ -44,9 +44,9 @@ if (!empty($_SESSION["name"])) {
         </label>
 
         <ul>
-            <li><a href="./Learning.php">Inicio</a></li>
-            <li><a href="./portal.php">Portal de Aprendizaje</a></li>
-            <li><a href="./CONTROLLER/close.php">Cerrar Sesion</a></li>
+            <li><a href="./URLs/config?URL1=Learning?">Inicio</a></li>
+            <li><a href="./URLs/config?URL2=portal?">Portal de Aprendizaje</a></li>
+            <li><a href="./URLs/config?URL3=close?">Cerrar Sesion</a></li>
         </ul>
     </header>
 
@@ -69,8 +69,10 @@ if (!empty($_SESSION["name"])) {
         <input type="checkbox" id="btn-mas">
 
         <div class="modelos">
-            <button name="b8155" type="" value="cod_fail_b8155" id="device" onclick="ab8155();"><a href="./RAPs/RAPs_b8155.php">B81</a></button>
-            <button name="b8255" type="" value="cod_fail_b8255" id="device" onclick="ab8255();"><a href="./RAPs/RAPs_b8255.php">B82</a></button>
+            <button name="b8155" type="" value="cod_fail_b8155" id="device" onclick="ab8155();"><a
+                    href="./URLs/config?URL5=Learning?">B81</a></button>
+            <button name="b8255" type="" value="cod_fail_b8255" id="device" onclick="ab8255();"><a
+                    href="./RAPs/RAPs_b8255.php">B82</a></button>
         </div>
 
         <div class="btn-mas">

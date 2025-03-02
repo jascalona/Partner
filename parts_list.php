@@ -44,9 +44,9 @@ if (!empty($_SESSION["name"])) {
     </label>
 
     <ul>
-      <li><a href="./Learning.php">Inicio</a></li>
-      <li><a href="./portal.php">Portal de Aprendizaje</a></li>
-      <li><a href="./CONTROLLER/close.php">Cerrar Sesion</a></li>
+      <li><a href="./URLs/config?URL1=Learning?">Inicio</a></li>
+      <li><a href="./URLs/config?URL2=portal?">Portal de Aprendizaje</a></li>
+      <li><a href="./URLs/config?URL3=close?">Cerrar Sesion</a></li>
     </ul>
   </header>
 

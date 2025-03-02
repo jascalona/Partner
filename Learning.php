@@ -10,7 +10,6 @@ if (!empty($_SESSION["name"])) {
     header("location: ./intranet.php");
   }
 } 
-
 ?>
 
 <!DOCTYPE html>
@@ -43,13 +42,14 @@ if (!empty($_SESSION["name"])) {
     <label style="float: right" for="check" class="checkbtn">
       <i class="bx bx-menu" undefined></i>
     </label>
-
+   
     <ul>
-      <li><a href="./Learning.php">Inicio</a></li>
-      <li><a href="./portal.php">Portal de Aprendizaje</a></li>
-      <li><a href="./CONTROLLER/close.php">Cerrar Sesion</a></li>
+      <li><a href="./URLs/config?URL1=Learning?">Inicio</a></li>
+      <li><a href="./URLs/config?URL2=portal?">Portal de Aprendizaje</a></li>
+      <li><a href="./URLs/config?URL3=close?">Cerrar Sesion</a></li>
     </ul>
   </header>
+
 
 
   <div class="container-header-library">
@@ -58,7 +58,7 @@ if (!empty($_SESSION["name"])) {
     <p><small>"Genius is made up of 1% talent and 99% effort."</small></p>
 
     <div class="icon-item">
-      <button type="button" class="btn btn-secondary"><a href="./cod_fail.php">Service Library</a></button>
+      <button type="button" class="btn btn-secondary"><a href="./URLs/config?URL4=cod_fail?">Service Library</a></button>
     </div>
 
   </div>

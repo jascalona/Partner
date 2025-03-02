@@ -1,7 +1,7 @@
 <?php
 session_start();
 include './CONTROLLER/conexion.php';
-
+include './URLs/config.php';
 
 if (!empty($_POST['btn'])) {
 
@@ -19,7 +19,7 @@ if (!empty($_POST['btn'])) {
             $_SESSION["corporation"]= $datos->corporation;
             $_SESSION["roll"]= $datos->roll;
 
-            header("location: ./Learning.php");
+            header("location: ./Learning?" . $ruta1);
         } else {
         echo '<script>alert("Acceso Denegado! Credenciales incorrectas, Verifique e intente de nuevo!")</script>' ;
         }
