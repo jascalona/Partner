@@ -9,11 +9,9 @@ $ruta2 = base64_encode ('Location: ../portqaportal');
 $ruta3 = base64_encode ('Location: ../library_raps');
 $ruta4 = base64_encode ('Location: ../Learning_part_list');
 $ruta5 = base64_encode ('Location: ../CONTROLLER/close');
-
 //RAPs
 $ruta6 = base64_encode('Location: ../RAPs/RAPs_b8155?');
 $ruta7 = base64_encode(string: 'Location: ../RAPs/RAPs_b8255?');
-
 
 
 if (isset($_GET['URL0']) == 'intranet') {
