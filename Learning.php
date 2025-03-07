@@ -57,7 +57,7 @@ if (!empty($_SESSION["name"])) {
     <p><small>"Genius is made up of 1% talent and 99% effort."</small></p>
 
     <div class="icon-item">
-      <button type="button" class="btn btn-secondary"><a href="./URLs/config?URL4=cod_fail?">Service Library</a></button>
+      <button type="button" class="btn btn-secondary"><a href="./URLs/config?URL4=cod_fail?">FixLib</a></button>
     </div>
 
   </div>
@@ -101,18 +101,17 @@ if (!empty($_SESSION["name"])) {
             <div class="contenct">
               <img src="./IMG/pantalla-learning.png" alt="#">
               <p>
-                La plataforma Service Library hace más que optimizar la entrega y la administración de su contenido: los
+                La plataforma FixLib hace más que optimizar la entrega y la administración de su contenido: los
                 usuarios tienen control total sobre cómo se utiliza el contenido. Los usuarios pueden anotar, resaltar
                 filtrar e interactuar con su contenido en todos los dispositivos y sistemas operativos estándar de la industria a velocidades sin procedentes.
 
-                Service Library es la plataforma de entrega de contenido interactiva, flexible y multidispositivo 
+                FixLib es la plataforma de entrega de contenido interactiva, flexible y multidispositivo 
                 que has estado buscando. Ya sea que su usuario de contenido esté anotando procedimientos de prueba o 
-                desglosando manuales de hardware, Service Library les brinda la capacidad que han estado buscando.
+                desglosando manuales de hardware, FixLib les brinda la capacidad que han estado buscando.
                 <br><br>
                 Mejora la experiencia de las comunicaciones técnicas al dar a los expertos un control 
                 total sobre la forma en que interactúan con el 
                 contenido gracias a nuestra interacción única con las capacidades de resaltar, anotar y referenciar. 
-
               </p>
             </div>
           </div>

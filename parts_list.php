@@ -99,7 +99,7 @@ if (!empty($_SESSION["name"])) {
                   locating each component when performing a diagnosis, from sensors and gears to fuses inside logic
                   boards. Compare parts and components similar or alternative to other equipment.
                   <br>
-                  Service Library is a secure, next-generation, professional-grade digital distribution platform
+                  FixLib is a secure, next-generation, professional-grade digital distribution platform
                   designed to deliver advanced design and research capabilities. It is also specifically designed for
                   knowledge workers who need constant access to reference content – ​​customers working in the legal,
                   financial, educational, or scientific and technological sectors.
@@ -9753,7 +9753,7 @@ if (!empty($_SESSION["name"])) {
 
 
     <footer>
-      <p class="m-0">Service Library
+      <p class="m-0">FixLib
         2010-2024 &copy; Xerox de Venezuela Todos los derechos reservados. <small style="color:brown;">XDV®</small></p>
     </footer>
 

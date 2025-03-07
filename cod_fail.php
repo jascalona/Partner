@@ -18,7 +18,7 @@ if (!empty($_SESSION["name"])) {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="./IMG/x.png" />
-  <title>Document-Service-Library</title>
+  <title>Document-FixLib</title>
 
   <!--STYLE ICON-->
   <link rel="stylesheet" href="./CSS/style.css" />
@@ -53,7 +53,7 @@ if (!empty($_SESSION["name"])) {
 
   <div class="container-header-library">
     <img src="./IMG/atomo.png" alt="">
-    <h6 clas="title">Service Library</h6>
+    <h6 clas="title">FixLib</h6>
     <p><small>ST Lightweight Knowledge Library</small></p>
 
     <div class="icon-item">
@@ -70,18 +70,18 @@ if (!empty($_SESSION["name"])) {
     <div class="public-1" id="public">
       <article class="item-public">
         <div class="contenido" id="item_1">
-          <small><b>Service Library</b></small>
+          <small><b>FixLib</b></small>
           <div class="contenct">
             <img src="./IMG/animation/public_1.gif" alt="#">
             <p>
-              Service Library es la solución perfecta para las empresas de comunicación técnica que están interesadas en optimizar
+              FixLib es la solución perfecta para las empresas de comunicación técnica que están interesadas en optimizar
               su entrega de contenido digital, hacer que su contenido sea
               fácil de encontrar y dar a sus usuarios el poder de interactuar con su contenido libremente.
               <br><br>
-              Service Library  empodera a su audiencia con un control sin precedentes sobre su contenido con acceso a múltiples 
+              FixLib empodera a su audiencia con un control sin precedentes sobre su contenido con acceso a múltiples 
               dispositivos y un arsenal de herramientas. Desde la entrega e integración sin interrupciones 
               hasta el análisis empresarial y las actualizaciones sin interrupciones, 
-              Service Library es la plataforma que necesita para modernizar su entrega de contenido digital.
+              FixLib es la plataforma que necesita para modernizar su entrega de contenido digital.
             </p>
           </div>
         </div>
@@ -102,7 +102,7 @@ if (!empty($_SESSION["name"])) {
             <img src="./IMG/Library_raps.png" alt="#">
             <p class="title"><b>Video Instructivo Library RAPs</b></p>
             <div class="desc">
-              <p>Conozca la variedad de formas en que Service Library puede entregar contenido sin esfuerzo.</p>
+              <p>Conozca la variedad de formas en que FixLib puede entregar contenido sin esfuerzo.</p>
               <a href="">Echar un Vistazo</a>
             </div>
           </div>
@@ -111,7 +111,7 @@ if (!empty($_SESSION["name"])) {
             <img src="./IMG/part_list.png" alt="#">
             <p class="title"><b>Video Instructivo Part List</b></p>
             <div class="desc">
-              <p>Conozca la variedad de formas en que Service Library puede entregar contenido sin esfuerzo.</p>
+              <p>Conozca la variedad de formas en que FixLib puede entregar contenido sin esfuerzo.</p>
               <a href="">Echar un Vistazo</a>
             </div>
           </div>
@@ -120,9 +120,9 @@ if (!empty($_SESSION["name"])) {
             <img
               src="https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="#">
-            <p class="title"><b>Folleto Service Library</b></p>
+            <p class="title"><b>Folleto FixLib</b></p>
             <div class="desc">
-              <p>Conozca la variedad de formas en que Service Library puede entregar contenido sin esfuerzo.</p>
+              <p>Conozca la variedad de formas en que FixLib puede entregar contenido sin esfuerzo.</p>
               <a href="">Echar un Vistazo</a>
             </div>
           </div>
@@ -143,7 +143,7 @@ if (!empty($_SESSION["name"])) {
           <img
             src="https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="#">
-          <h6>Contactanos ahora para obtener más información sobre Service Library</h6>
+          <h6>Contactanos ahora para obtener más información sobre FixLib</h6>
           <br>
           <p>
             ¿Busca modernizar su entrega de contenido digital?
@@ -177,7 +177,7 @@ if (!empty($_SESSION["name"])) {
   <!--SCRIPT-->
 
   <footer>
-    <p class="m-0">Service Library
+    <p class="m-0">FixLib
       2010-2024 &copy; Xerox de Venezuela Todos los derechos reservados. <small style="color:brown;">XDV®</small>
     </p>
   </footer>

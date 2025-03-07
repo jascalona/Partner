@@ -90,7 +90,7 @@ if (!empty($_SESSION["name"])) {
                     <div class="contenct">
                         <img style="width: 400px; margin-top: -25px;" src="./IMG/animation/nube.gif" alt="#">
                         <p>
-                            The Service Library platform does more than streamline the delivery and management of your
+                            The FixLib platform does more than streamline the delivery and management of your
                             content—users have complete control over how their content is used. Users can annotate,
                             highlight, filter, and interact with their content across all industry-standard devices and
                             operating systems at unprecedented speeds. Service Library is the interactive, flexible,
@@ -116,7 +116,7 @@ if (!empty($_SESSION["name"])) {
 
 
     <footer>
-        <p class="m-0">Service Library
+        <p class="m-0">FixLib
             2010-2024 &copy; Xerox de Venezuela Todos los derechos reservados. <small style="color:brown;">XDV®</small>
         </p>
     </footer>
