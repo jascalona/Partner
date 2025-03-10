@@ -44,14 +44,14 @@ if (!empty($_SESSION["name"])) {
         <div class=""></div>
         <ul>
         
-            <li><a href="../portal.php"><i style="font-size: 30px; padding: 10px;" class='bx bx-reset'></i></a></li>
+            <li><a href="../URLs/config?URL2=portal?"><i style="font-size: 30px; padding: 10px;" class='bx bx-reset'></i></a></li>
 
             <div class="dropdown">
                 <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <?php echo $_SESSION['name']; ?>
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="./close.php">Cerrar Sesion</a></li>
+                    <li><a class="dropdown-item" href="../URLs/config?URL3=close?">Cerrar Sesion</a></li>
                 </ul>
             </div>
 
