@@ -131,7 +131,7 @@ if (!empty($_SESSION["name"])) {
 
           <!--#03-->
           <details>
-            <summary>Configuración de Buzón KIP<i class='bx bx-chevron-down' style='color:#4c4c4c'>/i>
+            <summary>Configuración de Buzón KIP<i class='bx bx-chevron-down' style='color:#4c4c4c'></i>
             </summary>
             <p><small>
                 <a id="boton" onclick="ir_item_12();">Digitalización en Red</a>
@@ -192,19 +192,16 @@ if (!empty($_SESSION["name"])) {
 
 
 
-
-
-
     <div class="container-document">
 
-      <?php include "./CONTROLLER/select_b8155.php"; ?>
+      <?php include "./CONTROLLER/select_k_s.php"; ?>
 
       <!--Item 01-->
       <article class="item-card">
         <div class="contenido" id="item_1">
-          <h6>Capacitación Xerox AltaLink Serie B8100</h6>
+          <h6>Plotter KIP G71</h6>
           <div class="contenct">
-            <img src="./images/b8100.png" alt="#">
+            <img src="./images/S/p1.png" alt="#">
             <p>
               <?php
               $op = new select_cac();
@@ -234,9 +231,9 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_2">
-          <h6>Objetivos del curso</h6>
+          <h6>Caracteristicas Generales</h6>
           <div class="contenct">
-            <img src="./images/c2.png" alt="#">
+            <img src="./images/S/P2.png" alt="#">
             <p>
               <?php
               $op = new select_cac();
@@ -267,15 +264,15 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_3">
-          <h6>Instalación de hardware</h6>
+          <h6>Caracteristicas de Impresora</h6>
           <div class="contenct">
-            <img src="./images/i1.png" alt="#">
+            <img src="./images/S/p3.png" alt="#">
             <p>
               <?php
               $op = new select_inst();
-              $resD4 = $op->i1();
+              $resD4 = $op->i3();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['instalation']);
+                echo nl2br($row['caracteristicas']);
               }
               ?>
             </p>
@@ -299,15 +296,15 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_4">
-          <h6>Requisitos de espacio</h6>
+          <h6>Caracteristicas Controlador</h6>
           <div class="contenct">
-            <img src="./images/i2.png" alt="#">
+            <img src="./images/S/p4.png" alt="#">
             <p>
               <?php
               $op = new select_inst();
-              $resD4 = $op->i2();
+              $resD4 = $op->i4();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['instalation']);
+                echo nl2br($row['caracteristicas']);
               }
               ?>
             </p>
@@ -331,15 +328,15 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_5">
-          <h6>Proceso de Intercambio</h6>
+          <h6>Caracteristicas de Escáner</h6>
           <div class="contenct">
-            <img src="./images/i3.png" alt="#">
+            <img src="./images/S/P2.png" alt="#">
             <p>
               <?php
               $op = new select_inst();
               $resD4 = $op->i3();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['instalation']);
+                echo nl2br($row['caracteristicas']);
               }
               ?>
             </p>
@@ -363,15 +360,14 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_6">
-          <h6>Instalación del Front End Digital (DFE)</h6>
+          <h6>Tecnología de impresión de alta definición (HDP)</h6>
           <div class="contenct">
-            <img src="./images/i4.png" alt="#">
             <p>
               <?php
               $op = new select_inst();
               $resD4 = $op->i4();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['instalation']);
+                echo nl2br($row['caracteristicas']);
               }
               ?>
             </p>
@@ -395,15 +391,15 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_7">
-          <h6>Requisitos de energía</h6>
+          <h6>Tecnología de impresión de alta definición (HDP)</h6>
           <div class="contenct">
-            <img src="./images/i5.png" alt="#">
+            <img src="./images/S/t1.png" alt="#">
             <p>
               <?php
               $op = new select_inst();
               $resD4 = $op->i5();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['instalation']);
+                echo nl2br($row['caracteristicas']);
               }
               ?>
             </p>
@@ -427,15 +423,15 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_8">
-          <h6>Configurar conexiones de red</h6>
+          <h6>Tecnología de Velocidad Constante</h6>
           <div class="contenct">
-            <img src="./images/i6.png" alt="#">
+            <img src="./images/S/t2.png" alt="#">
             <p>
               <?php
               $op = new select_inst();
               $resD4 = $op->i6();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['instalation']);
+                echo nl2br($row['caracteristicas']);
               }
               ?>
             </p>
@@ -458,15 +454,15 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_9">
-          <h6>Imprimir un informe de configuración</h6>
+          <h6>Máxima durabilidad de la imagen</h6>
           <div class="contenct">
-            <img src="./images/i8.png" alt="#">
+            <img src="./images/S/t3.png" alt="#">
             <p>
               <?php
               $op = new select_inst();
               $resD4 = $op->i7();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['instalation']);
+                echo nl2br($row['caracteristicas']);
               }
               ?>
             </p>
@@ -489,15 +485,15 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_10">
-          <h6>Problemas comunes de conectividad</h6>
+          <h6>Capacidad de Medio</h6>
           <div class="contenct">
-            <img src="./images/i9.png" alt="#">
+            <img src="./images/S/t4.png" alt="#">
             <p>
               <?php
               $op = new select_inst();
               $resD4 = $op->i8();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['instalation']);
+                echo nl2br($row['caracteristicas']);
               }
               ?>
             </p>
@@ -520,15 +516,15 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_11">
-          <h6>Encedido y apagado</h6>
+          <h6>Descarga del Controlador</h6>
           <div class="contenct">
-            <img src="./images/i10.png" alt="#">
+            <img src="./images/S/driver1.png" alt="#">
             <p>
               <?php
               $op = new select_inst();
               $resD4 = $op->i9();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['instalation']);
+                echo nl2br($row['driver']);
               }
               ?>
             </p>
@@ -551,15 +547,15 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_12">
-          <h6>Operacion del Equipo (Divers)</h6>
+          <h6>Instalación del Controlador</h6>
           <div class="contenct">
-            <img src="./images/o1.png" alt="#">
+            <img src="./images/S/driver2.png" alt="#">
             <p>
               <?php
               $op = new select_inst();
               $resD4 = $op->o1();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['operacion']);
+                echo nl2br($row['driver']);
               }
               ?>
             </p>
@@ -582,14 +578,15 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_13">
-          <h6>Controlador de Impresión como herramienta</h6>
+          <h6>Instalación del Controlador .EXE</h6>
           <div class="contenct">
+            <img src="./images/S/driver3.png" alt="#">
             <p>
               <?php
               $op = new select_inst();
               $resD4 = $op->o2();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['operacion']);
+                echo nl2br($row['driver']);
               }
               ?>
             </p>
@@ -613,15 +610,15 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_14">
-          <h6>Panel de control UI</h6>
+          <h6>Configuración del Controlador de Impresión</h6>
           <div class="contenct">
-            <img src="./images/o2.png" alt="">
+            <img src="./images/S/driver4.png" alt="">
             <p>
               <?php
               $op = new select_inst();
               $resD4 = $op->o3();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['operacion']);
+                echo nl2br($row['driver']);
               }
               ?>
             </p>
@@ -644,15 +641,15 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_15">
-          <h6>Interfaz de usuario como herramienta</h6>
+          <h6>Configuración del Controlador de Impresión</h6>
           <div class="contenct">
-            <img src="./images/o3.png" alt="">
+            <img src="./images/S/driver5.png" alt="">
             <p>
               <?php
               $op = new select_inst();
               $resD4 = $op->o4();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['operacion']);
+                echo nl2br($row['driver']);
               }
               ?>
             </p>
@@ -675,15 +672,15 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_16">
-          <h6>Descripción general de la navegación EWS</h6>
+          <h6>¿Cómo remover el controlador de impresión?</h6>
           <div class="contenct">
-            <img src="./images/o5.png" alt="">
+            <img src="./images/S/driver6.png" alt="">
             <p>
               <?php
               $op = new select_inst();
               $resD4 = $op->o5();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['operacion']);
+                echo nl2br($row['driver']);
               }
               ?>
             </p>
@@ -707,15 +704,15 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_17">
-          <h6>Descripción general de la navegación EWS</h6>
+          <h6>¿Cómo remover el controlador de impresión?</h6>
           <div class="contenct">
-            <img src="./images/o6.png" alt="">
+            <img src="./images/S/driver7.png" alt="">
             <p>
               <?php
               $op = new select_inst();
               $resD4 = $op->o6();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['operacion']);
+                echo nl2br($row['driver']);
               }
               ?>
             </p>
@@ -738,15 +735,15 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_18">
-          <h6>Identificar la versión actual del software</h6>
+          <h6>¿Cómo usar el controlador de impresión?</h6>
           <div class="contenct">
-            <img src="./images/o7.png" alt="">
+            <img src="./images/S/driver8.png" alt="">
             <p>
               <?php
               $op = new select_inst();
               $resD4 = $op->o7();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['operacion']);
+                echo nl2br($row['driver']);
               }
               ?>
             </p>
@@ -770,15 +767,15 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_19">
-          <h6>Métodos de actualización</h6>
+          <h6>¿Cómo usar las propiedades del controlador?</h6>
           <div class="contenct">
-            <img src="./images/o8.png" alt="">
+            <img src="./images/S/driver9.png" alt="">
             <p>
               <?php
               $op = new select_inst();
               $resD4 = $op->o8();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['operacion']);
+                echo nl2br($row['driver']);
               }
               ?>
             </p>
@@ -801,15 +798,15 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_20">
-          <h6>Actualizaciones manuales</h6>
+          <h6>Interfaz de Impresión</h6>
           <div class="contenct">
-            <img src="./images/o9.png" alt="">
+            <img src="./images/S/interfazP1.png" alt="">
             <p>
               <?php
               $op = new select_inst();
               $resD4 = $op->o9();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['operacion']);
+                echo nl2br($row['interfazP']);
               }
               ?>
             </p>
@@ -832,15 +829,15 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_21">
-          <h6>Rutas de papel DADF</h6>
+          <h6>KIP ImagePro</h6>
           <div class="contenct">
-            <img src="./images/tp1.png" alt="">
+            <img src="./images/S/interfazP2.png" alt="">
             <p>
               <?php
               $op = new select_inst();
               $resD4 = $op->tp1();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['transporte']);
+                echo nl2br($row['interfazP']);
               }
               ?>
             </p>
@@ -863,18 +860,13 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_22">
-          <h6>130 Sheet DADF</h6>
+          <h6>KIP ImagePro (Resumen de Uso)</h6>
           <div class="contenct">
-            <img src="./images/tp2.png" alt="">
-            <p>
-              <?php
-              $op = new select_inst();
-              $resD4 = $op->tp2();
-              while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['transporte']);
-              }
-              ?>
-            </p>
+
+            <video width="100%" height="280" controls>
+              <source src="./images/S/KIP ImagePro SP.mp4" type="video/mp4">
+            </video>
+
           </div>
 
           <div class="btn-navigation">
@@ -895,15 +887,15 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_23">
-          <h6>Atascos de papel: el problema más común</h6>
+          <h6>¿Cómo descargar el KIP ImagePro?</h6>
           <div class="contenct">
-            <img src="./images/tp3.png" alt="">
+            <img src="./images/S/driver2.png" alt="">
             <p>
               <?php
               $op = new select_inst();
               $resD4 = $op->tp3();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['transporte']);
+                echo nl2br($row['interfazP']);
               }
               ?>
             </p>
@@ -927,15 +919,15 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_24">
-          <h6>Eliminacion de Atascos</h6>
+          <h6>¿Cómo Instalar el KIP ImagePro?</h6>
           <div class="contenct">
-            <img src="./images/tp4.png" alt="">
+            <img src="./images/S/interfazP4.png" alt="">
             <p>
               <?php
               $op = new select_inst();
-              $resD4 = $op->tp5();
+              $resD4 = $op->tp4();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['transporte']);
+                echo nl2br($row['interfazP']);
               }
               ?>
             </p>
@@ -958,18 +950,14 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_25">
-          <h6>Eliminacion de Atascos</h6>
+          <h6>Creación y guardado de trabajos</h6>
           <div class="contenct">
-            <img src="./images/tp6.png" alt="">
-            <p>
-              <?php
-              $op = new select_inst();
-              $resD4 = $op->tp5();
-              while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['transporte']);
-              }
-              ?>
-            </p>
+
+            <video width="100%" height="280" controls>
+              <source src="./images/S/creado_guardado_trabajos.mp4" type="video/mp4">
+            </video>
+
+
           </div>
 
           <div class="btn-navigation">
@@ -989,18 +977,13 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_26">
-          <h6>Eliminacion de Atascos</h6>
+          <h6>Creación y uso de ajustes prestablecidos</h6>
           <div class="contenct">
-            <img src="./images/tp7.png" alt="">
-            <p>
-              <?php
-              $op = new select_inst();
-              $resD4 = $op->tp6();
-              while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['transporte']);
-              }
-              ?>
-            </p>
+
+            <video width="100%" height="280" controls>
+              <source src="./images/S/creacion_ajustes_prestablecidos.mp4" type="video/mp4">
+            </video>
+
           </div>
 
           <div class="btn-navigation">
@@ -1021,18 +1004,13 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_27">
-          <h6>Rodillos de recorrido del papel</h6>
+          <h6>Creación de múltiples trabajos</h6>
           <div class="contenct">
-            <img src="./images/tp8.png" alt="">
-            <p>
-              <?php
-              $op = new select_inst();
-              $resD4 = $op->tp7();
-              while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['transporte']);
-              }
-              ?>
-            </p>
+
+            <video width="100%" height="280" controls>
+              <source src="./images/S/creacion_multiples_trabajos.mp4" type="video/mp4">
+            </video>
+
           </div>
 
           <div class="btn-navigation">
@@ -1053,53 +1031,12 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_28">
-          <h6>Animaciones de ruta de Papel</h6>
+          <h6>Cómo utilizar la configuración de calidad de impresión</h6>
           <div class="contenct">
 
-            <style>
-              #animation1 {
-                display: none;
-              }
-
-              #animation2 {
-                display: none;
-              }
-
-              #animation3 {
-                display: none;
-              }
-
-              #animation4 {
-                display: none;
-              }
-            </style>
-
-            <img src="./images/tray_1_to_exit1.gif" alt="" id="animation1">
-
-            <img src="./images/tray_2_to_exit1.gif" alt="" id="animation2">
-
-            <img src="./images/tray1_to_exit2.gif" alt="" id="animation3">
-
-            <img src="./images/tray2_to_exit2.gif" alt="" id="animation4">
-
-
-            <p>
-              <?php
-              $op = new select_inst();
-              $resD4 = $op->tp8();
-              while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['transporte']);
-              }
-              ?>
-            </p>
-
-            <button id="boton" onclick="animation_tray1();">Bandeja 1 a Salida 1</button>
-
-            <button id="boton" onclick="animation_tray2();">Bandeja 2 a Salida 1</button>
-
-            <button id="boton" onclick="animation_tray1_exit2();">Bandeja 1 a Salida 2</button>
-
-            <button id="boton" onclick="animation_tray2_exit_2();">Bandeja 2 a Salida 2</button>
+            <video width="100%" height="280" controls>
+              <source src="./images/S/calidad_impresion.mp4" type="video/mp4">
+            </video>
 
           </div>
 
@@ -1121,46 +1058,12 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_29">
-          <h6>Animaciones de ruta de papel bypass</h6>
+          <h6>KIP PrintPro.net</h6>
           <div class="contenct">
 
-            <style>
-              #animation5 {
-                display: none;
-              }
-
-              #animation6 {
-                display: none;
-              }
-
-              #animation7 {
-                display: none;
-              }
-            </style>
-
-            <img src="./images/bypass_tray_to_exit_1.gif" alt="" id="animation5">
-
-            <img src="./images/bypass_tray_to_exit_2.gif" alt="" id="animation6">
-
-            <img src="./images/bypass_tray_to_left_side_output_tray.gif" alt="" id="animation7">
-
-
-            <p>
-              <?php
-              $op = new select_inst();
-              $resD4 = $op->tp9();
-              while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['transporte']);
-              }
-              ?>
-            </p>
-
-            <button id="boton" onclick="bypass_tray_to_exit1();">Bypass a salida 1</button>
-
-            <button id="boton" onclick="bypass_tray_to_exit2();">Bypass a salida 2</button>
-
-            <button id="boton" onclick="bypass_tray_to_left_side_output_tray();">Bypass a salida del lado
-              izquierdo</button>
+            <video width="100%" height="280" controls>
+              <source src="./images/S/interfazP2.png" type="video/mp4">
+            </video>
 
           </div>
 
