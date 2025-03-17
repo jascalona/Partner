@@ -103,7 +103,7 @@ if (!empty($_SESSION["name"])) {
                     <small>Seleccione el botón "Ver" para comenzar su aprendizaje.</small>
 
                     <div class="btn-ver">
-                        <button class="btn btn-dark"><a href="../mantenimiento.html" target="_blank">Ver</a></button>
+                        <button class="btn btn-dark"><a href="./KIPG71/service_training_kip71G_h.php" target="_blank">Ver</a></button>
                     </div>
                 </div>
 
