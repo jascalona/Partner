@@ -1362,7 +1362,7 @@ if (!empty($_SESSION["name"])) {
       <!--Item 38-->
       <style>
         #item_38 {
-          display: ;
+          display: none;
         }
       </style>
 
@@ -1405,17 +1405,17 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_39">
-          <h6>Consejos para los cartuchos de tóner residual</h6>
+          <h6>Local Mailbox (Configuración del Búzon)</h6>
           <div class="contenct">
 
-            <img src="./images/mant5.png" alt="#" id="img_drum">
+            <img src="./images/S/scanerL2.png" alt="#" id="img_drum">
 
             <p>
               <?php
               $op = new select_inst();
-              $resD4 = $op->mant7();
+              $resD4 = $op->mant4();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['mantenimiento']);
+                echo nl2br($row['conf_b']);
               }
               ?>
             </p>
@@ -1440,15 +1440,16 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_40">
-          <h6>Esperanza de vida de los suministros</h6>
+          <h6>Local Mailbox (Vista Previa del directorio Local)</h6>
           <div class="contenct">
+            <img src="./images/S/scanerL3.png" alt="#">
 
             <p>
               <?php
               $op = new select_inst();
-              $resD4 = $op->mant8();
+              $resD4 = $op->mant5();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['mantenimiento']);
+                echo nl2br($row['conf_b']);
               }
               ?>
             </p>

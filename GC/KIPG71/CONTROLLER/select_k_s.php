@@ -319,7 +319,7 @@ class select_inst
 
     public function mant4()
     {
-        $sqlC3 = " SELECT  mantenimiento FROM kip_g71_s WHERE id=4 ";
+        $sqlC3 = " SELECT  conf_b FROM kip_g71_s WHERE id=5 ";
         $conexion = $this->Connection();
         $resC3 = mysqli_query($conexion, $sqlC3) or die("Ha Ocurrido un Error");
         return $resC3;
@@ -327,7 +327,7 @@ class select_inst
 
     public function mant5()
     {
-        $sqlC3 = " SELECT  mantenimiento FROM kip_g71_s WHERE id=5 ";
+        $sqlC3 = " SELECT  conf_b FROM kip_g71_s WHERE id=9 ";
         $conexion = $this->Connection();
         $resC3 = mysqli_query($conexion, $sqlC3) or die("Ha Ocurrido un Error");
         return $resC3;
