@@ -1833,12 +1833,930 @@ if (!empty($_SESSION["name"])) {
           </div>
 
           <div class="btn-navigation">
-            <button id="boton" onclick="ir_item_49();"><i class='bx bxs-left-arrow'></i></button>
-            <button id="boton" onclick="ir_item_51();"><i class='bx bxs-right-arrow'></i></button>
+            <button id="boton" onclick="ir_item_50();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_52();"><i class='bx bxs-right-arrow'></i></button>
           </div>
         </div>
       </article>
-      <!--Item 50-->
+      <!--Item 51-->
+
+      <!--Item 52-->
+      <style>
+        #item_52 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_52">
+          <h6>Actualización usando parche de seguridad</h6>
+          <div class="contenct">
+
+            <img src="./images/S/cSeguridad1.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant17();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['so']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_51();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_53();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 52-->
+
+      <!--Item 53-->
+      <style>
+        #item_53 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_53">
+          <h6>Actualización usando parche de seguridad</h6>
+          <div class="contenct">
+
+            <img src="./images/S/cSeguridad2.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant18();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['so']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_52();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_54();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 53-->
+
+
+      <!--Item 54-->
+      <style>
+        #item_54 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_54">
+          <h6>Actualización usando parche de seguridad</h6>
+          <div class="contenct">
+
+            <img src="./images/S/cSeguridad3.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant19();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['so']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_53();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_55();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 54-->
+
+      <!--Item 55-->
+      <style>
+        #item_55 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_55">
+          <h6>Actualización usando parche de seguridad</h6>
+          <div class="contenct">
+
+            <img src="./images/S/cSeguridad4.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant20();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['so']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_54();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_56();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 55-->
+
+
+      <!--Item 56-->
+      <style>
+        #item_56 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_56">
+          <h6>Actualización usando parche de seguridad</h6>
+          <div class="contenct">
+
+            <img src="./images/S/cSeguridad5.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant21();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['so']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_55();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_57();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 56-->
+
+
+      <!--Item 57-->
+      <style>
+        #item_57 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_57">
+          <h6>Actualización usando parche de seguridad</h6>
+          <div class="contenct">
+
+            <img src="./images/S/cSeguridad6.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant22();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['so']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_56();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_58();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 57-->
+
+
+      <!--Item 58-->
+      <style>
+        #item_58 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_58">
+          <h6>Actualización usando parche de seguridad</h6>
+          <div class="contenct">
+
+            <img src="./images/S/cSeguridad7.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant23();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['so']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_57();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_59();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 58-->
+
+
+      <!--Item 59-->
+      <style>
+        #item_59 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_59">
+          <h6>Actualización usando parche de seguridad</h6>
+          <div class="contenct">
+
+            <img src="./images/S/cSeguridad8.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant24();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['so']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_58();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_60();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 59-->
+
+
+      <!--Item 60-->
+      <style>
+        #item_60 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_60">
+          <h6>Proceso de Actualización</h6>
+          <div class="contenct">
+
+            <img src="./images/S/cSeguridad10.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant25();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['so']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_59();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_61();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 60-->
+
+
+      <!--Item 61-->
+      <style>
+        #item_61 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_61">
+          <h6>Restauración Interna</h6>
+          <div class="contenct">
+
+            <img src="./images/kip.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant26();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['restauracion']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_60();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_62();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 61-->
+
+
+      <!--Item 62-->
+      <style>
+        #item_62 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_62">
+          <h6>Restauración Interna</h6>
+          <div class="contenct">
+
+            <img src="./images/S/restauracion2.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant27();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['restauracion']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_61();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_63();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 62-->
+
+
+      <!--Item 63-->
+      <style>
+        #item_63 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_63">
+          <h6>Restauración Interna</h6>
+          <div class="contenct">
+
+            <img src="./images/S/restauracion3.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant28();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['restauracion']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_61();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_63();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 63-->
+
+
+      <!--Item 64-->
+      <style>
+        #item_64 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_64">
+          <h6>Restauración Interna</h6>
+          <div class="contenct">
+
+            <img src="./images/S/restauracion4.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant29();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['restauracion']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_62();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_64();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 64-->
+
+
+      <!--Item 65-->
+      <style>
+        #item_65 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_65">
+          <h6>Restauración Interna</h6>
+          <div class="contenct">
+
+            <img src="./images/S/restauracion5.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant30();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['restauracion']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_64();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_66();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 65-->
+
+
+
+      <!--Item 66-->
+      <style>
+        #item_66 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_66">
+          <h6>Centro de Contabilidad</h6>
+          <div class="contenct">
+
+            <img src="./images/kip.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant31();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['contabilidad']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_65();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_67();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 66-->
+
+
+      <!--Item 67-->
+      <style>
+        #item_67 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_67">
+          <h6>Centro de Contabilidad</h6>
+          <div class="contenct">
+
+            <img src="./images/S/contabilidad1.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant32();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['contabilidad']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_66();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_68();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 67-->
+
+
+      <!--Item 68-->
+      <style>
+        #item_68 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_68">
+          <h6>Centro de Contabilidad</h6>
+          <div class="contenct">
+
+            <img src="./images/S/contabilidad2.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant33();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['contabilidad']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_67();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_69();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 68-->
+
+      <!--Item 69-->
+      <style>
+        #item_69 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_69">
+          <h6>Centro de Contabilidad (Copia)</h6>
+          <div class="contenct">
+
+            <img src="./images/S/contabilidad3.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant34();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['contabilidad']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_68();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_70();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 69-->
+
+
+      <!--Item 70-->
+      <style>
+        #item_70 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_70">
+          <h6>Centro de Contabilidad (Scan)</h6>
+          <div class="contenct">
+
+            <img src="./images/S/contabilidad3.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant35();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['contabilidad']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_69();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_71();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 70-->
+
+      <!--Item 71-->
+      <style>
+        #item_71 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_71">
+          <h6>Centro de Contabilidad</h6>
+          <div class="contenct">
+
+            <img src="./images/S/contabilidad4.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant35();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['contabilidad']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_70();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_72();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 71-->
+
+
+      <!--Item 72-->
+      <style>
+        #item_72 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_72">
+          <h6>Centro de Contabilidad</h6>
+          <div class="contenct">
+
+            <img src="./images/S/contabilidad5.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant36();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['contabilidad']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_71();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_73();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 72-->
+
+
+      <!--Item 73-->
+      <style>
+        #item_73 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_73">
+          <h6>Centro de Contabilidad</h6>
+          <div class="contenct">
+
+            <img src="./images/S/contabilidad6.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant37();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['contabilidad']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_72();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_74();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 73-->
+
+
+      <!--Item 74-->
+      <style>
+        #item_74 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_74">
+          <h6>Centro de Contabilidad (Nuevo Usuario)</h6>
+          <div class="contenct">
+
+            <img src="./images/S/contabilidad8.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant38();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['contabilidad']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_73();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_75();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 74-->
+
+
+      <!--Item 75-->
+      <style>
+        #item_75 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_75">
+          <h6>Centro de Contabilidad (Asiganer PIN)</h6>
+          <div class="contenct">
+
+            <img src="./images/S/contabilidad9.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant39();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['contabilidad']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_74();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_76();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 75-->
+
+
+      <!--Item 76-->
+      <style>
+        #item_76 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_76">
+          <h6>Centro de Contabilidad (Asiganer PIN)</h6>
+          <div class="contenct">
+
+            <img src="./images/S/contabilidad10.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant40();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['contabilidad']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_75();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_77();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 76-->
+
+
+      <!--Item 77-->
+      <style>
+        #item_77 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_77">
+          <h6>Centro de Contabilidad (Permisos y Privilegios)</h6>
+          <div class="contenct">
+
+            <img src="./images/S/contabilidad11.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant41();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['contabilidad']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_76();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_78();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 77-->
+
+
+      <!--Item 78-->
+      <style>
+        #item_78 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_78">
+          <h6>Centro de Contabilidad (Permisos y Privilegios)</h6>
+          <div class="contenct">
+
+            <img src="./images/S/contabilidad12.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant42();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['contabilidad']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_77();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_79();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 78-->
+
+
+
+
 
     </div>
 
