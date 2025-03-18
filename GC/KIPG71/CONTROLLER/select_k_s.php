@@ -239,7 +239,7 @@ class select_inst
     
     public function tp6()
     {
-        $sqlC3 = " SELECT  transporte FROM kip_g71_s WHERE id=6 ";
+        $sqlC3 = " SELECT  conf_b FROM kip_g71_s WHERE id=1 ";
         $conexion = $this->Connection();
         $resC3 = mysqli_query($conexion, $sqlC3) or die("Ha Ocurrido un Error");
         return $resC3;
@@ -247,7 +247,7 @@ class select_inst
 
     public function tp7()
     {
-        $sqlC3 = " SELECT  transporte FROM kip_g71_s WHERE id=7 ";
+        $sqlC3 = " SELECT  conf_b FROM kip_g71_s WHERE id=2 ";
         $conexion = $this->Connection();
         $resC3 = mysqli_query($conexion, $sqlC3) or die("Ha Ocurrido un Error");
         return $resC3;
@@ -255,7 +255,7 @@ class select_inst
 
     public function tp8()
     {
-        $sqlC3 = " SELECT  transporte FROM kip_g71_s WHERE id=8 ";
+        $sqlC3 = " SELECT  conf_b FROM kip_g71_s WHERE id=3 ";
         $conexion = $this->Connection();
         $resC3 = mysqli_query($conexion, $sqlC3) or die("Ha Ocurrido un Error");
         return $resC3;
@@ -263,7 +263,7 @@ class select_inst
 
     public function tp9()
     {
-        $sqlC3 = " SELECT  transporte FROM kip_g71_s WHERE id=9 ";
+        $sqlC3 = " SELECT  conf_b FROM kip_g71_s WHERE id=4 ";
         $conexion = $this->Connection();
         $resC3 = mysqli_query($conexion, $sqlC3) or die("Ha Ocurrido un Error");
         return $resC3;
@@ -271,7 +271,7 @@ class select_inst
 
     public function tp10()
     {
-        $sqlC3 = " SELECT  transporte FROM kip_g71_s WHERE id=10 ";
+        $sqlC3 = " SELECT  conf_b FROM kip_g71_s WHERE id=5 ";
         $conexion = $this->Connection();
         $resC3 = mysqli_query($conexion, $sqlC3) or die("Ha Ocurrido un Error");
         return $resC3;
@@ -279,7 +279,7 @@ class select_inst
 
     public function tp11()
     {
-        $sqlC3 = " SELECT  transporte FROM kip_g71_s WHERE id=11 ";
+        $sqlC3 = " SELECT  conf_b FROM kip_g71_s WHERE id=6 ";
         $conexion = $this->Connection();
         $resC3 = mysqli_query($conexion, $sqlC3) or die("Ha Ocurrido un Error");
         return $resC3;
@@ -287,7 +287,7 @@ class select_inst
 
     public function tp12()
     {
-        $sqlC3 = " SELECT  transporte FROM kip_g71_s WHERE id=12 ";
+        $sqlC3 = " SELECT  conf_b FROM kip_g71_s WHERE id=2 ";
         $conexion = $this->Connection();
         $resC3 = mysqli_query($conexion, $sqlC3) or die("Ha Ocurrido un Error");
         return $resC3;
@@ -295,7 +295,7 @@ class select_inst
 
     public function mant1()
     {
-        $sqlC3 = " SELECT  mantenimiento FROM kip_g71_s WHERE id=1 ";
+        $sqlC3 = " SELECT  conf_b FROM kip_g71_s WHERE id=3 ";
         $conexion = $this->Connection();
         $resC3 = mysqli_query($conexion, $sqlC3) or die("Ha Ocurrido un Error");
         return $resC3;
@@ -303,7 +303,7 @@ class select_inst
 
     public function mant2()
     {
-        $sqlC3 = " SELECT  mantenimiento FROM kip_g71_s WHERE id=2 ";
+        $sqlC3 = " SELECT  conf_b FROM kip_g71_s WHERE id=7 ";
         $conexion = $this->Connection();
         $resC3 = mysqli_query($conexion, $sqlC3) or die("Ha Ocurrido un Error");
         return $resC3;
@@ -311,7 +311,7 @@ class select_inst
 
     public function mant3()
     {
-        $sqlC3 = " SELECT  mantenimiento FROM kip_g71_s WHERE id=3 ";
+        $sqlC3 = " SELECT  conf_b FROM kip_g71_s WHERE id=3 ";
         $conexion = $this->Connection();
         $resC3 = mysqli_query($conexion, $sqlC3) or die("Ha Ocurrido un Error");
         return $resC3;

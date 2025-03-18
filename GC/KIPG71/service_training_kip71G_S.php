@@ -1085,18 +1085,18 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_30">
-          <h6>Ruta del papel duplex</h6>
+          <h6>Digitalizacion en red</h6>
           <div class="contenct">
 
-            <img src="./images/paper_duplex.gif" alt="#">
+            <img src="./images/S/scanerR1.png" alt="#">
 
 
             <p>
               <?php
               $op = new select_inst();
-              $resD4 = $op->tp10();
-              while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['transporte']);
+              $resD4 = $op->tp6();
+              while ($row = mysqli_fetch_array(result: $resD4)) {
+                echo nl2br($row['conf_b']);
               }
               ?>
             </p>
@@ -1121,18 +1121,18 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_31">
-          <h6>Ubicaciones de atascos</h6>
+          <h6>Digitalización en red</h6>
           <div class="contenct">
 
-            <img src="./images/tp9.png" alt="#">
+            <img src="./images/S/scanerR2.png" alt="#">
 
 
             <p>
               <?php
               $op = new select_inst();
-              $resD4 = $op->tp11();
+              $resD4 = $op->tp7();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['transporte']);
+                echo nl2br($row['conf_b']);
               }
               ?>
             </p>
@@ -1157,78 +1157,20 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_32">
-          <h6>Pasos para Eliminar atascos</h6>
+          <h6>Digitalización  en  red (New Mailbox)</h6>
           <div class="contenct">
-
-            <style>
-              #animation8 {
-                display: none;
-              }
-
-              #animation9 {
-                display: none;
-              }
-
-              #animation10 {
-                display: none;
-              }
-
-              #animation11 {
-                display: none;
-              }
-
-              #animation12 {
-                display: none;
-              }
-
-              #animation13 {
-                display: none;
-              }
-
-              #animation14 {
-                display: none;
-              }
-            </style>
-
-            <img src="./images/DAFD_jam_at_exit.gif" alt="" id="animation8">
-
-            <img src="./images/DAFD_jam_at_extir_chute.gif" alt="" id="animation9">
-
-            <img src="./images/DAFD_jam_under_top_cover.gif" alt="" id="animation10">
-
-            <img src="./images/jam_at_fuser.gif" alt="" id="animation11">
-
-            <img src="./images/jam_in_exit_gate_1.gif" alt="" id="animation12">
-
-            <img src="./images/jam_in_duplexer.gif" alt="" id="animation13">
-
-            <img src="./images/jam_at_outputof_tray3.gif" alt="" id="animation14">
+            <img src="./images/S/scanerR3.png" alt="" id="animation14">
 
 
             <p>
               <?php
               $op = new select_inst();
-              $resD4 = $op->tp12();
+              $resD4 = $op->tp8();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['transporte']);
+                echo nl2br($row['conf_b']);
               }
               ?>
             </p>
-
-            <button id="boton" onclick="DADF_jam_at_exit();">DADF Jam at Exit</button>
-
-            <button id="boton" onclick="DADF_jam_at_exit_chute();">DADF Jam at Exit Chute</button>
-
-            <button id="boton" onclick="DADF_jam_under_top_cover();">DADF Jam under Top Cover</button>
-
-            <button id="boton" onclick="jam_at_fuser();">Jam at Fuser</button>
-
-            <button id="boton" onclick="jam_in_exit_gate();">Jam in Exit Gate 1</button>
-
-            <button id="boton" onclick="jam_in_duplexer();">Jam in Duplexer</button>
-
-            <button id="boton" onclick="jam_at_output_of_tray_3();">Jam at Output of Tray 3</button>
-
 
 
           </div>
@@ -1251,20 +1193,17 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_33">
-          <h6>Video del recorrido por los suministros</h6>
+          <h6>Digitalización en red (New Mailbox)</h6>
           <div class="contenct">
 
-            <video width="100%" height="280" controls>
-              <source src="./images/consumibles.mp4" type="video/mp4">
-            </video>
-
+          <img src="./images/S/scanerR4.png" alt="" id="animation14">
 
             <p>
               <?php
               $op = new select_inst();
-              $resD4 = $op->mant1();
+              $resD4 = $op->tp9();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['mantenimiento']);
+                echo nl2br($row['conf_b']);
               }
               ?>
             </p>
@@ -1289,17 +1228,17 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_34">
-          <h6>Resumen de CRU</h6>
+          <h6>Digitalización en red (Configuración del Buzón)</h6>
           <div class="contenct">
 
-            <img src="./images/mant1.png" alt="#">
+            <img src="./images/S/scanerR5.png" alt="#">
 
             <p>
               <?php
               $op = new select_inst();
-              $resD4 = $op->mant2();
+              $resD4 = $op->tp10();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['mantenimiento']);
+                echo nl2br($row['conf_b']);
               }
               ?>
             </p>
@@ -1324,17 +1263,17 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_35">
-          <h6>Fusor</h6>
+          <h6>Local Mailbox</h6>
           <div class="contenct">
 
-            <img src="./images/mant2.png" alt="#">
+            <img src="./images/S/scanerR5.png" alt="#">
 
             <p>
               <?php
               $op = new select_inst();
-              $resD4 = $op->mant3();
+              $resD4 = $op->tp11();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['mantenimiento']);
+                echo nl2br($row['conf_b']);
               }
               ?>
             </p>
@@ -1359,30 +1298,20 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_36">
-          <h6>Fusor Fallas comunes (Videos)</h6>
+          <h6>Local Mailbox</h6>
           <div class="contenct">
 
-            <style>
-              #animation_video1 {
-                display: none;
-              }
-            </style>
-
-            <video width="100%" height="280" controls id="animation_video1">
-              <source src="./images/fusor1.mp4" type="video/mp4">
-            </video>
+          <img src="./images/S/scanerR2.png" alt="#">
 
             <p>
               <?php
               $op = new select_inst();
-              $resD4 = $op->mant4();
+              $resD4 = $op->tp12();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['mantenimiento']);
+                echo nl2br($row['conf_b']);
               }
               ?>
             </p>
-
-            <button id="boton" onclick="video_fuser();">Video del Fusor</button>
 
           </div>
 
@@ -1404,32 +1333,20 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_37">
-          <h6>Mantenimiento al cliente</h6>
+          <h6>Digitalización Local (New Mailbox)</h6>
           <div class="contenct">
 
-            <img src="./images/mant3.png" alt="#" id="img_feed_roller">
-
-            <style>
-              #animation_video2 {
-                display: none;
-              }
-            </style>
-
-            <video width="100%" height="280" controls id="animation_video2">
-              <source src="./images/feed_roller.mp4" type="video/mp4">
-            </video>
+            <img src="./images/S/scanerL1.png" alt="#" id="img_feed_roller">
 
             <p>
               <?php
               $op = new select_inst();
-              $resD4 = $op->mant5();
+              $resD4 = $op->mant2();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['mantenimiento']);
+                echo nl2br($row['conf_b']);
               }
               ?>
             </p>
-
-            <button id="boton" onclick="feed_roller();">Vídeo del rodillo de alimentación</button>
 
           </div>
 
@@ -1445,33 +1362,23 @@ if (!empty($_SESSION["name"])) {
       <!--Item 38-->
       <style>
         #item_38 {
-          display: none;
+          display: ;
         }
       </style>
 
       <article class="item-card">
         <div class="contenido" id="item_38">
-          <h6>Cartuchos de tambor</h6>
+          <h6>Local Mailbox (Configuración del Buzón)</h6>
           <div class="contenct">
 
-            <img src="./images/mant4.png" alt="#" id="img_drum">
-
-            <style>
-              #animation_video3 {
-                display: none;
-              }
-            </style>
-
-            <video width="100%" height="280" controls id="animation_video3">
-              <source src="./images/drum_cartridges.mp4" type="video/mp4">
-            </video>
+            <img src="./images/S/scanerL2.png" alt="#" id="img_drum">
 
             <p>
               <?php
               $op = new select_inst();
-              $resD4 = $op->mant6();
+              $resD4 = $op->mant3();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['mantenimiento']);
+                echo nl2br($row['conf_b']);
               }
               ?>
             </p>
