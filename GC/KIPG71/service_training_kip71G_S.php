@@ -67,21 +67,19 @@ if (!empty($_SESSION["name"])) {
             <summary>Característica de Producto <i class='bx bx-chevron-down' style='color:#4c4c4c'></i>
             </summary>
             <p><small>
-                <a id="boton" onclick="ir_item_2();">Plotter KIP G71</a>
+                <a id="boton" onclick="ir_item_1();">Plotter KIP G71</a>
                 <br>
                 <a id="boton" onclick="ir_item_2();">Característica Generales</a>
                 <br>
-                <a id="boton" onclick="ir_item_2();">Características de Escáner</a>
+                <a id="boton" onclick="ir_item_5();">Características de Escáner</a>
                 <br>
-                <a id="boton" onclick="ir_item_2();">Introducción</a>
+                <a id="boton" onclick="ir_item_6();">Técnologia de Impresion de alta definición (HDP)</a>
                 <br>
-                <a id="boton" onclick="ir_item_2();">Técnologia de Impresion de alta definición (HDP)</a>
+                <a id="boton" onclick="ir_item_8();">Técnologia de Velocidad Constante</a>
                 <br>
-                <a id="boton" onclick="ir_item_2();">Técnologia de Velocidad Constante</a>
+                <a id="boton" onclick="ir_item_9();">Máxima durabilidad de Imagen</a>
                 <br>
-                <a id="boton" onclick="ir_item_2();">Máxima durabilidad de Imagen</a>
-                <br>
-                <a id="boton" onclick="ir_item_2();">Capacidad del Medio</a>
+                <a id="boton" onclick="ir_item_10();">Capacidad del Medio</a>
               </small></p>
           </details>
           <!--#01-->
@@ -91,40 +89,40 @@ if (!empty($_SESSION["name"])) {
             <summary>Controlador y utilidades<i class='bx bx-chevron-down' style='color:#4c4c4c'></i>
             </summary>
             <p><small>
-                <a id="boton" onclick="ir_item_3();">Descarga del Controlador</a>
+                <a id="boton" onclick="ir_item_11();">Descarga del Controlador</a>
                 <br>
-                <a id="boton" onclick="ir_item_8();">Instalación del Controlador</a>
+                <a id="boton" onclick="ir_item_12();">Instalación del Controlador</a>
                 <br>
-                <a id="boton" onclick="ir_item_11();">Instalación del Controlador .EXE</a>
+                <a id="boton" onclick="ir_item_13();">Instalación del Controlador .EXE</a>
                 <br>
-                <a id="boton" onclick="ir_item_11();">Configuración del Controlador de Impresión</a>
+                <a id="boton" onclick="ir_item_14();">Configuración del Controlador de Impresión</a>
                 <br>
-                <a id="boton" onclick="ir_item_11();">¿Cómo remover el Controlador de Impresión?</a>
+                <a id="boton" onclick="ir_item_16();">¿Cómo remover el Controlador de Impresión?</a>
                 <br>
-                <a id="boton" onclick="ir_item_11();">¿Cómo usar el Controlador de Impresión?</a>
+                <a id="boton" onclick="ir_item_18();">¿Cómo usar el Controlador de Impresión?</a>
                 <br>
-                <a id="boton" onclick="ir_item_11();">¿Cómo usar las propiedades del Controlador?</a>
+                <a id="boton" onclick="ir_item_19();">¿Cómo usar las propiedades del Controlador?</a>
                 <br>
-                <a id="boton" onclick="ir_item_11();">Interfaz de Impresión</a>
+                <a id="boton" onclick="ir_item_20();">Interfaz de Impresión</a>
                 <br>
-                <a id="boton" onclick="ir_item_11();">KIP ImagePro</a>
+                <a id="boton" onclick="ir_item_21();">KIP ImagePro</a>
                 <br>
-                <a id="boton" onclick="ir_item_11();">KIP ImagePro (Resumen de Uso)</a>
+                <a id="boton" onclick="ir_item_22();">KIP ImagePro (Resumen de Uso)</a>
                 <br>
-                <a id="boton" onclick="ir_item_11();">¿Cómo Descargar el KIP ImagePro?</a>
+                <a id="boton" onclick="ir_item_23();">¿Cómo Descargar el KIP ImagePro?</a>
                 <br>
-                <a id="boton" onclick="ir_item_11();">¿Cómo Instalar el KIP ImagePro?</a>
+                <a id="boton" onclick="ir_item_24();">¿Cómo Instalar el KIP ImagePro?</a>
                 <br>
-                <ac id="boton" onclick="ir_item_11();">Creación y guardado de trabajos</a>
-                  <br>
-                  <te id="boton" onclick="ir_item_11();">Creación y uso de ajustes prestablecidos</a>
-                    <br>
-                    <a id="boton" onclick="ir_item_11();">Creación de multiples trabajos</a>
-                    <br>
-                    <a id="boton" onclick="ir_item_11();">¿Cómo utilizar la configuración de calidad de Impresión?</a>
-                    <br>
-                    <a id="boton" onclick="ir_item_11();">KIP PrintPro.net</a>
-                    <br>
+                <a id="boton" onclick="ir_item_25();">Creación y guardado de trabajos</a>
+                <br>
+                <a id="boton" onclick="ir_item_26();">Creación y uso de ajustes prestablecidos</a>
+                <br>
+                <a id="boton" onclick="ir_item_27();">Creación de multiples trabajos</a>
+                <br>
+                <a id="boton" onclick="ir_item_28();">¿Cómo utilizar la configuración de calidad de Impresión?</a>
+                <br>
+                <a id="boton" onclick="ir_item_29();">KIP PrintPro.net</a>
+                <br>
               </small></p>
           </details>
           <!--#02-->
@@ -134,9 +132,9 @@ if (!empty($_SESSION["name"])) {
             <summary>Configuración de Buzón KIP<i class='bx bx-chevron-down' style='color:#4c4c4c'></i>
             </summary>
             <p><small>
-                <a id="boton" onclick="ir_item_12();">Digitalización en Red</a>
+                <a id="boton" onclick="ir_item_30();">Digitalización en Red</a>
                 <br>
-                <a id="boton" onclick="ir_item_14();">Local Mailbox</a>
+                <a id="boton" onclick="ir_item_35();">Local Mailbox</a>
               </small></p>
           </details>
           <!--#03-->
@@ -146,11 +144,11 @@ if (!empty($_SESSION["name"])) {
             <summary>Sistema Operativo <i class='bx bx-chevron-down' style='color:#4c4c4c'></i>
             </summary>
             <p><small>
-                <a id="boton" onclick="ir_item_21();">Formware USB serie 71</a>
+                <a id="boton" onclick="ir_item_41();">Formware USB serie 71</a>
                 <br>
-                <a id="boton" onclick="ir_item_27();">Actualización usando parche de seguridad</a>
+                <a id="boton" onclick="ir_item_52();">Actualización usando parche de seguridad</a>
                 <br>
-                <a id="boton" onclick="ir_item_33();">Restauración Interna</a>
+                <a id="boton" onclick="ir_item_61();">Restauración Interna</a>
                 <br>
               </small></p>
           </details>
@@ -162,7 +160,7 @@ if (!empty($_SESSION["name"])) {
             <summary>Contabilidad<i class='bx bx-chevron-down' style='color:#4c4c4c'></i>
             </summary>
             <p><small>
-                <a id="boton" onclick="ir_item_37();">Contabilidad</a>
+                <a id="boton" onclick="ir_item_66();">Contabilidad</a>
               </small></p>
           </details>
           <!--#05-->
@@ -172,15 +170,11 @@ if (!empty($_SESSION["name"])) {
             <summary>Funciones UI<i class='bx bx-chevron-down' style='color:#4c4c4c'></i>
             </summary>
             <p><small>
-                <a id="boton" onclick="ir_item_37();">Personalización de la Interfaz de Usuario</a>
+                <a id="boton" onclick="ir_item_79();">Personalización de la Interfaz de Usuario</a>
                 <br>
-                <a id="boton" onclick="ir_item_37();">Anidamiento</a>
+                <a id="boton" onclick="ir_item_85();">Anidamiento</a>
                 <br>
-                <a id="boton" onclick="ir_item_37();">Creación de Plantillas</a>
-                <br>
-                <a id="boton" onclick="ir_item_37();">Funciones de Configuración y Servicios I</a>
-                <br>
-                <a id="boton" onclick="ir_item_37();">Funciones de configuración y Servicios II</a>
+                <a id="boton" onclick="ir_item_89();">Creación de Plantillas</a>
               </small></p>
           </details>
           <!--#06-->
@@ -296,7 +290,7 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_4">
-          <h6>Caracteristicas Controlador</h6>
+          <h6>Caracteristicas del Controlador</h6>
           <div class="contenct">
             <img src="./images/S/p4.png" alt="#">
             <p>
@@ -1061,9 +1055,15 @@ if (!empty($_SESSION["name"])) {
           <h6>KIP PrintPro.net</h6>
           <div class="contenct">
 
-            <video width="100%" height="280" controls>
-              <source src="./images/S/interfazP2.png" type="video/mp4">
-            </video>
+          <img src="./images/S/interfazP2.png" alt="">
+           
+          <p>
+          Herramienta de envío de impresiones mediante navegador sin
+           controlador: no requiere ninguna aplicación ni instalación 
+           Admite navegadores Windows, Unix y MAC OS para un control 
+           total sobre los parámetros de impresión. Administración remota 
+           de impresoras y gestión de colas Libera la PC y procesa rápidamente los trabajos de impresión en el controlador KIP System K Controle la escala de la imagen mediante un porcentaje o la automatización con un toque al tamaño de página preferido Licencia de sitio ilimitada, no requiere servidor ni licencia: ideal para grupos de trabajo pequeños.
+          </p>
 
           </div>
 
@@ -1382,8 +1382,6 @@ if (!empty($_SESSION["name"])) {
               }
               ?>
             </p>
-
-            <button id="boton" onclick="drum_cartridges();">Vídeo sobre cartuchos de tambor</button>
 
           </div>
 
@@ -2238,8 +2236,8 @@ if (!empty($_SESSION["name"])) {
           </div>
 
           <div class="btn-navigation">
-            <button id="boton" onclick="ir_item_61();"><i class='bx bxs-left-arrow'></i></button>
-            <button id="boton" onclick="ir_item_63();"><i class='bx bxs-right-arrow'></i></button>
+            <button id="boton" onclick="ir_item_62();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_64();"><i class='bx bxs-right-arrow'></i></button>
           </div>
         </div>
       </article>
@@ -2272,8 +2270,8 @@ if (!empty($_SESSION["name"])) {
           </div>
 
           <div class="btn-navigation">
-            <button id="boton" onclick="ir_item_62();"><i class='bx bxs-left-arrow'></i></button>
-            <button id="boton" onclick="ir_item_64();"><i class='bx bxs-right-arrow'></i></button>
+            <button id="boton" onclick="ir_item_63();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_65();"><i class='bx bxs-right-arrow'></i></button>
           </div>
         </div>
       </article>
@@ -3016,8 +3014,8 @@ if (!empty($_SESSION["name"])) {
           </div>
 
           <div class="btn-navigation">
-            <button id="boton" onclick="ir_item_84();"><i class='bx bxs-left-arrow'></i></button>
-            <button id="boton" onclick="ir_item_86();"><i class='bx bxs-right-arrow'></i></button>
+            <button id="boton" onclick="ir_item_85();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_87();"><i class='bx bxs-right-arrow'></i></button>
           </div>
         </div>
       </article>
@@ -3294,6 +3292,38 @@ if (!empty($_SESSION["name"])) {
         </div>
       </article>
       <!--Item 94-->
+
+      <!--Item 95-->
+      <style>
+        #item_95 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_95">
+          <h6>Felicidades <?php echo $_SESSION['name'] ?>, has culminado con exito la formación de Servicio
+            para KIP G71</h6>
+          <div class="contenct">
+
+            <img src="./images/siguiente2.jpg" alt="">
+
+            <p>
+              De Click en "Ir a la Evaluación" para comenzar la evaluación diagnostica
+            </p>
+
+            <a href="">Ir a la Evaluación</a>
+            <br>
+            <a href="../KIPG71.php">Volver a los detalles de Inscripción</a>
+
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_94();"><i class='bx bxs-left-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 95-->
 
 
 
