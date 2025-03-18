@@ -639,4 +639,117 @@ class select_inst
         return $resC3;
     } 
 
+    public function mant43()
+    {
+        $sqlC3 = " SELECT  function_ui FROM kip_g71_s WHERE id=1 ";
+        $conexion = $this->Connection();
+        $resC3 = mysqli_query($conexion, $sqlC3) or die("Ha Ocurrido un Error");
+        return $resC3;
+    } 
+
+    public function mant44()
+    {
+        $sqlC3 = " SELECT  function_ui FROM kip_g71_s WHERE id=2 ";
+        $conexion = $this->Connection();
+        $resC3 = mysqli_query($conexion, $sqlC3) or die("Ha Ocurrido un Error");
+        return $resC3;
+    } 
+
+    public function mant45()
+    {
+        $sqlC3 = " SELECT  function_ui FROM kip_g71_s WHERE id=3 ";
+        $conexion = $this->Connection();
+        $resC3 = mysqli_query($conexion, $sqlC3) or die("Ha Ocurrido un Error");
+        return $resC3;
+    } 
+
+    public function mant46()
+    {
+        $sqlC3 = " SELECT  function_ui FROM kip_g71_s WHERE id=4 ";
+        $conexion = $this->Connection();
+        $resC3 = mysqli_query($conexion, $sqlC3) or die("Ha Ocurrido un Error");
+        return $resC3;
+    } 
+
+    public function mant47()
+    {
+        $sqlC3 = " SELECT  function_ui FROM kip_g71_s WHERE id=5 ";
+        $conexion = $this->Connection();
+        $resC3 = mysqli_query($conexion, $sqlC3) or die("Ha Ocurrido un Error");
+        return $resC3;
+    } 
+
+    public function mant48()
+    {
+        $sqlC3 = " SELECT  function_ui FROM kip_g71_s WHERE id=6 ";
+        $conexion = $this->Connection();
+        $resC3 = mysqli_query($conexion, $sqlC3) or die("Ha Ocurrido un Error");
+        return $resC3;
+    } 
+
+    public function mant49()
+    {
+        $sqlC3 = " SELECT  function_ui FROM kip_g71_s WHERE id=7 ";
+        $conexion = $this->Connection();
+        $resC3 = mysqli_query($conexion, $sqlC3) or die("Ha Ocurrido un Error");
+        return $resC3;
+    } 
+
+    public function mant50()
+    {
+        $sqlC3 = " SELECT  function_ui FROM kip_g71_s WHERE id=8 ";
+        $conexion = $this->Connection();
+        $resC3 = mysqli_query($conexion, $sqlC3) or die("Ha Ocurrido un Error");
+        return $resC3;
+    } 
+
+    public function mant51()
+    {
+        $sqlC3 = " SELECT  function_ui FROM kip_g71_s WHERE id=9 ";
+        $conexion = $this->Connection();
+        $resC3 = mysqli_query($conexion, $sqlC3) or die("Ha Ocurrido un Error");
+        return $resC3;
+    } 
+
+    public function mant52()
+    {
+        $sqlC3 = " SELECT  function_ui FROM kip_g71_s WHERE id=10 ";
+        $conexion = $this->Connection();
+        $resC3 = mysqli_query($conexion, $sqlC3) or die("Ha Ocurrido un Error");
+        return $resC3;
+    } 
+
+    public function mant53()
+    {
+        $sqlC3 = " SELECT  function_ui FROM kip_g71_s WHERE id=11 ";
+        $conexion = $this->Connection();
+        $resC3 = mysqli_query($conexion, $sqlC3) or die("Ha Ocurrido un Error");
+        return $resC3;
+    } 
+
+    public function mant54()
+    {
+        $sqlC3 = " SELECT  function_ui FROM kip_g71_s WHERE id=12 ";
+        $conexion = $this->Connection();
+        $resC3 = mysqli_query($conexion, $sqlC3) or die("Ha Ocurrido un Error");
+        return $resC3;
+    } 
+
+    public function mant55()
+    {
+        $sqlC3 = " SELECT  function_ui FROM kip_g71_s WHERE id=13 ";
+        $conexion = $this->Connection();
+        $resC3 = mysqli_query($conexion, $sqlC3) or die("Ha Ocurrido un Error");
+        return $resC3;
+    } 
+
+    public function mant56()
+    {
+        $sqlC3 = " SELECT  function_ui FROM kip_g71_s WHERE id=14 ";
+        $conexion = $this->Connection();
+        $resC3 = mysqli_query($conexion, $sqlC3) or die("Ha Ocurrido un Error");
+        return $resC3;
+    } 
+
+
 }

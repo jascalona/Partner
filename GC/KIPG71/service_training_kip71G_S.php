@@ -2755,6 +2755,549 @@ if (!empty($_SESSION["name"])) {
       <!--Item 78-->
 
 
+      <!--Item 79-->
+      <style>
+        #item_79 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_79">
+          <h6>Personalización de la Interfaz de Usuario</h6>
+          <div class="contenct">
+
+            <img src="./images/S/p_interfaz_u1.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant43();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['function_ui']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_78();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_80();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 79-->
+
+      <!--Item 80-->
+      <style>
+        #item_80 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_80">
+          <h6>Personalización de la Interfaz de Usuario</h6>
+          <div class="contenct">
+
+            <img src="./images/S/p_interfaz_u2.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant44();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['function_ui']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_79();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_81();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 80-->
+
+
+      <!--Item 81-->
+      <style>
+        #item_81 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_81">
+          <h6>Personalización de la Interfaz de Usuario</h6>
+          <div class="contenct">
+
+            <img src="./images/S/p_interfaz_u3.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant43();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['function_ui']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_80();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_82();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 81-->
+
+
+      <!--Item 82-->
+      <style>
+        #item_82 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_82">
+          <h6>Personalización de la Interfaz de Usuario</h6>
+          <div class="contenct">
+
+            <img src="./images/S/p_interfaz_u1.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant44();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['function_ui']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_81();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_83();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 82-->
+
+      <!--Item 83-->
+      <style>
+        #item_83 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_83">
+          <h6>Personalización de la Interfaz de Usuario</h6>
+          <div class="contenct">
+
+            <img src="./images/S/p_interfaz_u3.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant45();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['function_ui']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_82();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_84();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 83-->
+
+      <!--Item 84-->
+      <style>
+        #item_84 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_84">
+          <h6>Personalización de la Interfaz de Usuario</h6>
+          <div class="contenct">
+
+            <img src="./images/S/p_interfaz_u4.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant46();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['function_ui']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_83();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_85();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 84-->
+
+
+      <!--Item 85-->
+      <style>
+        #item_85 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_85">
+          <h6>Anidamiento de Trabajos</h6>
+          <div class="contenct">
+
+            <img src="./images/S/anidamiento1.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant47();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['function_ui']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_84();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_86();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 85-->
+
+
+      <!--Item 86-->
+      <style>
+        #item_86 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_86">
+          <h6>Anidamiento de Trabajos</h6>
+          <div class="contenct">
+
+            <img src="./images/S/anidamiento2.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant48();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['function_ui']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_84();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_86();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 86-->
+
+
+      <!--Item 87-->
+      <style>
+        #item_87 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_87">
+          <h6>Anidamiento de Trabajos</h6>
+          <div class="contenct">
+
+            <img src="./images/S/anidamiento3.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant49();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['function_ui']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_86();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_88();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 87-->
+
+
+      <!--Item 88-->
+      <style>
+        #item_88 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_88">
+          <h6>Anidamiento de Trabajos</h6>
+          <div class="contenct">
+
+            <img src="./images/S/anidamiento4.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant50();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['function_ui']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_87();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_89();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 88-->
+
+
+      <!--Item 89-->
+      <style>
+        #item_89 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_89">
+          <h6>Creado de Plantillas</h6>
+          <div class="contenct">
+
+            <img src="./images/S/plantillas1.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant51();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['function_ui']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_88();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_90();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 89-->
+
+
+      <!--Item 90-->
+      <style>
+        #item_90 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_90">
+          <h6>Creado de Plantillas (Templates)</h6>
+          <div class="contenct">
+
+            <img src="./images/S/plantillas2.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant52();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['function_ui']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_89();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_91();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 90-->
+
+
+      <!--Item 91-->
+      <style>
+        #item_91 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_91">
+          <h6>Creado de Plantillas (Propiedades de Plantillas)</h6>
+          <div class="contenct">
+
+            <img src="./images/S/plantillas3.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant53();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['function_ui']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_90();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_92();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 91-->
+
+
+      <!--Item 92-->
+      <style>
+        #item_92 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_92">
+          <h6>Creado de Plantillas (Guardar Platilla)</h6>
+          <div class="contenct">
+
+            <img src="./images/S/plantillas4.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant54();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['function_ui']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_91();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_93();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 92-->
+
+
+      <!--Item 93-->
+      <style>
+        #item_93 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_93">
+          <h6>Creado de Plantillas (Guardar Platilla)</h6>
+          <div class="contenct">
+
+            <img src="./images/S/plantillas5.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant55();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['function_ui']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_92();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_94();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 93-->
+
+
+      <!--Item 94-->
+      <style>
+        #item_94 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_94">
+          <h6>¿Cómo usar las plantillas generadas?</h6>
+          <div class="contenct">
+
+            <img src="./images/S/plantillas6.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant56();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['function_ui']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_93();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_95();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 94-->
+
+
+
+
 
 
 
