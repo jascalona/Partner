@@ -1157,7 +1157,7 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_32">
-          <h6>Digitalización  en  red (New Mailbox)</h6>
+          <h6>Digitalización en red (New Mailbox)</h6>
           <div class="contenct">
             <img src="./images/S/scanerR3.png" alt="" id="animation14">
 
@@ -1196,7 +1196,7 @@ if (!empty($_SESSION["name"])) {
           <h6>Digitalización en red (New Mailbox)</h6>
           <div class="contenct">
 
-          <img src="./images/S/scanerR4.png" alt="" id="animation14">
+            <img src="./images/S/scanerR4.png" alt="" id="animation14">
 
             <p>
               <?php
@@ -1301,7 +1301,7 @@ if (!empty($_SESSION["name"])) {
           <h6>Local Mailbox</h6>
           <div class="contenct">
 
-          <img src="./images/S/scanerR2.png" alt="#">
+            <img src="./images/S/scanerR2.png" alt="#">
 
             <p>
               <?php
@@ -1474,44 +1474,20 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_41">
-          <h6>Kits de rodillos de alimentación DADF</h6>
+          <h6>Actualizacion de Formware USB (Preparar el archivo)</h6>
           <div class="contenct">
 
-            <img src="./images/mant6.png" alt="" id="img_DADF">
-
-            <style>
-              #DADF_250 {
-                display: none;
-              }
-
-              #DADF_130 {
-                display: none;
-              }
-            </style>
-
-            <video width="100%" height="280" controls id="DADF_250">
-              <source src="./images/DADF_250.mp4" type="video/mp4">
-            </video>
-
-            <video width="100%" height="280" controls id="DADF_130">
-              <source src="./images/DADF_130.mp4" type="video/mp4">
-            </video>
+            <img src="./images/S/firmware1.png" alt="" id="img_DADF">
 
             <p>
               <?php
               $op = new select_inst();
-              $resD4 = $op->mant9();
+              $resD4 = $op->mant6();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['mantenimiento']);
+                echo nl2br($row['so']);
               }
               ?>
             </p>
-
-            <button id="boton" onclick="kit_dadf_250();">Kit de rodillo de alimentacón DADF 250
-              hojas</button>
-            <button id="boton" onclick="kit_dadf_130();">Kit de rodillo de alimentacón DADF 130
-              hojas</button>
-
 
           </div>
 
@@ -1532,15 +1508,16 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_42">
-          <h6>Limpiar el exterior de la impresora</h6>
+          <h6>Actualización de Firmware (Abrir la GUI del mantenimiento de KCS)</h6>
           <div class="contenct">
 
+            <img src="./images/S/firmware2.png" alt="#">
             <p>
               <?php
               $op = new select_inst();
-              $resD4 = $op->mant10();
+              $resD4 = $op->mant7();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['mantenimiento']);
+                echo nl2br($row['so']);
               }
               ?>
             </p>
@@ -1565,17 +1542,17 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_43">
-          <h6>Limpieza del interior de la impresora</h6>
+          <h6>Actualización de Firmware (Abrir la GUI del mantenimiento de KCS)</h6>
           <div class="contenct">
 
-            <img src="./images/mant8.png" alt="" id="">
+            <img src="./images/S/firmware3.png" alt="#" id="">
 
             <p>
               <?php
               $op = new select_inst();
-              $resD4 = $op->mant11();
+              $resD4 = $op->mant8();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['mantenimiento']);
+                echo nl2br($row['so']);
               }
               ?>
             </p>
@@ -1600,17 +1577,17 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_44">
-          <h6>Informe de configuración</h6>
+          <h6>Actualización de Firmware (Abrir la GUI del mantenimiento de KCS)</h6>
           <div class="contenct">
 
-            <img src="./images/mant9.png" alt="" id="">
+            <img src="./images/S/firmware4.png" alt="" id="">
 
             <p>
               <?php
               $op = new select_inst();
-              $resD4 = $op->mant12();
+              $resD4 = $op->mant9();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['mantenimiento']);
+                echo nl2br($row['so']);
               }
               ?>
             </p>
@@ -1634,17 +1611,17 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_45">
-          <h6>Códigos de error y falla</h6>
+          <h6>Actualización de Firmware (Abrir la GUI del mantenimiento de KCS)</h6>
           <div class="contenct">
 
-            <img src="./images/mant10.png" alt="" id="">
+            <img src="./images/S/firmware5.png" alt="" id="">
 
             <p>
               <?php
               $op = new select_inst();
-              $resD4 = $op->mant13();
+              $resD4 = $op->mant10();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['mantenimiento']);
+                echo nl2br($row['so']);
               }
               ?>
             </p>
@@ -1669,17 +1646,17 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_46">
-          <h6>Mensajes de alerta</h6>
+          <h6>Actualización de Firmware (Abrir la GUI del mantenimiento de KCS)</h6>
           <div class="contenct">
 
-            <img src="./images/mant11.png" alt="" id="">
+            <img src="./images/S/firmware6.png" alt="" id="">
 
             <p>
               <?php
               $op = new select_inst();
-              $resD4 = $op->mant14();
+              $resD4 = $op->mant11();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['mantenimiento']);
+                echo nl2br($row['so']);
               }
               ?>
             </p>
@@ -1704,32 +1681,20 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_47">
-          <h6>Historial de fallas</h6>
+          <h6>Actualización de Firmware (Abrir la GUI del mantenimiento de KCS)</h6>
           <div class="contenct">
 
-            <img src="./images/mant12.png" alt="" id="img_faul_history">
-
-            <style>
-              #faul_history_v {
-                display: none;
-              }
-            </style>
-
-            <video width="100%" height="280" controls id="faul_history_v">
-              <source src="./images/simulation_fallas.mp4" type="video/mp4">
-            </video>
+            <img src="./images/S/firmware7.png" alt="" id="img_faul_history">
 
             <p>
               <?php
               $op = new select_inst();
-              $resD4 = $op->mant15();
+              $resD4 = $op->mant12();
               while ($row = mysqli_fetch_array($resD4)) {
-                echo nl2br($row['mantenimiento']);
+                echo nl2br($row['so']);
               }
               ?>
             </p>
-
-            <button id="boton" onclick="faul_history();">Historial de Fallas</button>
 
           </div>
 
@@ -1751,40 +1716,129 @@ if (!empty($_SESSION["name"])) {
 
       <article class="item-card">
         <div class="contenido" id="item_48">
-          <h6>Felicidades <?php echo $_SESSION['name'] ?>, has culminado con exito la formación de Servicio
-            para AltaLink B8155</h6>
+          <h6>Actualización de Firmware (Abrir la GUI del mantenimiento de KCS)</h6>
           <div class="contenct">
 
-            <img src="./images/siguiente2.jpg" alt="">
-
-            <style>
-              #faul_history_v {
-                display: none;
-              }
-            </style>
-
-            <video width="100%" height="280" controls id="faul_history_v">
-              <source src="./images/simulation_fallas.mp4" type="video/mp4">
-            </video>
+            <img src="./images/S/firmware8.png" alt="">
 
             <p>
-              De Click en "Ir a la Evaluación" para comenzar la evaluación diagnostica
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant13();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['so']);
+              }
+              ?>
             </p>
-
-            <a href="">Ir a la Evaluación</a>
-            <br>
-            <a href="../B8155.php">Volver a los detalles de Inscripción</a>
-
           </div>
 
           <div class="btn-navigation">
             <button id="boton" onclick="ir_item_47();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_49();"><i class='bx bxs-right-arrow'></i></button>
           </div>
         </div>
       </article>
       <!--Item 48-->
 
+      <!--Item 49-->
+      <style>
+        #item_49 {
+          display: none;
+        }
+      </style>
 
+      <article class="item-card">
+        <div class="contenido" id="item_49">
+          <h6>Actualización de Firmware (Abrir la GUI del mantenimiento de KCS)</h6>
+          <div class="contenct">
+
+            <img src="./images/S/firmware9.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant14();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['so']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_48();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_50();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 49-->
+
+      <!--Item 50-->
+      <style>
+        #item_50 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_50">
+          <h6>Actualización de Firmware (Abrir la GUI del mantenimiento de KCS)</h6>
+          <div class="contenct">
+
+            <img src="./images/S/firmware10.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant15();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['so']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_49();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_51();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 50-->
+
+
+      <!--Item 51-->
+      <style>
+        #item_51 {
+          display: none;
+        }
+      </style>
+
+      <article class="item-card">
+        <div class="contenido" id="item_51">
+          <h6>Actualización de Firmware (Abrir la GUI del mantenimiento de KCS)</h6>
+          <div class="contenct">
+
+            <img src="./images/S/firmware11.png" alt="">
+
+            <p>
+              <?php
+              $op = new select_inst();
+              $resD4 = $op->mant16();
+              while ($row = mysqli_fetch_array($resD4)) {
+                echo nl2br($row['so']);
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="btn-navigation">
+            <button id="boton" onclick="ir_item_49();"><i class='bx bxs-left-arrow'></i></button>
+            <button id="boton" onclick="ir_item_51();"><i class='bx bxs-right-arrow'></i></button>
+          </div>
+        </div>
+      </article>
+      <!--Item 50-->
 
     </div>
 
